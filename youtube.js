@@ -2,10 +2,34 @@ const express = require('express')
 var app = express()
 var request = require('request');
 var fs = require('fs')
-app.use(express.static('public'))
 var _ = require('underscore');
+var bodyParser = require('body-parser');
+
+app.use(express.static('public'))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'pug');
 app.set('views', './views');
+
+app.post('/save', function(req, res){
+  var videoID = req.body.videoid;
+  var userid = req.body.userid;
+  var times = req.body.times;
+  //console.log("post"+videoID+userid+times);
+  
+  if(!fs.existsSync(`public/${videoID}`))
+  {
+    
+    fs.mkdirSync(`public/${videoID}`);
+  }              
+  var fullfilePath =`public/${videoID}/${userid}.json`;
+  fs.writeFile(fullfilePath,times,function(err) {
+    if (err) throw err;
+    console.log('The file has been saved at '+fullfilePath);
+  });
+
+  
+});
+
 
 app.get('/get/lang',function(req,res){
     var id=req.query.url.split("v=")[1];
@@ -81,16 +105,21 @@ app.get('/get/:id',function(req,res)
                 var temp = items[i].match(/(\d\d:\d\d:\d\d\.\d\d\d)\s*\-\-\>\s*(\d\d:\d\d:\d\d\.\d\d\d)(.*)((.*\n?)*)/)
                 if(temp) {
                     str+=`<li>${temp['1']} ${temp['2']} ${temp['4']}</li>`
-                    sentences.push([temp['1'],temp['2'],temp['4'].replace(/\n/g,' ')])
+                    var startSec = convert2Sec(temp['1']);
+                    var endSec = convert2Sec(temp['2']);
+                    sentences.push([startSec,endSec,temp['4'].replace(/\n/g,' ')])
                 }
             }
-            //console.log(body)
-            fs.writeFile(`public/${id}.json`,JSON.stringify(sentences),function(err) {
-              if (err) throw err;
-              console.log('The file has been saved!');});
+            if(!fs.existsSync(`public/${id}/${id}.json`))
+            {
               
+              fs.mkdirSync(`public/${id}`);
+              fs.writeFile(`public/${id}/${id}.json`,JSON.stringify(sentences),function(err) {
+                if (err) throw err;
+                console.log('The file has been saved!');});
+            }              
               
-            res.redirect(`/play/${id}`)
+            res.redirect(`/play/${id}/${id}`)
             
         }
   })
@@ -102,23 +131,16 @@ app.get('/',function(req,res){
   res.render('home');
 })
 
-app.get('/play/:id',function(req,res){
+app.get('/play/:id/:name',function(req,res){
 
-  fs.readFile(`public/${req.params.id}.json`,'utf8', (err, lines) => {
+  fs.readFile(`public/${req.params.id}/${req.params.name}.json`,'utf8', (err, lines) => {
     if (err) throw err;
+
 
     lines = JSON.parse(lines)
     var totalCount = lines.length;
-    var mytime=[];
 
-    for(var i=0; i<lines.length;i++)
-    {
-        var startSec = convert2Sec(lines[i][0]);
-        var endSec = convert2Sec(lines[i][1]);
-        mytime.push([startSec,endSec,lines[i][2]])
-    
-    }
-    res.render('play.pug',{totalCount:totalCount, mytime:JSON.stringify(mytime),id:req.params.id})
+    res.render('play.pug',{totalCount:totalCount, mytime:JSON.stringify(lines),id:req.params.id})
   })
 
   
@@ -126,8 +148,8 @@ app.get('/play/:id',function(req,res){
 
 function convert2Sec(str)
 {
-    //console.log(str)
-    //console.log(typeof str)
+    console.log(str)
+    console.log(typeof str)
     var temp = str.split(':');
     var hours = parseInt(temp[0]);
     var min = parseInt(temp[1]);

@@ -1,0 +1,10 @@
+doctype html
+html
+  body
+    form(action='/get/'+id)
+      select(name='lang')
+        each val in nodes
+            option(value=val[0]) #{val[1]}
+      br
+      br
+      input(type='submit')

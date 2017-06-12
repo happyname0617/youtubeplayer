@@ -1,0 +1,33 @@
+h1 youtube dictation practice player
+h2
+  | enter your youtube url
+  h2
+    | your video must have a 
+    b caption
+  form(action='/get/lang', method='get')
+    input#youtubeurl(name='url', type='text', placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs', size='100')
+    input(type='submit')
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=5ejGKY5tD8I', target='_blank') example 1
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=oDc5u8l-ao0', target='_blank') example 2
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 3
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 4
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 5
+  p
+    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 6
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script.
+    $(document).ready(function(){
+    $('#youtubeurl').keypress(function (e) {
+    var key = e.which;
+    //console.log(e)
+    if(key == 13)  // the enter key code
+    {
+    $('#youtubeurl').click();
+    }
+    });
+    })

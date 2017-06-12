@@ -1,0 +1,365 @@
+doctype html
+html
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  body
+    // 1. The <iframe> (and video player) will replace this <div> tag.
+    #player
+    .debug
+    p  
+    h1 Step1: Listen carefully whole video
+    button.play play
+    button.stop stop
+    p
+    p  
+    h1 Step2: Start Dictation one by one
+    h2 try to type as much as you can, then comapre with answer
+    button.dictstart Start Dictation Mode
+    button.dictstop Stop Dictation Mode
+    p
+    #dictationarea
+      p
+      p#underline_str
+      p#solution_str
+      textarea#inputstr(rows='4', cols='50')
+      button#answer Check Answer
+      p
+        button.prev prev sentence
+        button.repeatPlay play
+        button.repeatPause pause
+        button.next next sentence
+      p
+        // label margin at begin end
+        // select.control_margin
+        //   option(value='0.0') 0.0 sec
+        //   option(value='0.1') 0.1 sec
+        //   option(value='0.2') 0.2 sec
+        //   option(value='0.3') 0.3 sec
+        //   option(value='0.5') 0.5 sec
+        label rest time for repeating
+        select.control_restTime
+          option(value='0.0') 0.0 sec
+          option(value='0.5') 0.5 sec
+          option(value='1.0', selected) 1.0 sec
+          option(value='3.0') 3.0 sec
+          option(value='5.0') 5.0 sec
+      p
+        button.leftboder_2left01 <0.1
+        button.leftboder_2left03 <0.3
+        button.leftboder_2right01 0.1>
+        button.leftboder_2right03 0.3>
+        button.mergewithleft merge with left
+        button.captiondelete delete
+        button.rightboder_2left01 <0.1
+        button.rightboder_2left03 <0.3
+        button.rightboder_2right01 0.1>
+        button.rightboder_2right03 0.3>
+      p
+        button.save save
+    p  
+    h1 Step3: Quiz
+    h2 TBD
+    script.
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      var userid = 'bskim'
+      var margin = 0.2; //sec
+      var restTime = 1.0;
+      var videoID = '#{id}';
+      //var times = [['2.216','3.576'],['03.576','05.616'],['05.616','8.096'],['8.336','10.336'],['10.616','12.616'],['13.576','15.496']];
+      var times = !{mytime};
+      var totalCount = #{totalCount};
+      var currIdx = 0;
+      function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      caption: false,
+      cc_load_policy:3,
+      videoId: '#{id}',
+      events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+      }
+      });
+      }
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+      //event.target.playVideo();
+      //player.seekTo(getStartTime(currIdx,margin))
+      $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+      }
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      var timer;
+      var timersleep ;
+      function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+      //setTimeout(repeatVideo, getDuration(currIdx,margin))
+      done = true;
+      }
+      }
+      function repeatAfterSec()
+      {
+        player.pauseVideo();
+        clearTimeout(timer);
+        timersleep = setTimeout(repeatVideo,restTime*1000);
+      }
+
+      function repeatVideo() {
+        player.seekTo(getStartTime(currIdx,margin));
+        player.playVideo();
+        timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
+        clearTimeout(timersleep);
+        $('.debug').text(currIdx+'/'+totalCount)
+      }
+
+      function getStartTime(index,margin)
+      {
+      var start = parseFloat(times[index][0])-margin
+      return start>=0?start:0
+      }
+      function getEndTime(index,margin)
+      {
+      return parseFloat(times[index][1])+margin;
+      }
+      function getDuration(index,margin)
+      {
+      var duration = (getEndTime(index,margin)-getStartTime(index,margin))*1000;
+      //console.log(duration);
+      return duration;
+      }
+      
+      function myconvert(solution, input)
+      {
+      //console.log('solution:',solution)
+      //console.log('input:',input)
+      var marker = '+';
+      //console.log(typeof solution);
+      var temp = solution.replace(/[a-zA-Z]/gi,marker);
+      //console.log('temp:',temp)
+      var temp2 = input.replace(/[^a-zA-Z]/gi,'')
+      //console.log('temp2:',temp2)
+      for(var i=0; i<temp2.length; i++)
+      {
+      temp = temp.replace(marker,temp2[i])
+      }
+      //console.log('result:',temp)
+      return temp;
+      }
+  
+      $(document).ready(function(){
+        $('#dictationarea').hide();
+        $('#inputstr').keyup(function(){
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+      })
+      
+      $('#answer').click(function(){
+        $('#solution_str').text(times[currIdx][2])
+      })
+      
+      $('.dictstart').click(function(){
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+        $('#dictationarea').show();
+        })
+  
+      $('.dictstop').click(function(){
+        $('.stop').click();
+        $('#dictationarea').hide();
+        })
+      
+      $('.next').click(function(){
+        currIdx=currIdx+1;
+        //$('.debug').text(currIdx+'/'+totalCount)
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+        $('#solution_str').text('');
+        $('#inputstr').val('')
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+      })
+
+      $('.prev').click(function(){
+        currIdx=currIdx-1;
+        currIdx=currIdx>0?currIdx:0
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+        $('#solution_str').text('')
+        $('#inputstr').val('')
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+      })
+  
+      $('.play').click(function(){
+        $('.debug').text('play')
+        player.playVideo();
+      })
+
+      $('.stop').click(function(){
+        $('#solution_str').text('')
+        $('.debug').text('stop')
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        player.stopVideo();
+        $('#inputstr').text('')
+      })
+
+      $('.leftextend').click(function(){
+        $('.debug').text('leftextend')
+        times[currIdx][0] = getStartTime(currIdx,0)-extendSec;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.mergewithleft').click(function(){
+        $('.debug').text('mergewithleft')
+        player.playVideo();
+      })
+
+      $('.captiondelete').click(function(){
+        $('.debug').text('captiondelete')
+        player.playVideo();
+      })
+
+      $('.rightboder_2right01').click(function(){
+        $('.debug').text('rightboder_2right01')
+        times[currIdx][1] = getEndTime(currIdx,0)+0.1;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+      
+      $('.rightboder_2right03').click(function(){
+        $('.debug').text('rightboder_2right03')
+        times[currIdx][1] = getEndTime(currIdx,0)+0.3;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.rightboder_2left01').click(function(){
+        $('.debug').text('rightboder_2left01')
+        times[currIdx][1] = getEndTime(currIdx,0)-0.1;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+      
+      $('.rightboder_2left03').click(function(){
+        $('.debug').text('rightboder_2left03')
+        times[currIdx][1] = getEndTime(currIdx,0)-0.3;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.leftboder_2left01').click(function(){
+        $('.debug').text('leftboder_2left01')
+        times[currIdx][0] = getStartTime(currIdx,0)-0.1;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+      
+      $('.leftboder_2left03').click(function(){
+        $('.debug').text('leftboder_2left03')
+        times[currIdx][0] = getStartTime(currIdx,0)-0.3;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.leftboder_2right01').click(function(){
+        $('.debug').text('leftboder_2right01')
+        times[currIdx][0] = getStartTime(currIdx,0)+0.1;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+      
+      $('.leftboder_2right03').click(function(){
+        $('.debug').text('leftboder_2right03')
+        times[currIdx][0] = getStartTime(currIdx,0)+0.3;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+      
+      $('.captiondelete').click(function(){
+        $('.debug').text('captiondelete')
+        times.splice( currIdx, 1 );
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        $('#solution_str').text('')
+        $('#inputstr').val('')
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+        repeatVideo();
+      })
+      
+      $('.mergewithleft').click(function(){
+        $('.debug').text('mergewithleft')
+        times[currIdx-1][1] = times[currIdx][1];
+        times[currIdx-1][2] = times[currIdx-1][2]+' '+times[currIdx][2]
+        times.splice( currIdx, 1 );
+        currIdx = currIdx-1;
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        $('#solution_str').text('')
+        $('#inputstr').val('')
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+
+        repeatVideo();
+      })
+
+      $('.control_margin').change(function(){
+        // $('.debug').text('control_margin')
+        // margin =  $('.control_margin').val();
+        // console.log('margin:',margin)
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.control_restTime').change(function(){
+        $('.debug').text('control_restTime')
+        restTime =  $('.control_restTime').val();
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.repeatPlay').click(function(){
+        $('.debug').text('repeatPlay')
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+      })
+
+      $('.repeatPause').click(function(){
+        $('.debug').text('repeatPause')
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        player.pauseVideo();
+      })
+
+
+      $('.save').click(function(){
+        $('.debug').text('save')
+        $.post( "/save", {videoid:videoID,userid:userid,times:JSON.stringify(times)} );
+      })
+
+
+
+      
+   
+      })
