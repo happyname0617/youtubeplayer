@@ -1,6 +1,9 @@
 doctype html
 html
   script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script(src='https://unpkg.com/xregexp@3.2.0/xregexp-all.js', <='', script='')
+  </body></html>
+
   body
     // 1. The <iframe> (and video player) will replace this <div> tag.
     #player
@@ -150,9 +153,11 @@ html
       //console.log('input:',input)
       var marker = '+';
       //console.log(typeof solution);
-      var temp = solution.replace(/[a-zA-Z]/gi,marker);
+      var temp = solution.replace(/[\u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3|\w|äöüÄÖÜß|\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/gi,marker);
       //console.log('temp:',temp)
-      var temp2 = input.replace(/[^a-zA-Z]/gi,'')
+      // japanese \u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf
+      // korean \u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3
+      var temp2 = input.replace(/[^\u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3|\w|äöüÄÖÜß|\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/gi,'')
       //console.log('temp2:',temp2)
       for(var i=0; i<temp2.length; i++)
       {
