@@ -82,9 +82,10 @@ html
       var restTime = 1.0;
       var videoID = '#{id}';
       //var times = [['2.216','3.576'],['03.576','05.616'],['05.616','8.096'],['8.336','10.336'],['10.616','12.616'],['13.576','15.496']];
-      var times = !{mytime};
-      var totalCount = #{totalCount};
-      var currIdx = 0;
+      var videoRecord = !{mytime};
+      var times = videoRecord.caption;
+      var totalCount = times.length;
+      var currIdx = videoRecord.currentIndex;
       function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
       height: '390',
@@ -167,14 +168,60 @@ html
       return temp;
       }
   
+      var INPUTMODE = {
+        IDLE : {value: 0, name: "idle status", code: "i"}, 
+        ANSWER: {value: 1, name: "answer status", code: "a"}, 
+      };
+      
+      var currentInputMode = INPUTMODE.IDLE;
       $(document).ready(function(){
         $('#dictationarea').hide();
-        $('#inputstr').keyup(function(){
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-      })
-      
+        $('#inputstr').val(times[currIdx][3]);
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        
+        $("html").on('keyup', function (e) {
+          if (e.ctrlKey && e.keyCode == 37) {
+            console.log('ctrl + left key typed');
+            $('.prev').click();
+            currentInputMode=INPUTMODE.IDLE;
+            
+          }
+          if (e.ctrlKey && e.keyCode == 39) {
+            console.log('ctrl + right key typed');
+            $('.next').click();
+            currentInputMode=INPUTMODE.IDLE;
+          }
+        });
+
+        $("#inputstr").on('keyup', function (e) {
+         
+          if (e.keyCode == 13) {
+            e.preventDefault();
+            console.log('enter key typed');
+            if(currentInputMode==INPUTMODE.IDLE)
+            {
+              $('#answer').click();
+              currentInputMode=INPUTMODE.ANSWER;
+            }
+            else if(currentInputMode==INPUTMODE.ANSWER)
+            {
+              $('.next').click();
+              currentInputMode=INPUTMODE.IDLE;
+            }
+          }
+          else
+          {
+            console.log($('#inputstr').val())
+            $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+          }
+          
+        });
+
       $('#answer').click(function(){
-        $('#solution_str').text(times[currIdx][2])
+        $('#solution_str').text(times[currIdx][2]);
+        times[currIdx][3] = $('#inputstr').val()
+        // $('#inputstr').val();
+        // times[currIdx].push
       })
       
       $('.dictstart').click(function(){
@@ -190,24 +237,26 @@ html
         })
       
       $('.next').click(function(){
+        times[currIdx][3] = $('#inputstr').val()
         currIdx=currIdx+1;
         //$('.debug').text(currIdx+'/'+totalCount)
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
         $('#solution_str').text('');
-        $('#inputstr').val('')
+        $('#inputstr').val(times[currIdx][3])
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
       })
 
       $('.prev').click(function(){
+        times[currIdx][3] = $('#inputstr').val()
         currIdx=currIdx-1;
         currIdx=currIdx>0?currIdx:0
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
         $('#solution_str').text('')
-        $('#inputstr').val('')
+        $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
       })
   
@@ -225,23 +274,23 @@ html
         $('#inputstr').text('')
       })
 
-      $('.leftextend').click(function(){
-        $('.debug').text('leftextend')
-        times[currIdx][0] = getStartTime(currIdx,0)-extendSec;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
+      // $('.leftextend').click(function(){
+      //   $('.debug').text('leftextend')
+      //   times[currIdx][0] = getStartTime(currIdx,0)-extendSec;
+      //   clearTimeout(timer);
+      //   clearTimeout(timersleep);
+      //   repeatVideo();
+      // })
 
-      $('.mergewithleft').click(function(){
-        $('.debug').text('mergewithleft')
-        player.playVideo();
-      })
+      // $('.mergewithleft').click(function(){
+      //   $('.debug').text('mergewithleft')
+      //   player.playVideo();
+      // })
 
-      $('.captiondelete').click(function(){
-        $('.debug').text('captiondelete')
-        player.playVideo();
-      })
+      // $('.captiondelete').click(function(){
+      //   $('.debug').text('captiondelete')
+      //   player.playVideo();
+      // })
 
       $('.rightboder_2right01').click(function(){
         $('.debug').text('rightboder_2right01')
@@ -320,14 +369,16 @@ html
       
       $('.mergewithleft').click(function(){
         $('.debug').text('mergewithleft')
+        times[currIdx][3] = $('#inputstr').val();
         times[currIdx-1][1] = times[currIdx][1];
-        times[currIdx-1][2] = times[currIdx-1][2]+' '+times[currIdx][2]
+        times[currIdx-1][2] = times[currIdx-1][2]+' '+times[currIdx][2];
+        times[currIdx-1][3] = times[currIdx-1][3]+' '+times[currIdx][3];
         times.splice( currIdx, 1 );
         currIdx = currIdx-1;
         clearTimeout(timer);
         clearTimeout(timersleep);
         $('#solution_str').text('')
-        $('#inputstr').val('')
+        $('#inputstr').val(times[currIdx][3])
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
 
         repeatVideo();
@@ -366,8 +417,13 @@ html
 
 
       $('.save').click(function(){
-        $('.debug').text('save')
-        $.post( "/save", {videoid:videoID,userid:userid,times:JSON.stringify(times)} );
+        $('.debug').text('save');
+        times[currIdx][3] = $('#inputstr').val();
+        videoRecord.createdby_userid = userid;
+        videoRecord.currentIndex = currIdx;
+        videoRecord.forkedFromVideoID = videoID;
+        videoRecord.caption = times;
+        $.post( "/save", {videoid:videoID,userid:userid,videoRecord:JSON.stringify(videoRecord)} );
       })
 
 

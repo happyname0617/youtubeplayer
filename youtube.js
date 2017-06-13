@@ -13,7 +13,8 @@ app.set('views', './views');
 app.post('/save', function(req, res){
   var videoID = req.body.videoid;
   var userid = req.body.userid;
-  var times = req.body.times;
+  var videoRecord = req.body.videoRecord;
+
   //console.log("post"+videoID+userid+times);
   
   if(!fs.existsSync(`public/${videoID}`))
@@ -22,7 +23,7 @@ app.post('/save', function(req, res){
     fs.mkdirSync(`public/${videoID}`);
   }              
   var fullfilePath =`public/${videoID}/${userid}.json`;
-  fs.writeFile(fullfilePath,times,function(err) {
+  fs.writeFile(fullfilePath,videoRecord,function(err) {
     if (err) throw err;
     console.log('The file has been saved at '+fullfilePath);
   });
@@ -79,6 +80,7 @@ app.get('/get/lang',function(req,res){
     //res.send(url)
 })
 
+//get caption with given language from youtube.com
 app.get('/get/:id',function(req,res)
 {
     var id=req.params.id;
@@ -107,14 +109,20 @@ app.get('/get/:id',function(req,res)
                     str+=`<li>${temp['1']} ${temp['2']} ${temp['4']}</li>`
                     var startSec = convert2Sec(temp['1']);
                     var endSec = convert2Sec(temp['2']);
-                    sentences.push([startSec,endSec,temp['4'].replace(/\n/g,' ')])
+                    sentences.push([startSec,endSec,temp['4'].replace(/\n/g,' '),'']) //starttime, endtime, caption, userCaption
                 }
             }
             if(!fs.existsSync(`public/${id}/${id}.json`))
             {
-              
+              var videoRecord =
+              {
+                caption:sentences,
+                createdby_userid:'anonymous',
+                currentIndex:0,
+                forkedFromVideoID:`${id}`
+              }
               fs.mkdirSync(`public/${id}`);
-              fs.writeFile(`public/${id}/${id}.json`,JSON.stringify(sentences),function(err) {
+              fs.writeFile(`public/${id}/${id}.json`,JSON.stringify(videoRecord),function(err) {
                 if (err) throw err;
                 console.log('The file has been saved!');});
             }              
@@ -133,14 +141,14 @@ app.get('/',function(req,res){
 
 app.get('/play/:id/:name',function(req,res){
 
-  fs.readFile(`public/${req.params.id}/${req.params.name}.json`,'utf8', (err, lines) => {
+  fs.readFile(`public/${req.params.id}/${req.params.name}.json`,'utf8', (err, videoRecord) => {
     if (err) throw err;
 
 
-    lines = JSON.parse(lines)
-    var totalCount = lines.length;
+    videoRecord = JSON.parse(videoRecord)
 
-    res.render('play.pug',{totalCount:totalCount, mytime:JSON.stringify(lines),id:req.params.id})
+
+    res.render('play.pug',{mytime:JSON.stringify(videoRecord),id:req.params.id})
   })
 
   
