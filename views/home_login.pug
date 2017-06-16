@@ -1,0 +1,84 @@
+head
+  // Latest compiled and minified CSS
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  // Optional theme
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+  // Latest compiled and minified JavaScript
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+body
+  nav.navbar.navbar-inverse
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') TypingTube.com alpha 
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href='#') Home
+          li
+            a(href='#feed') Feed
+          li
+            a(href='#class') Class
+          li
+            a(href='#forum') Forum
+          li
+            a(href='#about') About
+          li
+            a(href='#mypage') MyPage
+  .container.theme-showcase(role='main')
+    .row
+      .col-md-12
+        .jumbotron
+          h1 Youtube player for dictation practice
+          h2 Enter your youtube url which have at least a caption
+          form(action='/get/lang', method='get')
+          form.form-inline(action='/get/lang', method='get')
+            input.form-control#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
+            button.btn.btn-default(type='submit') Submit
+        table.table.table-stripetable.table.table-striped.table-hover
+          thead
+            tr
+              th
+                | Video Title
+              th
+                | Language
+              th
+                | Progress
+              th
+                | Menu
+          tbody
+            tr
+              td 
+                a(href='') Learning German (A2) | The Germany Laboratory Episode 05: Hiking
+              td
+                | DE
+              td
+                | Completed on June 23,2017
+              td
+                | ...
+
+
+
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script.
+    $(document).ready(function(){
+    $('#youtubeurl').keypress(function (e) {
+    var key = e.which;
+    //console.log(e)
+    if(key == 13)  // the enter key code
+    {
+    $('#youtubeurl').click();
+    }
+    });
+    })
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-100905207-1', 'auto');
+    ga('send', 'pageview');
