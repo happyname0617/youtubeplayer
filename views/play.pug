@@ -2,6 +2,7 @@ doctype html
 head
   // Latest compiled and minified CSS
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  link(rel='stylesheet', href='/css/typingtube.css')
   // Optional theme
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
   // Latest compiled and minified JavaScript
@@ -41,6 +42,7 @@ body
           button.prev < prev sentence
           button.next next sentence>
         p
+        ul.sentence(text-align:"center")
         p#underline_str
         p#solution_str
         textarea#inputstr(rows='4', cols='50')
@@ -96,6 +98,12 @@ body
       var videoID = '#{id}';
       //var times = [['2.216','3.576'],['03.576','05.616'],['05.616','8.096'],['8.336','10.336'],['10.616','12.616'],['13.576','15.496']];
       var videoRecord = !{mytime};
+      var c_letter='letter'
+      if(videoRecord.videoCaptionLangCode=='ko')
+      {
+        c_letter='letter nonAlphbetLetter'
+      }
+        
       var times = videoRecord.caption;
       var totalCount = times.length;
       var currIdx = videoRecord.currentIndex;
@@ -112,11 +120,40 @@ body
       }
       });
       }
+      function updateInput()
+      {
+         var str = myconvert(times[currIdx][2],$('#inputstr').val());
+          console.log(str);
+          
+          var html='';
+          for(var i=0; i<str.length;i++)
+          {
+            var tempclass = '';
+            if(str[i]==marker)
+            {
+              html+=`<li class="${c_letter} correct">.</li>`;                
+            }
+            else if(str[i]==' ')
+            {
+              html+=`<li class="space">${str[i]}</li>`;                
+              
+            }
+            else
+            {
+              html+=`<li class="${c_letter} correct">${str[i]}</li>`;                
+            }
+
+          }
+            $('.sentence').html(html)
+          $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val())) 
+      }
+        
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
       //event.target.playVideo();
       //player.seekTo(getStartTime(currIdx,margin))
       $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+      updateInput();
       }
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
@@ -169,12 +206,15 @@ body
       //console.log(duration);
       return duration;
       }
+
+      var marker = '+';
       
       function myconvert(solution, input)
       {
-      //console.log('solution:',solution)
-      //console.log('input:',input)
-      var marker = '+';
+      console.log('solution:',solution)
+      console.log('input:',input)
+      solution = solution.trim();
+      input = input.trim();
       //console.log(typeof solution);
       var temp = solution.replace(/[\u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3|\w|äöüÄÖÜß|\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/gi,marker);
       //console.log('temp:',temp)
@@ -186,8 +226,24 @@ body
       {
       temp = temp.replace(marker,temp2[i])
       }
-      //console.log('result:',temp)
+      console.log('result:',temp)
       return temp;
+      }
+      
+      function evaluateAnswer(solution, input)
+      {
+        var result =[];
+        var strRef = myconvert(solution, solution);
+        var strIn = myconvert(solution, input);
+        
+        for(var i=0;i<strRef.length;i++)
+        {
+          if(strRef[i]==strIn[i])
+            result.push(true);
+          else
+            result.push(false);
+        }
+        return result;
       }
   
       var INPUTMODE = {
@@ -200,6 +256,7 @@ body
         $('#dictationarea').hide();
         $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        updateInput();
         
         $("html").on('keyup', function (e) {
           if (e.ctrlKey && e.keyCode == 37) {
@@ -215,6 +272,7 @@ body
           }
         });
 
+
         $("#inputstr").on('keyup', function (e) {
          
           if (e.keyCode == 13) {
@@ -223,7 +281,11 @@ body
             if(currentInputMode==INPUTMODE.IDLE)
             {
               $('#answer').click();
-              currentInputMode=INPUTMODE.ANSWER;
+               var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val());
+               var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
+              if(allTrue){
+                currentInputMode=INPUTMODE.ANSWER;
+                }
             }
             else if(currentInputMode==INPUTMODE.ANSWER)
             {
@@ -233,15 +295,43 @@ body
           }
           else
           {
-            console.log($('#inputstr').val())
-            $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+            updateInput();
+
+
           }
           
         });
 
       $('#answer').click(function(){
-        $('#solution_str').text(times[currIdx][2]);
-        times[currIdx][3] = $('#inputstr').val()
+        //$('#solution_str').text(times[currIdx][2]);
+        times[currIdx][3] = $('#inputstr').val();
+        var str= myconvert(times[currIdx][2],$('#inputstr').val())
+        var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val());
+        var html='';
+        for(var i=0; i<result.length;i++)
+        {
+          var tempclass = '';
+          if(str[i]==marker)
+          {
+            html+=`<li class="${c_letter} incorrect">.</li>`;                
+          }
+          else if(str[i]==' ')
+          {
+            html+=`<li class="space">${str[i]}</li>`;                
+            
+          }
+          else if(result[i])
+          {
+            html+=`<li class="${c_letter} correct">${str[i]}</li>`;                
+          }
+          else
+          {
+            html+=`<li class="${c_letter} incorrect">${str[i]}</li>`;                
+          }
+
+        }
+
+        $('.sentence').html(html)
         // $('#inputstr').val();
         // times[currIdx].push
       })
@@ -255,7 +345,8 @@ body
         repeatVideo();
         $('#solution_str').text('');
         $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        updateInput();
       })
 
       $('.prev').click(function(){
@@ -268,6 +359,7 @@ body
         $('#solution_str').text('')
         $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+        updateInput();
       })
   
   
@@ -277,7 +369,7 @@ body
         times[currIdx][1] = getEndTime(currIdx,0)+0.1;
         clearTimeout(timer);
         clearTimeout(timersleep);
-        repeatVideoFromClose2End(times[currIdx][1]-0.5)
+        repeatVideo()
       })
       
       $('.rightboder_2right03').click(function(){
@@ -344,6 +436,7 @@ body
         $('#solution_str').text('')
         $('#inputstr').val('')
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+        updateInput();
         repeatVideo();
       })
       
@@ -360,6 +453,7 @@ body
         $('#solution_str').text('')
         $('#inputstr').val(times[currIdx][3])
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
+        updateInput();
 
         repeatVideo();
       })

@@ -20,7 +20,7 @@ var assert = require('assert');
 var passport = require('passport')
 var FacebookStrategy = require('passport-facebook').Strategy;
 
-app.use(express.static('public'))
+app.use(express.static('client'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -95,7 +95,7 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(id, done) {
   console.log('deserializeUser', id);
  collectionUser.findOne({_id:id},function(err, foundUser) {
-      //console.log("result: "+JSON.stringify(foundUser))
+       console.log("result: "+JSON.stringify(foundUser))
         done(err, foundUser);
   });
 
@@ -255,6 +255,35 @@ app.get('/get/lang/:youtubeVideoId',function(req,res){
         
     //res.send(url)
 })
+app.get('/delete/:youtubeVideoId',function(req,res){
+    var YoutubeVideoId=ObjectId(req.params.youtubeVideoId);
+    console.log("/delete/ "+req.params.youtubeVideoId);
+
+    collectionVideo.findOne({_id:YoutubeVideoId},function(err, foundVideo) {
+      if (err) { return err; }
+      if(foundVideo){
+        console.log("video found");
+        //console.log(typeof foundVideo.caption)
+        if(foundVideo.owner==req.user._id)
+        {
+          collectionVideo.remove({_id:YoutubeVideoId},function(err,result){
+            if (err) { return err; }
+            console.log(result);
+            res.redirect('/')
+          })   
+        }
+        else
+        {
+          res.send('the video is not owned by you')
+        }
+      }
+      else
+      {
+        res.send('there is no such a video')
+        
+      }
+    });
+})
 
 app.get('/get/videoInfo/:youtubeVideoId',function(req,res){
     var YoutubeVideoId=req.params.youtubeVideoId;
@@ -266,7 +295,7 @@ app.get('/get/videoInfo/:youtubeVideoId',function(req,res){
 })
 function getVideoInfo(YouTubeVideoID,callback){
 
-  var url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id='+YouTubeVideoID+'&fields=items(id,snippet)&key='+GOOGLE_API_KEY;
+  var url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id='+YouTubeVideoID+'&fields=items(id,snippet)&key='+config.GOOGLE_API_KEY;
   request(url, function(error, response, body) {
         // Check status code (200 is HTTP OK)
         console.log("Status code: " + response.statusCode);
@@ -467,6 +496,6 @@ function convert2Sec(str)
 }
 
 
-app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0",function(){
-  console.log('listening on %s',process.env.PORT||3000)
+app.listen(process.env.PORT || config.NODE_PORT, process.env.IP || "0.0.0.0",function(){
+  console.log('listening on %s',process.env.PORT||config.NODE_PORT)
 })
