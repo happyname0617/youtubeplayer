@@ -14,11 +14,11 @@ body
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand(href='#') TypingTube.com alpha 
+        a.navbar-brand(href='/') TypingTube.com alpha 
       #navbar.navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li.active
-            a(href='#') Home
+            a(href='/') Home
           li
             a(href='#feed') Feed
           li
@@ -33,11 +33,13 @@ body
     .row
       .col-md-12
         .jumbotron
-          h1 Youtube player for dictation practice
-          h2 Enter your youtube url which have at least a caption
-          form(action='/get/lang', method='get')
-          form.form-inline(action='/get/lang', method='get')
-            input.form-control#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
+          h2 Youtube player for dictation practice
+          h4 Enter your youtube url which have at least a caption
+          input#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
+          #VideoInfo
+          form.form-inline(action='/newvideo', method='post')
+            input#youtubeID(name='youtubeVideoId', type='hidden')
+            #VideoCaptions
             button.btn.btn-default(type='submit') Submit
         table.table.table-stripetable.table.table-striped.table-hover
           thead
@@ -51,21 +53,79 @@ body
               th
                 | Menu
           tbody
-            tr
-              td 
-                a(href='') Learning German (A2) | The Germany Laboratory Episode 05: Hiking
-              td
-                | DE
-              td
-                | Completed on June 23,2017
-              td
-                | ...
+            each video in videolist
+              tr
+                td 
+                  a(href='/play/'+video._id) #{video.videoTitle}
+                td
+                  | #{video.videoCaptionLangCode}
+                td
+                  | #{video.currentIndex}/#{video.caption.length}
+                td
+                  | ...
 
 
 
   script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
   script.
+    function getVideoCaption(youtubeVideoId, callback)
+    {
+        //get video caption language list
+        var url_lang = "/get/lang/"+youtubeVideoId;
+        console.log(url_lang);
+        $.getJSON( url_lang, function( caption ) {
+          callback(caption);
+        });
+  
+    }
+    function getVideoInfo(youtubeVideoId,callback)
+    {
+        //get video info
+        var url_vinfo = "/get/videoInfo/"+youtubeVideoId;
+        //console.log(url_vinfo);
+        $.getJSON( url_vinfo, function( vInfo ) {
+          callback(vInfo)
+        });    
+    }
+  
     $(document).ready(function(){
+
+      $('#youtubeurl').on('paste',function(){
+        setTimeout(function () {
+        var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]
+        console.log(youtubeVideoId);
+        getVideoInfo(youtubeVideoId,function(vInfo){
+          console.log(vInfo);
+          var title = vInfo.items[0].snippet.title;
+          var description = vInfo.items[0].snippet.description;
+          var thumbnailUrl = vInfo.items[0].snippet.thumbnails.default.url
+          var thumbWidth = vInfo.items[0].snippet.thumbnails.default.width
+          var thumbHeight = vInfo.items[0].snippet.thumbnails.default.height;
+          var defaultAudioLanguage = vInfo.items[0].snippet.defaultAudioLanguage;
+          $('#VideoInfo').html(`<img src='${thumbnailUrl}' width=${thumbWidth} height=${thumbHeight}><span>${title}</span>`);
+
+          getVideoCaption(youtubeVideoId,function(caption){
+            console.log(JSON.stringify(caption));
+            var htmlstr = '';
+            for(var i=0; i<caption.length;i++)
+            {
+              if(defaultAudioLanguage==caption[i][0]){
+                htmlstr=htmlstr+`<option value="${caption[i][0]}" selected>${caption[i][1]}</option>`
+              }
+              else
+              {
+                htmlstr=htmlstr+`<option value="${caption[i][0]}">${caption[i][1]}</option>`
+              }
+            }
+            $('#VideoCaptions').html(`<select class='language' name='lang'>${htmlstr}</select>`)
+  
+          });          
+        });
+
+        $('#youtubeID').val(youtubeVideoId);
+        }, 100);
+      });
+
     $('#youtubeurl').keypress(function (e) {
     var key = e.which;
     //console.log(e)

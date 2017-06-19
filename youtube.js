@@ -1,6 +1,11 @@
+var env = process.env.NODE_ENV || 'development';
+var config = require('./config')[env];
+
 const express = require('express')
 var session = require('express-session');
-var FileStore = require('session-file-store')(session);
+//var FileStore = require('session-file-store')(session);
+const MongoStore = require('connect-mongo')(session);
+
 var app = express()
 var request = require('request');
 var fs = require('fs')
@@ -14,9 +19,6 @@ var assert = require('assert');
 
 var passport = require('passport')
 var FacebookStrategy = require('passport-facebook').Strategy;
-var FACEBOOK_APP_SECRET='e765d4f33eb9adcca3ba7fdcb07c4dbe';
-var FACEBOOK_APP_ID = '120280471896762'
-var db_url = 'mongodb://localhost:27017/typingtube';
 
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -24,10 +26,10 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.use(session({
-  secret: '1234DSFs@adf1234!@#$asd',
+  secret: config.SESSION_SECRET_KEY,
   resave: false,
   saveUninitialized: true,
-  store:new FileStore()
+  store:new MongoStore({ url: config.DB_URL })
 }));
 
 var mongodb;
@@ -48,14 +50,15 @@ function dbdisconnect(){
   mongodb.close();
 }
 
-dbconnect(db_url);
+dbconnect(config.DB_URL);
+
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(
   new FacebookStrategy({
-    clientID: FACEBOOK_APP_ID,
-    clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: "https://youtubeplayer-happyname0617.c9users.io/auth/facebook/callback",
+    clientID: config.FACEBOOK_APP_ID,
+    clientSecret: config.FACEBOOK_APP_SECRET,
+    callbackURL: config.FACEBOOK_CALLBACK_URL,
     profileFields:['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified', 'displayName']
   },
   function(accessToken, refreshToken, profile, done) {
@@ -79,8 +82,6 @@ passport.use(
 
         }
       });
-      // collectionUser.insertOne(newuser);
-      // done(null, newuser);
   }
 
 ));
@@ -94,7 +95,7 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(id, done) {
   console.log('deserializeUser', id);
  collectionUser.findOne({_id:id},function(err, foundUser) {
-      console.log("result: "+JSON.stringify(foundUser))
+      //console.log("result: "+JSON.stringify(foundUser))
         done(err, foundUser);
   });
 
@@ -113,7 +114,7 @@ app.get('/dbtest',function(req, res) {
     // Connection URL
 
     // Use connect method to connect to the server
-    MongoClient.connect(db_url, function(err, db) {
+    MongoClient.connect(config.DB_URL, function(err, db) {
       assert.equal(null, err);
       console.log("Connected correctly to server");
      //db.collection('documents').drop();
@@ -185,7 +186,7 @@ app.get('/auth/facebook/callback',
 
 
 
-app.post('/save', function(req, res){
+app.post('/update', function(req, res){
   console.log(req.body.videoRecord)
   var videoRecord = JSON.parse(req.body.videoRecord);
 
@@ -194,7 +195,7 @@ app.post('/save', function(req, res){
     if (err) { return err; }
     if(foundVideo){
       console.log("video found, updated it successfully")
-      collectionVideo.updateOne({_id:video_id},{ $set: { "caption" : videoRecord.caption } })
+      collectionVideo.updateOne({_id:video_id},{ $set: { caption : videoRecord.caption, currentIndex:videoRecord.currentIndex } })
     }
     else
     {
@@ -205,9 +206,10 @@ app.post('/save', function(req, res){
 });
 
 
-app.get('/get/lang',function(req,res){
-    var id=req.query.url.split("v=")[1];
-    var url = 'https://video.google.com/timedtext?hl=en&v=' + id + '&type=list';
+app.get('/get/lang/:youtubeVideoId',function(req,res){
+    console.log("get/lang "+req.params.youtubeVideoId);
+    var YoutubeVideoId=req.params.youtubeVideoId;
+    var url = 'https://video.google.com/timedtext?hl=en&v=' + YoutubeVideoId + '&type=list';
     console.log('caption lang url:'+url);
     var nodes =[];
     request(url, function(error, response, body) {
@@ -227,12 +229,12 @@ app.get('/get/lang',function(req,res){
                 res.render('noCaption')
                 return;
             }
-            if(langlist.root.children.length ==1)
-            {
-              console.log('there is only one lang')
-                code = langlist.root.children[0].attributes.lang_code
-                res.redirect(`/get/${id}/?lang=${code}`)
-            }
+            // if(langlist.root.children.length ==1)
+            // {
+            //   console.log('there is only one lang')
+            //     code = langlist.root.children[0].attributes.lang_code
+            //     res.redirect(`/get/${YoutubeVideoId}/?lang=${code}`)
+            // }
             else
             {
               for(var i=0; i<langlist.root.children.length;i++)
@@ -243,7 +245,8 @@ app.get('/get/lang',function(req,res){
                 nodes.push([code,name]);
               }
               
-              res.render('getLang',{id:id,nodes:nodes})
+              res.json(nodes);
+              //res.render('getLang',{id:id,nodes:nodes})
             }
 
         }
@@ -253,14 +256,34 @@ app.get('/get/lang',function(req,res){
     //res.send(url)
 })
 
-//get caption with given language from youtube.com //create new from youtube.com
-app.get('/get/:id',function(req,res)
-{
-  console.log('/get/id')
-    var id=req.params.id;
-    var lang=req.query.lang;//'de'; //default language is english (see below)
-    var url = 'http://video.google.com/timedtext?lang='+lang+'&v='+id+'&fmt=vtt';
-    console.log('get id lang '+ url);
+app.get('/get/videoInfo/:youtubeVideoId',function(req,res){
+    var YoutubeVideoId=req.params.youtubeVideoId;
+    console.log("/get/videoInfo/ "+req.params.youtubeVideoId);
+    getVideoInfo(YoutubeVideoId,function(vinfo) {
+      res.json(vinfo);        
+    })
+
+})
+function getVideoInfo(YouTubeVideoID,callback){
+
+  var url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id='+YouTubeVideoID+'&fields=items(id,snippet)&key='+GOOGLE_API_KEY;
+  request(url, function(error, response, body) {
+        // Check status code (200 is HTTP OK)
+        console.log("Status code: " + response.statusCode);
+        if (response.statusCode !== 200) {
+            //error
+            console.log(error + response.statusCode);
+        } else {
+          var result = JSON.parse(body);
+          //console.log(JSON.stringify(result))
+          callback(result);
+        }
+  })
+}
+
+function getVideoCaption(YouTubeVideoID,languageID,callback){
+  var url = 'http://video.google.com/timedtext?lang='+languageID+'&v='+YouTubeVideoID+'&fmt=vtt';
+  console.log('get video caption url: '+ url);
   //var url = 'http://video.google.com/timedtext?lang=de&v=jgdPdeQZ3T8&fmt=vtt';
 
   request(url, function(error, response, body) {
@@ -286,29 +309,113 @@ app.get('/get/:id',function(req,res)
                     sentences.push([startSec,endSec,temp['4'].replace(/\n/g,' '),'']) //starttime, endtime, caption, userCaption
                 }
             }
+            //console.log(sentences)
+            callback(sentences);
+        }
+  })
+  
+}
+
+app.post('/newvideo',function(req, res) {
+
+  var YouTubeVideoID=req.body.youtubeVideoId;
+  var langCode=req.body.lang;
+  console.log('/newvideo '+YouTubeVideoID+' '+langCode)
+  getVideoInfo(YouTubeVideoID,function(vinfo) {
+      //var langCode = vinfo.items[0].snippet.defaultAudioLanguage;
+      getVideoCaption(YouTubeVideoID,langCode, function(sentences){
+        //console.log(JSON.stringify(sentences))
+        //console.log('typeof:'+typeof sentences);
+        var videoRecord =
+        {
+          owner:`${req.user._id}`,
+          caption:sentences,
+          currentIndex:0,
+          YouTubeVideoID:`${YouTubeVideoID}`,
+          forkedFromVideoID:`${YouTubeVideoID}`,
+          videoTitle:vinfo.items[0].snippet.title,
+          videoDescription:vinfo.items[0].snippet.description,
+          defaultAudioLanguage:vinfo.items[0].snippet.defaultAudioLanguage,
+          videoCaptionLangCode:langCode,
+          thumbnails:vinfo.items[0].snippet.thumbnails
+        }
+        collectionVideo.insertOne(videoRecord,function(err, insertedDocument) {
+          if (err) {err; }
+          console.log('video inserted successfully:'+insertedDocument.insertedId);
+          res.redirect(`/play/${insertedDocument.insertedId}`);
+        })
+  
+      })
+      
+  })
+    
+})
+
+// //get caption with given language from youtube.com //create new from youtube.com
+// app.get('/get/:id',function(req,res)
+// {
+//   console.log('/get/id')
+//     var id=req.params.id;
+//     var lang=req.query.lang;//'de'; //default language is english (see below)
+//     var url = 'http://video.google.com/timedtext?lang='+lang+'&v='+id+'&fmt=vtt';
+//     console.log('get id lang '+ url);
+//   //var url = 'http://video.google.com/timedtext?lang=de&v=jgdPdeQZ3T8&fmt=vtt';
+
+//   request(url, function(error, response, body) {
+//         // Check status code (200 is HTTP OK)
+//         console.log("Status code: " + response.statusCode);
+//         if (response.statusCode !== 200) {
+//             //error
+//             console.log(error + response.statusCode);
+//         } else {
+//             var sentences = [];
+//             var txt = body.toString()
+//             txt = txt.replace(/(\d\d:\d\d:\d\d\.\d\d\d\s*\-\-\>)/g, '\|$1');
+//             var items = txt.split('|');
+//             //console.log(items[1])
+//             var str ='';
+//             for(var i =0; i<items.length; i++)
+//             {
+//                 var temp = items[i].match(/(\d\d:\d\d:\d\d\.\d\d\d)\s*\-\-\>\s*(\d\d:\d\d:\d\d\.\d\d\d)(.*)((.*\n?)*)/)
+//                 if(temp) {
+//                     str+=`<li>${temp['1']} ${temp['2']} ${temp['4']}</li>`
+//                     var startSec = convert2Sec(temp['1']);
+//                     var endSec = convert2Sec(temp['2']);
+//                     sentences.push([startSec,endSec,temp['4'].replace(/\n/g,' '),'']) //starttime, endtime, caption, userCaption
+//                 }
+//             }
             
 
-            var videoRecord =
-              {
-                owner:`${req.user._id}`,
-                caption:sentences,
-                currentIndex:0,
-                YouTubeVideoID:`${id}`,
-                forkedFromVideoID:`${id}`
-              }
-
-            collectionVideo.insertOne(videoRecord,function(err, insertedDocument) {
-              if (err) {err; }
-              console.log('video inserted successfully:'+insertedDocument.insertedId)
-              res.redirect(`/play/${insertedDocument.insertedId}`);
-
-            });
+//             var videoRecord =
+//               {
+//                 owner:`${req.user._id}`,
+//                 caption:sentences,
+//                 currentIndex:0,
+//                 YouTubeVideoID:`${id}`,
+//                 forkedFromVideoID:`${id}`,
+//                 videoInfo:{}
+//               }
+//             getVideoInfo(videoRecord.YouTubeVideoID,function(result){
+//               if(result.items)
+//               {
+//                 videoRecord.videoInfo=result.items[0];
+//                 collectionVideo.insertOne(videoRecord,function(err, insertedDocument) {
+//                   if (err) {err; }
+//                   console.log('video inserted successfully:'+insertedDocument.insertedId)
+//                   res.redirect(`/play/${insertedDocument.insertedId}`);
+//                 })
+//               }
+//               else
+//               {
+//                 res.send('ther is no video information. error.')
+//               }
+//             });
       
 
             
-        }
-  })
-})
+//         }
+//   })
+// })
 
 
   
@@ -316,7 +423,15 @@ app.get('/get/:id',function(req,res)
 app.get('/',function(req,res){
   if(req.user) //logged in 
   {
-    res.render('home_login')
+
+    collectionVideo.find({owner:req.user._id},function(err, cursor) {
+      if(err){return err;}
+      cursor.toArray(function(err,foundVideoList){
+        if(err){return err;}
+        console.log(foundVideoList)
+        res.render('home_login',{videolist:foundVideoList})
+      });
+    })
   }
   else //logged out user
   {
@@ -326,11 +441,13 @@ app.get('/',function(req,res){
 
 app.get('/play/:id',function(req,res){
   var video_id = ObjectId(req.params.id);
-  console.log('/play/id/'+video_id);
+  console.log('/play/'+video_id);
   collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
     if (err) { return err; }
     if(foundVideo){
-      console.log("video found");
+      //console.log("video found");
+      //console.log(typeof foundVideo.caption)
+
       res.render('play.pug',{mytime:JSON.stringify(foundVideo)})
     }
   });
@@ -339,8 +456,8 @@ app.get('/play/:id',function(req,res){
 
 function convert2Sec(str)
 {
-    console.log(str)
-    console.log(typeof str)
+    //console.log(str)
+    //console.log(typeof str)
     var temp = str.split(':');
     var hours = parseInt(temp[0]);
     var min = parseInt(temp[1]);

@@ -1,66 +1,79 @@
 doctype html
-html
-  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
-  script(src='https://unpkg.com/xregexp@3.2.0/xregexp-all.js', <='', script='')
-  </body></html>
-
-  body
-    // 1. The <iframe> (and video player) will replace this <div> tag.
-    #player
-    .debug
-    p  
-    h1 Step1: Listen carefully whole video
-    button.play play
-    button.stop stop
-    p
-    p  
-    h1 Step2: Start Dictation one by one
-    h2 try to type as much as you can, then comapre with answer
-    button.dictstart Start Dictation Mode
-    button.dictstop Stop Dictation Mode
-    p
-    #dictationarea
-      p
-      p#underline_str
-      p#solution_str
-      textarea#inputstr(rows='4', cols='50')
-      button#answer Check Answer
-      p
-        button.prev prev sentence
-        button.repeatPlay play
-        button.repeatPause pause
-        button.next next sentence
-      p
-        // label margin at begin end
-        // select.control_margin
-        //   option(value='0.0') 0.0 sec
-        //   option(value='0.1') 0.1 sec
-        //   option(value='0.2') 0.2 sec
-        //   option(value='0.3') 0.3 sec
-        //   option(value='0.5') 0.5 sec
-        label rest time for repeating
-        select.control_restTime
-          option(value='0.0') 0.0 sec
-          option(value='0.5') 0.5 sec
-          option(value='1.0', selected) 1.0 sec
-          option(value='3.0') 3.0 sec
-          option(value='5.0') 5.0 sec
-      p
-        button.leftboder_2left01 <0.1
-        button.leftboder_2left03 <0.3
-        button.leftboder_2right01 0.1>
-        button.leftboder_2right03 0.3>
-        button.mergewithleft merge with left
-        button.captiondelete delete
-        button.rightboder_2left01 <0.1
-        button.rightboder_2left03 <0.3
-        button.rightboder_2right01 0.1>
-        button.rightboder_2right03 0.3>
-      p
-        button.save save
-    p  
-    h1 Step3: Quiz
-    h2 TBD
+head
+  // Latest compiled and minified CSS
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  // Optional theme
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+  // Latest compiled and minified JavaScript
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+body
+  nav.navbar.navbar-inverse
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/') TypingTube.com alpha 
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href='/') Home
+          li
+            a(href='#feed') Feed
+          li
+            a(href='#class') Class
+          li
+            a(href='#forum') Forum
+          li
+            a(href='#about') About
+          li
+            a(href='#mypage') MyPage
+  .container.theme-showcase(role='main')
+    .row
+      .col-md-2
+      .col-md-8
+        #player
+        p
+          button.repeatPlay repeat play
+          button.repeatPause repeat pause
+          button.prev < prev sentence
+          button.next next sentence>
+        p
+        p#underline_str
+        p#solution_str
+        textarea#inputstr(rows='4', cols='50')
+        button#answer Check Answer
+        p
+        p
+          |study option
+        p
+          label rest time for repeating
+          select.control_restTime
+            option(value='0.0') 0.0 sec
+            option(value='0.5') 0.5 sec
+            option(value='1.0', selected) 1.0 sec
+            option(value='3.0') 3.0 sec
+            option(value='5.0') 5.0 sec
+        p 
+          |edit video playback
+        p
+          button.leftboder_2left01 <0.1
+          button.leftboder_2left03 <0.3
+          button.leftboder_2right01 0.1>
+          button.leftboder_2right03 0.3>
+          button.mergewithleft merge with left
+          button.captiondelete delete
+          button.rightboder_2left01 <0.1
+          button.rightboder_2left03 <0.3
+          button.rightboder_2right01 0.1>
+          button.rightboder_2right03 0.3>
+        p
+          button.save save
+        .debug
+      .col-md-2
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -124,6 +137,15 @@ html
         timersleep = setTimeout(repeatVideo,restTime*1000);
       }
 
+      function repeatVideoFromClose2End(time,) {
+        player.seekTo(time);
+        player.playVideo();
+        timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
+        clearTimeout(timersleep);
+        $('.debug').text(currIdx+'/'+totalCount)
+
+      }
+      
       function repeatVideo() {
         player.seekTo(getStartTime(currIdx,margin));
         player.playVideo();
@@ -223,19 +245,7 @@ html
         // $('#inputstr').val();
         // times[currIdx].push
       })
-      
-      $('.dictstart').click(function(){
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-        $('#dictationarea').show();
-        })
-  
-      $('.dictstop').click(function(){
-        $('.stop').click();
-        $('#dictationarea').hide();
-        })
-      
+
       $('.next').click(function(){
         times[currIdx][3] = $('#inputstr').val()
         currIdx=currIdx+1;
@@ -260,44 +270,14 @@ html
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
       })
   
-      $('.play').click(function(){
-        $('.debug').text('play')
-        player.playVideo();
-      })
-
-      $('.stop').click(function(){
-        $('#solution_str').text('')
-        $('.debug').text('stop')
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        player.stopVideo();
-        $('#inputstr').text('')
-      })
-
-      // $('.leftextend').click(function(){
-      //   $('.debug').text('leftextend')
-      //   times[currIdx][0] = getStartTime(currIdx,0)-extendSec;
-      //   clearTimeout(timer);
-      //   clearTimeout(timersleep);
-      //   repeatVideo();
-      // })
-
-      // $('.mergewithleft').click(function(){
-      //   $('.debug').text('mergewithleft')
-      //   player.playVideo();
-      // })
-
-      // $('.captiondelete').click(function(){
-      //   $('.debug').text('captiondelete')
-      //   player.playVideo();
-      // })
+  
 
       $('.rightboder_2right01').click(function(){
         $('.debug').text('rightboder_2right01')
         times[currIdx][1] = getEndTime(currIdx,0)+0.1;
         clearTimeout(timer);
         clearTimeout(timersleep);
-        repeatVideo();
+        repeatVideoFromClose2End(times[currIdx][1]-0.5)
       })
       
       $('.rightboder_2right03').click(function(){
@@ -419,11 +399,9 @@ html
       $('.save').click(function(){
         $('.debug').text('save');
         times[currIdx][3] = $('#inputstr').val();
-        videoRecord.createdby_userid = userid;
         videoRecord.currentIndex = currIdx;
-        videoRecord.forkedFromVideoID = videoID;
         videoRecord.caption = times;
-        $.post( "/save", {videoid:videoID,userid:userid,videoRecord:JSON.stringify(videoRecord)} );
+        $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );
       })
 
 
