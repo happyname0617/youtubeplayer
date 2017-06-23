@@ -1,15 +1,18 @@
 doctype html
 head
   // Latest compiled and minified CSS
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')  
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
   link(rel='stylesheet', href='/css/typingtube.css')
   // Optional theme
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
   // Latest compiled and minified JavaScript
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+
+
 body
   nav.navbar.navbar-inverse
-    .container
+    .container-fluid
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
           span.sr-only Toggle navigation
@@ -29,53 +32,83 @@ body
             a(href='#forum') Forum
           li
             a(href='#about') About
-          li
-            a(href='#mypage') MyPage
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | MyPage
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='/auth/logout') Logout
   .container.theme-showcase(role='main')
     .row
       .col-md-2
       .col-md-8
-        #player
-        p
-          button.repeatPlay repeat play
-          button.repeatPause repeat pause
-          button.prev < prev sentence
-          button.next next sentence>
+        .embed-responsive.embed-responsive-16by9
+          #player
+        p#playcontrol
+          .btn-group.btn-group-justified(role='group', aria-label='...')
+            .btn-group(role='group')
+              button.repeatPlay.btn.btn-default Play
+            .btn-group(role='group')
+              button.repeatPause.btn.btn-default Pause
+            .btn-group(role='group')
+              button.prev.btn.btn-default < prev sentence
+            .btn-group(role='group')
+              button.next.btn.btn-default next sentence>
         p
         ul.sentence(text-align:"center")
-        p#underline_str
+        p#underline_str(hidden)
         p#solution_str
         textarea#inputstr(rows='4', cols='50')
-        button#answer Check Answer
         p
-        p
-          |study option
-        p
-          label rest time for repeating
-          select.control_restTime
-            option(value='0.0') 0.0 sec
-            option(value='0.5') 0.5 sec
-            option(value='1.0', selected) 1.0 sec
-            option(value='3.0') 3.0 sec
-            option(value='5.0') 5.0 sec
-        p 
-          |edit video playback
-        p
-          button.leftboder_2left01 <0.1
-          button.leftboder_2left03 <0.3
-          button.leftboder_2right01 0.1>
-          button.leftboder_2right03 0.3>
-          button.mergewithleft merge with left
-          button.captiondelete delete
-          button.rightboder_2left01 <0.1
-          button.rightboder_2left03 <0.3
-          button.rightboder_2right01 0.1>
-          button.rightboder_2right03 0.3>
-        p
-          button.save save
+          button.btn.btn-info.btn-block#answer Check Answer
         .debug
+        #accordion.panel-group(role='tablist', aria-multiselectable='true')
+          .panel.panel-default
+            #headingOne.panel-heading(role='tab')
+              h4.panel-title
+                a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                  | Option
+            #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+              .panel-bod
+                label rest time for repeating
+                select.control_restTime
+                  option(value='0.0') 0.0 sec
+                  option(value='0.5') 0.5 sec
+                  option(value='1.0', selected) 1.0 sec
+                  option(value='3.0') 3.0 sec
+                  option(value='5.0') 5.0 sec
+          .panel.panel-default
+            #headingTwo.panel-heading(role='tab')
+              h4.panel-title
+                a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                  | Edit Subtitle
+            #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+              .panel-body
+                .btn-group.btn-group-justified(role='group', aria-label='...')
+                  .btn-group(role='group')
+                    button.leftboder_2left01.btn.btn-default <0.1
+                  .btn-group(role='group')
+                    button.btn.btn-default.leftboder_2left03 <0.3
+                  .btn-group(role='group')
+                    button.btn.btn-default.leftboder_2right01 0.1>
+                  .btn-group(role='group')
+                    button.btn.btn-default.leftboder_2right03 0.3>
+                  .btn-group(role='group')
+                    button.btn.btn-default.mergewithleft merge with left
+                  .btn-group(role='group')
+                    button.btn.btn-default.captiondelete delete
+                  .btn-group(role='group')
+                    button.btn.btn-default.rightboder_2left01 <0.1
+                  .btn-group(role='group')
+                    button.btn.btn-default.rightboder_2left03 <0.3
+                  .btn-group(role='group')
+                    button.btn.btn-default.rightboder_2right01 0.1>
+                  .btn-group(role='group')
+                    button.btn.btn-default.rightboder_2right03 0.3>
+        p
+          button.btn.btn-default.btn-block.save save
       .col-md-2
-    script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -253,6 +286,7 @@ body
       
       var currentInputMode = INPUTMODE.IDLE;
       $(document).ready(function(){
+        $('.player').addClass('embed-responsive-item')
         $('#dictationarea').hide();
         $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));

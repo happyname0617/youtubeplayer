@@ -1,36 +1,49 @@
-h1 youtube dictation practice player
-h2
-  | enter your youtube url
-  h2
-    | your video must have a 
-    b caption
-  form(action='/get/lang', method='get')
-    input#youtubeurl(name='url', type='text', placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs', size='100')
-    input(type='submit')
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=5ejGKY5tD8I', target='_blank') example 1
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=oDc5u8l-ao0', target='_blank') example 2
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 3
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 4
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 5
-  p
-    a(href='/get/lang/?url=https://www.youtube.com/watch?v=CfDEd4SRLeY', target='_blank') example 6
+doctype html
+head
+  // Latest compiled and minified CSS
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')  
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  link(rel='stylesheet', href='/css/typingtube.css')
+  // Optional theme
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+  // Latest compiled and minified JavaScript
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+
+
+body
+  nav.navbar.navbar-inverse
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/') TypingTube.com alpha 
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href='/') Home
+          li
+            a(href='#about') About
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | MyPage
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='/auth/facebook') Login
+  .container.theme-showcase(role='main')
+    .row
+      .col-md-12
+        .jumbotron
+          h2 Youtube player for dictation practice
+          h4 Enter your youtube url which have at least a caption
+          a.btn.btn-primary(href='/auth/facebook') 
+            span.fa.fa-facebook-official.fa-fw
+            | Sign in with Facebook
+
   script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
-  script.
-    $(document).ready(function(){
-    $('#youtubeurl').keypress(function (e) {
-    var key = e.which;
-    //console.log(e)
-    if(key == 13)  // the enter key code
-    {
-    $('#youtubeurl').click();
-    }
-    });
-    })
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
