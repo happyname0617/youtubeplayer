@@ -7,6 +7,10 @@
   margin: 0 0px;
 }
 
+#accordion{
+  margin-top: 100px;
+}
+
 textarea {
      width: 100%;
      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -23,12 +27,13 @@ textarea {
   display:none;  
 }
 .letter {
-  border-bottom: 1px solid #53bdff;
+//  border-bottom: 1px solid #53bdff;
+  border-bottom: 1px solid #000000;
   display: inline-block;
-  width:10px;
+  width: 15px;
   color: transparent;
   text-align: center;
-  margin: 0 2px;
+  margin: 0 1px;
   padding: 0px;
 //  border: 1px solid #73AD21;
 }
@@ -36,17 +41,23 @@ textarea {
   width:15px;
 }
 .sentence {
-  font-family: "Londrina Solid", cursive;
+//  font-family: "Londrina Solid", cursive;
   font-size: 20px;
   padding-left: 0px;  
   display: block;
 }
+
+.normal {
+  color: #000000;
+//  text-shadow: 1px 1px 0 #20a9ff;
+}
+
 .correct {
   color: #53bdff;
-  text-shadow: 1px 1px 0 #20a9ff;
+//  text-shadow: 1px 1px 0 #20a9ff;
 }
 .incorrect {
   background: #ff4d4d;
-  text-shadow: 1px 1px 0 red;
+//  text-shadow: 1px 1px 0 red;
   color: white;
 }

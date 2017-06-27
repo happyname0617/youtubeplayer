@@ -22,9 +22,9 @@ body
         a.navbar-brand(href='/') TypingTube.com alpha 
       #navbar.navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
-          li.active
-            a(href='/') Home
           li
+            a(href='/') Home
+          li.active
             a(href='/feed') Feed
           li
             a(href='/forum') Forum
@@ -40,15 +40,6 @@ body
   .container.theme-showcase(role='main')
     .row
       .col-md-12
-        .jumbotron
-          h2 Youtube player for dictation practice
-          h4 Enter your youtube url which have at least a caption
-          input#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
-          #VideoInfo
-          form.form-inline(action='/newvideo', method='post')
-            input#youtubeID(name='youtubeVideoId', type='hidden')
-            #VideoCaptions
-            button.btn.btn-default(type='submit') Submit
         table.table.table-stripetable.table.table-striped.table-hover
           thead
             tr

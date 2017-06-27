@@ -108,8 +108,38 @@ app.get('/auth/logout', function(req, res){
   });
 });
 
+app.get('/about',function(req,res){
+    res.render('about.pug')
+})
 
+app.get('/feed',function(req,res){
+  if(req.user) //logged in 
+  {
 
+    collectionVideo.find({owner:req.user._id},function(err, cursor) {
+      if(err){return err;}
+      cursor.toArray(function(err,foundVideoList){
+        if(err){return err;}
+        console.log(foundVideoList)
+        res.render('feed.pug',{videolist:foundVideoList})
+      });
+    })
+  }
+  else //logged out user
+  {
+    res.render('home');
+  }
+})
+
+app.get('/forum',function(req,res){
+  if(req.user) //logged in 
+  {
+    res.render('forum.pug')
+  }
+  else{
+    res.redirect('/')
+  }
+})
 app.get('/dbtest',function(req, res) {
     // Connection URL
 

@@ -22,8 +22,12 @@ body
         a.navbar-brand(href='/') TypingTube.com alpha 
       #navbar.navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
-          li.active
+          li
             a(href='/') Home
+          li
+            a(href='/feed') Feed
+          li.active
+            a(href='/forum') Forum
           li
             a(href='/about') About
           li.dropdown
@@ -32,18 +36,11 @@ body
               span.caret
             ul.dropdown-menu
               li
-                a(href='/auth/facebook') Login
+                a(href='/auth/logout') Logout
   .container.theme-showcase(role='main')
     .row
-      .col-md-12
-        .jumbotron
-          h2 Youtube player for dictation practice
-          h4 Enter your youtube url which have at least a caption
-          a.btn.btn-primary(href='/auth/facebook') 
-            span.fa.fa-facebook-official.fa-fw
-            | Sign in with Facebook
-
-  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+      .col-md-12(style="text-align:center")
+       a.btn.btn-primary(href='https://www.facebook.com/groups/typingtube/' target='_blank') Open TypingTube Facebook Group Page
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -25,13 +25,11 @@ body
           li.active
             a(href='/') Home
           li
-            a(href='#feed') Feed
+            a(href='/feed') Feed
           li
-            a(href='#class') Class
+            a(href='/forum') Forum
           li
-            a(href='#forum') Forum
-          li
-            a(href='#about') About
+            a(href='/about') About
           li.dropdown
             a.dropdown-toggle(href='#', data-toggle='dropdown')
               | MyPage
@@ -70,7 +68,7 @@ body
                 a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
                   | Option
             #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
-              .panel-bod
+              .panel-body
                 label rest time for repeating
                 select.control_restTime
                   option(value='0.0') 0.0 sec
@@ -87,25 +85,25 @@ body
               .panel-body
                 .btn-group.btn-group-justified(role='group', aria-label='...')
                   .btn-group(role='group')
-                    button.leftboder_2left01.btn.btn-default <0.1
+                    button.leftboder_2left01.btn.btn-default LeftEnd << 0.1s
+                  // .btn-group(role='group')
+                  //   button.btn.btn-default.leftboder_2left03 LeftEnd << 0.3s
                   .btn-group(role='group')
-                    button.btn.btn-default.leftboder_2left03 <0.3
+                    button.btn.btn-default.leftboder_2right01 LeftEnd >> 0.1s
+                  // .btn-group(role='group')
+                  //   button.btn.btn-default.leftboder_2right03 0.3>
                   .btn-group(role='group')
-                    button.btn.btn-default.leftboder_2right01 0.1>
+                    button.btn.btn-default.mergewithleft Merge with left
                   .btn-group(role='group')
-                    button.btn.btn-default.leftboder_2right03 0.3>
+                    button.btn.btn-default.captiondelete Delete
                   .btn-group(role='group')
-                    button.btn.btn-default.mergewithleft merge with left
+                    button.btn.btn-default.rightboder_2left01 RightEnd << 0.1s
+                  // .btn-group(role='group')
+                  //   button.btn.btn-default.rightboder_2left03 <0.3
                   .btn-group(role='group')
-                    button.btn.btn-default.captiondelete delete
-                  .btn-group(role='group')
-                    button.btn.btn-default.rightboder_2left01 <0.1
-                  .btn-group(role='group')
-                    button.btn.btn-default.rightboder_2left03 <0.3
-                  .btn-group(role='group')
-                    button.btn.btn-default.rightboder_2right01 0.1>
-                  .btn-group(role='group')
-                    button.btn.btn-default.rightboder_2right03 0.3>
+                    button.btn.btn-default.rightboder_2right01 RightEnd >> 0.1s
+                  // .btn-group(role='group')
+                  //   button.btn.btn-default.rightboder_2right03 0.3>
         p
           button.btn.btn-default.btn-block.save save
       .col-md-2
@@ -144,8 +142,17 @@ body
       player = new YT.Player('player', {
       height: '390',
       width: '640',
-      caption: false,
-      cc_load_policy:3,
+      playerVars : {
+                  'autoplay' : 0,
+                  'rel' : 0,
+                  'showinfo' : 0,
+                  'showsearch' : 0,
+                  'controls' : 0,
+                  'loop' : 0,
+                  'enablejsapi' : 1,
+                  'disablekb': 1,
+                  'fs':0
+                },
       videoId: videoRecord.YouTubeVideoID,
       events: {
       'onReady': onPlayerReady,
@@ -164,7 +171,7 @@ body
             var tempclass = '';
             if(str[i]==marker)
             {
-              html+=`<li class="${c_letter} correct">.</li>`;                
+              html+=`<li class="${c_letter} normal">.</li>`;                
             }
             else if(str[i]==' ')
             {
@@ -173,7 +180,7 @@ body
             }
             else
             {
-              html+=`<li class="${c_letter} correct">${str[i]}</li>`;                
+              html+=`<li class="${c_letter} normal">${str[i]}</li>`;                
             }
 
           }
@@ -195,11 +202,23 @@ body
       var timer;
       var timersleep ;
       function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-      //setTimeout(repeatVideo, getDuration(currIdx,margin))
-      done = true;
+        try
+        {
+          player.unloadModule("captions");  
+          player.unloadModule("cc"); 
+        }
+        catch (exception)
+        {
+          LoggerUtil.logError("Error when trying to unloadModule youtube captions: " + exception);
+        }
+
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+        //setTimeout(repeatVideo, getDuration(currIdx,margin))
+        done = true;
+        }
+
       }
-      }
+
       function repeatAfterSec()
       {
         player.pauseVideo();
@@ -318,6 +337,8 @@ body
                var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val());
                var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
               if(allTrue){
+                alert("Super!");
+                $('.next').click();
                 currentInputMode=INPUTMODE.ANSWER;
                 }
             }
