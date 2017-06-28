@@ -67,7 +67,7 @@ body
           button.btn.btn-default.btn-block#answer Check Answer
         .well
           h4 Play Option
-          label rest time for repeating
+          label rest time between repeating
             select.control_restTime
               option(value='0.0') 0.0 sec
               option(value='0.5') 0.5 sec
@@ -108,6 +108,9 @@ body
           .debug
           p
             button.btn.btn-default.btn-block.save save
+        p
+          a.btn.btn-default.btn-block(href='/') <- back to my play list
+
       .col-md-2
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -326,6 +329,12 @@ body
         $('#editSubtitle').toggle();
         $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        $('.repeatPlay').text('START');
+        $('.toBegin').prop('disabled', true);
+        $('.toEnd').prop('disabled', true);
+        $('.prev').prop('disabled', true);
+        $('.next').prop('disabled', true);
+
         updateInput();
         
         $("html").on('keyup', function (e) {
@@ -590,19 +599,21 @@ body
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
- 
+        $('.repeatPlay').text('PAUSE');
+        $('.toBegin').prop('disabled', false);
+        $('.toEnd').prop('disabled', false);
+        $('.prev').prop('disabled', false);
+        $('.next').prop('disabled', false);
       }
+      
       $('.repeatPlay').click(function(){
         if($('.repeatPlay').text()=='PAUSE')
         {
           RepeatPause();
-          $('.repeatPlay').text('START');
-          
         }
         else
         {
           RepeatPlay();
-          $('.repeatPlay').text('PAUSE');
         }
       })
 
@@ -611,6 +622,12 @@ body
         clearTimeout(timer);
         clearTimeout(timersleep);
         player.pauseVideo();
+        $('.repeatPlay').text('START');
+        $('.toBegin').prop('disabled', true);
+        $('.toEnd').prop('disabled', true);
+        $('.prev').prop('disabled', true);
+        $('.next').prop('disabled', true);
+
       }
 
 

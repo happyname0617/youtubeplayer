@@ -35,6 +35,9 @@ app.use(session({
 var mongodb;
 var collectionUser;
 var collectionVideo;
+
+//bundle video list
+var bundleVideoList =['594cde9f6a4f130a7b5c1cca','59478bfe4002c725f2379436'];
 function dbconnect(url)
 {
   MongoClient.connect(url, function(err, db) {
@@ -77,6 +80,12 @@ passport.use(
           newuser._id = _id;
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) { return done(err); }
+
+            //add bundle videos
+            bundleVideoList.foreach(function(item){
+              forkVideo(item,_id)
+            })
+
             done(null, newuser);
           });
 
@@ -211,12 +220,13 @@ app.get('/auth/facebook', passport.authenticate('facebook',{scope:'email'}));
 // authentication has failed.
 app.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/',
-                                      failureRedirect: '/login' }));
+                                      failureRedirect: '/' }));
 
 
 
 
 app.post('/update', function(req, res){
+  //TODO user login status check
   //console.log(req.body.videoRecord)
   var videoRecord = JSON.parse(req.body.videoRecord);
 
@@ -375,6 +385,48 @@ function getVideoCaption(YouTubeVideoID,languageID,callback){
   
 }
 
+
+
+function clearCaptionUserAnswer(caption)
+{
+  //caption[0] start time
+  //caption[1] end time
+  //caption[2] original script anwer
+  //caption[3] user input answer
+  for(var i=0; i<caption.length;i++)
+   {
+     caption[3]='';
+   }
+  return caption;
+}
+
+function forkVideo(videoRecordId,userID)//fork given video to the given user
+{
+    var video_id = ObjectId(videoRecordId);
+
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { return err; }
+      if(foundVideo){
+        console.log("fork: video found")
+        var newVideo = foundVideo;
+        newVideo.owner=userID;
+        newVideo.caption=clearCaptionUserAnswer(foundVideo.caption);
+        newVideo.currentIndex=0;
+        newVideo.forkedFromVideoID=videoRecordId;
+
+        collectionVideo.insertOne(newVideo,function(err, insertedDocument) {
+          if (err) {err; }
+          console.log('fork: video forked successfully:'+insertedDocument.insertedId);
+        })
+
+      }
+      else
+      {
+          console.log('video is not existing! something wrong')
+      }
+    });
+ 
+}
 app.post('/newvideo',function(req, res) {
 
   var YouTubeVideoID=req.body.youtubeVideoId;
