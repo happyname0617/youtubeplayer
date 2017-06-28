@@ -62,7 +62,7 @@ passport.use(
     profileFields:['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified', 'displayName']
   },
   function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
+    //console.log(profile);
     var _id = 'facebook:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
         if (err) { return done(err); }
@@ -120,7 +120,7 @@ app.get('/feed',function(req,res){
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
         if(err){return err;}
-        console.log(foundVideoList)
+        //console.log(foundVideoList)
         res.render('feed.pug',{videolist:foundVideoList})
       });
     })
@@ -217,7 +217,7 @@ app.get('/auth/facebook/callback',
 
 
 app.post('/update', function(req, res){
-  console.log(req.body.videoRecord)
+  //console.log(req.body.videoRecord)
   var videoRecord = JSON.parse(req.body.videoRecord);
 
   var video_id = ObjectId(videoRecord._id);
@@ -251,7 +251,7 @@ app.get('/get/lang/:youtubeVideoId',function(req,res){
         } else {
             var parse = require('xml-parser');
             var xml = body.toString();
-            console.log('caption lang xml:'+xml);
+            //console.log('caption lang xml:'+xml);
             //console.log(xml)
             var langlist = parse(xml);
             var code='en';
@@ -298,7 +298,7 @@ app.get('/delete/:youtubeVideoId',function(req,res){
         {
           collectionVideo.remove({_id:YoutubeVideoId},function(err,result){
             if (err) { return err; }
-            console.log(result);
+            //console.log(result);
             res.redirect('/')
           })   
         }
@@ -487,7 +487,7 @@ app.get('/',function(req,res){
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
         if(err){return err;}
-        console.log(foundVideoList)
+        //console.log(foundVideoList)
         res.render('home_login',{videolist:foundVideoList})
       });
     })
