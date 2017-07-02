@@ -41,7 +41,7 @@ var bundleVideoList =['594cde9f6a4f130a7b5c1cca','59478bfe4002c725f2379436'];
 function dbconnect(url)
 {
   MongoClient.connect(url, function(err, db) {
-     if (err) { return err; }
+     if (err) {console.log(err); return err; }
     console.log("Connected correctly to server");
     mongodb=db;
     collectionUser = mongodb.collection('User');
@@ -68,7 +68,7 @@ passport.use(
     //console.log(profile);
     var _id = 'facebook:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
-        if (err) { return done(err); }
+        if (err) {console.log(err); return done(err); }
         if(foundUser){
           console.log("user already exist, proceed to login")
           done(null, foundUser);
@@ -79,12 +79,8 @@ passport.use(
           var newuser = profile._json;
           newuser._id = _id;
           collectionUser.insertOne(newuser,function(err, newuser) {
-            if (err) { return done(err); }
+            if (err) {console.log(err); return done(err); }
 
-            //add bundle videos
-            bundleVideoList.foreach(function(item){
-              forkVideo(item,_id)
-            })
 
             done(null, newuser);
           });
@@ -109,6 +105,16 @@ passport.deserializeUser(function(id, done) {
   });
 
 });
+
+app.get('/fork',function(req,res){
+  //add bundle videos
+  bundleVideoList.forEach(function(item){
+    forkVideo(item,req.user._id)
+  })
+  
+  res.redirect('/');
+
+})
 
 app.get('/auth/logout', function(req, res){
   req.logout();
@@ -232,7 +238,7 @@ app.post('/update', function(req, res){
 
   var video_id = ObjectId(videoRecord._id);
   collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
-    if (err) { return err; }
+    if (err) {console.log(err); return err; }
     if(foundVideo){
       console.log("video found, updated it successfully")
       collectionVideo.updateOne({_id:video_id},{ $set: { caption : videoRecord.caption, currentIndex:videoRecord.currentIndex } })
@@ -300,14 +306,14 @@ app.get('/delete/:youtubeVideoId',function(req,res){
     console.log("/delete/ "+req.params.youtubeVideoId);
 
     collectionVideo.findOne({_id:YoutubeVideoId},function(err, foundVideo) {
-      if (err) { return err; }
+      if (err) {console.log(err); return err; }
       if(foundVideo){
         console.log("video found");
         //console.log(typeof foundVideo.caption)
         if(foundVideo.owner==req.user._id)
         {
           collectionVideo.remove({_id:YoutubeVideoId},function(err,result){
-            if (err) { return err; }
+            if (err) {console.log(err); return err; }
             //console.log(result);
             res.redirect('/')
           })   
@@ -395,7 +401,7 @@ function clearCaptionUserAnswer(caption)
   //caption[3] user input answer
   for(var i=0; i<caption.length;i++)
    {
-     caption[3]='';
+     caption[i][3]='';
    }
   return caption;
 }
@@ -405,17 +411,18 @@ function forkVideo(videoRecordId,userID)//fork given video to the given user
     var video_id = ObjectId(videoRecordId);
 
     collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
-      if (err) { return err; }
+      if (err) {console.log(err); return err; }
       if(foundVideo){
         console.log("fork: video found")
         var newVideo = foundVideo;
+        delete newVideo._id
         newVideo.owner=userID;
         newVideo.caption=clearCaptionUserAnswer(foundVideo.caption);
         newVideo.currentIndex=0;
         newVideo.forkedFromVideoID=videoRecordId;
 
         collectionVideo.insertOne(newVideo,function(err, insertedDocument) {
-          if (err) {err; }
+          if (err) {console.log(err); return err; }
           console.log('fork: video forked successfully:'+insertedDocument.insertedId);
         })
 
@@ -451,7 +458,7 @@ app.post('/newvideo',function(req, res) {
           thumbnails:vinfo.items[0].snippet.thumbnails
         }
         collectionVideo.insertOne(videoRecord,function(err, insertedDocument) {
-          if (err) {err; }
+          if (err) {console.log(err); return err; }
           console.log('video inserted successfully:'+insertedDocument.insertedId);
           res.redirect(`/play/${insertedDocument.insertedId}`);
         })
@@ -554,7 +561,7 @@ app.get('/play/:id',function(req,res){
   var video_id = ObjectId(req.params.id);
   console.log('/play/'+video_id);
   collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
-    if (err) { return err; }
+    if (err) { console.log(err); return err; }
     if(foundVideo){
       //console.log("video found");
       //console.log(typeof foundVideo.caption)
