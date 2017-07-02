@@ -513,17 +513,23 @@ body
       
       $('.captiondelete').click(function(){
         $('.debug').text('captiondelete')
+
         times.splice( currIdx, 1 );
         clearTimeout(timer);
         clearTimeout(timersleep);
         //$('#solution_str').text('')
         $('#inputstr').val('')
+        if(currIdx >= times.length-1)
+        {
+          currIdx = times.length-1;
+        }
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
         updateInput();
         repeatVideo();
       })
       
       $('.mergewithleft').click(function(){
+        if(currIdx == 0) return;
         $('.debug').text('mergewithleft')
         times[currIdx][3] = $('#inputstr').val();
         times[currIdx-1][1] = times[currIdx][1];
