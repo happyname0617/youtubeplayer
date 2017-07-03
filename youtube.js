@@ -35,9 +35,9 @@ app.use(session({
 var mongodb;
 var collectionUser;
 var collectionVideo;
-
+var bundleVideoList =["5948eb94076d52107e95e38b","5948f20a076d52107e95e38d","5958baac7ed9c93c76967137","5958bf087ed9c93c76967138","5958bfab7ed9c93c76967139"];
 //bundle video list
-var bundleVideoList =['594cde9f6a4f130a7b5c1cca','59478bfe4002c725f2379436'];
+//var bundleVideoList =['5958bf087ed9c93c76967138','5948eb94076d52107e95e38b',,'5958bf087ed9c93c76967138','5958baac7ed9c93c76967137',];
 function dbconnect(url)
 {
   MongoClient.connect(url, function(err, db) {
@@ -62,7 +62,7 @@ passport.use(
     clientID: config.FACEBOOK_APP_ID,
     clientSecret: config.FACEBOOK_APP_SECRET,
     callbackURL: config.FACEBOOK_CALLBACK_URL,
-    profileFields:['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified', 'displayName']
+    profileFields:['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'verified', 'displayName','age_range']
   },
   function(accessToken, refreshToken, profile, done) {
     //console.log(profile);
@@ -78,13 +78,12 @@ passport.use(
           console.log("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
+
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {console.log(err); return done(err); }
-
-
-            done(null, newuser);
-          });
-
+            forkInit(_id);
+	  });
+          done(null,newuser);
         }
       });
   }
@@ -106,11 +105,19 @@ passport.deserializeUser(function(id, done) {
 
 });
 
+//add bundle videos
+function forkInit(id){
+ bundleVideoList.forEach(function(item){
+   forkVideo(item,id)
+ })
+}
+
 app.get('/fork',function(req,res){
+  forkInit(req.user._id);
   //add bundle videos
-  bundleVideoList.forEach(function(item){
-    forkVideo(item,req.user._id)
-  })
+ // bundleVideoList.forEach(function(item){
+ //   forkVideo(item,req.user._id)
+ // })
   
   res.redirect('/');
 
