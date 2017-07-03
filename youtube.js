@@ -111,7 +111,41 @@ function forkInit(id){
    forkVideo(item,id)
  })
 }
+app.get('/admin/fork/:video_id/:userid',function(req,res){
+  
+  if(req.user) //logged in 
+  {
+    var videoID = req.params.video_id
+    var userID = req.params.userid
+    forkVideo(videoID,userID);
+    
+  }
+  res.redirect('/');
+})
+app.get('/fork/:video_id',function(req, res) {
+  if(req.user) //logged in 
+  {
+    var video_id = ObjectId(req.params.video_id);
+    console.log('/exam/'+video_id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { console.log(err); return err; }
+      if(foundVideo){
+       console.log("same video exist");
+      //console.log(typeof foundVideo.caption)
+      }
+      else
+      {
+        //not exist then add
+        forkVideo(req.params.video_id,req.user._id);
+      }
+    });
 
+  }
+  else{
+    res.redirect('/')
+  } 
+})
+http://www.typingtube.com/fork/595a55225162b73b3ca72b91
 app.get('/fork',function(req,res){
   forkInit(req.user._id);
   //add bundle videos
@@ -257,6 +291,26 @@ app.post('/update', function(req, res){
   });
 
 });
+app.get('/exam/:video_id',function(req, res) {
+  if(req.user) //logged in 
+  {
+    var video_id = ObjectId(req.params.video_id);
+    console.log('/exam/'+video_id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { console.log(err); return err; }
+      if(foundVideo){
+       console.log("video found");
+      //console.log(typeof foundVideo.caption)
+
+        res.render('exam.pug',{mytime:JSON.stringify(foundVideo)})
+      }
+    });
+
+  }
+  else{
+    res.redirect('/')
+  } 
+})
 
 
 app.get('/get/lang/:youtubeVideoId',function(req,res){
