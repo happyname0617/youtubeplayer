@@ -217,10 +217,10 @@ app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
 
-    collectionVideo.find({owner:"public"},function(err, cursor) {
-      if(err){return err;}
+    collectionVideo.find({"owner":"public"},function(err, cursor) {
+      if(err){console.log(err); return err;}
       cursor.toArray(function(err,foundVideoList){
-        if(err){return err;}
+        if(err){console.log(err); return err;}
         //console.log(foundVideoList)
         res.render('feed.pug',{videolist:foundVideoList})
       });
@@ -228,7 +228,7 @@ app.get('/feed',function(req,res){
   }
   else //logged out user
   {
-    res.render('home');
+    res.redirect('/');
   }
 })
 
