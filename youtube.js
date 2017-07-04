@@ -35,7 +35,8 @@ app.use(session({
 var mongodb;
 var collectionUser;
 var collectionVideo;
-var bundleVideoList =["5948eb94076d52107e95e38b","5948f20a076d52107e95e38d","5958baac7ed9c93c76967137","5958bf087ed9c93c76967138","5958bfab7ed9c93c76967139"];
+var bundleVideoList =config.BUNDLE_VIDEO_LIST;
+//["595a55225162b73b3ca72b91","5948eb94076d52107e95e38b","5948f20a076d52107e95e38d","5958baac7ed9c93c76967137","5958bf087ed9c93c76967138","5958bfab7ed9c93c76967139"];
 //bundle video list
 //var bundleVideoList =['5958bf087ed9c93c76967138','5948eb94076d52107e95e38b',,'5958bf087ed9c93c76967138','5958baac7ed9c93c76967137',];
 function dbconnect(url)
@@ -145,7 +146,7 @@ app.get('/fork/:video_id',function(req, res) {
     res.redirect('/')
   } 
 })
-http://www.typingtube.com/fork/595a55225162b73b3ca72b91
+//http://www.typingtube.com/fork/595a55225162b73b3ca72b91
 app.get('/fork',function(req,res){
   forkInit(req.user._id);
   //add bundle videos
@@ -490,7 +491,7 @@ function forkVideo(videoRecordId,userID)//fork given video to the given user
       }
       else
       {
-          console.log('video is not existing! something wrong')
+          console.log('video is not existing! something wrong'+videoRecordId)
       }
     });
  
