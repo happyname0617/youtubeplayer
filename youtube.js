@@ -19,6 +19,7 @@ var assert = require('assert');
 
 var passport = require('passport')
 var FacebookStrategy = require('passport-facebook').Strategy;
+var GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 app.use(express.static('client'))
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -58,6 +59,37 @@ dbconnect(config.DB_URL);
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+passport.use(new GoogleStrategy({
+    clientID: config.GOOGLE_CLIENT_ID,
+    clientSecret: config.GOOGLE_CLIENT_SECRET,
+    callbackURL: config.GOOGLE_CALLBACK_URL
+  },
+  function(accessToken, refreshToken, profile, done) {
+    console.log(profile);
+    var _id = 'google:'+profile.id;;
+      collectionUser.findOne({_id:_id},function(err, foundUser) {
+        if (err) {console.log(err); return done(err); }
+        if(foundUser){
+          console.log("user already exist, proceed to login")
+          done(null, foundUser);
+        }
+        else
+        {
+          console.log("new user, proceed to login")
+          var newuser = profile._json;
+          newuser._id = _id;
+
+          collectionUser.insertOne(newuser,function(err, newuser) {
+            if (err) {console.log(err); return done(err); }
+            forkInit(_id);
+	        });
+          done(null,newuser);
+        }
+      });
+  }
+));
+
 passport.use(
   new FacebookStrategy({
     clientID: config.FACEBOOK_APP_ID,
@@ -83,7 +115,7 @@ passport.use(
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {console.log(err); return done(err); }
             forkInit(_id);
-	  });
+	        });
           done(null,newuser);
         }
       });
@@ -122,7 +154,19 @@ app.get('/admin/fork/:video_id/:userid',function(req,res){
     
   }
   res.redirect('/');
+});
+
+app.get('/publish/:video_id',function(req,res){
+  
+  if(req.user) //logged in 
+  {
+    var videoID = req.params.video_id
+    var userID = "public";
+    forkVideo(videoID,userID);
+  }
+  res.redirect('/');
 })
+
 app.get('/fork/:video_id',function(req, res) {
   if(req.user) //logged in 
   {
@@ -173,7 +217,7 @@ app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
 
-    collectionVideo.find({owner:req.user._id},function(err, cursor) {
+    collectionVideo.find({owner:"public"},function(err, cursor) {
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
         if(err){return err;}
@@ -271,7 +315,11 @@ app.get('/auth/facebook/callback',
                                       failureRedirect: '/' }));
 
 
+app.get('/auth/google',passport.authenticate('google', { scope: ['profile','email'] }));
 
+app.get('/auth/google/callback', 
+  passport.authenticate('google', { successRedirect:'/',
+                                    failureRedirect: '/' }));
 
 app.post('/update', function(req, res){
   //TODO user login status check
