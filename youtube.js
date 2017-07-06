@@ -36,6 +36,7 @@ app.use(session({
 var mongodb;
 var collectionUser;
 var collectionVideo;
+var collectionLog;
 var bundleVideoList =config.BUNDLE_VIDEO_LIST;
 //["595a55225162b73b3ca72b91","5948eb94076d52107e95e38b","5948f20a076d52107e95e38d","5958baac7ed9c93c76967137","5958bf087ed9c93c76967138","5958bfab7ed9c93c76967139"];
 //bundle video list
@@ -48,6 +49,7 @@ function dbconnect(url)
     mongodb=db;
     collectionUser = mongodb.collection('User');
     collectionVideo = mongodb.collection('Video');
+    collectionLog = mongodb.collection('Log');
   });
 }
 
@@ -161,27 +163,59 @@ app.get('/publish/:video_id',function(req,res){
   if(req.user) //logged in 
   {
     var videoID = req.params.video_id
-    var userID = "public";
-    forkVideo(videoID,userID);
+    var video_id = ObjectId(videoID);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) {console.log(err); return err; }
+      if(foundVideo){
+        console.log("video found, updated it successfully")
+        collectionVideo.updateOne({_id:video_id},{ $set: { owner : "public" } })
+        res.redirect('/');
+      }
+      else
+      {
+          console.log('video is not existing! something wrong')
+          res.redirect('/');
+      }
+    });
   }
-  res.redirect('/');
+  else
+  {
+    res.redirect('/');
+  }
 })
 
 app.get('/fork/:video_id',function(req, res) {
   if(req.user) //logged in 
   {
     var video_id = ObjectId(req.params.video_id);
-    console.log('/exam/'+video_id);
+    console.log('/fork/'+video_id);
     collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
       if (err) { console.log(err); return err; }
       if(foundVideo){
-       console.log("same video exist");
-      //console.log(typeof foundVideo.caption)
+        //check whether same video exist
+        collectionVideo.findOne({owner:req.user._id,forkedFromVideoID:req.params.video_id},function(err, sameVideo)
+        {
+          if (err) { console.log(err); return err; }
+            if(sameVideo){
+              console.log("same video exist");
+              res.redirect('/');
+            }
+            else
+            {
+              //not exist then add
+              forkVideo(req.params.video_id,req.user._id,function(err){
+                if (err) { console.log(err); return err; }
+                res.redirect('/');
+              });
+              
+            }
+        });
       }
       else
       {
-        //not exist then add
-        forkVideo(req.params.video_id,req.user._id);
+        console.log('video is not exist :error something wrong')
+        res.redirect('/');
+
       }
     });
 
@@ -211,6 +245,10 @@ app.get('/auth/logout', function(req, res){
 
 app.get('/about',function(req,res){
     res.render('about.pug')
+})
+
+app.get('/create',function(req,res){
+    res.render('create.pug')
 })
 
 app.get('/feed',function(req,res){
@@ -516,7 +554,7 @@ function clearCaptionUserAnswer(caption)
   return caption;
 }
 
-function forkVideo(videoRecordId,userID)//fork given video to the given user
+function forkVideo(videoRecordId,userID,callback)//fork given video to the given user
 {
     var video_id = ObjectId(videoRecordId);
 
@@ -534,18 +572,19 @@ function forkVideo(videoRecordId,userID)//fork given video to the given user
         collectionVideo.insertOne(newVideo,function(err, insertedDocument) {
           if (err) {console.log(err); return err; }
           console.log('fork: video forked successfully:'+insertedDocument.insertedId);
+          callback();
         })
 
       }
       else
       {
           console.log('video is not existing! something wrong'+videoRecordId)
+          callback();
       }
     });
  
 }
 app.post('/newvideo',function(req, res) {
-
   var YouTubeVideoID=req.body.youtubeVideoId;
   var langCode=req.body.lang;
   console.log('/newvideo '+YouTubeVideoID+' '+langCode)
@@ -570,7 +609,7 @@ app.post('/newvideo',function(req, res) {
         collectionVideo.insertOne(videoRecord,function(err, insertedDocument) {
           if (err) {console.log(err); return err; }
           console.log('video inserted successfully:'+insertedDocument.insertedId);
-          res.redirect(`/play/${insertedDocument.insertedId}`);
+          res.redirect(`/play_modify/${insertedDocument.insertedId}`);
         })
   
       })
@@ -667,6 +706,80 @@ app.get('/',function(req,res){
   }
 })
 
+function getCurrentTimeString()
+{
+  return new Date(getCurrentTime()).toLocaleString();
+}
+
+function getCurrentTime()
+{
+  return new Date().getTime();
+}
+
+var LogType = {INFO_SERVER:{value:0,name:'INFO_SERVER'},INFO_CLIENT:{value:1,name:'INFO_CLIENT'},ERROR_SERVER:{value:2,name:'ERROR_SERVER'},ERROR_CLIENT:{value:3,name:'ERROR_CLIENT'}}
+
+function logging(location,logType,userID,message1, message2)
+{
+  var currentTime = new Date().getTime();
+  var currentTimeString = new Date(currentTime).toLocaleString();
+  
+  var log = {"timestamp":currentTime ,"timestring":currentTimeString,"type":logType,"userID":userID,"location":location,"message1":message1, "message2":message2}; 
+  collectionLog.insertOne(log,function(err, insertedDocument) {
+          if (err) {console.log(err); return err; }
+          console.log('LOG:', log);
+  })
+}
+
+
+app.get('/preview/:id',function(req, res) {
+  try{
+    if(req.user) {
+      var video_id = ObjectId(req.params.id);
+      logging('/preview/',LogType.INFO_SERVER,req.user._id,req.params.id,"user found");
+      collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+        if (err) { logging('/preview/',LogType.ERROR_SERVER,req.user._id,req.params.id,err); return err; }
+        if(foundVideo){
+          res.render('preview.pug',{mytime:JSON.stringify(foundVideo)})
+        }
+      });    
+    }
+    else
+    {
+      logging('/preview/',LogType.INFO_SERVER,"none",req.params.id,"user not logged in");
+      res.redirect('/');
+    }
+  }catch(err)
+  {
+    logging('/play_modify/',LogType.ERROR_SERVER,'',req.params.id,err);
+  }
+})
+
+app.get('/play_modify/:id',function(req,res){
+  if(req.user)  //is logged in?
+  {
+    var video_id = ObjectId(req.params.id);
+    console.log('/play_modify/'+video_id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { console.log(err); return err; }
+      if(foundVideo){
+        //video owner == user then allow to modify 
+        
+        //console.log("video found");
+        //console.log(typeof foundVideo.caption)
+  
+        res.render('play_modify.pug',{mytime:JSON.stringify(foundVideo)})
+        
+        //else - send message that not allowed to modify
+        
+      }
+    });
+  }
+  else
+  {
+    res.redirect('/');
+  }
+
+})
 app.get('/play/:id',function(req,res){
   var video_id = ObjectId(req.params.id);
   console.log('/play/'+video_id);

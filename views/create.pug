@@ -5,32 +5,16 @@ body
   .container.theme-showcase(role='main')
     .row
       .col-md-12
-        h2 MyBox
-        table.table.table-hover
-          thead
-            tr
-              th
-                | Video Title
-              th
-                | Language
-              th
-                | Progress
-              th
-                | Menu
-          tbody
-            each video in videolist
-              tr
-                td 
-                  a(href='/play/'+video._id) #{video.videoTitle}
-                td
-                  | #{video.videoCaptionLangCode}
-                td
-                  | #{video.currentIndex}/#{video.caption.length}
-                td
-                  a#delete(href='/delete/'+video._id,onclick="return confirm('Are you sure?')") delete
-
-
-
+        .jumbotron
+          h2 Youtube player for dictation practice
+          h4 Enter your youtube url which have at least a caption
+          input#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
+          #VideoInfo
+          form.form-inline(action='/newvideo', method='post')
+            input#youtubeID(name='youtubeVideoId', type='hidden')
+            #VideoCaptions
+            button.btn.btn-default(type='submit') Submit
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
   script.
     function getVideoCaption(youtubeVideoId, callback)
     {
@@ -53,6 +37,7 @@ body
     }
   
     $(document).ready(function(){
+
       $('#youtubeurl').on('paste',function(){
         setTimeout(function () {
         var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]

@@ -7,15 +7,22 @@ body
       .col-md-12
         .jumbotron
           h2 Youtube player for dictation practice
-          h4 Enter your youtube url which have at least a caption
-          a.btn.btn-primary(href='/auth/facebook') 
-            span.fa.fa-facebook-official.fa-fw
-            | Sign in with Facebook
-          a.btn.btn-primary(href='/auth/google') 
-            span.fa.fa-facebook-official.fa-fw
-            | Sign in with Google
+          h4 never the easier way to practice the dictation!
+          p
+            button.loginBtn.loginBtn--facebook(onclick="location.href='/auth/facebook'")
+              | Login with Facebook
+          p
+            button.loginBtn.loginBtn--google(onclick="location.href='/auth/google'")
+              | Login with Google
+          // p
+          //   a.btn.btn-primary(href='/auth/facebook') 
+          //     span.fa.fa-facebook-official.fa-fw
+          //     | Sign in with Facebook
+          // p
+          //   a.btn.btn-primary(href='/auth/google') 
+          //     span.fa.fa-facebook-official.fa-fw
+          //     | Sign in with Google
 
-  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

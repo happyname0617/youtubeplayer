@@ -5,16 +5,11 @@ body
   .container.theme-showcase(role='main')
     .row
       .col-md-12
+        h2 Feed
         .jumbotron
-          h2 Youtube player for dictation practice
-          h4 Enter your youtube url which have at least a caption
-          input#youtubeurl(name='url', type='text', style='width:80%;',placeholder='https://www.youtube.com/watch?v=41rhm6Agvqs')
-          #VideoInfo
-          form.form-inline(action='/newvideo', method='post')
-            input#youtubeID(name='youtubeVideoId', type='hidden')
-            #VideoCaptions
-            button.btn.btn-default(type='submit') Submit
-        table.table.table-stripetable.table.table-striped.table-hover
+          h2 Get more videos!
+          h4 select what you like and add to your box
+        table.table.table-hover
           thead
             tr
               th
@@ -22,24 +17,35 @@ body
               th
                 | Language
               th
-                | Progress
+                | Level
               th
-                | Menu
+                | Length
           tbody
             each video in videolist
-              tr
-                td 
-                  a(href='/play/'+video._id) #{video.videoTitle}
+              tr(data-toggle='modal',data-id=video._id+':'+video.YouTubeVideoID, data-target='#myModal')
+                td
+                  a
+                    | #{video.videoTitle}
                 td
                   | #{video.videoCaptionLangCode}
                 td
-                  | #{video.currentIndex}/#{video.caption.length}
+                  | -
                 td
-                  a(href='/delete/'+video._id) delete
-
-
-
-  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+                  | #{video.caption.length}
+        // Modal
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+          .modal-dialog(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+                h4#myModalLabel.modal-title Preview
+              .modal-body
+                .embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item#ytplayer(type='text/html', width='720', height='405', src='https://www.youtube.com/embed/M7lc1UVf-VE?fs=0&rel=0&showinfo=0', frameborder='0', allowfullscreen='')
+              .modal-footer
+                a.btn.btn-default(type='button', data-dismiss='modal') Close
+                a#fork.btn.btn-primary(type='button',href="/fork") Add to MyBox
   script.
     function getVideoCaption(youtubeVideoId, callback)
     {
@@ -60,9 +66,34 @@ body
           callback(vInfo)
         });    
     }
-  
+ 
+    $(function(){
+        $('#myModal').modal({
+            keyboard: true,
+            backdrop: "static",
+            show:false
+        }).on('show.bs.modal', function(){ //subscribe to show method
+              var lines = $(this).data('id').split(':'); //get the id from tr
+              console.log($(this).data('id'));
+              var videoID = lines[0];
+              var youtubeVideoId = lines[1];
+              console.log('videoID:',videoID);
+              console.log('youtubeVideoId:',youtubeVideoId);
+              var url = 'https://www.youtube.com/embed/'+youtubeVideoId+'?fs=0&rel=0&showinfo=0';
+              $(this).find('iframe').attr('src', url);
+              $('#fork').attr('href', '/fork/'+videoID);
+        }).on('hidden.bs.modal', function(){ //subscribe to show method
+              console.log('stop video');
+              $("iframe").attr("src", $("iframe").attr("src"));
+        });
+        
+        $(".table").find('tr[data-target]').on('click', function(){
+         $('#myModal').data('id',$(this).data('id'));
+        }); 
+    })
+    
     $(document).ready(function(){
-
+      
       $('#youtubeurl').on('paste',function(){
         setTimeout(function () {
         var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]

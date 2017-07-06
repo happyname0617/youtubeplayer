@@ -12,21 +12,24 @@ body
           .progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0%;')
             | 60%
         p#playcontrol
-        p
-          button.repeatPlay.btn.btn-primary.btn-block START
+          .btn-group.btn-group-justified(role='group', aria-label='...')
+            .btn-group(role='group')
+              button.repeatPlay.btn.btn-primary START
+            .btn-group(role='group')
+              button.toBegin.btn.btn-default |<
+            .btn-group(role='group')
+              button.prev.btn.btn-default <
+            .btn-group(role='group')
+              button.next.btn.btn-default >
+            .btn-group(role='group')
+              button.toEnd.btn.btn-default >|
         p
           ul.sentence(text-align:"center")
         p#underline_str(hidden)
         p#solution_str
         textarea#inputstr(rows='4', cols='50')
-        .btn-group.btn-group-justified(role='group', aria-label='...')
-          .btn-group(role='group')
-            button.btn.btn-success#answer Check Answer
-          .btn-group(role='group')
-            button.btn.btn-warning#answerShow Show Answer
-          .btn-group(role='group')
-            button.next.btn.btn-danger Skip
         p
+          button.btn.btn-default.btn-block#answer Check Answer
         .well
           h4 Play Option
           label rest time between repeating
@@ -36,12 +39,42 @@ body
               option(value='1.0', selected) 1.0 sec
               option(value='3.0') 3.0 sec
               option(value='5.0') 5.0 sec
-          // .checkbox
-          //   label
-          //     input#answerToggle(type='checkbox')
-          //     |  Show/Hide Answer
+          .checkbox
+            label
+              input#answerToggle(type='checkbox')
+              |  Show/Hide Answer
+          .checkbox
+            label
+              input#EditToggle(type='checkbox')
+              |  Show/Hide Subtible Edit Panel
+        .well#editSubtitle
+          h4 Edit Subtitle
+          .btn-group.btn-group-justified(role='group', aria-label='...')
+            .btn-group(role='group')
+              button.leftboder_2left01.btn.btn-default  <<0.1s
+            .btn-group(role='group')
+              button.btn.btn-default.leftboder_2left03  <<0.3s
+            .btn-group(role='group')
+              button.btn.btn-default.leftboder_2right01 >>0.1
+            .btn-group(role='group')
+              button.btn.btn-default.leftboder_2right03 >>0.3
+            .btn-group(role='group')
+              button.btn.btn-default.mergewithleft Merge to left
+            .btn-group(role='group')
+              button.btn.btn-default.captiondelete Delete
+            .btn-group(role='group')
+              button.btn.btn-default.rightboder_2left01  0.1<<
+            .btn-group(role='group')
+              button.btn.btn-default.rightboder_2left03  0.3<<
+            .btn-group(role='group')
+              button.btn.btn-default.rightboder_2right01 0.1>>
+            .btn-group(role='group')
+              button.btn.btn-default.rightboder_2right03 0.3>>
+          .debug
+          p
+            button.btn.btn-default.btn-block.save save
         p
-          a.btn.btn-default.btn-block(href='/') <- back to MyBox
+          a.btn.btn-default.btn-block(href='/') <- back to my play list
 
       .col-md-2
     script.
@@ -52,7 +85,6 @@ body
       ga('create', 'UA-100905207-1', 'auto');
       ga('send', 'pageview');
     script.
-      try{
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
@@ -147,7 +179,6 @@ body
         }
         catch (exception)
         {
-          alert("Error occured: " + exception);//or any message
           LoggerUtil.logError("Error when trying to unloadModule youtube captions: " + exception);
         }
 
@@ -264,8 +295,9 @@ body
         $('#inputstr').val(times[currIdx][3]);
         $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
         $('.repeatPlay').text('START');
-        $('#answer').prop('disabled', true);
-        $('#answerShow').prop('disabled', true);
+        $('.toBegin').prop('disabled', true);
+        $('.toEnd').prop('disabled', true);
+        $('.prev').prop('disabled', true);
         $('.next').prop('disabled', true);
 
         updateInput();
@@ -309,10 +341,9 @@ body
           }
 
         });
-      
-
-      $('#answerShow').click(function(){
-        $('#solution_str').show();
+        
+      $('#answerToggle').click(function(){
+        $('#solution_str').toggle();
       })
       $('#EditToggle').click(function(){
         $('#editSubtitle').toggle();
@@ -352,6 +383,7 @@ body
          var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
          console.log('allTrue:'+allTrue);
           if(allTrue){
+            $('.save').click();
             alert("Super! Hit Enter key to the next sentence!");
             $('.next').click();
             //currentInputMode=INPUTMODE.ANSWER;
@@ -388,27 +420,16 @@ body
 
 
       $('.next').click(function(){
-        save();
         times[currIdx][3] = $('#inputstr').val()
-        if(currIdx==times.length-1) //if last item
-        {
-          //TODO :show user's study activity e.g. passed, failed, skipped
-          alert("Wow! You just finished a video. Hit Enter key to go back to your box");
-          window.location.href = "/";
-        }
-        else
-        {
-          currIdx=Math.min(currIdx+1,times.length-1);
-          //$('.debug').text(currIdx+'/'+totalCount)
-          clearTimeout(timer);
-          clearTimeout(timersleep);
-          repeatVideo();
-          //$('#solution_str').text('');
-          $('#solution_str').hide();
-          $('#inputstr').val(times[currIdx][3])
-          $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-          updateInput();
-        }
+        currIdx=Math.min(currIdx+1,times.length-1);
+        //$('.debug').text(currIdx+'/'+totalCount)
+        clearTimeout(timer);
+        clearTimeout(timersleep);
+        repeatVideo();
+        //$('#solution_str').text('');
+        $('#inputstr').val(times[currIdx][3])
+        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        updateInput();
       })
 
       $('.prev').click(function(){
@@ -550,8 +571,9 @@ body
         clearTimeout(timersleep);
         repeatVideo();
         $('.repeatPlay').text('PAUSE');
-        $('#answer').prop('disabled', false);
-        $('#answerShow').prop('disabled', false);
+        $('.toBegin').prop('disabled', false);
+        $('.toEnd').prop('disabled', false);
+        $('.prev').prop('disabled', false);
         $('.next').prop('disabled', false);
       }
       
@@ -572,22 +594,20 @@ body
         clearTimeout(timersleep);
         player.pauseVideo();
         $('.repeatPlay').text('START');
-        $('#answer').prop('disabled', true);
-        $('#answerShow').prop('disabled', true);
+        $('.toBegin').prop('disabled', true);
+        $('.toEnd').prop('disabled', true);
+        $('.prev').prop('disabled', true);
         $('.next').prop('disabled', true);
+
       }
 
 
-      function save()
-      {
+      $('.save').click(function(){
         $('.debug').text('save');
         times[currIdx][3] = $('#inputstr').val();
         videoRecord.currentIndex = currIdx;
         videoRecord.caption = times;
         $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );
-      }
-      $('.save').click(function(){
-        save();
       })
 
 
@@ -595,7 +615,3 @@ body
       
    
       })
-      }catch(e)
-      {
-        alert("Error occured: " + e.message);
-      }
