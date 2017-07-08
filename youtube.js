@@ -256,18 +256,44 @@ app.get('/create',function(req,res){
     res.render('create.pug')
 })
 
+function VideoFind(query,callback)
+{
+  collectionVideo.find(query,function(err, cursor) {
+      if(err){console.log(err); return err;}
+      cursor.toArray(function(err,result){
+        if(err){console.log(err); return err;}
+        callback(result);
+      });
+  })
+}
 app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
-
-    collectionVideo.find({"owner":"public"},function(err, cursor) {
-      if(err){console.log(err); return err;}
-      cursor.toArray(function(err,foundVideoList){
-        if(err){console.log(err); return err;}
-        //console.log(foundVideoList)
-        res.render('feed.pug',{videolist:foundVideoList})
-      });
+    VideoFind({"owner":"public"},function(publicList){
+      VideoFind({"owner":req.user._id},function(userList){
+        var newList=[];
+        publicList.forEach(function(publicItem){
+          //if user have already this, then skip
+          var checkExist = userList.some(function(userItem){
+            return userItem.forkedFromVideoID==publicItem._id;
+          })
+          
+          if(!checkExist)
+          {
+            newList.push(publicItem);
+          }
+        })
+        res.render('feed.pug',{videolist:newList})
+      })
     })
+    // collectionVideo.find({"owner":"public"},function(err, cursor) {
+    //   if(err){console.log(err); return err;}
+    //   cursor.toArray(function(err,foundVideoList){
+    //     if(err){console.log(err); return err;}
+    //     //console.log(foundVideoList)
+    //     res.render('feed.pug',{videolist:foundVideoList})
+    //   });
+    // })
   }
   else //logged out user
   {
