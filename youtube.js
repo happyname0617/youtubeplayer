@@ -143,7 +143,9 @@ passport.deserializeUser(function(id, done) {
 //add bundle videos
 function forkInit(id){
  bundleVideoList.forEach(function(item){
-   forkVideo(item,id)
+   forkVideo(item,id,function(err){
+      if (err) { console.log(err); return err; }
+   })
  })
 }
 app.get('/admin/fork/:video_id/:userid',function(req,res){
@@ -152,7 +154,10 @@ app.get('/admin/fork/:video_id/:userid',function(req,res){
   {
     var videoID = req.params.video_id
     var userID = req.params.userid
-    forkVideo(videoID,userID);
+    forkVideo(videoID,userID,function(err){
+      if (err) { console.log(err); return err; }
+            res.redirect('/');
+    });
     
   }
   res.redirect('/');
