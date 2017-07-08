@@ -5,9 +5,12 @@ const express = require('express')
 var session = require('express-session');
 //var FileStore = require('session-file-store')(session);
 const MongoStore = require('connect-mongo')(session);
+var winston = require('winston');
+
 
 var app = express()
 var request = require('request');
+var VError = require('verror');
 var fs = require('fs')
 var _ = require('underscore');
 var bodyParser = require('body-parser');
@@ -33,6 +36,13 @@ app.use(session({
   store:new MongoStore({ url: config.DB_URL })
 }));
 
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Console)({
+      timestamp: true
+    })
+  ]
+});
 var mongodb;
 var collectionUser;
 var collectionVideo;
@@ -43,9 +53,15 @@ var bundleVideoList =config.BUNDLE_VIDEO_LIST;
 //var bundleVideoList =['5958bf087ed9c93c76967138','5948eb94076d52107e95e38b',,'5958bf087ed9c93c76967138','5958baac7ed9c93c76967137',];
 function dbconnect(url)
 {
+
+  logger.info("DB connect")
   MongoClient.connect(url, function(err, db) {
-     if (err) {console.log(err); return err; }
-    console.log("Connected correctly to server");
+     if (err) { 
+        var error = new VError(err,"DB connect %s", url) 
+        logger.error(error);
+        return error; 
+     }
+    logger.info("Connected correctly to server");
     mongodb=db;
     collectionUser = mongodb.collection('User');
     collectionVideo = mongodb.collection('Video');
@@ -68,17 +84,17 @@ passport.use(new GoogleStrategy({
     callbackURL: config.GOOGLE_CALLBACK_URL
   },
   function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
+    logger.info(profile.name)
     var _id = 'google:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
         if (err) {console.log(err); return done(err); }
         if(foundUser){
-          console.log("user already exist, proceed to login")
+          logger.info("user already exist, proceed to login")
           done(null, foundUser);
         }
         else
         {
-          console.log("new user, proceed to login")
+          logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
 
@@ -100,17 +116,17 @@ passport.use(
     profileFields:['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'verified', 'displayName','age_range']
   },
   function(accessToken, refreshToken, profile, done) {
-    //console.log(profile);
+    logger.info('facebook login:',profile.name);
     var _id = 'facebook:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
         if (err) {console.log(err); return done(err); }
         if(foundUser){
-          console.log("user already exist, proceed to login")
+          logger.info("user already exist, proceed to login")
           done(null, foundUser);
         }
         else
         {
-          console.log("new user, proceed to login")
+          logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
 
@@ -127,14 +143,13 @@ passport.use(
 
 
 passport.serializeUser(function(user, done) {
-  console.log('serializeUser', user);
+  logger.info('         serializeUser',user._id, user.name);
   done(null, user._id);
 });
 
 passport.deserializeUser(function(id, done) {
-  console.log('deserializeUser', id);
  collectionUser.findOne({_id:id},function(err, foundUser) {
-       console.log("result: "+JSON.stringify(foundUser))
+        logger.info('         deserializeUser ', id, foundUser.name)
         done(err, foundUser);
   });
 
@@ -193,7 +208,7 @@ app.get('/fork/:video_id',function(req, res) {
   if(req.user) //logged in 
   {
     var video_id = ObjectId(req.params.video_id);
-    console.log('/fork/'+video_id);
+    logger.info('/fork/'+video_id, req.user.name);
     collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
       if (err) { console.log(err); return err; }
       if(foundVideo){
@@ -202,7 +217,7 @@ app.get('/fork/:video_id',function(req, res) {
         {
           if (err) { console.log(err); return err; }
             if(sameVideo){
-              console.log("same video exist");
+              logger.info("same video exist");
               res.redirect('/');
             }
             else
@@ -210,6 +225,7 @@ app.get('/fork/:video_id',function(req, res) {
               //not exist then add
               forkVideo(req.params.video_id,req.user._id,function(err){
                 if (err) { console.log(err); return err; }
+                logger.info('/fork/'+video_id,foundVideo.videoTitle, req.user.name);
                 res.redirect('/');
               });
               
@@ -230,30 +246,60 @@ app.get('/fork/:video_id',function(req, res) {
   } 
 })
 //http://www.typingtube.com/fork/595a55225162b73b3ca72b91
-app.get('/fork',function(req,res){
-  forkInit(req.user._id);
-  //add bundle videos
- // bundleVideoList.forEach(function(item){
- //   forkVideo(item,req.user._id)
- // })
+// app.get('/fork',function(req,res){
+//   forkInit(req.user._id);
+//   //add bundle videos
+// // bundleVideoList.forEach(function(item){
+// //   forkVideo(item,req.user._id)
+// // })
   
-  res.redirect('/');
+//   res.redirect('/');
 
-})
+// })
+
+// app.get('/auth/logout', function(req, res){
+//   logger.info('/auth/logout', req.user.name);
+//   req.logout();
+//   req.session.save(function(){
+//     res.redirect('/');
+//   });
+// });
 
 app.get('/auth/logout', function(req, res){
-  req.logout();
-  req.session.save(function(){
+  if(req.user)
+  {
+    logger.info('/auth/logout', req.user._id, req.user.name);
+    req.logout();
+    req.session.save(function(){
+      res.redirect('/');
+    });
+  }
+  else{
+    logger.info('/auth/logout not logged in approach')
     res.redirect('/');
-  });
+  }
 });
 
 app.get('/about',function(req,res){
+  if(req.user)
+  {
     res.render('about.pug')
+  }
+  else
+  {
+    res.redirect('/')
+  }
 })
 
 app.get('/create',function(req,res){
+  if(req.user)
+  {
     res.render('create.pug')
+  }
+  else
+  {
+    res.redirect('/');
+  }
 })
 
 function VideoFind(query,callback)
@@ -269,6 +315,7 @@ function VideoFind(query,callback)
 app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
+    logger.info('/feed',req.user._id,req.user.name)
     VideoFind({"owner":"public"},function(publicList){
       VideoFind({"owner":req.user._id},function(userList){
         var newList=[];
@@ -304,6 +351,7 @@ app.get('/feed',function(req,res){
 app.get('/forum',function(req,res){
   if(req.user) //logged in 
   {
+    logger.info('/forum',req.user._id,req.user.name);
     res.render('forum.pug')
   }
   else{
@@ -359,15 +407,9 @@ var findDocuments = function(db, callback) {
 
 
 
-app.get('/login',function(req, res) {
-    res.render('login.pug')
-})
-app.get('/auth/logout', function(req, res){
-  req.logout();
-  req.session.save(function(){
-    res.redirect('/');
-  });
-});
+// app.get('/login',function(req, res) {
+//     res.render('login.pug')
+// })
 
 
 // Redirect the user to Facebook for authentication.  When complete,
@@ -391,22 +433,29 @@ app.get('/auth/google/callback',
                                     failureRedirect: '/' }));
 
 app.post('/update', function(req, res){
-  //TODO user login status check
-  //console.log(req.body.videoRecord)
-  var videoRecord = JSON.parse(req.body.videoRecord);
-
-  var video_id = ObjectId(videoRecord._id);
-  collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
-    if (err) {console.log(err); return err; }
-    if(foundVideo){
-      console.log("video found, updated it successfully")
-      collectionVideo.updateOne({_id:video_id},{ $set: { caption : videoRecord.caption, currentIndex:videoRecord.currentIndex } })
-    }
-    else
-    {
-        console.log('video is not existing! something wrong')
-    }
-  });
+  if(req.user)
+  {
+    //TODO user login status check
+    //console.log(req.body.videoRecord)
+    var videoRecord = JSON.parse(req.body.videoRecord);
+  
+    var video_id = ObjectId(videoRecord._id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) {console.log(err); return err; }
+      if(foundVideo){
+        logger.info("/update video found, updated it successfully",req.user._id, req.user.name, videoRecord.currentIndex+'/'+videoRecord.caption.length,foundVideo.videoTitle)
+        collectionVideo.updateOne({_id:video_id},{ $set: { caption : videoRecord.caption, currentIndex:videoRecord.currentIndex } })
+      }
+      else
+      {
+          logging.info('/update video is not existing! something wrong')
+      }
+    });
+  }
+  else{
+    logging.info('/update not logged in approach')
+    res.redirect('/');
+  }
 
 });
 app.get('/exam/:video_id',function(req, res) {
@@ -482,23 +531,24 @@ app.get('/get/lang/:youtubeVideoId',function(req,res){
 })
 app.get('/delete/:youtubeVideoId',function(req,res){
     var YoutubeVideoId=ObjectId(req.params.youtubeVideoId);
-    console.log("/delete/ "+req.params.youtubeVideoId);
+    logger.info("/delete/ "+req.params.youtubeVideoId);
 
     collectionVideo.findOne({_id:YoutubeVideoId},function(err, foundVideo) {
       if (err) {console.log(err); return err; }
       if(foundVideo){
-        console.log("video found");
+        logger.info("/delete/  video found",foundVideo.videoTitle);
         //console.log(typeof foundVideo.caption)
         if(foundVideo.owner==req.user._id)
         {
           collectionVideo.remove({_id:YoutubeVideoId},function(err,result){
             if (err) {console.log(err); return err; }
-            //console.log(result);
+            logger.info('/delete/ successfully deleted', foundVideo.videoTitle)
             res.redirect('/')
           })   
         }
         else
         {
+          logger.info('/delete/ the video is not owned by you');
           res.send('the video is not owned by you')
         }
       }
@@ -592,7 +642,7 @@ function forkVideo(videoRecordId,userID,callback)//fork given video to the given
     collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
       if (err) {console.log(err); return err; }
       if(foundVideo){
-        console.log("fork: video found")
+        logger.info("forkVideo: video found")
         var newVideo = foundVideo;
         delete newVideo._id
         newVideo.owner=userID;
@@ -602,14 +652,14 @@ function forkVideo(videoRecordId,userID,callback)//fork given video to the given
 
         collectionVideo.insertOne(newVideo,function(err, insertedDocument) {
           if (err) {console.log(err); return err; }
-          console.log('fork: video forked successfully:'+insertedDocument.insertedId);
+          logger.info('forkVideo: video forked successfully:'+insertedDocument.insertedId);
           callback();
         })
 
       }
       else
       {
-          console.log('video is not existing! something wrong'+videoRecordId)
+          logger.info('video is not existing! something wrong'+videoRecordId)
           callback();
       }
     });
@@ -618,7 +668,7 @@ function forkVideo(videoRecordId,userID,callback)//fork given video to the given
 app.post('/newvideo',function(req, res) {
   var YouTubeVideoID=req.body.youtubeVideoId;
   var langCode=req.body.lang;
-  console.log('/newvideo '+YouTubeVideoID+' '+langCode)
+  logger.info('/newvideo '+YouTubeVideoID+' '+langCode)
   getVideoInfo(YouTubeVideoID,function(vinfo) {
       //var langCode = vinfo.items[0].snippet.defaultAudioLanguage;
       getVideoCaption(YouTubeVideoID,langCode, function(sentences){
@@ -721,7 +771,7 @@ app.post('/newvideo',function(req, res) {
 app.get('/',function(req,res){
   if(req.user) //logged in 
   {
-
+    logger.info('/',req.user._id, req.user.name);
     collectionVideo.find({owner:req.user._id},function(err, cursor) {
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
@@ -813,12 +863,12 @@ app.get('/play_modify/:id',function(req,res){
 })
 app.get('/play/:id',function(req,res){
   var video_id = ObjectId(req.params.id);
-  console.log('/play/'+video_id);
   collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
     if (err) { console.log(err); return err; }
     if(foundVideo){
       //console.log("video found");
       //console.log(typeof foundVideo.caption)
+      logger.info('/play/'+video_id,req.user.name,foundVideo.videoTitle);
 
       res.render('play.pug',{mytime:JSON.stringify(foundVideo)})
     }
@@ -840,5 +890,5 @@ function convert2Sec(str)
 
 
 app.listen(process.env.PORT || config.NODE_PORT, process.env.IP || "0.0.0.0",function(){
-  console.log('listening on %s',process.env.PORT||config.NODE_PORT)
+  logger.info('listening on %s',process.env.PORT||config.NODE_PORT)
 })
