@@ -24,29 +24,8 @@ body
             .btn-group(role='group')
               button.toEnd.btn.btn-default >|
         p
-          ul.sentence(text-align:"center")
-        p#underline_str(hidden)
-        p#solution_str
+          ul.sentence
         textarea#inputstr(rows='4', cols='50')
-        p
-          button.btn.btn-default.btn-block#answer Check Answer
-        .well
-          h4 Play Option
-          label rest time between repeating
-            select.control_restTime
-              option(value='0.0') 0.0 sec
-              option(value='0.5') 0.5 sec
-              option(value='1.0', selected) 1.0 sec
-              option(value='3.0') 3.0 sec
-              option(value='5.0') 5.0 sec
-          .checkbox
-            label
-              input#answerToggle(type='checkbox')
-              |  Show/Hide Answer
-          .checkbox
-            label
-              input#EditToggle(type='checkbox')
-              |  Show/Hide Subtible Edit Panel
         .well#editSubtitle
           h4 Edit Subtitle
           .btn-group.btn-group-justified(role='group', aria-label='...')
@@ -74,7 +53,7 @@ body
           p
             button.btn.btn-default.btn-block.save save
         p
-          a.btn.btn-default.btn-block(href='/') <- back to my play list
+          a.btn.btn-default.btn-block(href='/') back to my play list
 
       .col-md-2
     script.
@@ -130,40 +109,31 @@ body
       }
       });
       }
-      function updateInput()
+      
+      function updateHTMLDisplay()
       {
-         var str = myconvert(times[currIdx][2],$('#inputstr').val());
-          console.log(str);
-          
+          var str = $('#inputstr').val();
+
           var html='';
           for(var i=0; i<str.length;i++)
           {
             var tempclass = '';
-            if(str[i]==marker)
+            if(str[i]==' ')
             {
-              html+=`<li class="${c_letter} normal">&nbsp</li>`;                
-            }
-            else if(str[i]==' ')
-            {
-              html+=`<li class="space">${str[i]}</li>`;                
-              
+              html+='<li class="space">'+str[i]+'</li>';                
             }
             else
             {
-              html+=`<li class="${c_letter} normal">${str[i]}</li>`;                
+              html+='<li class="'+c_letter+' normal">'+str[i]+'</li>';                
             }
-
+  
           }
-            $('.sentence').html(html)
-          $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val())) 
+          $('.sentence').html(html)
       }
-        
+
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-      //event.target.playVideo();
-      //player.seekTo(getStartTime(currIdx,margin))
-      $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-      updateInput();
+        updateHTMLDisplay();
       }
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
@@ -179,12 +149,11 @@ body
         }
         catch (exception)
         {
-          LoggerUtil.logError("Error when trying to unloadModule youtube captions: " + exception);
+          console.log("Error when trying to unloadModule youtube captions: " + exception);
         }
 
         if (event.data == YT.PlayerState.PLAYING && !done) {
-        //setTimeout(repeatVideo, getDuration(currIdx,margin))
-        done = true;
+            done = true;
         }
 
       }
@@ -201,7 +170,6 @@ body
         player.playVideo();
         timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
         clearTimeout(timersleep);
-        // $('.debug').text(currIdx+'/'+totalCount)
 
       }
       
@@ -218,107 +186,55 @@ body
         player.playVideo();
         timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
         clearTimeout(timersleep);
-        //$('.debug').text(currIdx+'/'+totalCount)
         updateProgressbar();
-        $('#solution_str').text(times[currIdx][2]);
-
       }
 
       function getStartTime(index,margin)
       {
-      var start = parseFloat(times[index][0])-margin
-      return start>=0?start:0
+        var start = parseFloat(times[index][0])-margin
+        return start>=0?start:0
       }
       function getEndTime(index,margin)
       {
-      return parseFloat(times[index][1])+margin;
+        return parseFloat(times[index][1])+margin;
       }
       function getDuration(index,margin)
       {
-      var duration = (getEndTime(index,margin)-getStartTime(index,margin))*1000;
-      //console.log(duration);
-      return duration;
+        var duration = (getEndTime(index,margin)-getStartTime(index,margin))*1000;
+        //console.log(duration);
+        return duration;
       }
 
-      var marker = '+';
-      
-      function myconvert(solution, input)
-      {
-      console.log('solution:',solution)
-      console.log('input:',input)
-      solution = solution.trim();
-      input = input.trim();
-      //console.log(typeof solution);
-      var temp = solution.replace(/[\u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3|\w|äöüÄÖÜß|\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/gi,marker);
-      //console.log('temp:',temp)
-      // japanese \u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf
-      // korean \u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3
-      var temp2 = input.replace(/[^\u3131-\u314e|\u314f-\u3163|\uac00-\ud7a3|\w|äöüÄÖÜß|\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/gi,'')
-      //console.log('temp2:',temp2)
-      for(var i=0; i<temp2.length; i++)
-      {
-      temp = temp.replace(marker,temp2[i])
-      }
-      console.log('result:',temp)
-      return temp;
-      }
-      
-      function evaluateAnswer(solution, input)
-      {
-        var result =[];
-        var strRef = myconvert(solution, solution);
-        var strIn = myconvert(solution, input);
-        
-        for(var i=0;i<strRef.length;i++)
-        {
-          if(strRef[i]==strIn[i])
-            result.push(true);
-          else
-            result.push(false);
-        }
-        return result;
-      }
-  
-      var INPUTMODE = {
-        IDLE : {value: 0, name: "idle status", code: "i"}, 
-        ANSWER: {value: 1, name: "answer status", code: "a"}, 
-      };
-      
-      var currentInputMode = INPUTMODE.IDLE;
+
+
       $(document).ready(function(){
         $('.player').addClass('embed-responsive-item')
         updateProgressbar();
-        $('#solution_str').text(times[currIdx][2]);
-        $('#dictationarea').hide();
-        $('#solution_str').toggle();
-        $('#editSubtitle').toggle();
-        $('#inputstr').val(times[currIdx][3]);
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+        $('#inputstr').val(times[currIdx][2]);
+        //$('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
         $('.repeatPlay').text('START');
         $('.toBegin').prop('disabled', true);
         $('.toEnd').prop('disabled', true);
         $('.prev').prop('disabled', true);
         $('.next').prop('disabled', true);
 
-        updateInput();
+        updateHTMLDisplay();
         
         $("html").on('keyup', function (e) {
           if (e.ctrlKey && e.keyCode == 37) {
             console.log('ctrl + left key typed');
             $('.prev').click();
-            currentInputMode=INPUTMODE.IDLE;
-            
+
           }
           if (e.ctrlKey && e.keyCode == 39) {
             console.log('ctrl + right key typed');
             $('.next').click();
-            currentInputMode=INPUTMODE.IDLE;
           }
         });
 
         $("#inputstr").on('keyup', function (e) {
           if (e.keyCode != 13) {
-            updateInput();
+            updateHTMLDisplay();
           }
 
         });
@@ -329,120 +245,53 @@ body
           if (e.keyCode == 13) {
             e.preventDefault();
             console.log('enter key typed');
-            if(currentInputMode==INPUTMODE.IDLE)
-            {
-                $('#answer').click();
-            }
-            // else if(currentInputMode==INPUTMODE.ANSWER)
-            // {
-            //   $('.next').click();
-            //   currentInputMode=INPUTMODE.IDLE;
-            // }
+            $('.next').click();
+            //TODO save?
           }
-
         });
         
-      $('#answerToggle').click(function(){
-        $('#solution_str').toggle();
-      })
-      $('#EditToggle').click(function(){
-        $('#editSubtitle').toggle();
-      })
 
-      $('#answer').click(function(){
-        $('#solution_str').text(times[currIdx][2]);
-        times[currIdx][3] = $('#inputstr').val();
-        var str= myconvert(times[currIdx][2],$('#inputstr').val())
-        var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val());
-        var html='';
-        for(var i=0; i<result.length;i++)
-        {
-          var tempclass = '';
-          if(str[i]==marker)
-          {
-            html+=`<li class="${c_letter} incorrect">&nbsp</li>`;                
-          }
-          else if(str[i]==' ')
-          {
-            html+=`<li class="space">${str[i]}</li>`;                
-            
-          }
-          else if(result[i])
-          {
-            html+=`<li class="${c_letter} correct">${str[i]}</li>`;                
-          }
-          else
-          {
-            html+=`<li class="${c_letter} incorrect">${str[i]}</li>`;                
-          }
 
-        }
-
-        $('.sentence').html(html)
-         var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val());
-         var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
-         console.log('allTrue:'+allTrue);
-          if(allTrue){
-            $('.save').click();
-            alert("Super! Hit Enter key to the next sentence!");
-            $('.next').click();
-            //currentInputMode=INPUTMODE.ANSWER;
-          }
-
-        // $('#inputstr').val();
-        // times[currIdx].push
-      })
 
       $('.toBegin').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
+        times[currIdx][2] = $('#inputstr').val()
         currIdx=0;
-        //$('.debug').text(currIdx+'/'+totalCount)
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
-        //$('#solution_str').text('');
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-        updateInput();
+        $('#inputstr').val(times[currIdx][2])
+        updateHTMLDisplay();
       })
       $('.toEnd').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
+        times[currIdx][2] = $('#inputstr').val()
         currIdx=times.length-1;
-        //$('.debug').text(currIdx+'/'+totalCount)
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
-        //$('#solution_str').text('');
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-        updateInput();
+        $('#inputstr').val(times[currIdx][2])
+        updateHTMLDisplay();
       })
 
 
       $('.next').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
+        times[currIdx][2] = $('#inputstr').val()
         currIdx=Math.min(currIdx+1,times.length-1);
-        //$('.debug').text(currIdx+'/'+totalCount)
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
-        //$('#solution_str').text('');
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-        updateInput();
+        $('#inputstr').val(times[currIdx][2])
+        updateHTMLDisplay();
       })
 
       $('.prev').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
+        times[currIdx][2] = $('#inputstr').val()
         currIdx=Math.max(currIdx-1,0);
         currIdx=currIdx>0?currIdx:0
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
-        //$('#solution_str').text('')
-        $('#inputstr').val(times[currIdx][3]);
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
+        $('#inputstr').val(times[currIdx][2]);
+        updateHTMLDisplay();
       })
   
   
@@ -517,14 +366,12 @@ body
         times.splice( currIdx, 1 );
         clearTimeout(timer);
         clearTimeout(timersleep);
-        //$('#solution_str').text('')
         $('#inputstr').val('')
         if(currIdx >= times.length-1)
         {
           currIdx = times.length-1;
         }
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
+        updateHTMLDisplay();
         repeatVideo();
       })
       
@@ -539,25 +386,19 @@ body
         currIdx = currIdx-1;
         clearTimeout(timer);
         clearTimeout(timersleep);
-        //$('#solution_str').text('')
         $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
+        updateHTMLDisplay();
 
         repeatVideo();
       })
 
       $('.control_margin').change(function(){
-        // $('.debug').text('control_margin')
-        // margin =  $('.control_margin').val();
-        // console.log('margin:',margin)
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
       })
 
       $('.control_restTime').change(function(){
-        $('.debug').text('control_restTime')
         restTime =  $('.control_restTime').val();
         clearTimeout(timer);
         clearTimeout(timersleep);
@@ -566,7 +407,6 @@ body
 
       function RepeatPlay()
       {
-         $('.debug').text('repeatPlay')
         clearTimeout(timer);
         clearTimeout(timersleep);
         repeatVideo();
@@ -603,8 +443,7 @@ body
 
 
       $('.save').click(function(){
-        $('.debug').text('save');
-        times[currIdx][3] = $('#inputstr').val();
+        times[currIdx][2] = $('#inputstr').val();
         videoRecord.currentIndex = currIdx;
         videoRecord.caption = times;
         $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );

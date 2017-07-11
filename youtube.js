@@ -87,7 +87,7 @@ passport.use(new GoogleStrategy({
     logger.info(profile.name)
     var _id = 'google:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
-        if (err) {console.log(err); return done(err); }
+        if (err) {logger.error('google strategy:',err); return done(err); }
         if(foundUser){
           logger.info("user already exist, proceed to login")
           done(null, foundUser);
@@ -99,8 +99,14 @@ passport.use(new GoogleStrategy({
           newuser._id = _id;
 
           collectionUser.insertOne(newuser,function(err, newuser) {
-            if (err) {console.log(err); return done(err); }
-            forkInit(_id);
+            if (err) {var newError = VError(err,'google strategy InsertOne'); return done(newError); }
+            forkInit(_id,function(err){
+              if(err)
+              {
+                var newError = VError(err,'google strategy forkInit');
+                return done(newError);
+              }
+            });
 	        });
           done(null,newuser);
         }
@@ -119,7 +125,7 @@ passport.use(
     logger.info('facebook login:',profile.name);
     var _id = 'facebook:'+profile.id;;
       collectionUser.findOne({_id:_id},function(err, foundUser) {
-        if (err) {console.log(err); return done(err); }
+        if (err) {logger.error(err); return done(err); }
         if(foundUser){
           logger.info("user already exist, proceed to login")
           done(null, foundUser);
@@ -131,8 +137,14 @@ passport.use(
           newuser._id = _id;
 
           collectionUser.insertOne(newuser,function(err, newuser) {
-            if (err) {console.log(err); return done(err); }
-            forkInit(_id);
+            if (err) {var newError = VError(err,'facebook strategy insertOne'); return done(newError); }
+            forkInit(_id,function(err){
+              if(err)
+              {
+                var newError = VError(err,'facebook strategy forkInit');
+                return done(newError);
+              }
+            });
 	        });
           done(null,newuser);
         }
@@ -149,6 +161,7 @@ passport.serializeUser(function(user, done) {
 
 passport.deserializeUser(function(id, done) {
  collectionUser.findOne({_id:id},function(err, foundUser) {
+        if(err){logger.error('deserializeUser',err); return done(err);}
         logger.info('         deserializeUser ', id, foundUser.name)
         done(err, foundUser);
   });
@@ -156,12 +169,13 @@ passport.deserializeUser(function(id, done) {
 });
 
 //add bundle videos
-function forkInit(id){
+function forkInit(id,callback){
  bundleVideoList.forEach(function(item){
    forkVideo(item,id,function(err){
-      if (err) { console.log(err); return err; }
+      if (err) { var newError = new VError(err,'forkInit'); callback(newError); }
    })
  })
+ callback();
 }
 app.get('/admin/fork/:video_id/:userid',function(req,res){
   
@@ -771,6 +785,8 @@ app.post('/newvideo',function(req, res) {
 app.get('/',function(req,res){
   if(req.user) //logged in 
   {
+    logger.info('USER INFO',req.headers);
+
     logger.info('/',req.user._id, req.user.name);
     collectionVideo.find({owner:req.user._id},function(err, cursor) {
       if(err){return err;}
@@ -862,17 +878,22 @@ app.get('/play_modify/:id',function(req,res){
 
 })
 app.get('/play/:id',function(req,res){
-  var video_id = ObjectId(req.params.id);
-  collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
-    if (err) { console.log(err); return err; }
-    if(foundVideo){
-      //console.log("video found");
-      //console.log(typeof foundVideo.caption)
-      logger.info('/play/'+video_id,req.user.name,foundVideo.videoTitle);
-
-      res.render('play.pug',{mytime:JSON.stringify(foundVideo)})
-    }
-  });
+  if(req.user) //logged in?
+  {
+    var video_id = ObjectId(req.params.id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { logger.error('/play/'+req.params.id,req.user.name,err)}
+      if(foundVideo){
+        logger.info('/play/'+req.params.id,req.user.name,foundVideo.videoTitle);
+        res.render('play.pug',{mytime:JSON.stringify(foundVideo)})
+      }
+    });
+  }
+  else
+  {
+    logger.info('/play'+ 'not logged in access')
+    res.redirect('/')
+  }
 
 })
 
