@@ -361,24 +361,21 @@ body
       })
       
       $('.captiondelete').click(function(){
-        $('.debug').text('captiondelete')
-
         times.splice( currIdx, 1 );
         clearTimeout(timer);
         clearTimeout(timersleep);
-        $('#inputstr').val('')
         if(currIdx >= times.length-1)
         {
           currIdx = times.length-1;
         }
+        $('#inputstr').val(times[currIdx][2]);
         updateHTMLDisplay();
         repeatVideo();
       })
       
       $('.mergewithleft').click(function(){
         if(currIdx == 0) return;
-        $('.debug').text('mergewithleft')
-        times[currIdx][3] = $('#inputstr').val();
+        times[currIdx][2] = $('#inputstr').val();
         times[currIdx-1][1] = times[currIdx][1];
         times[currIdx-1][2] = times[currIdx-1][2]+' '+times[currIdx][2];
         times[currIdx-1][3] = times[currIdx-1][3]+' '+times[currIdx][3];
@@ -386,7 +383,7 @@ body
         currIdx = currIdx-1;
         clearTimeout(timer);
         clearTimeout(timersleep);
-        $('#inputstr').val(times[currIdx][3])
+        $('#inputstr').val(times[currIdx][2])
         updateHTMLDisplay();
 
         repeatVideo();
@@ -450,7 +447,4 @@ body
       })
 
 
-
-      
-   
       })

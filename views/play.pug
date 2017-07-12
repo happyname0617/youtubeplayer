@@ -78,7 +78,7 @@ body
       
     var times = videoRecord.caption;
     var totalCount = times.length;
-    var currIdx = videoRecord.currentIndex;
+    var currIdx = parseInt(videoRecord.currentIndex);
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '390',
@@ -104,8 +104,7 @@ body
     function updateInput()
     {
       var str = myconvert(times[currIdx][2],$('#inputstr').val());
-        console.log(str);
-        
+
         var html='';
         for(var i=0; i<str.length;i++)
         {
@@ -125,15 +124,11 @@ body
           }
 
         }
-          $('.sentence').html(html)
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val())) 
+        $('.sentence').html(html)
     }
       
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
-      //event.target.playVideo();
-      //player.seekTo(getStartTime(currIdx,margin))
-      $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
       updateInput();
     }
     // 5. The API calls this function when the player's state changes.
@@ -173,7 +168,6 @@ body
       player.playVideo();
       timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
       clearTimeout(timersleep);
-      // $('.debug').text(currIdx+'/'+totalCount)
 
     }
     
@@ -190,7 +184,6 @@ body
       player.playVideo();
       timer = setTimeout(repeatAfterSec,getDuration(currIdx,margin));
       clearTimeout(timersleep);
-      //$('.debug').text(currIdx+'/'+totalCount)
       updateProgressbar();
       $('#solution_str').text(times[currIdx][2]);
 
@@ -208,7 +201,6 @@ body
     function getDuration(index,margin)
     {
       var duration = (getEndTime(index,margin)-getStartTime(index,margin))*1000;
-      //console.log(duration);
       return duration;
     }
 
@@ -216,8 +208,8 @@ body
     
     function myconvert(solution, input)
     {
-      console.log('solution:',solution);
-      console.log('input:',input);
+      // console.log('solution:',solution);
+      // console.log('input:',input);
       solution = solution.trim();
       input = input.trim();
       //console.log(typeof solution);
@@ -231,7 +223,7 @@ body
       {
         temp = temp.replace(marker,temp2[i])
       }
-      console.log('result:',temp)
+      // console.log('result:',temp)
       return temp;
     }
     
@@ -259,21 +251,21 @@ body
       return result;
     }
 
-    var INPUTMODE = {
-      IDLE : {value: 0, name: "idle status", code: "i"}, 
-      ANSWER: {value: 1, name: "answer status", code: "a"}, 
-    };
+    // var INPUTMODE = {
+    //   IDLE : {value: 0, name: "idle status", code: "i"}, 
+    //   ANSWER: {value: 1, name: "answer status", code: "a"}, 
+    // };
     
-    var currentInputMode = INPUTMODE.IDLE;
+    // var currentInputMode = INPUTMODE.IDLE;
     $(document).ready(function(){
       $('.player').addClass('embed-responsive-item')
       updateProgressbar();
       $('#solution_str').text(times[currIdx][2]);
-      $('#dictationarea').hide();
-      $('#solution_str').toggle();
-      $('#editSubtitle').toggle();
+      // $('#dictationarea').hide();
+      $('#solution_str').hide();
+      $('#editSubtitle').hide();
       $('#inputstr').val(times[currIdx][3]);
-      $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+      //$('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
       $('.repeatPlay').text('START');
       $('#answer').prop('disabled', true);
       $('#answerShow').prop('disabled', true);
@@ -281,19 +273,6 @@ body
 
       updateInput();
       
-      $("html").on('keyup', function (e) {
-        if (e.ctrlKey && e.keyCode == 37) {
-          console.log('ctrl + left key typed');
-          $('.prev').click();
-          currentInputMode=INPUTMODE.IDLE;
-          
-        }
-        if (e.ctrlKey && e.keyCode == 39) {
-          console.log('ctrl + right key typed');
-          $('.next').click();
-          currentInputMode=INPUTMODE.IDLE;
-        }
-      });
 
       $("#inputstr").on('keyup', function (e) {
         if (e.keyCode != 13) {
@@ -308,10 +287,10 @@ body
         if (e.keyCode == 13) {
           e.preventDefault();
           console.log('enter key typed');
-          if(currentInputMode==INPUTMODE.IDLE)
-          {
-              $('#answer').click();
-          }
+          // if(currentInputMode==INPUTMODE.IDLE)
+          // {
+          $('#answer').click();
+          // }
           // else if(currentInputMode==INPUTMODE.ANSWER)
           // {
           //   $('.next').click();
@@ -321,19 +300,24 @@ body
       })
 
     
-
+      var seenAnswer = 0;
       $('#answerShow').click(function(){
         $('#solution_str').show();
+        seenAnswer = true;
+        
       })
       $('#EditToggle').click(function(){
         $('#editSubtitle').toggle();
       })
+      
+      var trial = 0;
+
       $('#answer').click(function(){
         $('#solution_str').text(times[currIdx][2]);
-        times[currIdx][3] = $('#inputstr').val();
+        //times[currIdx][3] = $('#inputstr').val();
         var str= myconvert(times[currIdx][2],$('#inputstr').val())
         var caseSensitiveOn = $('#caseSensitiveToggle').prop('checked');
-        console.log('caseSensitiveOn:'+caseSensitiveOn);
+        //console.log('caseSensitiveOn:'+caseSensitiveOn);
         var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val(),caseSensitiveOn);
 
         var html='';
@@ -358,50 +342,29 @@ body
             html+='<li class="'+c_letter+' incorrect">'+str[i]+'</li>';                
           }
         }
-
         $('.sentence').html(html);
         //var result = evaluateAnswer(times[currIdx][2],$('#inputstr').val(),true);
         var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
         console.log('allTrue:'+allTrue);
         if(allTrue){
+          updateSentence(currIdx,true,(trial==0&&!seenAnswer)?true:false);
+          trial = 0;
+          seenAnswer=0;
           alert("Super! Hit Enter key to the next sentence!");
-          $('.next').click();
-          //currentInputMode=INPUTMODE.ANSWER;
+          next();
+          
+        }
+        else
+        {
+          trial++;
         }
   
-           // $('#inputstr').val();
-          // times[currIdx].push
-      })
-
-      $('.toBegin').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
-        currIdx=0;
-        //$('.debug').text(currIdx+'/'+totalCount)
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-        //$('#solution_str').text('');
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-        updateInput();
-      })
-      $('.toEnd').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
-        currIdx=times.length-1;
-        //$('.debug').text(currIdx+'/'+totalCount)
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-        //$('#solution_str').text('');
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
-        updateInput();
       })
 
 
-      $('.next').click(function(){
-        save();
-        times[currIdx][3] = $('#inputstr').val()
+      function next()
+      {
+        //times[currIdx][3] = $('#inputstr').val()
         if(currIdx==times.length-1) //if last item
         {
           //TODO :show user's study activity e.g. passed, failed, skipped
@@ -417,126 +380,20 @@ body
           repeatVideo();
           //$('#solution_str').text('');
           $('#solution_str').hide();
-          $('#inputstr').val(times[currIdx][3])
-          $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
+          $('#inputstr').val('');
+          //$('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()));
           updateInput();
-        }
-      })
-
-      $('.prev').click(function(){
-        times[currIdx][3] = $('#inputstr').val()
-        currIdx=Math.max(currIdx-1,0);
-        currIdx=currIdx>0?currIdx:0
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-        //$('#solution_str').text('')
-        $('#inputstr').val(times[currIdx][3]);
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
-      })
-
-
-
-      $('.rightboder_2right01').click(function(){
-        $('.debug').text('rightboder_2right01')
-        times[currIdx][1] = getEndTime(currIdx,0)+0.1;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo()
-      })
-    
-      $('.rightboder_2right03').click(function(){
-        $('.debug').text('rightboder_2right03')
-        times[currIdx][1] = getEndTime(currIdx,0)+0.3;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-
-      $('.rightboder_2left01').click(function(){
-        $('.debug').text('rightboder_2left01')
-        times[currIdx][1] = getEndTime(currIdx,0)-0.1;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-    
-      $('.rightboder_2left03').click(function(){
-        $('.debug').text('rightboder_2left03')
-        times[currIdx][1] = getEndTime(currIdx,0)-0.3;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-
-      $('.leftboder_2left01').click(function(){
-        $('.debug').text('leftboder_2left01')
-        times[currIdx][0] = getStartTime(currIdx,0)-0.1;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-    
-      $('.leftboder_2left03').click(function(){
-        $('.debug').text('leftboder_2left03')
-        times[currIdx][0] = getStartTime(currIdx,0)-0.3;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-
-      $('.leftboder_2right01').click(function(){
-        $('.debug').text('leftboder_2right01')
-        times[currIdx][0] = getStartTime(currIdx,0)+0.1;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
-    
-      $('.leftboder_2right03').click(function(){
-        $('.debug').text('leftboder_2right03')
-        times[currIdx][0] = getStartTime(currIdx,0)+0.3;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
-      })
+        }        
+      }
       
-      $('.captiondelete').click(function(){
-        $('.debug').text('captiondelete')
-
-        times.splice( currIdx, 1 );
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        //$('#solution_str').text('')
-        $('#inputstr').val('')
-        if(currIdx >= times.length-1)
-        {
-          currIdx = times.length-1;
-        }
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
-        repeatVideo();
+      //skip
+      $('.next').click(function(){
+        //save();
+        updateSentence(currIdx,false,false);
+        next();
       })
-    
-      $('.mergewithleft').click(function(){
-        if(currIdx == 0) return;
-        $('.debug').text('mergewithleft')
-        times[currIdx][3] = $('#inputstr').val();
-        times[currIdx-1][1] = times[currIdx][1];
-        times[currIdx-1][2] = times[currIdx-1][2]+' '+times[currIdx][2];
-        times[currIdx-1][3] = times[currIdx-1][3]+' '+times[currIdx][3];
-        times.splice( currIdx, 1 );
-        currIdx = currIdx-1;
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        //$('#solution_str').text('')
-        $('#inputstr').val(times[currIdx][3])
-        $('#underline_str').text(myconvert(times[currIdx][2],$('#inputstr').val()))
-        updateInput();
 
-        repeatVideo();
-      })
+
 
       $('.control_margin').change(function(){
         // $('.debug').text('control_margin')
@@ -590,16 +447,22 @@ body
       }
 
 
-      function save()
-      {
-        $('.debug').text('save');
-        times[currIdx][3] = $('#inputstr').val();
-        videoRecord.currentIndex = currIdx;
-        videoRecord.caption = times;
-        $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );
-      }
+      // function save()
+      // {
+      //   $('.debug').text('save');
+      //   times[currIdx][3] = $('#inputstr').val();
+      //   videoRecord.currentIndex = currIdx;
+      //   videoRecord.caption = times;
+      //   $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );
+      // }
       
-      $('.save').click(function(){
-        save();
-      })
+      function updateSentence(_index,_isCorrect,_isCorrectAtOnce)
+      {
+        $.post( "/update/sentence", {videoID:videoRecord._id,index:_index,isCorrect:_isCorrect,isCorrectAtOnce:_isCorrectAtOnce} );
+      }
+
+      // $('.save').click(function(){
+      //   save();
+      // })
+      
     })

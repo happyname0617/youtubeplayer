@@ -1,0 +1,144 @@
+doctype html
+include head.pug
+body
+  include menu_login.pug
+  .container.theme-showcase(role='main')
+    .row
+      .col-md-12
+        h2 Ranking
+        table.table
+          thead
+            tr
+              th
+                | Ranking
+              th
+                | UserName
+              th
+                | Score
+              th
+                | LastTime acess
+          tbody
+            each val, index in ranking
+              tr
+                td
+                  | #{index+1}
+                td
+                  | #{val.displayName}
+                td
+                  | #{val.score}
+                td
+                  | #{new Date(val.lastTime).toLocaleDateString()}
+        // Modal
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+          .modal-dialog(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+                h4#myModalLabel.modal-title Preview
+              .modal-body
+                .embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item#ytplayer(type='text/html', width='720', height='405', src='https://www.youtube.com/embed/M7lc1UVf-VE?fs=0&rel=0&showinfo=0', frameborder='0', allowfullscreen='')
+              .modal-footer
+                a.btn.btn-default(type='button', data-dismiss='modal') Close
+                a#fork.btn.btn-primary(type='button',href="/fork") Add to MyBox
+  script.
+    function getVideoCaption(youtubeVideoId, callback)
+    {
+        //get video caption language list
+        var url_lang = "/get/lang/"+youtubeVideoId;
+        console.log(url_lang);
+        $.getJSON( url_lang, function( caption ) {
+          callback(caption);
+        });
+  
+    }
+    function getVideoInfo(youtubeVideoId,callback)
+    {
+        //get video info
+        var url_vinfo = "/get/videoInfo/"+youtubeVideoId;
+        //console.log(url_vinfo);
+        $.getJSON( url_vinfo, function( vInfo ) {
+          callback(vInfo)
+        });    
+    }
+ 
+    $(function(){
+        $('#myModal').modal({
+            keyboard: true,
+            backdrop: "static",
+            show:false
+        }).on('show.bs.modal', function(){ //subscribe to show method
+              var lines = $(this).data('id').split(':'); //get the id from tr
+              console.log($(this).data('id'));
+              var videoID = lines[0];
+              var youtubeVideoId = lines[1];
+              console.log('videoID:',videoID);
+              console.log('youtubeVideoId:',youtubeVideoId);
+              var url = 'https://www.youtube.com/embed/'+youtubeVideoId+'?fs=0&rel=0&showinfo=0';
+              $(this).find('iframe').attr('src', url);
+              $('#fork').attr('href', '/fork/'+videoID);
+        }).on('hidden.bs.modal', function(){ //subscribe to show method
+              console.log('stop video');
+              $("iframe").attr("src", $("iframe").attr("src"));
+        });
+        
+        $(".table").find('tr[data-target]').on('click', function(){
+         $('#myModal').data('id',$(this).data('id'));
+        }); 
+    })
+    
+    $(document).ready(function(){
+      
+      $('#youtubeurl').on('paste',function(){
+        setTimeout(function () {
+        var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]
+        console.log(youtubeVideoId);
+        getVideoInfo(youtubeVideoId,function(vInfo){
+          console.log(vInfo);
+          var title = vInfo.items[0].snippet.title;
+          var description = vInfo.items[0].snippet.description;
+          var thumbnailUrl = vInfo.items[0].snippet.thumbnails.default.url
+          var thumbWidth = vInfo.items[0].snippet.thumbnails.default.width
+          var thumbHeight = vInfo.items[0].snippet.thumbnails.default.height;
+          var defaultAudioLanguage = vInfo.items[0].snippet.defaultAudioLanguage;
+          $('#VideoInfo').html(`<img src='${thumbnailUrl}' width=${thumbWidth} height=${thumbHeight}><span>${title}</span>`);
+
+          getVideoCaption(youtubeVideoId,function(caption){
+            console.log(JSON.stringify(caption));
+            var htmlstr = '';
+            for(var i=0; i<caption.length;i++)
+            {
+              if(defaultAudioLanguage==caption[i][0]){
+                htmlstr=htmlstr+`<option value="${caption[i][0]}" selected>${caption[i][1]}</option>`
+              }
+              else
+              {
+                htmlstr=htmlstr+`<option value="${caption[i][0]}">${caption[i][1]}</option>`
+              }
+            }
+            $('#VideoCaptions').html(`<select class='language' name='lang'>${htmlstr}</select>`)
+  
+          });          
+        });
+
+        $('#youtubeID').val(youtubeVideoId);
+        }, 100);
+      });
+
+    $('#youtubeurl').keypress(function (e) {
+    var key = e.which;
+    //console.log(e)
+    if(key == 13)  // the enter key code
+    {
+    $('#youtubeurl').click();
+    }
+    });
+    })
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-100905207-1', 'auto');
+    ga('send', 'pageview');

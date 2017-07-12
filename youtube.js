@@ -1,6 +1,7 @@
 var env = process.env.NODE_ENV || 'development';
 var config = require('./config')[env];
-
+//var dictionary = require('./dictionary');
+//var freqlist_DE = require('./freqlist_DE');
 const express = require('express')
 var session = require('express-session');
 //var FileStore = require('session-file-store')(session);
@@ -47,6 +48,7 @@ var mongodb;
 var collectionUser;
 var collectionVideo;
 var collectionLog;
+var collectionSentence;
 var bundleVideoList =config.BUNDLE_VIDEO_LIST;
 //["595a55225162b73b3ca72b91","5948eb94076d52107e95e38b","5948f20a076d52107e95e38d","5958baac7ed9c93c76967137","5958bf087ed9c93c76967138","5958bfab7ed9c93c76967139"];
 //bundle video list
@@ -66,6 +68,7 @@ function dbconnect(url)
     collectionUser = mongodb.collection('User');
     collectionVideo = mongodb.collection('Video');
     collectionLog = mongodb.collection('Log');
+    collectionSentence = mongodb.collection('Sentence');
   });
 }
 
@@ -97,6 +100,8 @@ passport.use(new GoogleStrategy({
           logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
+          newuser.displayname = JSON.stringify(profile._json.name);
+
 
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {var newError = VError(err,'google strategy InsertOne'); return done(newError); }
@@ -135,6 +140,7 @@ passport.use(
           logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
+          newuser.displayname = JSON.stringify(profile._json.name);
 
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {var newError = VError(err,'facebook strategy insertOne'); return done(newError); }
@@ -208,7 +214,6 @@ app.get('/publish/:video_id',function(req,res){
       else
       {
           console.log('video is not existing! something wrong')
-          res.redirect('/');
       }
     });
   }
@@ -326,6 +331,18 @@ function VideoFind(query,callback)
       });
   })
 }
+
+function findSentence(query,callback){
+  collectionSentence.find(query,function(err, cursor) {
+      if(err){console.log(err); return err;}
+      cursor.toArray(function(err,result){
+        if(err){console.log(err); return err;}
+        callback(result);
+      });
+  })
+
+  
+}
 app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
@@ -362,6 +379,22 @@ app.get('/feed',function(req,res){
   }
 })
 
+app.get('/ranking',function(req,res){
+  if(req.user) //logged in 
+  {
+    logger.info('/ranking',req.user._id,req.user.name)
+    collectionUser.find({}).sort({"score":-1}).limit(50).toArray(function(err,list){
+        if (err) {console.log(err); return err; }
+        res.render('ranking.pug',{ranking:list})
+    })
+    
+  }
+  else //logged out user
+  {
+    logger.info('/ranking not logged in access')
+    res.redirect('/');
+  }
+})
 app.get('/forum',function(req,res){
   if(req.user) //logged in 
   {
@@ -372,6 +405,8 @@ app.get('/forum',function(req,res){
     res.redirect('/')
   }
 })
+
+
 app.get('/dbtest',function(req, res) {
     // Connection URL
 
@@ -446,6 +481,101 @@ app.get('/auth/google/callback',
   passport.authenticate('google', { successRedirect:'/',
                                     failureRedirect: '/' }));
 
+function addScore(userID, additionalScore,callback)
+{
+  collectionUser.updateOne({_id:userID},{$inc:{"score":additionalScore}},function(err)
+  {
+    if(err)
+    {
+      callback(err);
+    }
+    else
+    {
+      callback(null);
+    }
+  })
+}
+
+
+app.post('/update/sentence', function(req, res){
+  if(req.user)
+  {
+    logger.info('isCorrect',req.body.isCorrect,'typeof',typeof req.body.isCorrect);
+    logger.info('isCorrectisCorrectAtOnce',req.body.isCorrectAtOnce);
+    var videoID = req.body.videoID;
+    var index = parseInt(req.body.index);
+    var isCorrect = req.body.isCorrect=='true'?1:0;
+    var isCorrectAtOnce = req.body.isCorrectAtOnce=='true'?1:0;
+    var sentenceID = videoID+':'+index;        
+    //when correct==true, give a score to user
+    logger.info('/update/sentence videoID',videoID);
+    logger.info('/update/sentence index',index);
+    logger.info('/update/sentence correct',isCorrect);
+    logger.info('/update/sentence correctAtOnce',isCorrectAtOnce);
+    var video_id = ObjectId(videoID);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) {console.log(err); return err; }
+      if(foundVideo){
+        collectionSentence.findOne({_id:sentenceID},function(err,result){
+          // console.log("err:",err);
+          // console.log("result:",result);
+          if (err) {console.log('some error:',err); return err; }
+          
+          if(result)
+          {
+            logger.info('sentence exist, update it')
+            collectionSentence.updateOne({_id:sentenceID},{$inc:{"correctAtOnce":isCorrectAtOnce,"correct":isCorrect}})
+          }
+          else 
+          {
+            logger.info('sentence does not exist, add it new')
+            var newSentence = 
+              {
+                _id:sentenceID,
+                owner:req.user._id,
+                languageCode:foundVideo.videoCaptionLangCode,
+                sentence:foundVideo.caption[index],
+                sentence_frontNeighbour:foundVideo.caption.slice(index-3,index),
+                sentence_postNeighbour:foundVideo.caption.slice(index+1,index+3),//TODO
+                sentenceFreq:1,
+                wordsFreq:[1,2,3,4],
+                videoID:videoID,
+                youtubeVideoId:foundVideo.YouTubeVideoID,
+                correctAtOnce:isCorrectAtOnce,
+                correct:isCorrect
+              }
+              insertSentence(newSentence,function(err,inserted_id){
+                if (err) {console.log(err); return err; }
+                logger.info('new sentence successfully added',inserted_id);
+              });
+
+          }
+          //foundVideo.caption[index][3] = sentence;
+          logger.info("/update video found, updated it successfully",req.user._id, req.user.name, index+'/'+foundVideo.caption.length,foundVideo.videoTitle)
+          //var targetSentence= "$.caption."+index+".3";
+          collectionVideo.updateOne({_id:video_id},{ $set: {currentIndex:index+1} })
+          
+          var newScore = isCorrectAtOnce*5+isCorrect;
+          addScore(req.user._id,newScore,function(err)
+          {
+            if (err) {console.log(err); return err; }
+            logger.info('New score added to User',newScore,req.user.name);
+          });
+        })
+
+      }
+      else
+      {
+          logging.info('/update video is not existing! something wrong')
+      }
+    });
+  }
+  else{
+    logging.info('/update/sentence not logged in approach')
+    res.redirect('/');
+  }
+
+});
 app.post('/update', function(req, res){
   if(req.user)
   {
@@ -649,6 +779,15 @@ function clearCaptionUserAnswer(caption)
   return caption;
 }
 
+function  insertSentence(sentence,callback)
+{
+  collectionSentence.insertOne(sentence,function(err, insertedDocument) {
+          if (err) {console.log(err);callback(err)}
+          logger.info('forkVideo: video forked successfully:'+insertedDocument.insertedId);
+          callback(null,insertedDocument.insertedId);
+        })
+}
+
 function forkVideo(videoRecordId,userID,callback)//fork given video to the given user
 {
     var video_id = ObjectId(videoRecordId);
@@ -786,7 +925,8 @@ app.get('/',function(req,res){
   if(req.user) //logged in 
   {
     logger.info('USER INFO',req.headers);
-
+    var currentTime = new Date().getTime();
+    collectionUser.updateOne({_id:req.user._id},{ $set: {lastTime:currentTime}});
     logger.info('/',req.user._id, req.user.name);
     collectionVideo.find({owner:req.user._id},function(err, cursor) {
       if(err){return err;}
