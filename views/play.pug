@@ -2,10 +2,10 @@ doctype html
 include head.pug
 body
   include menu_login.pug
-  .container.theme-showcase(role='main')
+  .container-fluid.theme-showcase(role='main')
     .row
       .col-md-2
-      .col-md-8
+      .col-md-8.col-xs-12
         .embed-responsive.embed-responsive-16by9
           #player
         .progress
@@ -88,11 +88,13 @@ body
                     'rel' : 0,
                     'showinfo' : 0,
                     'showsearch' : 0,
-                    'controls' : 1,
+                    'controls' : 0,
                     'loop' : 0,
                     'enablejsapi' : 1,
                     'disablekb': 1,
-                    'fs':0
+                    'fs':0,
+                    'playsinline':1,
+                    'cc_load_policy':0
                   },
         videoId: videoRecord.YouTubeVideoID,
         events: {
