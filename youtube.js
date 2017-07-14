@@ -579,9 +579,27 @@ app.post('/update/sentence', function(req, res){
   }
 
 });
+
+app.post('/update/user', function(req, res){
+  if(req.user)
+  {
+    res.send('okay update user');
+    var displayName = req.body.displayName?req.body.displayName:req.user.displayName;
+    var langCode = req.body.langCode;
+    logger.info('update user displayName',displayName);
+    logger.info('update user langCode',langCode);
+    collectionUser.updateOne({_id:req.user._id},{ $set: {displayName:displayName,langCode:langCode}});
+  }
+  else{
+    logging.info('/update user not logged in approach')
+    res.redirect('/');
+  }
+
+});
 app.post('/update', function(req, res){
   if(req.user)
   {
+    res.send('okay update');
     //TODO user login status check
     //console.log(req.body.videoRecord)
     var videoRecord = JSON.parse(req.body.videoRecord);
@@ -928,10 +946,10 @@ app.get('/mypage',function(req,res){
       if(err){logger.error('/mypage',err);return err;}
         if(foundUser)
         {
-          var langCode = foundUser.languageCode?foundUser.languageCode:"en";
-          logger.info('langCode from DB',typeof foundUser.languageCode);
+          var langCode = foundUser.langCode?foundUser.langCode:"en";
+          logger.info('langCode from DB',typeof foundUser.langCode);
           logger.info('langCode selected',langCode);
-          res.render('mypage.pug',{score:foundUser.score[langCode]|0,displayName:foundUser.displayName,language:"English",ranking:'12',langCode:"de"})
+          res.render('mypage.pug',{score:foundUser.score[langCode]|0,displayName:foundUser.displayName,language:"English",ranking:'12',langCode:langCode})
         }
         else{
           res.send('/mypage no user found')

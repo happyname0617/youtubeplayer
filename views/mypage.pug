@@ -9,7 +9,7 @@ body
         //h4 Ranking: #{ranking}
         h4 Score: #{score}
         h4 Name: 
-          input(type='text',value=displayName)
+          input#diplayName(type='text',value=displayName)
         h4 Site Language: #{language}
         h4 Study Language: 
           select.study_language
@@ -24,36 +24,25 @@ body
 
 
   script.
-    function getVideoCaption(youtubeVideoId, callback)
-    {
-        //get video caption language list
-        var url_lang = "/get/lang/"+youtubeVideoId;
-        console.log(url_lang);
-        $.getJSON( url_lang, function( caption ) {
-          callback(caption);
-        });
-  
-    }
-    function getVideoInfo(youtubeVideoId,callback)
-    {
-        //get video info
-        var url_vinfo = "/get/videoInfo/"+youtubeVideoId;
-        //console.log(url_vinfo);
-        $.getJSON( url_vinfo, function( vInfo ) {
-          callback(vInfo)
-        });    
-    }
-  
+
     $(document).ready(function(){
       console.log('#{langCode}');
       $("select").val('#{langCode}');
-
-      // $("select > option").each(function() {
-      //   if(this.value=='#{langCode}')
-      //   {
-      //   }
-      // });
-
+      $('.save').click(function(){
+        
+        var updatedDisplayName = $('#diplayName').val();
+        if(updatedDisplayName.trim().length==0)
+          return alert('displayName cannot be blank!');
+        var result = confirm('update chanages?')
+        if(result)
+        {
+          var updatedLangCode = $("select").val();
+          console.log({langCode:updatedLangCode,displayName:updatedDisplayName})
+  
+          $.post( "/update/user", {langCode:updatedLangCode,displayName:updatedDisplayName});
+          alert('saved!')
+        }
+      });
       $('#youtubeurl').on('paste',function(){
         setTimeout(function () {
         var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]
