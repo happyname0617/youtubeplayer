@@ -27,7 +27,7 @@ body
           .btn-group(role='group')
             button.next.btn.btn-danger Skip
         p
-        .well
+        .well#playOption
           h4 Play Option
           label rest time between repeating
             select.control_restTime
@@ -94,7 +94,8 @@ body
                     'disablekb': 1,
                     'fs':0,
                     'playsinline':1,
-                    'cc_load_policy':0
+                    'cc_load_policy':0,
+                    'autohide':1
                   },
         videoId: videoRecord.YouTubeVideoID,
         events: {
@@ -132,6 +133,11 @@ body
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
       updateInput();
+      if(currIdx==0)
+      { 
+        alert('Click blue [START] button');
+      }
+          
     }
     // 5. The API calls this function when the player's state changes.
     //    The function indicates that when playing a video (state=1),
@@ -272,9 +278,20 @@ body
       $('#answer').prop('disabled', true);
       $('#answerShow').prop('disabled', true);
       $('.next').prop('disabled', true);
-
-      updateInput();
+      $('#inputstr').prop('disabled', true);
+      $('#playOption').hide();
       
+
+
+      
+      $('#inputstr').focus();
+      updateInput();
+
+      $(document).keypress(function(e)
+      {
+        console.log(e.keyCode)
+        $('#inputstr').focus();
+      })
 
       $("#inputstr").on('keyup', function (e) {
         if (e.keyCode != 13) {
@@ -306,6 +323,8 @@ body
       $('#answerShow').click(function(){
         $('#solution_str').show();
         seenAnswer = true;
+        $('#inputstr').focus();
+
         
       })
       $('#EditToggle').click(function(){
@@ -352,14 +371,14 @@ body
           updateSentence(currIdx,true,(trial==0&&!seenAnswer)?true:false);
           trial = 0;
           seenAnswer=0;
-          alert("Super! Hit Enter key to the next sentence!");
+          //alert("Super! Hit Enter key to the next sentence!");
           next();
-          
         }
         else
         {
           trial++;
         }
+        $('#inputstr').focus();
   
       })
 
@@ -393,6 +412,7 @@ body
         //save();
         updateSentence(currIdx,false,false);
         next();
+        $('#inputstr').focus();
       })
 
 
@@ -409,9 +429,6 @@ body
       $('.control_restTime').change(function(){
         $('.debug').text('control_restTime')
         restTime =  $('.control_restTime').val();
-        clearTimeout(timer);
-        clearTimeout(timersleep);
-        repeatVideo();
       })
 
       function RepeatPlay()
@@ -424,6 +441,10 @@ body
         $('#answer').prop('disabled', false);
         $('#answerShow').prop('disabled', false);
         $('.next').prop('disabled', false);
+        $('#inputstr').prop('disabled', false);
+        $('#playOption').show();
+
+
       }
     
       $('.repeatPlay').click(function(){
@@ -434,6 +455,8 @@ body
         else
         {
           RepeatPlay();
+          $('#inputstr').focus();
+
         }
       })
 
@@ -442,10 +465,15 @@ body
         clearTimeout(timer);
         clearTimeout(timersleep);
         player.pauseVideo();
-        $('.repeatPlay').text('START');
+        $('.repeatPlay').text('RESUME');
         $('#answer').prop('disabled', true);
         $('#answerShow').prop('disabled', true);
         $('.next').prop('disabled', true);
+        $('#inputstr').prop('disabled', true);
+        $('#playOption').hide();
+
+
+        
       }
 
 
@@ -466,5 +494,4 @@ body
       // $('.save').click(function(){
       //   save();
       // })
-      
     })

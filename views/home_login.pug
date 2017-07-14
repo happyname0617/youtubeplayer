@@ -15,8 +15,8 @@ body
                 | Language
               th
                 | Progress
-              th
-                | Menu
+              // th
+              //   | Menu
           tbody
             each video in videolist
               tr
@@ -25,78 +25,37 @@ body
                 td
                   | #{video.videoCaptionLangCode}
                 td
-                  | #{video.currentIndex}/#{video.caption.length}
-                td
-                  a#delete(href='/delete/'+video._id,onclick="return confirm('Are you sure?')") delete
+                  if video.currentIndex==video.caption.length
+                    | completed
+                  else if video.currentIndex == 0
+                    | new
+                  else
+                    | #{video.currentIndex+1}/#{video.caption.length}
+                // td
+                //   a#delete(href='/delete/'+video._id,onclick="return confirm('Are you sure?')") delete
 
 
 
   script.
-    function getVideoCaption(youtubeVideoId, callback)
-    {
-        //get video caption language list
-        var url_lang = "/get/lang/"+youtubeVideoId;
-        console.log(url_lang);
-        $.getJSON( url_lang, function( caption ) {
-          callback(caption);
-        });
-  
-    }
-    function getVideoInfo(youtubeVideoId,callback)
-    {
-        //get video info
-        var url_vinfo = "/get/videoInfo/"+youtubeVideoId;
-        //console.log(url_vinfo);
-        $.getJSON( url_vinfo, function( vInfo ) {
-          callback(vInfo)
-        });    
-    }
-  
     $(document).ready(function(){
-      $('#youtubeurl').on('paste',function(){
-        setTimeout(function () {
-        var youtubeVideoId = $('#youtubeurl').val().split("v=")[1]
-        console.log(youtubeVideoId);
-        getVideoInfo(youtubeVideoId,function(vInfo){
-          console.log(vInfo);
-          var title = vInfo.items[0].snippet.title;
-          var description = vInfo.items[0].snippet.description;
-          var thumbnailUrl = vInfo.items[0].snippet.thumbnails.default.url
-          var thumbWidth = vInfo.items[0].snippet.thumbnails.default.width
-          var thumbHeight = vInfo.items[0].snippet.thumbnails.default.height;
-          var defaultAudioLanguage = vInfo.items[0].snippet.defaultAudioLanguage;
-          $('#VideoInfo').html(`<img src='${thumbnailUrl}' width=${thumbWidth} height=${thumbHeight}><span>${title}</span>`);
-
-          getVideoCaption(youtubeVideoId,function(caption){
-            console.log(JSON.stringify(caption));
-            var htmlstr = '';
-            for(var i=0; i<caption.length;i++)
+      $('a').click(function()
+      {
+        if($(this).parent().next().next().text() == "completed")
+        {
+            var result = confirm('Do you want to study again?')
+            if(result)
             {
-              if(defaultAudioLanguage==caption[i][0]){
-                htmlstr=htmlstr+`<option value="${caption[i][0]}" selected>${caption[i][1]}</option>`
-              }
-              else
-              {
-                htmlstr=htmlstr+`<option value="${caption[i][0]}">${caption[i][1]}</option>`
-              }
+              event.preventDefault();
+              var url = $(this).attr('href').replace('/play/','/playagain/')
+              window.location.replace(url);
             }
-            $('#VideoCaptions').html(`<select class='language' name='lang'>${htmlstr}</select>`)
-  
-          });          
-        });
+            else
+            {
+              event.preventDefault();
+            }
+        }
 
-        $('#youtubeID').val(youtubeVideoId);
-        }, 100);
       });
-
-    $('#youtubeurl').keypress(function (e) {
-    var key = e.which;
-    //console.log(e)
-    if(key == 13)  // the enter key code
-    {
-    $('#youtubeurl').click();
-    }
-    });
     })
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

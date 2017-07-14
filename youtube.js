@@ -2,6 +2,7 @@ var env = process.env.NODE_ENV || 'development';
 var config = require('./config')[env];
 //var dictionary = require('./dictionary');
 //var freqlist_DE = require('./freqlist_DE');
+var languageCode = require('./languageCode');
 const express = require('express')
 var session = require('express-session');
 //var FileStore = require('session-file-store')(session);
@@ -498,6 +499,7 @@ function addScore(userID, additionalScore,callback)
 
 
 app.post('/update/sentence', function(req, res){
+  res.send('okay');
   if(req.user)
   {
     logger.info('isCorrect',req.body.isCorrect,'typeof',typeof req.body.isCorrect);
@@ -551,9 +553,10 @@ app.post('/update/sentence', function(req, res){
 
           }
           //foundVideo.caption[index][3] = sentence;
-          logger.info("/update video found, updated it successfully",req.user._id, req.user.name, index+'/'+foundVideo.caption.length,foundVideo.videoTitle)
+          logger.info("/update video found, updated it successfully",req.user._id, req.user.name, (index+2)+'/'+foundVideo.caption.length,foundVideo.videoTitle)
           //var targetSentence= "$.caption."+index+".3";
-          collectionVideo.updateOne({_id:video_id},{ $set: {currentIndex:index+1} })
+          
+          collectionVideo.updateOne({_id:video_id},{ $set: {currentIndex:index+1} }) 
           
           var newScore = isCorrectAtOnce*5+isCorrect;
           addScore(req.user._id,newScore,function(err)
@@ -572,7 +575,7 @@ app.post('/update/sentence', function(req, res){
   }
   else{
     logging.info('/update/sentence not logged in approach')
-    res.redirect('/');
+    
   }
 
 });
@@ -764,8 +767,6 @@ function getVideoCaption(YouTubeVideoID,languageID,callback){
   
 }
 
-
-
 function clearCaptionUserAnswer(caption)
 {
   //caption[0] start time
@@ -783,7 +784,7 @@ function  insertSentence(sentence,callback)
 {
   collectionSentence.insertOne(sentence,function(err, insertedDocument) {
           if (err) {console.log(err);callback(err)}
-          logger.info('forkVideo: video forked successfully:'+insertedDocument.insertedId);
+          logger.info('insertSentence: inserted successfully:'+insertedDocument.insertedId);
           callback(null,insertedDocument.insertedId);
         })
 }
@@ -918,6 +919,32 @@ app.post('/newvideo',function(req, res) {
 //   })
 // })
 
+  
+app.get('/mypage',function(req,res){
+  if(req.user) //logged in 
+  {
+    logger.info('/mypage',req.user.displayName,req.user._id);
+    collectionUser.findOne({_id:req.user._id},function(err, foundUser) {
+      if(err){logger.error('/mypage',err);return err;}
+        if(foundUser)
+        {
+          var langCode = foundUser.languageCode?foundUser.languageCode:"en";
+          logger.info('langCode from DB',typeof foundUser.languageCode);
+          logger.info('langCode selected',langCode);
+          res.render('mypage.pug',{score:foundUser.score[langCode]|0,displayName:foundUser.displayName,language:"English",ranking:'12',langCode:"de"})
+        }
+        else{
+          res.send('/mypage no user found')
+        }
+    })
+  }
+  else
+  {
+    logger.error('/mypage not logged in access')
+    res.send('log logged in access');
+  }
+
+})
 
   
   
@@ -932,7 +959,15 @@ app.get('/',function(req,res){
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
         if(err){return err;}
-        //console.log(foundVideoList)
+        logger.info('foundVideoList length',foundVideoList.length);
+        for(var i=0;i<foundVideoList.length;i++)
+        {
+          logger.info(i,foundVideoList[i].videoTitle,ObjectId(foundVideoList[i]._id));
+        }
+        for(var i=0;i<foundVideoList.length;i++)
+        {
+          logger.info(i,foundVideoList[i].caption.length,foundVideoList[i].videoTitle);
+        }
         res.render('home_login',{videolist:foundVideoList})
       });
     })
@@ -1017,6 +1052,29 @@ app.get('/play_modify/:id',function(req,res){
   }
 
 })
+app.get('/playagain/:id',function(req,res){
+  if(req.user) //logged in?
+  {
+    var video_id = ObjectId(req.params.id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { logger.error('/playagain/'+req.params.id,req.user.name,err)}
+      if(foundVideo){
+        logger.info('/playagain/'+req.params.id,req.user.name,foundVideo.videoTitle);
+        foundVideo.currentIndex=0;
+        foundVideo.caption = clearCaptionUserAnswer(foundVideo.caption);
+        res.render('play.pug',{mytime:JSON.stringify(foundVideo)})
+        collectionVideo.updateOne({_id:video_id},{ $set: { caption : foundVideo.caption, currentIndex:foundVideo.currentIndex } })
+      }
+    });
+  }
+  else
+  {
+    logger.info('/playagain'+ 'not logged in access')
+    res.redirect('/')
+  }
+})
+
+
 app.get('/play/:id',function(req,res){
   if(req.user) //logged in?
   {
