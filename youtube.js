@@ -401,7 +401,7 @@ app.get('/ranking',function(req,res){
     query_search[sortstr]= {$exists: true};
     var query_sort={};
     query_sort[sortstr]=-1;
-    collectionUser.find(query_search).sort(query_sort).limit(20).toArray(function(err,list){
+    collectionUser.find(query_search).sort(query_sort).limit(10).toArray(function(err,list){
               logger.info(list.length)
         if (err) {console.log(err); return err; }
         list.forEach(function(item){
