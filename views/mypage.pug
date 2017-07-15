@@ -7,7 +7,7 @@ body
       .col-md-12.col-xs-12
         h2 MyPage
         //h4 Ranking: #{ranking}
-        h4 Score: #{score}
+        h4 Score: #{score.toFixed(2)}
         h4 Name: 
           input#diplayName(type='text',value=displayName)
         h4 Site Language: #{language}
@@ -40,7 +40,8 @@ body
           console.log({langCode:updatedLangCode,displayName:updatedDisplayName})
   
           $.post( "/update/user", {langCode:updatedLangCode,displayName:updatedDisplayName});
-          alert('saved!')
+          alert('saved!');
+          window.location.replace("/mypage");
         }
       });
       $('#youtubeurl').on('paste',function(){

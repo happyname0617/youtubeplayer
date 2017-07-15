@@ -101,8 +101,10 @@ passport.use(new GoogleStrategy({
           logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
-          newuser.displayname = JSON.stringify(profile._json.name);
-
+          newuser.displayName = JSON.stringify(profile._json.name);
+          newuser.langCode = 'de';
+          newuser.scores = {'de':0};
+          logger.info('new user displayName',newuser.displayName)
 
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {var newError = VError(err,'google strategy InsertOne'); return done(newError); }
@@ -141,8 +143,9 @@ passport.use(
           logger.info("new user, proceed to login")
           var newuser = profile._json;
           newuser._id = _id;
-          newuser.displayname = JSON.stringify(profile._json.name);
-
+          newuser.displayName = profile._json.name;
+          newuser.langCode = 'de';
+          newuser.scores = {'de':0};
           collectionUser.insertOne(newuser,function(err, newuser) {
             if (err) {var newError = VError(err,'facebook strategy insertOne'); return done(newError); }
             forkInit(_id,function(err){
@@ -169,8 +172,15 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(id, done) {
  collectionUser.findOne({_id:id},function(err, foundUser) {
         if(err){logger.error('deserializeUser',err); return done(err);}
-        logger.info('         deserializeUser ', id, foundUser.name)
-        done(err, foundUser);
+        if(foundUser)
+        {
+          logger.info('         deserializeUser ', id, foundUser.name)
+          done(err, foundUser);
+        }
+        else
+        {
+          done('not existing FoundUser');
+        }
   });
 
 });
@@ -348,7 +358,7 @@ app.get('/feed',function(req,res){
   if(req.user) //logged in 
   {
     logger.info('/feed',req.user._id,req.user.name)
-    VideoFind({"owner":"public"},function(publicList){
+    VideoFind({"owner":"public",videoCaptionLangCode:req.user.langCode},function(publicList){
       VideoFind({"owner":req.user._id},function(userList){
         var newList=[];
         publicList.forEach(function(publicItem){
@@ -383,9 +393,21 @@ app.get('/feed',function(req,res){
 app.get('/ranking',function(req,res){
   if(req.user) //logged in 
   {
-    logger.info('/ranking',req.user._id,req.user.name)
-    collectionUser.find({}).sort({"score":-1}).limit(50).toArray(function(err,list){
+    logger.info('/ranking',req.user._id,req.user.name);
+    var langCode = req.user.langCode;
+    var sortstr = 'scores'+'.'+langCode;
+    logger.info('sortstr', sortstr)
+    var query_search = {};
+    query_search[sortstr]= {$exists: true};
+    var query_sort={};
+    query_sort[sortstr]=-1;
+    collectionUser.find(query_search).sort(query_sort).limit(20).toArray(function(err,list){
+              logger.info(list.length)
         if (err) {console.log(err); return err; }
+        list.forEach(function(item){
+          item.score = item.scores[langCode];
+        })
+        logger.info(list.length)
         res.render('ranking.pug',{ranking:list})
     })
     
@@ -482,9 +504,11 @@ app.get('/auth/google/callback',
   passport.authenticate('google', { successRedirect:'/',
                                     failureRedirect: '/' }));
 
-function addScore(userID, additionalScore,callback)
+function addScore(userID,langCode, additionalScore,callback)
 {
-  collectionUser.updateOne({_id:userID},{$inc:{"score":additionalScore}},function(err)
+  var query ={}
+  query['scores.'+langCode] = additionalScore;
+  collectionUser.updateOne({_id:userID},{$inc:query},function(err)
   {
     if(err)
     {
@@ -507,13 +531,13 @@ app.post('/update/sentence', function(req, res){
     var videoID = req.body.videoID;
     var index = parseInt(req.body.index);
     var isCorrect = req.body.isCorrect=='true'?1:0;
-    var isCorrectAtOnce = req.body.isCorrectAtOnce=='true'?1:0;
+    var trials = req.body.trials;
     var sentenceID = videoID+':'+index;        
     //when correct==true, give a score to user
     logger.info('/update/sentence videoID',videoID);
     logger.info('/update/sentence index',index);
     logger.info('/update/sentence correct',isCorrect);
-    logger.info('/update/sentence correctAtOnce',isCorrectAtOnce);
+    logger.info('/update/sentence trials',trials);
     var video_id = ObjectId(videoID);
     collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
       if (err) {console.log(err); return err; }
@@ -543,7 +567,7 @@ app.post('/update/sentence', function(req, res){
                 wordsFreq:[1,2,3,4],
                 videoID:videoID,
                 youtubeVideoId:foundVideo.YouTubeVideoID,
-                correctAtOnce:isCorrectAtOnce,
+                trials:trials,
                 correct:isCorrect
               }
               insertSentence(newSentence,function(err,inserted_id){
@@ -558,8 +582,8 @@ app.post('/update/sentence', function(req, res){
           
           collectionVideo.updateOne({_id:video_id},{ $set: {currentIndex:index+1} }) 
           
-          var newScore = isCorrectAtOnce*5+isCorrect;
-          addScore(req.user._id,newScore,function(err)
+          var newScore = isCorrect/(trials+1);
+          addScore(req.user._id,req.user.langCode,newScore,function(err)
           {
             if (err) {console.log(err); return err; }
             logger.info('New score added to User',newScore,req.user.name);
@@ -949,7 +973,17 @@ app.get('/mypage',function(req,res){
           var langCode = foundUser.langCode?foundUser.langCode:"en";
           logger.info('langCode from DB',typeof foundUser.langCode);
           logger.info('langCode selected',langCode);
-          res.render('mypage.pug',{score:foundUser.score[langCode]|0,displayName:foundUser.displayName,language:"English",ranking:'12',langCode:langCode})
+          var scores = foundUser.scores?foundUser.scores:0;
+          var score;
+          if(scores)
+          {
+            score = scores[langCode]?scores[langCode]:0
+          }
+          else
+          {
+            score = 0;
+          }
+          res.render('mypage.pug',{score:score,displayName:foundUser.displayName,language:"English",ranking:'12',langCode:langCode})
         }
         else{
           res.send('/mypage no user found')
@@ -973,19 +1007,11 @@ app.get('/',function(req,res){
     var currentTime = new Date().getTime();
     collectionUser.updateOne({_id:req.user._id},{ $set: {lastTime:currentTime}});
     logger.info('/',req.user._id, req.user.name);
-    collectionVideo.find({owner:req.user._id},function(err, cursor) {
+    collectionVideo.find({owner:req.user._id,videoCaptionLangCode:req.user.langCode},function(err, cursor) {
       if(err){return err;}
       cursor.toArray(function(err,foundVideoList){
         if(err){return err;}
         logger.info('foundVideoList length',foundVideoList.length);
-        for(var i=0;i<foundVideoList.length;i++)
-        {
-          logger.info(i,foundVideoList[i].videoTitle,ObjectId(foundVideoList[i]._id));
-        }
-        for(var i=0;i<foundVideoList.length;i++)
-        {
-          logger.info(i,foundVideoList[i].caption.length,foundVideoList[i].videoTitle);
-        }
         res.render('home_login',{videolist:foundVideoList})
       });
     })

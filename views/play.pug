@@ -368,7 +368,7 @@ body
         var allTrue =result.reduce(function(acc,curr){return acc&&curr},true);
         console.log('allTrue:'+allTrue);
         if(allTrue){
-          updateSentence(currIdx,true,(trial==0&&!seenAnswer)?true:false);
+          updateSentence(currIdx,true,trial);
           trial = 0;
           seenAnswer=0;
           //alert("Super! Hit Enter key to the next sentence!");
@@ -410,7 +410,7 @@ body
       //skip
       $('.next').click(function(){
         //save();
-        updateSentence(currIdx,false,false);
+        updateSentence(currIdx,false,trial);
         next();
         $('#inputstr').focus();
       })
@@ -486,9 +486,9 @@ body
       //   $.post( "/update", {videoRecord:JSON.stringify(videoRecord)} );
       // }
       
-      function updateSentence(_index,_isCorrect,_isCorrectAtOnce)
+      function updateSentence(_index,_isCorrect,_trials)
       {
-        $.post( "/update/sentence", {videoID:videoRecord._id,index:_index,isCorrect:_isCorrect,isCorrectAtOnce:_isCorrectAtOnce} );
+        $.post( "/update/sentence", {videoID:videoRecord._id,index:_index,isCorrect:_isCorrect,trials:_trials} );
       }
 
       // $('.save').click(function(){

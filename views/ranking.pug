@@ -25,7 +25,7 @@ body
                 td
                   | #{val.displayName}
                 td
-                  | #{val.score}
+                  | #{val.score.toFixed(2)}
                 td
                   | #{new Date(val.lastTime).toLocaleDateString()}
         // Modal
