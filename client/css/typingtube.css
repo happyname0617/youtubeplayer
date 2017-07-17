@@ -5,7 +5,17 @@
 
 body { padding-top: 0px; }
 
+span.freqword {
+  padding: 0 1px 0 1px;
+  margin: 1px 1px 1px 1px;
+  display: inline-block;
+  border-style: dotted;
+  border-width: 0.1px;
+}
 
+span.freqword.num1 {
+  background-color: lightgreen;
+}
 
 /* Shared */
 .loginBtn {

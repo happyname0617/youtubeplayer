@@ -1,7 +1,8 @@
 var env = process.env.NODE_ENV || 'development';
 var config = require('./config')[env];
 //var dictionary = require('./dictionary');
-//var freqlist_DE = require('./freqlist_DE');
+var freqlist_DE = require('./DeReKoFreqList7500.js');
+//var freqlist_DE_A1 = require('./freqlist_DE_A1');
 var languageCode = require('./languageCode');
 const express = require('express')
 var session = require('express-session');
@@ -209,6 +210,90 @@ app.get('/admin/fork/:video_id/:userid',function(req,res){
   res.redirect('/');
 });
 
+
+function generateForEachLevel(freqListDE) //for display purpose
+{
+  var level = {A1:700,A2:1200,B1a:1750,B1b:2200,B2a:2800,B2b:3500,C1:5500,C2:7500};
+  var A1={};
+  var A2={};
+  var B1a={};
+  var B1b={};
+  var B2a={};
+  var B2b={};
+  var C1={};
+  var C2={};
+  var count = 0;
+  for(var key in freqListDE)
+  {
+          count++;
+          if(count<=level.A1)
+          {
+              A1[key] = freqListDE[key];
+          }
+          else if(count<=level.A2)
+          {
+              A2[key] = freqListDE[key];
+          }
+          else if(count<=level.B1a)
+          {
+              B1a[key] = freqListDE[key];
+          }
+          else if(count<=level.B1b)
+          {
+              B1b[key] = freqListDE[key];
+          }
+          else if(count<=level.B2a)
+          {
+              B2a[key] = freqListDE[key];
+          }
+          else if(count<=level.B2b)
+          {
+              B2b[key] = freqListDE[key];
+          }
+          else if(count<=level.C1)
+          {
+              C1[key] = freqListDE[key];
+          }
+          else if(count<=level.C2)
+          {
+              C2[key] = freqListDE[key];
+          }
+   
+  }
+  return {A1:A1,A2:A2,B1a:B1a,B1b:B1b,B2a:B2a,B2b:B2b,C1:C1,C2:C2};
+}
+app.get('/voca',function(req, res) {
+  if(req.user) //logged in 
+  {
+    collectionUser.findOne({_id:req.user._id},function(err, foundUser) {
+      if(err){logger.error('/voca fineOne',err);return err;}
+      if(!foundUser.freqlist_DE)
+      {
+        collectionUser.updateOne({_id:req.user._id},{ $set: {freqlist_DE:freqlist_DE}},function(err){
+          if(err){logger.error('/voca updateOne',err); return err}
+          var levels = generateForEachLevel(freqlist_DE);
+          res.render('voka',{voca_A1:levels.A1,voca_A2:levels.A2,
+                            voca_B1a:levels.B1a,voca_B1b:levels.B1b,
+                            voca_B2a:levels.B2a,voca_B2b:levels.B2b,
+                            voca_C1:levels.C1,voca_C2:levels.C2 })
+
+        });
+      }
+      else
+      {
+        var levels = generateForEachLevel(foundUser.freqlist_DE);
+        res.render('voka',{voca_A1:levels.A1,voca_A2:levels.A2,
+                          voca_B1a:levels.B1a,voca_B1b:levels.B1b,
+                          voca_B2a:levels.B2a,voca_B2b:levels.B2b,
+                          voca_C1:levels.C1,voca_C2:levels.C2 })
+      }
+    })
+  }
+  else{
+    logger.info('/voca log logged in access',req.headers);
+    res.send('/voca log logged in access')
+  }
+})
 app.get('/publish/:video_id',function(req,res){
   
   if(req.user) //logged in 
@@ -521,7 +606,53 @@ function addScore(userID,langCode, additionalScore,callback)
   })
 }
 
+function markVocaTable(newSentence,freqlist,callback)
+{
+  try
+  {
+    logger.info(typeof newSentence);
+    var words = newSentence.toLocaleLowerCase().split(/[^\w|äöüÄÖÜß]+/); //work only for german and english at the moment
+    logger.info(words);
+    words.forEach(function(item){
+      if(freqlist[item])
+      {
+        freqlist[item].frequency++;
+        logger.info(item,freqlist[item].rank,freqlist[item].frequency)
+      }
+    })
+    callback(null,freqlist);
+  }
+  catch(err)
+  {
+    logger.error('markVocaTable',err);
+    callback(err);
+  }
+}
 
+function markVocaTableDB(newSentence,userID,callback)
+{
+    collectionUser.findOne({_id:userID},function(err, foundUser) {
+      if(err){logger.error('markVocaTableDB',err);return callback(err);}
+      if(!foundUser)
+      {
+        return callback(new VError('no foundUser'))
+      }
+      var prevfreqList = foundUser.freqlist_DE;
+      if(!prevfreqList)
+      {
+        prevfreqList = freqlist_DE; //set defaultValue
+      }
+      markVocaTable(newSentence,prevfreqList,function(err,updatedFreqList){
+          if(err){logger.error('markVocaTableDB',err);return callback(err);}
+          
+          collectionUser.updateOne({_id:userID},{ $set: {freqlist_DE:updatedFreqList}},function(err){
+            if(err){logger.error('markVocaTableDB',err);return  callback(err)}
+            return callback(null);
+          })
+        
+      })
+    })
+}
 app.post('/update/sentence', function(req, res){
   res.send('okay');
   if(req.user)
@@ -550,7 +681,7 @@ app.post('/update/sentence', function(req, res){
           if(result)
           {
             logger.info('sentence exist, update it')
-            collectionSentence.updateOne({_id:sentenceID},{$inc:{"correctAtOnce":isCorrectAtOnce,"correct":isCorrect}})
+            collectionSentence.updateOne({_id:sentenceID},{$inc:{"trials":trials,"correct":isCorrect}})
           }
           else 
           {
@@ -587,6 +718,10 @@ app.post('/update/sentence', function(req, res){
           {
             if (err) {console.log(err); return err; }
             logger.info('New score added to User',newScore,req.user.name);
+            //mark at voca table
+            markVocaTableDB(foundVideo.caption[index][2],req.user._id,function(err){
+              if (err) {logger.error(err); return err; }
+            });
           });
         })
 
