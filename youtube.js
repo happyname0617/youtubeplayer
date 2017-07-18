@@ -2,6 +2,7 @@ var env = process.env.NODE_ENV || 'development';
 var config = require('./config')[env];
 //var dictionary = require('./dictionary');
 var freqlist_DE = require('./DeReKoFreqList7500.js');
+var DE_KR6800 = require('./DE_KR6800.js');
 //var freqlist_DE_A1 = require('./freqlist_DE_A1');
 var languageCode = require('./languageCode');
 const express = require('express')
@@ -605,6 +606,66 @@ function addScore(userID,langCode, additionalScore,callback)
     }
   })
 }
+
+function translate(source,target,text,callback)
+{
+  var url = 'https://translation.googleapis.com/language/translate/v2';
+  key=config.GOOGLE_TRANSLATE_API_KEY;
+  var qs = {
+  'q': text,
+  'source': source,
+  'target': target,
+  'format': 'text',
+  'key':key
+  }
+
+  request({uri:url,qs:qs}, function(error, response, body) {
+        // Check status code (200 is HTTP OK)
+        console.log("Status code: " + response.statusCode);
+        if (response.statusCode !== 200) {
+            //error
+            logger.error(error + response.statusCode);
+            callback(error);
+        } else {
+          logger.info(body)
+          logger.info(typeof body);
+          var json = JSON.parse(body);
+          callback(null,json.data.translations[0].translatedText);
+        }
+  })
+//  var result;
+//  return result;
+}
+app.get('/sentenceinfo',function(req, res) {
+    var str = req.query.sentence;
+    
+    var words = str.toLocaleLowerCase().split(/[^\w|äöüÄÖÜß]+/); //work only for german and english at the moment
+    logger.info(words);
+    var result = {words:[],translatedText:{}};
+    translate("de","en",str,function(err,translatedTxt){
+      logger.info(translatedTxt);
+      result.translatedText = translatedTxt.trim();
+      words.forEach(function(item){
+        if(freqlist_DE[item])
+        {
+          var searchkey = freqlist_DE[item].infinitive.toLocaleLowerCase()
+
+          if(DE_KR6800[searchkey])
+          {
+            freqlist_DE[item].translation = DE_KR6800[searchkey].translation; 
+            logger.info('dict trans:',DE_KR6800[searchkey])
+          }
+          else{
+            freqlist_DE[item].translation ='';
+          }
+          result.words.push(freqlist_DE[item]);
+          logger.info(item,freqlist_DE[item].rank,freqlist_DE[item].infinitive,freqlist_DE[item].type,freqlist_DE[item].translation)
+        }
+      })
+      res.json(result);
+
+    });
+})
 
 function markVocaTable(newSentence,freqlist,callback)
 {
@@ -1219,6 +1280,33 @@ app.get('/play_modify/:id',function(req,res){
         //console.log(typeof foundVideo.caption)
   
         res.render('play_modify.pug',{mytime:JSON.stringify(foundVideo)})
+        
+        //else - send message that not allowed to modify
+        
+      }
+    });
+  }
+  else
+  {
+    res.redirect('/');
+  }
+
+})
+
+app.get('/study/:id',function(req,res){
+  if(req.user)  //is logged in?
+  {
+    var video_id = ObjectId(req.params.id);
+    console.log('/review/'+video_id);
+    collectionVideo.findOne({_id:video_id},function(err, foundVideo) {
+      if (err) { console.log(err); return err; }
+      if(foundVideo){
+        //video owner == user then allow to modify 
+        
+        //console.log("video found");
+        //console.log(typeof foundVideo.caption)
+  
+        res.render('study.pug',{mytime:JSON.stringify(foundVideo)})
         
         //else - send message that not allowed to modify
         

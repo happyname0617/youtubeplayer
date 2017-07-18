@@ -1,0 +1,6396 @@
+Backe	;	뺨, 볼
+backen	;	(빵) 굽다
+Bäcker	;	빵 제조업자
+Bäckerei	;	제과점
+Bad	;	목욕
+baden	;	목욕시키다
+Badewanne	;	욕조
+Badezimmer	;	욕실
+bähen	;	데워서 부드럽게 하다
+Bahn	;	길
+Bahnhof	;	정거장
+Bahnsteig	;	플랫폼
+Bahre	;	관
+bald	;	곧
+Balg	;	가죽, 껍질
+Balkon	;	발코니
+Ball	;	공, 무도회
+Bällchen	;	작은 공
+ballen	;	둥글게 하다
+Ballon	;	기구, 풍선
+banal	;	케케묵은
+Band	;	끈, 리본
+Band	;	(전집, 시리즈의) 권, 책
+Bande	;	펜스, 범죄조직
+bändigen	;	제어하다
+bange	;	근심스런, 불안한
+bangen	;	두려워하다
+Bank	;	벤치, 좌석
+Bank	;	은행
+bankrott	;	파산한
+Bann	;	매력, 마력, 추방
+bannen	;	매료시키다, 추방하다
+Banner	;	군기
+bar	;	현금의
+Bär	;	곰
+Barbar	;	미개인
+barfuß	;	맨발의
+Bargeld	;	현금
+barmherzlich	;	자비로운
+Barometer	;	기압계
+Baron	;	남작
+barsch	;	퉁명스런, 무뚝뚝한
+Bart	;	수염
+Basis	;	기초
+Bast	;	속껍질, 내피
+basteln	;	조립하다
+Bau	;	건축, 공사장, 건축물
+Bauch	;	배, 복부
+bauen	;	건설하다
+Bauer	;	농부
+Baum	;	나무
+Baumwolle	;	솜, 면화
+Bausch	;	쿠션
+Baustelle	;	건축현장
+beabsichtigen	;	의도하다
+beachten	;	준수하다, 유념하다
+Beamte	;	공무원, 관리
+beantworten	;	답하다
+bearbeiten	;	검토하다, 손질하다
+bebauen	;	경작하다
+beben	;	떨다
+Becher	;	컵, 잔
+Becken	;	양푼
+bedacht	;	사려깊은
+bedanken	;	감사하다
+Bedarf	;	필요, 수요
+bedauern	;	동정하다, 유감으로 생각하다
+bedecken	;	덮다, 덮어씌우다
+bedenken	;	고려하다
+bedenklich	;	걱정스러운, 위험한
+bedeuten	;	의미하다, 뜻하다
+Bedeutung	;	의미
+bedienen	;	시중들다, 서비스하다
+Bediente	;	하인, 종
+Bedienung	;	접대, 서비스
+bedingen	;	야기시키다
+Bedingung	;	조건
+bedrängen	;	들볶다
+bedrohen	;	위협하다
+bedürfen	;	필요로 하다
+Bedürfnis	;	욕구
+beeinflussen	;	영향주다
+beenden	;	끝내다
+beerdigen	;	매장하다
+Beet	;	화단
+befangen	;	둘러싸다
+befassen	;	관련맺다
+Befehl	;	명령
+befehlen	;	명령하다
+befestigen	;	고정하다
+befinden	;	생각하다
+befolgen	;	지키다, 따르다
+befördern	;	운송하다, 진급시키다, 촉진하다
+befreien	;	해방하다
+befremden	;	낯설게 하다, 불쾌하게 하다
+befreunden	;	익숙해지다, 친분맺다
+befriedigen	;	만족시키다
+befruchten	;	열매를 맺게하다
+Befugnis	;	권한, 자격
+befürchten	;	두려워하다
+Begabung	;	재능
+begeben	;	양도하다, 가다
+begegnen	;	누구와 만나다
+Begegnung	;	만남, 해후
+begehen	;	가다, (나쁜짓) 행하다
+begehren	;	열망하다
+begeistern	;	영향주다, 감격하다
+Begeisterung	;	감격, 영광
+Begierde	;	열망, 욕구
+begierig	;	열망하는
+Beginn	;	시작, 처음
+beginnen	;	시작하다, 행하다
+begleiten	;	동행하다
+Begleitung	;	동반
+begnügen	;	만족하다
+begraben	;	매장하다, 포기하다
+Begräbnis	;	매장, 장례식
+begreifen	;	이해하다
+begrenzen	;	제한하다
+Begriff	;	개념
+begründen	;	기초를 놓다
+begrüßen	;	인사하다
+begünstigen	;	은혜 베풀다, 총애하다
+Behagen	;	쾌적, 유쾌
+behaglich	;	쾌적한, 안락한
+behalten	;	유지하다
+Behältnis	;	용기
+behandeln	;	다루다, 취급하다
+Behandlung	;	취급
+beharrlich	;	참고 견디는, 끊임없는
+behaupten	;	주장하다, 확보하다
+Behauptung	;	주장
+behelfen	;	의지하다
+beherrschen	;	지배하다, 억제하다
+beherzt	;	용감한
+behilflich	;	도움이 되는
+Behörde	;	관청, 당국
+behüten	;	보호하다
+beibringen	;	제출하다
+beide	;	양쪽의
+beieindander	;	나란히
+Beifall	;	찬성, 갈채
+Beil	;	손도끼
+beiläufig	;	부수적인, 덧붙여서
+beilegen	;	덧붙이다
+Bein	;	다리, 발
+benah(e)	;	거의
+beipflichten	;	찬성하다, 동의하다
+beisammen	;	함께
+Beischlaf	;	동침, 성교
+Beispiel	;	보기, 실례
+beißen	;	씹다, 물다
+Beistand	;	도움, 원조
+beistehen	;	편들다, 도움주다
+beistimmen	;	찬성하다, 동의하다
+Beitrag	;	기여, 공로
+beitragen	;	기여하다, 공헌하다
+beiwohnen	;	참석하다
+Beize	;	부식, 침식
+beizen	;	부식시키다
+bejahen	;	긍정하다, 시인하다
+bekämpfen	;	싸우다
+bekannt	;	유명한
+bekehren	;	개종시키다, 전향시키다
+Bekehrung	;	개종, 전향
+bekennen	;	고백하다
+Bekenntnis	;	고백, 신앙
+beklagen	;	한탄하다, 불평하다
+bekleiden	;	옷을 입히다
+bekommen	;	얻다, 받다
+bekümmern	;	슬프게 하다
+beladen	;	짐을 지우다
+belagern	;	포위하다, 둘러싸다
+belasten	;	짐을 싣다
+belästigen	;	괴롭히다
+Belastung	;	부담
+beleben	;	소생시키다
+belebt	;	활기띈
+belegen	;	덮다, 얹다
+beleidigen	;	모욕하다, 감정 상하게 하다
+Beleidigung	;	모욕
+belesen	;	다독한
+beleuchten	;	비추다, 조명하다
+Beleuchtung	;	조명
+belieben	;	좋아하다
+beliebt	;	인기있는
+bellen	;	짖다
+belohnen	;	보답하다
+belügen	;	거짓말 하다, 속이다
+belustigen	;	즐겁게 하다
+bemerken	;	인지하다, 진술하다
+Bemerkung	;	소견, 발언
+bemühen	;	요구하다, 도움청하다
+Bemühung	;	수고, 노력
+benehmen	;	빼앗다, 행동하다(sich)
+Benehmen	;	행동거지
+beneiden	;	부러워하다
+Bengel	;	개구쟁이
+benu(ü)tzen	;	이용하다, 사용하다
+Benu(ü)tzung	;	이용, 사용
+beobachten	;	관찰하다
+Beobachtung	;	관찰
+bequem	;	쾌적한, 편리한
+beraten	;	조언하다, 충고하다
+Beratung	;	조언, 충고
+berauben	;	빼앗다
+berauschen	;	취하게 하다
+berechnen	;	계산하다
+berechtigen	;	권리를 주다
+beredt	;	달변의, 유창한
+Bereich	;	범위, 영역
+bereit	;	준비가 된
+bereiten	;	준비하다
+bereits	;	이미, 벌써
+bereuen	;	후회하다
+Berg	;	산
+bergen	;	구조하다, 보호하다
+Bergwerk	;	광산
+Bericht	;	통지
+berichten	;	통지하다
+berichtigen	;	정정하다
+berücksichtigen	;	고려하다
+Beruf	;	직업
+beruflich	;	직업상의
+berufstätig	;	직업활동을 하는
+beruhen	;	근거하다, 기인하다
+beruhigen	;	달래다, 진정시키다
+berühmt	;	유명한
+berühren	;	접촉하다
+Berührung	;	접촉
+besänften	;	달래다, 진정시키다
+Beschaffenheit	;	성질
+beschäftigen	;	채용하다, 몰두하다
+beschäftigt	;	고용된
+Beschäftigung	;	일, 고용
+beschämen	;	부끄럽게 하다, 창피주다
+beschauen	;	주시하다
+Bescheid	;	고지, 통지
+bescheiden	;	겸손한
+bescheinigen	;	증명하다
+Bescheinigung	;	증명, 증서
+beschimpfen	;	욕하다
+Beschlag	;	녹, 곰팡이
+beschleunigen	;	속도를 높이다
+Beschleunigung	;	가속, 가속도
+beschließen	;	끝내다, 결정하다
+Beschluss	;	끝맺음, 결정
+beschränken	;	제한하다
+beschränkt	;	제한된, 편협한
+beschreiben	;	기술하다, 묘사하다
+Beschreibung	;	기술, 묘사
+beschuldigen	;	죄를 씌우다
+beschützen	;	보호하다
+Beschwerde	;	무거운 짐, 고통, 불평
+beschweren	;	무거운 짐을 지우다, 괴롭히다
+beschwichtigen	;	달래다, 가라앉히다
+beschwöhren	;	맹세하다, 애원하다
+besehen	;	주시하다
+beseitigen	;	없애다, 제거하다
+Besen	;	빗자루
+besessen	;	미친
+besetzen	;	차지하다
+besetzt	;	점령된
+besichtigen	;	시찰하다
+Besichtigung	;	시찰
+besiegen	;	이기다
+besinnen	;	숙고하다
+Besinnung	;	의식, 분별, 숙고
+Besitz	;	소유
+besitzen	;	소유하다
+Besitzer	;	소유자
+besonder	;	특별한
+besorgen	;	처리하다, 돌보다
+besprechen	;	협의하다, 비평하다
+Besprechung	;	협의, 비평
+besser	;	더 좋은
+bessern	;	개선하다
+Besserung	;	개선
+Bestand	;	존립, 재고
+beständig	;	끊임없는
+bestätigen	;	증명하다, 보증하다
+Bestätigung	;	확인, 증명
+bestechen	;	매수하다, 매혹하다
+Bestechung	;	매수
+Besteck	;	상자
+bestehen	;	존재하다, 지속하다
+besteigen	;	오르다, 타다
+bestellen	;	주문하다, 이행하다
+bestimmen	;	결정하다
+bestimmt	;	정해진, 일정한, 확실히
+Bestimmung	;	규정
+bestrafen	;	처벌하다
+bestreben	;	노력하다
+bestreiten	;	이의제기하다, 지불하다
+Besuch	;	방문
+besuchen	;	방문하다
+betätigen	;	일 시키다, 실증하다
+betäuben	;	귀먹게하다, 진정시키다
+beteiligen	;	관여하다, 참가하다
+Beteiligung	;	관여, 참가
+beten	;	기도하다, 외다
+Beton	;	콘크리트
+betonen	;	강조하다
+Betonung	;	액센트
+betrachten	;	주시하다
+beträchtlich	;	현저한, 상당한
+Betrachtung	;	고찰, 숙고
+Betrag	;	액수, 총액
+betragen	;	~에 달하다, 행동하다(sich)
+betreffen	;	관계하다, 닥치다
+betreten	;	발을 들여놓다
+Betrieb	;	경영, 기업체, 운전
+betroffen	;	놀란, 당황한
+betrüben	;	슬프게 하다
+Betrug	;	사기, 속임
+betrügen	;	속이다, 기만하다
+Betrüger	;	사기꾼
+betrunken	;	술취한
+Bett	;	잠자리, 침대
+Bettler	;	거지
+Bettwäsche	;	시트
+beugen	;	굽히다, 구부리다
+Beule	;	혹, 종기
+beurteilen	;	판단하다, 비판하다
+Beute	;	노획물
+Beutel	;	작은주머니, 돈지갑
+Bevölkerung	;	주민, 인구
+bevollmächtigen	;	전권을 주다
+bevor	;	하기 전에
+bewaffnen	;	무장시키다
+bewahren	;	지키다, 보호하다
+bewähren	;	증명하다, 확증하다
+bewältigen	;	극복하다, 압도하다
+bewegen	;	움직이다, 감동시키다
+beweglich	;	움직일 수 있는
+Bewegung	;	움직임, 운동
+Beweis	;	증거
+beweisen	;	증명하다
+bewerben	;	얻으려고 애쓰다, 지망하다
+bewerten	;	평가하다
+bewilligen	;	동의하다, 승낙하다
+bewirten	;	접대하다
+bewohnen	;	살다
+Bewohner	;	주민, 거주자
+bewundern	;	경탄하다, 감탄하다
+Bewunderung	;	경탄, 찬미
+bewusst	;	알고있는, 의식적인
+Bewusstsein	;	의식, 지각
+bezahlen	;	지불하다
+Bezahlung	;	지불
+bezaubern	;	매혹하다
+bezeichnen	;	기호를 붙이다, 표현하다
+Bezeichnung	;	기호, 명칭
+beziehen	;	옮기다, 얻다, 구독하다
+Beziehung	;	관계
+Bezirk	;	구역, 영역
+Bezug	;	구입, 관계
+bezweifen	;	의심하다
+bezwingen	;	제압하다
+Bibel	;	성경
+Bibliothek	;	도서관
+bieder	;	정직한
+biegen	;	구부러지다, 구부리다
+Biene	;	꿀벌
+Bier	;	맥주
+bieten	;	보이다, 나타내다
+Bilanz	;	결산, 대차대조표
+Bild	;	모습, 그림
+bilden	;	형성하다
+Bilderbuch	;	그림책
+Bildhauer	;	조각가
+bildlich	;	구상적인, 비유적인
+Bildnis	;	초상, 초상화
+Bildung	;	형성, 육성, 교양
+billig	;	정당한, 싼
+billigen	;	시인하다
+Binde	;	끈, 띠
+binden	;	매다, 묶다
+Birne	;	배, 배나무
+bisher	;	지금까지
+bisschen	;	조금
+Bissen	;	한 입
+Bitte	;	부탁, 당부
+bitten	;	부탁하다
+bitter	;	혹독한, 엄한
+bizarr	;	기괴한
+blank	;	빛나는
+Blase   	;	거품
+blasen	;	불다
+blass	;	창백한
+Blatt	;	꽃잎, 종이
+Blatter	;	부스럼
+blättern	;	페이지 넘기다, 뒤적이다
+blau	;	푸른
+Blech	;	엷은 금속판
+Blei	;	납
+bleiben	;	머무르다, 지속되다
+bleich	;	창백한
+Bleistift	;	연필
+blenden	;	눈부시게 하다
+Blick	;	눈, 시선
+blicken	;	바라보다, 주시하다
+blind	;	눈 먼, 맹목적인
+blinken	;	깜빡이다
+Blitz	;	번개, 섬광
+blitzen	;	반짝이다
+Block	;	덩어리, 한 구획
+blöd	;	정신 박약의
+Blödsinn	;	정신박약, 허튼소리
+blond	;	금발의
+bloß	;	벌거벗은, 없는
+blühen	;	번성하다
+Blume	;	꽃, 화초
+Blumenstrauß	;	꽃다발
+Bluse	;	블라우스
+Blut	;	피, 혈액
+Blüte	;	꽃
+bluten	;	출혈하다
+blutig	;	피투성이의, 피가나는
+Bock	;	숫염소
+Boden	;	땅, 지반
+bodenlos	;	밑바악이 없는, 헤아릴 수없는
+Bogen	;	곡선, 아치, 활
+Bohle	;	널빤지
+Bohne	;	콩
+bohren	;	구멍뚫다, 찌르다
+Boje	;	부이, 부표
+Bombe	;	폭탄
+Bonbon	;	사탕
+Boot	;	보트
+Bord	;	널빤지, 선반
+borgen	;	빌려주다, 빌다
+Börse	;	지갑, 돈주머니
+böschen	;	경사지게 하다
+böse	;	나쁜
+Bösewicht	;	악한, 장난꾸러기
+Bote	;	사자, 전령
+Botschaft	;	통지, 뉴스
+Botschafter	;	대사
+Bottich	;	통, 양동이
+Brand	;	연소, 화재, 화상
+braten	;	굽다
+Braten	;	구운 고기, 불고기
+Brauch	;	관례, 풍습
+brauchen	;	필요로 하다
+Braue	;	눈썹
+brauen	;	(파도)일다, (물)끓다, (안개)끼다
+braun	;	갈색의
+Brause	;	샤워
+brausen	;	(바람)윙윙거리다, (물)쏴쏴거리다
+Braut	;	약혼녀
+Bräutigam	;	약혼한 남자
+brav	;	얌전한
+brechen	;	깨다, 부수다
+Brei	;	죽
+breit	;	폭이 ~인
+Breite	;	폭
+bremsen	;	브레이크 걸다
+brennen	;	타다, 굽다
+Brennpunkt	;	촛점
+Brennstoff	;	연료
+Brett	;	널빤지, 장기판
+Brief	;	편지, 서류
+Brieftasche	;	작은 가방
+Briefwechsel	;	편지교환
+Briefträger	;	집배원
+Briefmarke	;	우표
+Brille	;	안경
+bringen	;	가져오다
+Brocken	;	파편, 작은조각
+Bronze	;	청동
+bronzen	;	청동의
+Brosche	;	브로치, 장식핀
+Broschüre	;	브로셔, 소책자
+Brot	;	빵
+Brötchen	;	작은 빵
+Bruch	;	부서짐, 파괴
+Brücke	;	다리
+Bruder	;	형, 아우
+Brühe	;	국물, 소스, 수프
+brüllen	;	울부짖다, 포효하다
+brummen	;	윙윙거리다, 투덜대다
+Brunnen	;	샘, 분수
+Brust	;	가슴
+Brut	;	부화
+brüten	;	알을 품다, 부화하다
+Buch	;	책
+buchen	;	예약하다, 기록하다
+Bücherei	;	문고, 장서, 도서관
+Buchhandlung	;	서점
+Büchse	;	상자
+Buchstabe	;	문자
+buchstabieren	;	철자하다
+bücken	;	굽히다, 구부리다
+Bude	;	노점
+Büfett	;	뷔페
+Bügel	;	옷걸이, (다리미)손잡이
+Bügeleisen	;	다리미
+bügeln	;	다림질하다
+Bühne	;	무대, 극장
+Bund	;	다발, 묶음
+Bund	;	동맹, 연합
+Bündnis	;	동맹, 연합
+bunt	;	가지각색의, 알록달록한
+Burg	;	성곽
+Bürge	;	보증(인)
+bürgen	;	보증하다
+Bürger	;	국민, 시민
+bürgerlich	;	국민의, 시민의
+Bürgermeister	;	시장
+Bürgertum	;	시민(부르주아) 계급
+Bürgschaft	;	보증, 보장
+Büro	;	사무실
+Bürokratie	;	관료주의
+bürokratisch	;	관료주의의
+Bursche	;	젊은이, 동료
+Bürste	;	솔, 브러시
+bürsten	;	솔질하다
+Bus	;	버스
+Busch	;	수풀
+Busen	;	유방
+Buße	;	보상, 속죄
+büßen	;	보상하다, 속죄하다
+Büste	;	흉부, 버스트
+Butter	;	버터
+Butterbrot	;	버터빵
+Aas	;	썩은 고기
+abändern	;	수정하다
+Abart	;	변종
+Abbau	;	채굴, 철거
+abbauen	;	채굴하다, 철거하다
+Abbildung	;	삽화
+Abbitte	;	사죄
+abbrechnen	;	꺾다, 갑자기 중단하다
+Abbruch	;	해체, 철거
+abdanken	;	해고하다
+abdecken	;	뚜껑을 벗기다
+abdrehen	;	꼭지를 돌려 잠그다
+Abdruck	;	인쇄, 인쇄물
+Abend	;	저녁
+Abendbrot	;	저녁식사
+Abendessen	;	저녁식사
+Abendland	;	서양
+abends	;	저녁에
+Abenteuer	;	모험
+Aberglauben	;	미신
+abfahren	;	출발하다
+Abfahrt	;	출발
+Abfall	;	폐기물
+abfallen	;	떨어지다
+abfassen	;	작성하다
+abfertigen	;	처리하다
+abfinden	;	배상하다
+abfließen	;	물이 흐르다
+Abflug	;	이륙
+abführen	;	연행하다, 돌리다
+Abgabe	;	전달, 발표
+Abgang	;	출발
+abgeben	;	제출하다
+abgedroschen 	;	진부한
+abgefeimt	;	교활한
+abgehen	;	출발하다
+abgelegen	;	멀리떨어진
+Abgeordnete	;	대표, 국회의원
+abgeschmackt	;	멋없는
+abgewöhnen	;	버릇을 고치다
+Abgott	;	우상
+Abgrund	;	심연
+abhalten	;	가까이 못오게 하다, 방해하다
+Abhandlung	;	논문
+abhängen	;	의존하다
+abhängig	;	의존하는
+abhelfen	;	제거하다
+Abhilfe	;	제거, 시정
+abholen	;	받다, 마중나가다
+Abitur	;	김나지움의 졸업시험
+abkommen	;	멀어지다, 떨어져나가다
+Abkommen	;	협정
+abkürzen	;	잘라서 줄이다
+Abkürzen	;	단축, 약어
+abladen	;	짐을 내리다, 근심걱정 털어놓다
+Ablass	;	방출, 유출
+ablassen	;	방출시키다, 팔다
+Ablauf	;	유출, 하수구
+ablaufen	;	출발하다, 흘러내리다
+ablegen	;	벗다, 떼어내다, 이행하다
+ablehnen	;	거절하다
+ableiten	;	도출하다, 유도하다
+Ableitung	;	유도, 파생
+ablenken	;	딴쪽으로 돌리다
+Ablenkung	;	딴쪽으로 돌리기, 기분전환
+ablesen	;	낭독하다
+ablösen	;	떼내다, 분리하다
+abmachen	;	떼어내다, 제거하다
+Abmarsch	;	행진
+abmessen	;	측정하다
+Abnahme	;	떼어냄, 수령
+abnehmen	;	떼어내다, 수령하다
+Abneigung	;	혐오, 꺼림
+abonnieren	;	정기구독하다
+abraten	;	말리다, 못하게 하다
+abräumen	;	치우다, 정리하다
+abrechnen	;	공제하다, 계산하다
+Abrede	;	합의, 협정
+Abreise	;	(여행) 출발
+abreisen	;	출발하다
+abreißen	;	찢다, 헐다
+abrichten	;	짐승을 길들이다
+Abriss	;	철거
+abrunden	;	둥글게 하다
+abrüsten	;	군비축소하다
+Absage	;	거절
+absagen	;	취소하다
+Absatz	;	앙금, 중단
+abschaffen	;	폐지하다
+abschalten	;	스위치를 끄다
+abschätzen	;	평가하다
+abscheiden	;	분리하다
+Abscheu	;	혐오
+abscheulich	;	비열한
+Abschied	;	이별, 작별
+Abschlag	;	할인
+abschlagen	;	잘라내다, 거절하다
+abschließen	;	잠그다, 폐쇄하다
+Abschluss	;	폐쇄, 종결
+abschneiden	;	끊어내다
+Abschnitt	;	절단
+abschreiben	;	베끼다
+absehen	;	보고배우다, 예측하다, 엿보다
+abseits	;	떨어져, 오프사이드
+absenden	;	발송하다, 파견하다
+Absender	;	발송인
+absetzen	;	벗다, 내려놓다
+Absicht	;	의도
+absichtlich	;	의도적인
+absolut	;	절대적인
+absondern	;	격리하다
+absprechen	;	합의하다
+abstammen	;	후손이다, 유래하다
+Abstand	;	거리, 간격
+abstehen	;	떨어져 있다
+absteigen	;	내리다
+abstellen	;	멈추다, 끄다
+Abstieg	;	내리막길, 몰락
+abstimmen	;	투표하다, 일치시키다
+Abstimmung	;	투표
+abstrakt	;	추상적인
+abstufen	;	차등화하다
+Abstufung	;	등급
+abstürzen	;	추락하다
+abteilen	;	구분하다, 분할하다
+Abteilung	;	구분
+abtragen	;	제거하다
+abtreiben	;	쫓아내다
+abtreten	;	물러나다, 양도하다
+abtrocknen	;	말리다, 닦다
+abtrünnig	;	배신하는
+abwandeln	;	변화시키다
+abwarten	;	기다리다
+abwärts	;	아래로
+abwaschen	;	씻어내다
+abwechseln	;	교대하다
+Abwechselung	;	교대
+abweisen	;	물리치다, 거절하다
+abwesend	;	결석한
+abwesenheit	;	부재, 결석
+abwischen	;	닦아내다
+abzahlen	;	분할 지불하다
+abzählen	;	세다, 빼다
+Abzahlung	;	할부
+abziehen	;	떼어놓다, 벗다
+Abzug	;	퇴거, 유출
+Achse	;	축, 차축
+Achsel	;	어깨
+achten	;	존경하다
+ächten	;	추방하다
+achtlos	;	부주의한
+Achtung	;	주의, 존경
+ächzen	;	신음하다
+Acker	;	전답, 경작지
+Ackerbau	;	농업
+Adam	;	아담
+Adel	;	귀족
+adelig	;	귀족의
+Ader	;	혈관
+adieu	;	안녕
+Adler	;	독수리
+Administration	;	행정
+Admiral	;	제독
+Adresse	;	주소
+Advokat	;	변호인
+Affäre	;	사건
+Affe	;	원숭이
+affizieren	;	자극하다
+Agent	;	대리인
+Agonie	;	죽음의 고통
+Ägypten	;	이집트
+ahnen	;	예감하다
+ähnlich	;	닮은, 비슷한
+Ähnlichkeit	;	유사
+Ahnung	;	예감
+Ahorn	;	단풍나무
+Ähre	;	이삭
+akkurat	;	면밀한, 정밀한
+Akt	;	행위
+Akte	;	기록, 서류
+aktuell	;	현실의, 실제의
+akut	;	급성의
+albern	;	단순한
+allerdings	;	물론, 틀림없이
+allerhand	;	온갖종류의
+allerlei	;	각종의
+allgemein	;	전반적인
+alliieren	;	동맹을 맺다
+allmählich	;	점차적인, 점차로
+Alltag	;	평일
+allzu	;	너무나
+Alpe	;	알프스산맥
+alt	;	늙은
+Altar	;	제단
+Alter	;	나이, 연령
+Altertum	;	고대
+ältertümlich	;	고대의
+altmodisch	;	유행에 뒤진
+Ameise	;	개미, 근면한사람
+Amt	;	공직, 관직
+analog	;	비슷한, 유사항
+anbeißen	;	베어먹다
+Anbetung	;	숭배
+anbieten	;	제안하다
+anbinden	;	묶다
+Anblick	;	바라봄, 주시
+anblicken	;	바라보다
+anbrechen	;	뜯다, 뽑다
+anbringen	;	설치하다, 말하다
+Andacht	;	기도, 예배
+andächtig	;	경건한
+Andenken	;	추억, 기억, 기념
+ander	;	다른
+ändern	;	바꾸다, 고치다
+anders	;	다른 방향으로, 달리
+Änderung	;	변화, 변경
+andeuten	;	암시하다
+Andeutung	;	암시
+Andrang	;	쇄도
+aneignen	;	취득하다, 습득하다
+aneinander	;	나란히
+anerkannt	;	존경받는, 인정받는
+anerkennen	;	존경하다, 인정하다
+Anfall	;	발작
+anfallen	;	엄습하다
+Anfang	;	시작
+anfangen	;	시작하다, 착수하다
+anfassen	;	붙잡다
+anfechten	;	이의를 제기하다
+Anfrage	;	문의, 조회
+anführen	;	이끌다
+Angabe	;	진술, 보고
+angeben	;	진술하다, 표시하다
+angeblich	;	자칭
+Angebot	;	제시, 제안, 공급
+angebracht	;	적절한, 타당한
+angehen	;	시작되다, 대항해 싸우다
+angehören	;	속하다
+Angel	;	낚시
+angelegen	;	중요한
+Angelegenheit	;	요건, 용무, 사무
+angeln	;	낚시질하다
+angemessen	;	걸맞는, 알맞은
+angenehm	;	쾌적한, 유쾌한
+Anger	;	풀밭
+Angesicht	;	얼굴, 대면
+Angestellte	;	종업원, 월급쟁이
+angewöhnen	;	습관들이다
+angreifen	;	공격하다, 비판하다
+Angriff	;	공격, 비판
+Angst	;	공포, 두려움
+ängstlich	;	걱정되는
+Anhalt	;	근거
+anhalten	;	정지시키다, 멈추다
+Anhang	;	부록
+anhängen	;	추종하다
+Anhänger	;	신봉자, 추종자
+anhören	;	문의하다
+ankern	;	정박하다, 닻을 내리다
+Anklage	;	기소, 고소
+anklagen	;	기소하다
+Anklang	;	동감, 유사
+ankleiden	;	옷을 입히다
+anknüpfen	;	연결시키다
+ankommen	;	도착하다
+ankündigen	;	통지하다, 알리다
+Ankunft	;	도착
+Anlage	;	시설, 투자, 소질
+Anlass	;	원인, 동기
+anlassen	;	시동시키다
+anlegen	;	기대다
+anlehnen	;	기대다
+Anleihe	;	차용, 차입
+anleiten	;	지도하다
+anmaßen	;	감히 ~하다
+anmelden	;	알리다
+Anmerkung	;	논평
+Anmut	;	우아
+Annahme	;	수령, 채용
+annehmen	;	수령하다, 채용하다
+anpacken	;	움켜잡다
+anpassen	;	맞주다, 조화시키다
+Anrede	;	호칭
+anreden	;	호칭하다, 부르다
+anregen	;	자극하다, 조언하다
+Anregung	;	자극, 조언
+anreißen	;	개봉하다
+Anruf	;	부름
+anrufen	;	전화걸다, 부르다
+ansagen	;	알리다, 고지하다
+Ansager	;	아나운서
+Ansatz	;	부가물
+anschaffen	;	명령하다, 지시하다
+anschauen	;	바라보다
+Anschauung	;	바라봄
+Anschein	;	외모, 풍채
+Anschlag	;	게시, 포스터
+anschließen	;	연결하다
+Anschluss	;	연결
+Anschrift	;	주소
+anschuldigen	;	고발하다
+ansehen	;	바라보다, 주시하다
+ansetzen	;	덧붙이다, 정하다
+Ansicht	;	의견
+Ansichtskarte	;	그림엽서
+anspielen	;	넌지시 암시하다
+Ansprache	;	인사말
+ansprechen	;	말걸다
+Anspruch	;	권리, 청구권
+Anstalt	;	공공시설
+Anstand	;	예의범절, 미풍양속
+anständig	;	단정한
+anstatt	;	대신
+anstecken	;	찔러박다
+anstehen	;	차례를 기다리다
+ansteigen	;	오르다
+anstellen	;	놓다, 세우다, 고용하다
+anstrengen	;	열과 성을 쏟다
+Anstrengung	;	전력투구
+Anteil	;	몫, 배당
+Antenne	;	안테나
+antik	;	고대의
+Antrag	;	신청, 청구
+Antreib	;	동기, 동인
+antreten	;	시작하다, 시동걸다
+Antritt	;	시작
+antun	;	베풀다, ~하다
+Antwort	;	대답
+antworten	;	대답하다
+anvertrauen	;	맡기다
+Anwalt	;	변호사
+anweisen	;	맡기다, 지시하다
+Anweisung	;	지시, 지정
+anwenden	;	사용하다, 쓰다
+Anwendung	;	이용
+anwesend	;	출석한
+Anzahl	;	약간의 수
+Anzeige	;	광고
+anzeigen	;	알리다, 고발하다
+anziehen	;	입히다
+Anzug	;	신사복
+Apfel	;	사과
+Apotheke	;	약국
+Apotheker	;	약사
+Apparat	;	장치, 기구
+Appetit	;	식욕
+Arbeit	;	노동
+Arbeiter	;	노동자
+arbeitslos	;	무직의
+Ärger	;	불만, 짜증
+ärgerlich	;	화난
+ärgern	;	화나게 하다
+Argwohn	;	의심
+arm	;	불쌍한, 가난한
+Arm	;	팔
+Armee	;	군대
+Ärmel	;	소매
+Armut	;	가난, 빈곤, 결핍
+artig	;	점잖은, 얌전한
+Artikel	;	조항, 항목
+Arznei	;	약
+Arzt	;	의사
+ärztlich	;	의사의
+Asche	;	재
+Asien	;	아시아
+Aspekt	;	관점, 시각
+Ast	;	큰 가지
+Ästhetik	;	미학
+Atem	;	숨, 호흡
+atmen	;	숨쉬다, 호흡하다
+Atom	;	원자
+Attibut	;	속성
+aufatmen	;	호흡하다
+Aufbau	;	설립, 구축
+aufbauen	;	설립하다, 구축하다
+aufbewahren	;	보존하다
+aufbleiben	;	깨어있다
+aufblühen	;	번성하다
+aufbrechen	;	억지로 열다, 갈라지다
+aufbringen	;	조달하다, 구하다
+aufdecken	;	덮개를 벗기다
+aufdrehen	;	열다, 풀다
+aufeinander	;	겹쳐서, 포개어, 잇달아
+Aufenhalt	;	체재, 체류
+Auferstehung	;	소생, 부활
+auffahren	;	추돌하다
+auffallen	;	눈에 띄다, 두드러지다
+auffangen	;	붙잡다
+auffassen	;	이해하다
+auffordern	;	요청하다, 재촉하다
+aufführen	;	연주하다, 상연하다
+Aufführung	;	상연
+Aufgabe	;	과제, 임무
+Aufgang	;	해돋이
+aufgeben	;	맡기다
+aufgehen	;	뜨다, 열리다, 몰두하다
+aufhalten	;	막다, 저지하다
+aufhängen	;	걸다, 매달다
+aufheben	;	들다, 보관하다, 폐지하다
+aufhören	;	그만두다
+aufklären	;	해명하다
+Aufklärung	;	계몽
+aufkommen	;	일어나다, 생기다
+aufkündigen	;	해약하다
+Auflage	;	(책의) 판
+auflegen	;	위에 놓다, 싣다
+auflehnen	;	올려놓다
+auflösen	;	녹이다, 풀다, 폐지하다
+aufmerksam	;	주의깊은
+Aufmerksamkeit	;	주의
+aufmuntern	;	즐겁게 하다
+Aufnahme	;	개시, 수용, 작성, 촬영
+aufnehmen	;	집어올리다, 수용하다, 촬영하다
+aufpassen	;	주의하다, 돌보다
+aufräumen	;	치우다, 청소하다
+aufrecht	;	똑바른
+aufregen	;	흥분시키다
+Aufregung	;	흥분
+aufreißen	;	찢어뜯다, 열어젖히다
+aufrichten	;	똑바로 일으키다, 격려하다
+aufrichtig	;	솔직한
+Aufruhr	;	소동, 폭동
+Aufsatz	;	작문, 논문
+aufschieben	;	연기하다, 유예하다
+Aufschlag	;	추락
+aufschlagen	;	깨뜨리다, 떨어져 부딪치다
+aufschließen	;	열다, 해명하다
+Aufschluss	;	해명
+aufschneiden	;	절개하다
+aufschreiben	;	기입하다
+Aufschwung	;	비약
+Aufsehen	;	주목
+aufsehen	;	주목하다
+aufsetzen	;	놓다, 얹다
+Aufsicht	;	감독, 감시
+aufspringen	;	뛰어오르다, 활짝열리다
+Aufstand	;	봉기, 반란
+aufstehen	;	열려있다, 일어서다
+aufsteigen	;	오르다, 올라타다
+aufstellen	;	세우다
+Aufstieg	;	상승, 등정, 이륙
+auftauchen	;	떠오르다
+Auftrag	;	지시, 위임
+auftragen	;	(음식) 식탁에 차리다, 바르다
+auftreiben	;	위로 올리다, 일으키다
+auftreten	;	밟다, 행동하다
+Auftritt	;	등장, 출연, 장
+auftun	;	열다, 위에 얹다
+aufwachen	;	눈뜨다, 정신이 들다
+aufwachsen	;	자라다,
+Aufwand	;	비용, 낭비
+aufwärmen	;	다시 데우다, 다시 꺼내다
+aufwärts	;	위쪽으로
+aufwecken	;	깨우다
+aufwiegeln	;	선동하다
+aufziehen	;	끌어올리다, 열다
+Aufzug	;	행진, 승강기
+Auge	;	눈
+Augenblick	;	순간
+Augenblicklich	;	당장의
+Augenschein	;	외관
+ausarbeiten	;	완성하다
+ausarten	;	악화되다
+ausbessern	;	수선하다
+Ausbeute	;	이득, 생산량
+ausbeuten	;	채굴하다, 이용하다
+ausbilden	;	양성하다
+Ausbildung	;	교육
+ausbleiben	;	일어나지 않다
+Ausblick	;	조망, 전망
+Ausblund	;	표본, 화신
+ausbrechen	;	헐어내다, 뽑다
+ausbreiten	;	펴다, 설명하다
+Ausdauer	;	인내력
+ausdauern	;	오래가다
+ausdehnen	;	넓히다, 팽창시키다
+ausdenken	;	생각해내다
+Ausdruck	;	표시
+ausdrücken	;	표현하다
+ausdrücklich	;	명확한
+ausdrucksvoll	;	감정이 풍부한
+auseinander	;	떨어져, 따로따로
+auseinandersetzen	;	설명하다, 논술하다
+ausfahren	;	차를타고나가다, 출항하다
+Ausfahrt	;	출발
+ausfallen	;	탈락하다, 빠지다
+ausfliegen	;	밖으로 날아가다
+Ausflucht	;	핑계
+Ausflug	;	소풍
+Ausfuhr	;	수출
+ausführen	;	수출하다, 실행하다
+ausführlich	;	상세한
+Ausführung	;	실행
+ausfüllen	;	가득 채우다
+Ausgabe	;	지출, 비용
+Ausgang	;	외출
+ausgeben	;	지출하다
+ausgehen	;	나가다
+ausgelassen	;	생기발랄한
+ausgemacht	;	확실한, 완전한
+ausgeschlossen	;	불가능한, 있을수없는
+ausgezeichnet	;	뛰어난, 매우
+ausgleichen	;	평준화하다
+aushalten	;	참다, 견디다
+ausheben	;	끄집어내다, 뽑아내다
+auskleiden	;	옷을 벗기다
+auskommen	;	사이좋게 지내다
+Auskunft	;	알림, 안내
+Ausland	;	외국
+Ausländer	;	외국인
+ausländish	;	외국의
+auslassen	;	빠뜨리다, 누락시키다
+ausleeren	;	비우다
+auslegen	;	진열하다
+Auslese	;	선택, 선발
+auslesen	;	선택하다, 선발하다
+auslöschen	;	끄다, 지우다
+auslösen	;	작동시키다
+ausmachen	;	끄다, 끝내다
+Ausnahme	;	제외, 예외
+ausnehmen	;	꺼내다, 제외하다
+auspacken	;	포장을 뜯고 꺼내다
+ausrechnen	;	계산하다
+Ausrede	;	핑계
+ausreichen	;	넉넉하다, 족하다
+ausreichend	;	충분한
+ausrichten	;	개최하다, 거행하다
+ausrufen	;	외치다
+ausruhen	;	쉬다
+ausrüsten	;	준비하다
+Aussage	;	진술, 보고
+aussagen	;	진술하다
+Aussatz	;	나병
+ausschalten	;	스위치 끄다
+ausscheiden	;	배설하다, 분리하다
+ausschlafen	;	충분히 자다
+ausschließen	;	쫓아내다, 제명하다
+Ausschnitt	;	부분, 틈
+Ausschuss	;	위원회
+aussehen	;	~처럼 보이다
+außen	;	밖에
+außer	;	밖에
+außerdem	;	이외에
+außerhalb	;	~의 밖에
+äußerlich	;	외부의, 외면적인
+äußern	;	나타내다. 나타나다
+äußerordentlich	;	특별한, 이상한
+äußerst	;	가장 밖의, 최후의
+Äußerung	;	발표, 의견
+aussetzen	;	방치하다
+Aussicht	;	조망, 전망
+aussperren	;	들어오지 못하게 하다
+Aussprache	;	발음
+aussprechen	;	발음하다, 진술하다
+Ausspruch	;	발언, 격언
+Ausstand	;	졸업
+ausstatten	;	공급하다
+aussteigen	;	내리다
+ausstellen	;	진열하다, 전시하다
+Ausstellung	;	전람회, 박람회
+ausstoßen	;	내쫓다
+ausstrecken	;	(팔, 다리) 쭉 뻗다
+aussuchen	;	선발하다
+Austausch	;	교환, 교체
+austauschen	;	교환하다, 교체하다
+Auster	;	굴
+austragen	;	배달하다
+austreten	;	걸어나가다
+ausüben	;	수행하다, 영향미치다
+Auswahl	;	선택, 선발
+auswählen	;	선택하다, 선발하다
+auswandern	;	이민가다
+auswärtig	;	외지의, 국외의
+auswärts	;	밖으로
+auswechseln	;	교환하다
+Ausweg	;	출구, 해결책
+ausweichen	;	피하다
+Ausweis	;	신분증명서
+ausweisen	;	증명하다
+auswendig	;	암기하여
+auszahlen	;	지불하다
+Auszahlung	;	지불
+auszeichnen	;	시상하다, 특징짓다, 뛰어나다
+ausziehen	;	펼치다, 뽑아내다
+Auszug	;	발췌, 추출물, 이사
+Axt	;	도끼
+Cafe	;	커피숍
+Champion	;	챔피언
+Chance	;	기회
+Chaos	;	혼란
+chaotisch	;	무질서한
+Charakter	;	특성, 특징
+charakterisieren	;	특징지우다
+charakteristisch	;	특색있는
+Chauffeur	;	(택시) 운전사
+Chef	;	우두머리, 장
+Chemie	;	화학
+chemisch	;	화학적인
+Chinese	;	중국인
+Chirurg	;	외과의사
+Chirurgie	;	외과의술, 외과
+Chor	;	합창단, 합창
+Christ	;	그리스도교도
+Christentum	;	그리스도교
+christlich	;	그리스도교의
+Christus	;	그리스도
+Chronik	;	연대기
+chronisch	;	만성의
+circa	;	대략
+Dach	;	지붕
+dadeln	;	비난하다, 꾸짖다
+daheim	;	자기 집에서, 고향에서
+damals	;	그 당시, 그 무렵
+Dame	;	귀부인, 숙녀
+Damm	;	제방, 댐
+dämmern	;	동트다, 밝아지다
+Dämmerung	;	어스름
+Dampf	;	김, 수증기
+danach	;	그 다음에
+daneben	;	게다가
+Dänemark	;	덴마크
+Dank	;	감사
+dankbar	;	감사하고 있는
+danken	;	감사하다
+darlegen	;	명시하다, 설명하다
+Darm	;	장(腸)
+darstellen	;	표현하다, 이루다
+Dasein	;	존재, 생활
+dastehen	;	서있다
+Dauer	;	지속, 기간
+dauern	;	지속되다
+dauern	;	불쌍히 여기다
+Daumen	;	엄지 손가락
+Deck	;	갑판, 데크
+Decke	;	뚜껑, 이불
+Deckel	;	뚜껑, 덮개
+decken	;	덮다, 지불하다
+Degen	;	검, 긴 칼
+dehnen	;	늘이다, 팽창시키다
+Deich	;	둑, 제방
+Delegation	;	대표단
+Delphin	;	돌고래
+Demokratie	;	민주주의
+Demonstrant	;	시위운동자
+Demonstration	;	시위
+denkbar	;	생각할 수 있는, 가능한
+denken	;	생각하다
+Denkmal	;	기념물
+derb	;	질긴, 거친
+dergleichen	;	그와 같은 것
+deshalb	;	그 때문에
+desto	;	더욱 더
+deswegen	;	그 때문에
+deuten	;	가리키다, 지시하다
+deutlich	;	명백한, 뚜렷한
+Deutung	;	해석, 의미
+Dezember	;	12월
+Dialog	;	대화
+Diamant	;	다이아몬드
+dicht	;	촘촘한
+dichten	;	쓰다, 짓다
+Dichter	;	시인, 작가
+dick	;	두꺼운, 부푼
+Dieb	;	도둑
+Diebstahl	;	도둑질, 절도
+dienen	;	봉사하다, 근무하다, 쓰이다
+Diener	;	하인, 공복
+Dienst	;	고용관계, 근무
+Dienstag	;	화요일
+dienstlich	;	직무상의, 사무적인
+diesmal	;	이번에
+diesseits	;	이쪽
+Diktat	;	구술, 받아쓰기
+Diktator	;	독재자
+Diktatur	;	독재
+diktieren	;	받아쓰게 하다
+Dilettant	;	애호가, 아마추어
+Ding	;	물건, 사물
+Diplomat	;	외교관
+diplomatisch	;	외교상의
+Dirne	;	창녀
+Diskussion	;	토론
+diskutieren	;	토론하다
+Disziplin	;	규율
+Doktor	;	박사
+dolmetschen	;	통역하다
+Dolmetscher	;	통역사
+Dom	;	대성당
+Dom	;	돔
+Donner	;	천둥
+donnern	;	천둥치다
+Donnerstag	;	목요일
+doppelt	;	이중의
+Doppelzimmer	;	2인용 침대 방
+Dorf	;	마을, 촌
+Dorn	;	가시, 가시덤불
+Dose	;	깡통
+Dosis	;	복용량
+Dotter	;	노른자위
+Dozent	;	대학강사
+Draht	;	철사, 전선
+Drama	;	희곡
+Drang	;	압박, 충동
+drängen	;	몰아대다, 재촉하다
+draußen	;	밖에서
+Dreck	;	오물, 쓰레기
+dreckig	;	불결한
+drehen	;	돌리다, (영화)촬영하다, 감다
+Dreieck	;	삼각형
+dreschen	;	타작하다
+dringen	;	밀고 나아가다
+dringend	;	절박한, 긴급한
+drohen	;	협박하다, 위협하다
+dröhnen	;	울리다
+drollig	;	익살스러운
+drüben	;	저쪽에서
+Druck	;	누름, 중압감, 인쇄
+drucken	;	인쇄하다
+drücken	;	누르다, 밀다
+Druckerei	;	인쇄소
+Druckfehler	;	오자
+Drucksache	;	인쇄물
+ducken	;	굴복시키다
+Duell	;	결투
+Duft	;	향기
+dulden	;	참다, 허용하다
+dumm	;	어리석은
+Dummheit	;	우둔
+Dummkopf	;	바보
+dumpf	;	습기찬
+dunkel	;	어두운
+Dunkel	;	암흑, 어둠
+Dunkelheit	;	암흑, 어둠
+dünn	;	얇은, 가는, 여윈
+Dunst	;	증기, 안개, 연기
+durcharbeiten	;	쉬지않고 일하다
+durchaus	;	전적으로, 무조건
+durchbrechen	;	걲다, 돌파하다
+durchdringen	;	뚫고 나가다
+durcheinander	;	뒤섞여, 뒤죽박죽되어
+Durchfahrt	;	통과, 통로
+durchfallen	;	낙제하다
+durchführen	;	수행하다
+Durchgang	;	통과, 통로
+durchgehen	;	통과하다
+durchlassen	;	통과시키다
+Durchlaucht	;	전하(존칭)
+durchmachen	;	졸업하다
+Durchmesser	;	직경, 지름
+Durchschnitt	;	평균, 단면도
+durchsehen	;	통해서보다, 들여다보다
+durchsetzen	;	끝가지 해내다, 관철시키다
+durchsichtig	;	투명한
+durchstreichen	;	말소하다
+dürfen	;	해도 좋다
+dürfig	;	가난한, 부족한
+dürr	;	마른, 메마른
+Durst	;	목마름, 갈증
+durstig	;	목이 마른
+Dusche	;	샤워
+duschen	;	샤워를 하다
+düster	;	어두운, 침침한
+Dutzent	;	12개, 다스
+duzen	;	너라고 부르다, 말놓다
+DZug	;	급행열차
+Ebbe	;	썰물
+eben	;	평평한
+eben	;	생존하다
+Ebene	;	평야, 평지
+ebenfalls	;	역시, 마찬가지로
+ebenso	;	똑같은 정도로
+Eber	;	수퇘지
+Echo	;	산울림, 메아리
+echt	;	진정한, 진짜의
+Eck	;	모퉁이
+Ecke	;	모퉁이
+eckig	;	모난
+edel	;	고귀한, 고상한
+eerdichten	;	꾸며내다
+Effekt	;	효과
+egal	;	아무렇게나 해도 좋은
+Egoist	;	이기주의자
+egoistisch	;	이기주의의
+ehe	;	이전에, 오히려
+Ehe	;	혼인, 결혼
+Ehepaar	;	부부
+eher	;	더 일찍이
+ehern	;	청동의
+ehest	;	가장 빠른
+Ehre	;	명예
+ehren	;	존경하다
+ehrfurcht	;	경외
+ehrlich	;	성실한, 정직한
+Ei	;	알, 달걀
+Eid	;	선서, 맹세
+Eifer	;	열의, 열심
+Eifersucht	;	질투
+eifersüchtig	;	질투가 심한
+eifrig	;	열심인
+eigen	;	자기의, 자신의
+eigenartig	;	고유한, 특별한
+Eigenschaft	;	성질, 자격
+eigensinnig	;	고집센
+eigentlich	;	원래의, 본래의, 원래
+Eigentum	;	소유물, 재산
+eigentümlich	;	고유의, 독특한
+Eile	;	서두름
+eilen	;	서두르다, 급히 가다
+eilig	;	긴급한, 급한
+Eimer	;	들통, 양동이
+einander	;	서로
+einarbeiten	;	삽입하다
+einbegreifen	;	포함하다
+einbiegen	;	접어들다
+einbilden	;	상상하다, 착각하다
+Einbildung	;	상상, 공상
+einbrechen	;	부수다, 침입하다
+Einbrecher	;	침입자, 도둑
+einbringen	;	가져오다
+Einbruch	;	침입, 가택침입
+eindeutig	;	명백한
+eindringen	;	침입하다
+Eindruck	;	인상, 감명
+einerlei	;	동일한, 마찬가지인
+einerseits	;	한편에서는
+einfach	;	단순한, 이해하기 쉬운
+Einfahrt	;	입구, 타고 들어옴
+Einfall	;	침입, 착상
+einfallen	;	붕괴하다, 침입하다
+Einfluss	;	영향
+einfreffen	;	도달하다, 실현되다
+Einfuhr	;	수입
+einführen	;	수입하다, 소개하다
+Einführung	;	수입, 소개
+Eingang	;	입구
+eingeboren	;	토착의
+eingehen	;	들어가다, 도착하다, 동의하다
+einhalten	;	엄수하다, 중지하다
+Einheit	;	단일, 통일
+einheitlich	;	통일적인, 조화된
+einher	;	이쪽으로
+einholen	;	따라잡다, 얻다
+einig	;	몇몇의
+einig	;	의견이 같은, 사이좋은
+einigen	;	일치하다, 의견이 같다
+Einkauf	;	구입
+einkaufen	;	구입하다
+einkehren	;	잠시 들르다
+Einkommen	;	소득, 수입
+einkommen	;	청원하다, 진정하다, 들어오다
+Einkünfte	;	소득, 수입
+einladen	;	초청하다, 초대하다
+Einladung	;	초대
+Einlage	;	첨부물
+einlassen	;	들여보내다, 관여하다(sich)
+einlaufen	;	들어오다, 도착하다
+einlegen	;	끼워넣다
+einleiten	;	준비하다, 시작하다
+Einleitung	;	도입, 입문
+einleuchten	;	분명해지다, 알다
+einmünden	;	합류하다
+einnehmen	;	수용하다, 복용하다, 벌다
+Einöde	;	황무지
+einpacken	;	포장하다
+einräumen	;	챙기다, 정리하다
+Einrede	;	이의, 항의
+einrichten	;	정리하다, 정돈하다
+Einrichtung	;	정리, 정돈
+einsam	;	고독한, 외로운
+Einsamkeit	;	고독
+Einsatz	;	삽입물, 투입
+einschalgen	;	박다, 때려부수다, 나아가다
+einschalten	;	끼워넣다, 스위치를 넣다
+einschätzen	;	평가하다
+einschenken	;	따르다, 권하다
+einschlafen	;	잠들다
+einschließen	;	가두다, 포함하다
+Einschluss	;	포함, 포괄
+Einschnitt	;	베기, 도려내기
+einschränken	;	제한하다, 절약하다(sich)
+Einschränkung	;	제한, 절약
+einschreiben	;	기입하다, 등록하다
+einschreiten	;	단호한 태도를 취하다
+einschüchtern	;	위협하다
+einsehen	;	열람하다, 이해하다
+einseitig	;	일면의, 일방적인
+einsetzen	;	끼워넣다, 임명하다
+Einsicht	;	열람, 통찰
+Einsiedler	;	은자, 세상을 등진사람
+einsperren	;	감금하다
+Einspruch	;	이의, 불복
+einst	;	언젠가
+einstecken	;	끼워넣다
+einsteigen	;	올라타다
+einstellen	;	집어넣다, 중지하다
+einstimmung	;	만장일치의
+einstürzen	;	함몰하다, 붕괴하다
+einteilen	;	나누다, 분할하다
+eintönig	;	단조로운
+Eintracht	;	일치, 협조
+eintragen	;	기입하다, 등기하다
+eintreten	;	들어가다, 일어나다
+Eintritt	;	입장(료)
+einverleiben	;	합병하다
+einverstanden	;	동의된, 합의된
+Einwand	;	이의, 항변
+einwandern	;	이주하다
+einwandfrei	;	비난할 여지가 없는, 이의없는
+einwenden	;	이의 제기하다, 항의하다
+einwerfen	;	투입하다, 던져넣다
+einwickeln	;	싸다, 포장하다
+einwilligen	;	동의하다, 승낙하다
+einwirken	;	작용하다, 영향 끼치다
+Einwohner	;	주민
+einzahlen	;	불입하다, 예금하다
+Einzahlung	;	불입, 예금
+Einzelheit	;	상세
+einzeln	;	단일의, 개별적인
+Einzelzimmer	;	싱글룸
+einziehen	;	끌어들이다, 이사하다
+einzig	;	유일한, 둘도없는
+Eis	;	얼음
+Eisen	;	쇠, 철
+Eisenbahn	;	철도
+eisern	;	철의
+eisig	;	얼음의
+eitel	;	허영심이 강한, 공허한
+Eiter	;	(의학) 고름
+Eiweiß	;	(알) 흰자위
+Ekel	;	욕지기, 메스꺼움
+ekelhaft	;	욕지기나는, 불쾌한
+Ekstase	;	기쁨, 활홀
+elastisch	;	탄력있는
+Elefant	;	코끼리
+elegant	;	우아한, 멋진
+elektrisch	;	전기의
+Elektrische	;	전차
+Element	;	원소
+elementar	;	기본적인
+elend	;	불행한, 비참한
+Elend	;	불행, 비참, 가난
+Elfenbein	;	상아
+Ellbogen	;	팔꿈치
+Eltern	;	양친, 부모
+Empfang	;	수취, 수령, 영접
+empfangen	;	받다, 맞아들이다
+Empfänger	;	수취인, 수령자
+empfehlen	;	추천하다, 권하다
+Empfehlung	;	추천
+empfinden	;	느끼다, 지각하다
+empfindlich	;	느끼기 쉬운, 다감한
+Emphase	;	강조, 역설
+empirisch	;	경험적인
+empor	;	위로, 높이
+empören	;	격분시키다, 자극하다
+empörend	;	괘씸한, 불쾌한
+emsig	;	부지런한
+Ende	;	끝
+enden	;	끝내다
+endgültig	;	최종적인, 최후의
+endlich	;	마침내, 드디어
+Energie	;	에너지
+energisch	;	정력적인, 힘찬
+eng	;	좁은, 비좁은
+Enge	;	좁음, 궁지
+Engel	;	천사
+englisch	;	영어의, 영국의
+Enkel	;	손자
+Enkelkind	;	손자, 손녀
+entbehren	;	~없이 지내다, 결여되다
+entdecken	;	발견하다
+Entdeckung	;	발견, 폭로
+Ente	;	오리
+entfalten	;	펴다, 펼치다, 발전시키다
+Entfernung	;	추방, 이탈
+entfremden	;	멀리하다, 소외시키다
+entgegen	;	~향하여, 반대하여
+entgegenesetzt	;	상반되는, 모순된
+entgegenkommen	;	받아들이다, 상응하다
+entgegennehmen	;	받아들이다
+entgegensetzen	;	반대하다
+entgegnen	;	대답하다, 말대꾸하다
+entgehen	;	모면하다, 피하다
+entgelten	;	보상하다
+enthalten	;	함유하다, 억제하다
+enthüllen	;	덮개를 벗기다, 드러내다
+Enthusiasmus	;	감격, 열광
+entkommen	;	달아나다, 벗어나다
+entladen	;	짐을 내리다
+entlang	;	~따라
+entlassen	;	떠나게 하다
+entlegen	;	멀리 떨어져 있는
+entnehmen	;	덜다, 집어내다
+entrüsten	;	격분하다(sich)
+entsagen	;	단념하다
+Entsagung	;	체념
+entschädigen	;	갚다, 배상하다
+entscheiden	;	결정하다
+entscheidend	;	결정적인
+Entscheidung	;	결정, 결심
+entschieden	;	결정적인
+entschließen	;	결정하다
+Entschluss	;	결심, 결정
+entschuldigen	;	용서하다, 변호하다
+Entschuldigung	;	용서, 사과
+entsetzen	;	깜짝 놀라다
+Entsetzen	;	깜짝 놀람, 공포
+entsetzlich	;	무서운, 엄청나게
+entsetzt	;	깜짝 놀란
+entsingen	;	생각해내다, 상기하다
+entsprechen	;	상응하다, 일치하다
+entsprechend	;	상응하는, 일치하는
+entspringen	;	발원하다
+entstammen	;	~의 자손이다
+entstehen	;	생기다, 일어나다
+Entstehung	;	생성, 기원
+entstellen	;	일그러뜨리다
+enttäuschen	;	실망시키다
+Enttäuschung	;	환멸, 실망
+entwerfen	;	설계하다, 계획하다
+entwickeln	;	발전시키다, 발전하다
+Entwicklung	;	발전
+Entwurf	;	윤곽, 약도, 설계
+entzücken	;	매혹하다
+entzünden	;	불붙이다
+Entzündung	;	발화, 점화
+entzwei	;	둘로, 갈라져서
+Enzyklopädie	;	백과사전
+Epidemie	;	전염병, 유행병
+Epigone	;	자손, 후예
+Epigramm	;	경구
+Epik	;	서사시
+Epilog	;	맺는 말
+episch	;	서사적인
+Episode	;	에피소드
+Epistel	;	서신, 서간
+Epoche	;	시기, 시대
+erbarmen	;	불쌍히 여기다(sich)
+erbärmlich	;	가엾은
+erbauen	;	세우다, 짓다
+Erbe	;	상속인, 유산
+erben	;	상속하다
+erblicken	;	바라보다
+erbrechen	;	부수어 열다
+Erbschaft	;	상속재산, 유산
+Erbse	;	완두, 완두콩
+Erbsünde	;	원죄
+Erdbeben	;	지진
+Erde	;	흙, 토양
+erdenken	;	생각해내다
+Erdgeschoss	;	1층
+Erdkunde	;	지리학
+ereignen	;	생기다, 일어나다
+Ereignis	;	사건
+erfahren	;	경험하다
+erfahren	;	경험있는
+Erfahrung	;	경험
+erfinden	;	발명하다
+Erfindung	;	발명
+Erfolg	;	성공
+erfolgreich	;	효과있는
+erforderlich	;	필요한, 필수의
+erfreuen	;	기쁘게 하다, 만족시키다
+erfreulich	;	기쁜
+erfrischen	;	신선하게 하다
+Erfrischung	;	원기회복
+erfüllen	;	채우다
+Erfüllung	;	채움, 이행
+ergänzen	;	보충하다, 채우다
+Ergänzung	;	보충, 보완
+ergeben	;	생기다, 밝히다
+Ergebnis	;	결과
+ergiebig	;	수확이 많은, 비옥한
+ergötzen	;	흥겨워하다
+ergreifen	;	움켜쥐다
+ergründen	;	깊이를 재다
+erhaben	;	높아진, 두드러진
+erhalten	;	얻다, 보존하다
+erheben	;	높이 올리다, 일으키다
+erheblich	;	두드러진, 현저한
+erhitzen	;	가열하다
+erhöhen	;	높이다, 올리다
+erholen	;	회복되다, 휴양하다
+Erholung	;	회복, 휴양
+erinnern	;	상기시키다
+Erinnerung	;	기억, 추억
+erkälten	;	감기들다(sich)
+Erkältung	;	감기
+erkennen	;	인식하다
+Erkenntnis	;	인식, 인지
+erklären	;	설명하다
+Erklärung	;	설명, 선언
+erkranken	;	병에 걸리다
+erkundigen	;	묻다, 문의하다
+erlangen	;	도달하다, 얻다
+erlauben	;	허락하다, 동의하다
+Erlaubnis	;	허가, 동의
+erläutern	;	설명하다
+erleben	;	경험하다
+Erlebnis	;	체험, 경험
+erledigen	;	끝내다, 처리하다
+erleichtern	;	덜어주다, 안심시키다
+erleiden	;	당하다, 겪다
+erlöschen	;	꺼지다, 바래다
+erlösen	;	구제하다
+ermahnen	;	경고하다
+ermorden	;	살해하다
+ermuntern	;	용기를 북돋우다, 격려하다
+ernähren	;	부양하다, 양육하다
+Ernährung	;	부양, 양육
+erneuern	;	교체하다, 수선하다
+Ernst	;	진지함, 신중함
+ernst	;	진지한, 중대한
+Ernte	;	수확, 수익
+ernten	;	수확하다, 얻다
+erobern	;	정복하다, 획득하다
+Eroberung	;	정복, 획득
+eröffnen	;	개시하다, 열다
+Eröffnung	;	열기, 개시
+erörtern	;	토론하다
+Eros	;	사랑, 연애
+erraten	;	알아맞히다, 추측하다
+erregen	;	자극하다, 흥분시키다
+Erregung	;	흥분
+erreichen	;	닿다, 도착하다, 도달하다
+errichten	;	세우다, 짓다, 창설하다
+Errungenschaft	;	업적, 성과
+Ersatz	;	대체, 대신
+erscheinen	;	나타나다, 보이다
+Erscheinung	;	현상, 외모
+erschöpfen	;	녹초가 되다, 소진하다
+erschrecken	;	깜짝 놀라다
+ersetzen	;	대체하다, 보충하다
+ersparen	;	절약하다
+erst	;	맨처음, 최초의
+erstaunen	;	놀라게 하다, 놀라다
+erstaunlich	;	놀라운, 경탄할만한
+erstens	;	첫째로
+ersticken	;	질식하다
+Ersuchen	;	청원, 간청
+Ertrag	;	수익, 소득
+ertragen	;	참다, 견디다
+ertrinken	;	물에 빠지다, 익사하다
+erwachen	;	잠깨다
+erwachsen	;	자라다, 생기다
+erwägen	;	고려하다, 헤아리다
+Erwägung	;	고려, 숙고
+erwähnen	;	언급하다
+erwarten	;	기대하다, 고대하다
+Erwartung	;	기대, 예상
+erwecken	;	깨우다, 일으키다
+erweisen	;	증명하다, 표명하다
+erweitern	;	확대하다
+Erwerb	;	취득, 영업
+erwerben	;	얻다, 취득하다
+erwidern	;	대응하다, 갚다
+erwischen	;	체포하다, 검거하다
+Erz	;	광석
+erzählen	;	말하다, 묘사하다
+Erzählung	;	묘사, 이야기
+erzeugen	;	생산하다, 만들다
+Erzeugnis	;	생산물, 생산품
+Erzeugung	;	생산, 제작
+erziehen	;	교육하다
+Erziehung	;	교육
+Esel	;	당나귀
+essen	;	먹다
+Essen	;	식사, 음식
+Essig	;	식초
+Esszimmer	;	식당
+Etage	;	층
+Ethik	;	윤리학, 윤리
+Ethos	;	품성, 풍속
+etwa	;	대략, 혹시, 어쩌다가
+etwas	;	어떤것, 무엇, 조금
+Eule	;	부엉이
+Europa	;	유럽
+europäisch	;	유럽의
+evangelisch	;	복음주의의, 신교의
+Evangelium	;	복음
+ewig	;	영구적인, 영원한
+Ewigkeit	;	영원, 영구
+exakt	;	정확한
+Examen	;	시험
+Exempel	;	보기
+Exemplar	;	모범, 견본
+Existenz	;	존재, 생존, 생활
+existieren	;	존재하다, 생존하다
+Experiment	;	실험
+Explosion	;	폭발
+explosiv	;	폭발의
+exponieren	;	진열하다, 드러내다
+Export	;	수출
+exportieren	;	수출하다
+extra	;	특별히
+exzellent	;	우수한, 탁월한
+exzentrisch	;	별난, 기이한
+Fabel	;	우화
+fabelhaft	;	환상적인
+Fabrik	;	공장
+Fach	;	칸막이
+Fächer	;	부채
+Fachmann	;	전문가
+Fackel	;	횃불
+fade	;	맛없는, 김빠진, 멋없는
+Faden	;	실
+fähig	;	유능한
+Fähigkeit	;	능력
+fahl	;	흐릿한
+Fahne	;	기, 깃발
+Fähre	;	나룻배
+fahren	;	향하다, 가다, 운전하다
+Fahrer	;	운전자
+Fahrkarte	;	승차권, 차표
+Fahrrad	;	자전거
+Fahrstuhl	;	승강기, 엘리베이터
+Fahrt	;	여행, 드라이브
+Fahrzeug	;	교통기관
+Fäkultat	;	단과대학, 학부
+Falke	;	매
+Fall	;	낙하, 추락, 떨어짐
+Falle	;	덫, 함정
+fallen	;	넘어지다, 쓰러지다
+falls	;	~의 경우에는, 만일 ~라면
+falsch	;	거짓의, 틀린
+fälschen	;	위조하다, 변조하다
+Falte	;	주름, 주름살
+falten	;	접다
+Familie	;	가족, 가정
+Familienname	;	성
+Fang	;	잡음, 포획
+fangen	;	잡다, 붙잡다
+Fantasie	;	상상, 공상력
+fantasieren	;	공상에 잠기다, 헛소리하다
+fantastisch	;	환상적인
+Farbe	;	색, 색채
+färben	;	염색하다, 물들다
+farbig	;	색이있는, 다채로운
+Farbige	;	유색인
+Faser	;	섬유, 실, 힘줄
+Fass	;	(나무) 통
+fassen	;	담다, 끼워넣다, 움켜쥐다
+Fassung	;	표현 양식, 침착
+fast	;	거의, 대략
+fasten	;	단식하다
+Fastnacht	;	카니발
+faul	;	썩은, 부패한
+faulenzen	;	게으름 피우다
+Faulheit	;	나태, 게으름
+Faust	;	주먹
+Feder	;	깃, 깃털, 펜
+fegen	;	청소하다
+fehlen	;	잘못하다, 실패하다
+Fehler	;	오류, 결점
+Feier	;	축제, 잔치
+feierlich	;	축제의, 장엄한
+feiern	;	축하하다
+Feiertag	;	휴일, 축제일
+feig	;	비겁한
+Feige	;	무화과
+feil	;	팔려고 내놓은
+feilschen	;	값을 깍다
+fein	;	미세한, 가는, 총명한, 미세한
+Feind	;	적, 원수
+feind	;	~의 적이다
+feindlich	;	적의, 적대적인
+feist	;	살찐
+Feld	;	들, 벌판
+Feldzug	;	전쟁, 출정, 캠페인
+Fell	;	가죽, 모피
+Felsen	;	바위, 암석
+Fenster	;	창, 창문
+Fensterscheibe	;	창유리
+Ferien	;	휴가
+Ferienreise	;	휴가 여행
+fern	;	먼
+Ferne	;	먼 곳, 이국
+ferner	;	그 밖에, 게다가, 장차
+Ferngespräch	;	장거리 통화
+Fernsehapparat	;	TV수상기
+fernsehen	;	TV보다
+Fernsehen	;	TV
+Fernsprecher	;	전화기
+Ferse	;	발꿈치
+fertig	;	준비된, 숙련된, 끝난
+fertigmachen	;	준비하다, 끝내다
+Fessel	;	수갑, 사슬
+fesseln	;	묶다, 매다
+Fest	;	축제, 잔치
+fest	;	질긴, 단단한, 견고한, 굳게
+festhalten	;	쥐다, 꽉 달라붙다
+feststellen	;	규명하다, 확언하다
+Festung	;	요새, 성채
+fett	;	살찐, 뚱뚱한
+Fett	;	지방
+Fetzen	;	찢어진 조각
+feucht	;	축축한, 젖은
+Feuchtigkeit	;	습기
+feudal	;	봉건의
+Feudalismus	;	봉건제도
+Feuer	;	불, 화재
+Feuerwehr	;	소방대
+Feuerzeug	;	라이터
+Fieber	;	열, 열병
+Figur	;	몸매, 외모
+Film	;	막, 필름, 영화
+Finanz	;	금융, 재정
+finanziell	;	재정상의
+finanzieren	;	자금 조달하다
+finden	;	발견하다
+Finger	;	손가락
+finster	;	깜깜한
+Finsternis	;	어둠, 암흑
+Firma	;	회사
+Fisch	;	물고기
+fischen	;	잡다, 낚다
+Fischer	;	어부
+fix	;	고정된
+fixieren	;	고정시키다, 기록하다
+flach	;	편편한
+Fläche	;	표면, 평지
+flackern	;	깜박거리다
+Flagge	;	기
+Flamme	;	불꽃, 화염
+flammen	;	활활 타오르다
+Flasche	;	병
+flattern	;	훨훨 날아가다
+flau	;	메스꺼운, 활기가 없는
+flechten	;	꼬다, 땋다
+Fleck	;	장소, 오점, 얼룩
+Fledeermaus	;	박쥐
+Flegel	;	도리깨
+flehen	;	간청하다
+Fleisch	;	살
+Fleischer	;	도축업자, 백정
+Fleiß	;	부지런함, 근면
+fleißig	;	부지런한, 근면한
+flicken	;	깁다, 수선하다
+Fliege	;	파리
+fliegen	;	날다, 비행기로 가다
+fliehen	;	달아나다, 기피하다
+fließen	;	흐르다
+flink	;	재빠른, 민첩한
+Flocke	;	털송이, 눈송이
+Floh	;	벼룩
+Floß	;	뗏목
+Flosse	;	지느러미
+Flöte	;	피리, 플루트
+Flotte	;	선대, 함대
+Fluch	;	욕설, 험담
+fluchen	;	저주하다, 악담하다
+Flucht	;	도망, 도주, 탈출
+Flucht	;	줄, 열
+flüchten	;	달아나다
+flüchtig	;	도주중인, 덧없는
+Flüchtling	;	망명자, 난민
+Flug	;	비행
+Flügel	;	날개, 측면
+Fluggesellschaft	;	항공사
+Flughafen	;	공항
+Flugplatz	;	비행장
+Flugzeug	;	항공기, 비행기
+Flur	;	현관, 복도, 마루
+Fluss	;	강, 하천
+flüssig	;	유동하는, 유창한, 유동적인
+Flüssigkeit	;	액체
+flüstern	;	속삭이다
+Flut (die Ebbe)	;	밀물, 만조, 홍수 (썰물)
+Folge	;	연속, 순서
+folgen	;	뒤따라가다
+folgend	;	다음의
+folgern	;	추론하다
+Folgerung	;	추론, 추정, 결론
+folglich	;	따라서
+Folter	;	고문기구
+fordern	;	요구하다, 필요로 하다
+fördern	;	강화하다, 채굴하다
+Forderung	;	요구, 청구
+Förderung	;	촉진, 진흥, 장려
+Form	;	꼴, 형태
+Formel	;	공식
+formen	;	형성하다
+förmlich	;	정식의, 형식적인
+Formular	;	서식, 서식용지
+forschen	;	연구하다, 탐구하다
+Forscher	;	연구자
+Forschung	;	연구, 탐구
+Forst	;	산림
+fort	;	앞으로, 잇달아
+fortfahren	;	출발하다, 계속하다
+fortgehen	;	떠나가다, 계속되다
+fortkommen	;	떠나다, 분실되다, 나아가다, 무성하다, 살아가다
+fortpflanzen	;	유포하다
+Fortschritt	;	진보, 발전
+fortschrittlich	;	진보적인, 진취적인
+fortsetzen	;	계속하다
+Fortsetzung	;	계속, 연속
+Fossil	;	화석
+Foto	;	사진
+Fotoalbum	;	앨범
+Fotoapparat	;	사진기
+Fotograf	;	사진사
+fotografieren	;	사진직다
+Fracht	;	운임, 운송화물
+Frachter	;	화물선, 운송업자
+Frage	;	질문
+fragen	;	묻다, 질문하다
+fraglich	;	불확실한, 애매한
+Frankreich	;	프랑스
+Französin	;	프랑스 여자
+französisch	;	프랑스의
+Fratze	;	허튼 짓, 익살
+Frau	;	여성, 여자
+frech	;	뻔뻔스러운, 건방진
+Frechheit	;	뻔뻔스러움
+frei	;	자유로운
+freigebig	;	아끼지 않는, 관대한
+Freiheit	;	자유, 면제
+freilassen	;	석방하다
+freilich	;	물론, 당연히
+freisprechen	;	무죄 판결 내리다
+Freitag	;	금요일
+freiwillig	;	자발적인
+Freizeit	;	휴가, 여가
+fremd	;	외국의, 낯선
+Fremde	;	외국인, 타향사람, 이방인
+Fremdsprache	;	외국어
+fressen	;	(동물) 먹다
+Freude	;	기쁨, 즐거움
+freudig	;	기쁜, 즐거운
+freuen	;	기뻐하다
+Freund	;	친구
+Freundin	;	여자친구
+freundlich	;	친절한
+Freundlichkeit	;	친절
+Frieden	;	평화, 화합
+Friedhof	;	묘지
+friedlich	;	평화적인, 평온한
+frieren	;	얼다, 결빙하다
+frisch	;	시원한, 활기찬
+Friseur	;	이발사, 미용사
+Frist	;	기간, 기한, 연기, 유예
+froh	;	기뻐하는, 즐거운
+fröhlich	;	기뻐하는, 즐거운
+fromm	;	경건한, 선의의
+Front	;	전면, 정면
+Frosch	;	개구리
+Frost	;	혹한, 오한
+Frucht	;	열매, 과실
+fruchtbar	;	수확이 많은, 다산의
+früh	;	이른, 초기의
+Frühe	;	이른 시각, 초기
+früher	;	이른, 이전의, 이전에
+frühestens	;	빨라도, 일러야
+Frühling	;	봄
+Frühstück	;	조반
+frühstücken	;	아침먹다
+Fuchs	;	여우
+fügen	;	연결시키다
+fühlen	;	느끼다, 만져서 확인하다
+führen	;	인도하다, 이끌다, 행하다
+Führer	;	안내인, 지도자
+Führerschein	;	운전면허증
+Führung	;	안내, 품행
+Fülle	;	풍부, 풍만
+füllen	;	채우다
+Füller	;	만년필
+Fund	;	발견, 발굴
+Fundament	;	기초, 토대
+Funk	;	무선전신
+Funke	;	불꽃
+Funktion	;	기능, 작용
+funktionieren	;	기능을 발휘하다
+Fürbitte	;	중재
+Furche	;	주름, 고랑
+Furcht	;	두려움, 공포
+furchtbar	;	무서운, 두려운
+fürchten	;	두려워하다
+fürchterlich	;	끔찍한
+Fürsorge	;	돌봄, 배려
+Fürst	;	국왕, 영주
+Fuß	;	발, 다리
+Fußball	;	축구
+Fußgänger	;	보행자
+Futter	;	(가축) 사료, 먹이
+füttern	;	사료(먹이) 주다
+Gabe	;	선물, 재능
+Gabel	;	포크
+gähnen	;	하품하다
+galant	;	친절한, 멋진
+Galerie	;	회랑, 화랑
+Galgen	;	교수대
+Galle	;	담즙
+Gang	;	보행, 걸음걸이
+Gans	;	거위
+ganz	;	온전한, 전체의
+gänzlich	;	완전한
+gar	;	준비가 되어있는, 완전한
+Garantie	;	보증, 담보
+garantieren	;	보증하다
+Gardine	;	커튼
+gären	;	발효하다, 끓다
+Garn	;	실, 그물
+garstig	;	싫은, 더러운
+Garten	;	뜰, 정원
+Gärtner	;	원예가
+Gas	;	가스, 기체
+Gasherd	;	가스레인지
+Gasse	;	골목길
+Gast	;	손님
+Gastgeber	;	주인(역)
+Gasthaus	;	여관, 음식점
+Gastliste	;	초청객 목록
+Gastmahl	;	향연, 연회
+Gatte	;	남편, 주인어른
+Gatter	;	울타리
+Gattung	;	종류
+Gau	;	지방
+gaukeln	;	팔랑거리다
+Gaumen	;	구강
+Gauner	;	사기꾼, 도적
+Gebärde	;	몸짓, 거동, 태도
+gebaren	;	행동하다, 처신하다
+gebären	;	낳다, 분만하다
+Gebäude	;	건물
+geben	;	주다
+Gebet	;	기도, 기도문
+Gebiet	;	지역, 분야
+gebieten	;	명하다, 요구하다
+gebildet	;	교양있는
+Gebirge	;	산맥
+geboren	;	타고난
+Gebot	;	명령
+Gebrauch	;	사용, 습관
+gebrauchen	;	사용하다
+gebrechlich	;	허약한
+gebrochen	;	끊어진
+Gebühr	;	요금, 사용료
+gebühren	;	~할 만하다
+Geburt	;	분만, 출산
+Geburtstag	;	생일
+Gebüsch	;	덤불, 수풀
+Geck	;	멋쟁이, 자존심 강한사람
+Gedächtnis	;	기억, 기억력
+Gedanke	;	생각, 사고, 사상
+gedeihen	;	번영하다, 성공하다
+gedenken	;	기억하고 있다
+Gedicht	;	시, 운문
+gediegen	;	옹골찬, 건실한
+Gedränge	;	군중
+Geduld	;	인내, 끈기
+geduldig	;	참을성이 강한
+geeignet	;	적당한
+Gefahr	;	위험
+gefährlich	;	위험한
+Gefährte	;	동행자, 동반자
+gefallen	;	맘에 들다
+gefällig	;	맘에 드는
+Gefängnis	;	형무소, 교도소
+Gefäß	;	그릇
+geflissentlich	;	고의적으로
+Gefühl	;	감정, 느낌
+Gegend	;	지방, 토지
+gegeneinander	;	서로서로
+Gegensatz	;	대립, 대조
+gegenseitig	;	상대하는, 서로의
+Gegenstand	;	사물, 물체, 대상
+Gegenteil	;	반대
+gegenüber	;	맞은 편에
+Gegenwart	;	현재, 오늘날, 현상, 출석
+gegenwärtig	;	현재의, 지금 있는
+Gegner	;	반대자, 적
+Gehalt	;	성분, 내용
+Gehege	;	울타리
+geheim	;	비밀의
+Geheimnis	;	비밀, 신비
+geheimnisvoll	;	신비한, 불가사의한
+Gehilfe	;	조수, 종업원
+Gehirn	;	뇌, 두뇌
+Gehör	;	청각
+gehorchen	;	복종하다
+gehören	;	~의 소유이다
+gehorsam	;	순종하는, 유순한
+Geige	;	바이올린
+geil	;	호색의
+Geisel	;	볼모, 인질
+Geißel	;	채찍
+Geist	;	생명력, 정신
+Geisteswissenschaft	;	정신과학
+geistig	;	종교상의
+Geiz	;	인색, 탐욕
+geizig	;	인색한
+Gelände	;	토지, 지형
+Geländer	;	난간, 손잡이
+gelangen	;	다다르다
+geläufig	;	유창한, 능숙한
+gelb	;	노란색의
+Geld	;	금전, 지폐
+Geldschein	;	지폐
+Geldstück	;	화폐, 주화
+Gelegenheit	;	기회
+gelegentlich	;	임시의, 그때그때의
+gelehrt	;	배움이 있는
+Geleit	;	동반, 동행
+Gelenk	;	관절
+Geliebte	;	연인
+gelind	;	부드러운, 느긋한
+gelingen	;	성공하다, 잘 되다
+gellen	;	날카롭게 울리다
+geloben	;	굳게 약속하다, 서약하다
+gelten	;	가치가 있다, 유효하다
+Geltung	;	가치, 통용, 유행
+Gemach	;	(작은) 방
+gemach	;	침착하게, 고요히
+gemächlich	;	쾌적한, 아늑한
+Gemahl	;	남편, 주인양반
+Gemälde	;	회화(채색)
+gemäß	;	~에 따라서
+gemein	;	일반의, 공공의, 야비한
+Gemeinde	;	공동체, 지방자치단체
+gemeinsam	;	공동의
+Gemeinschaft	;	공동, 공동사회
+Gemüse	;	야채
+Gemüt	;	심정, 기분
+gemütlich	;	기분좋은, 느긋한
+genau	;	면밀한, 엄격한
+genehmigen	;	동의하다, 인가하다
+Genehmigung	;	재가, 인가
+geneigt	;	경향이 있는, 호의가 있는
+General	;	장군
+Generation	;	세대
+genesen	;	낫다, 회복하다
+genial	;	천재적인
+Genie	;	천재적인
+genießen	;	누리다, 향유하다, 먹다, 마시다
+Genius	;	수호신
+Genoss	;	동무, 동료
+genug	;	충분한, 넉넉한
+genügen	;	충분하다, 족하다
+genügend	;	충분한
+Genuss	;	향유, 기쁨
+Geografie	;	지리학
+Geometrie	;	기하학
+Gepäck	;	수하물, 배낭
+gerade	;	짝수의
+gerade	;	곧은, 반듯한, 똑바로
+geradeaus	;	똑바로
+gerädert	;	기진맥진한
+Gerage	;	차고
+Gerät	;	도구, 기구
+geraten	;	빠지다, 마주치다
+Geräusch	;	소음, 잡음
+gerben	;	다듬다
+gerecht	;	정당한
+Gerechtigkeit	;	정당
+Gerede	;	수다, 소문, 평판
+Gericht	;	사법기구, 판결, 재판
+gerichtlich	;	사법의, 재판의
+gering	;	적은, 모자라는
+gerinnen	;	응고하다
+Germane	;	게르만사람
+germanisch	;	게르만의
+gern	;	즐겨, 기꺼이
+Geruch	;	후각, 냄새, 향기
+Gerücht	;	소문, 풍문
+gesamt	;	전체의, 모든
+Gesang	;	노래, 가곡
+Geschäft	;	용무, 일, 영업, 장사
+Geschäftsmann	;	실업가, 상인
+geschehen	;	일어나다, 생기다
+gescheit	;	영리한, 재치있는
+Geschenk	;	선물
+Geschichte	;	역사
+Geschick	;	운명, 숙명
+geschickt	;	숙련된, 재치있는
+Geschirr	;	그릇, 마구
+Geschlecht	;	성, 종, 세대
+geschlossen	;	닫힌, 폐쇄적인
+Geschmack	;	취미, 미각
+geschmacklos	;	맛없는, 상스러운
+geschmeidig	;	유연한
+Geschöpf	;	피조물, 생물, 인간
+Geschrei	;	비명, 소란
+Geschütz	;	대포
+geschwätzig	;	수다스러운
+geschwind	;	빠른, 민첩한
+Geschwindigkeit	;	속도
+Geschwister	;	형제, 자매
+Geschwulst	;	종양
+Geschwür	;	궤양
+Gesell	;	사나이, 놈, 동무, 장인
+gesellen	;	누구의 패가 되다
+gesellig	;	사교적인
+Gesellschaft	;	회사, 사회
+gesellschaftlich	;	사회의, 공동의
+Gesetz	;	법률, 규칙
+Gesicht	;	얼굴, 용모
+Gesinnung	;	지조, 성향
+gespannt	;	기대에 부푼, 긴장된
+Gespenst	;	환영, 유령
+Gespinst	;	실, 직물
+Gespräch	;	대화, 회화
+gesprächig	;	수다스러운
+Gestalt	;	용모, 체구
+gestalten	;	형성하다
+Geständnis	;	자백, 고백
+gestatten	;	허용하다
+Geste	;	몸짓, 제스처
+gestehen	;	고백하다, 자백하다
+Gestein	;	암석, 광물
+Gestell	;	가대, 선반
+gestern	;	어제
+Gesuch	;	청원
+gesund	;	건강한
+Gesundheit	;	건강
+gesundheitlich	;	건강상의
+Getränk	;	마실 것, 음료
+Getreide	;	곡물, 곡식
+getreu	;	성실한, 일치하는
+getrost	;	안심하는, 침착한
+Gewächs	;	식물
+Gewähr	;	보증, 보장
+gewähren	;	승낙하다, 허락하다
+Gewalt	;	힘, 강제, 폭력
+gewaltig	;	강력한, 유능한
+Gewand	;	옷, 외양
+gewandt	;	민첩한, 유능한
+Gewebe	;	직물, 천
+Gewehr	;	총
+Gewerbe	;	생업, 직업
+Gewerbesteuer	;	영업세
+Gewicht	;	무게, 중요
+Gewinn	;	이득, 이익
+gewinnen	;	이기다, 얻다
+gewiss	;	확실한, 어떤, 어느 정도의
+Gewissen	;	양심
+gewissenhaft	;	양심적인
+gewissenmaßen	;	어느 정도까지
+Gewitter	;	뇌우
+gewöhnen	;	길들이다, 익숙하게 하다
+Gewohnheit	;	습관, 버릇
+gewöhnlich	;	보통의, 일상의
+gewohnt	;	습관인
+Gewürz	;	양념
+geziemen	;	적당하다, 알맞다(sich)
+Gier	;	욕망, 열망
+gierig	;	탐욕스러운, 정욕적인
+gießen	;	붓다, 따르다, 주조하다
+Gift	;	선물
+Gift	;	독, 독물
+giftig	;	유독한
+gigantisch	;	거대한
+Gilde	;	조합, 길드
+Gipfel	;	꼭대기, 정상
+Gips	;	깁스, 석고
+Gitarre	;	기타
+Gitter	;	격자, 울타리
+Glanz	;	광채, 광택
+glänzen	;	빛나다
+Glas	;	유리
+gläsern	;	유리로 만든
+glatt	;	매끄러운, 순조로운
+Glaube(n)	;	믿음, 신앙
+glauben	;	믿다, 생각하다
+gleich	;	동일한, 곧
+gleichen	;	닮다, 비슷하다
+gleichfalls	;	마찬가지로
+Gleichgewicht	;	평형, 균형
+gleichgültig	;	무관심한, 중요하지 않은
+Gleichnis	;	비유
+gleichsam	;	말하자면, 마치, 흡사
+gleichzeitig	;	동시의
+Gleis	;	궤도, 레일
+gleiten	;	미끄러지다
+Gletscher	;	빙하
+Glied	;	사지, 마디
+Gliedmaßen	;	사지, 손발
+glimmen	;	희미하게 빛나다
+Glocke	;	종, 방울
+Glorie	;	영광
+Glück	;	행운, 요행
+glücklich	;	행복한, 행운의
+Glückwunsch	;	축하, 축사
+glühen	;	작열하다
+Glut	;	백열, 작열
+Gnade	;	은혜, 총애
+gnädig	;	자비로운
+Gold	;	금, 황금
+golden	;	금의
+gönnen	;	베풀다
+Gott	;	신
+Göttin	;	여신
+göttlich	;	신성한
+Götze	;	우상
+Grab	;	무덤
+graben	;	파다, 캐다
+Graben	;	도랑
+Grad	;	도, 등급
+Gram	;	원망, 비탄
+Gramm	;	그램
+Grammatik	;	문법
+grammatisch	;	문법의
+Gras	;	풀
+grässlich	;	끔찍한, 싫은
+gratulieren	;	축하하다
+grau	;	회색의
+Gräuel	;	공포, 전율
+grausam	;	잔혹한, 잔인한
+greifen	;	잡다, 쥐다
+grell	;	날카로운, 눈부신
+Grenze	;	경계선, 끝
+Grieche	;	그리스 사람
+Griechenland	;	그리스 
+griechisch	;	그리스의
+Griff	;	쥠, 손잡이
+Grille	;	귀뚜라미, 변덕
+Grimasse	;	찡그린 얼굴
+Grimm	;	분노, 원한
+grob	;	거친, 두꺼운, 굵은
+Groll	;	원한
+groß	;	큰, 많은, 위대한
+großartig	;	광대한
+Größe	;	큼, 크기, 신장
+Großeltern	;	조부모
+Großmutter	;	조모
+Großstadt	;	대도시
+Großvater	;	조부
+großzügig	;	배포가 큰, 아량있는
+grotesk	;	기괴한
+Grube	;	구멍, 구덩이
+grübeln	;	골똘히 생각하다
+grün	;	녹색의, 초록의
+Grün	;	녹색
+Grund	;	토지, 토대, 원인, 이유
+gründen	;	기초를 세우다, 창립하다
+Grundlage	;	토대, 기초
+gründlich	;	근본적인, 철저한
+grundlos	;	헤아릴 수 없는, 이유없는
+Grundriss	;	약도, 평면도, 개요
+Grundsatz	;	원칙, 주의
+grundsätzlich	;	원칙상의
+Grundstück	;	토지, 부동산
+Grundzug	;	특징, 개요
+Grüne	;	녹색, 초원, 잔디
+Gruppe	;	무리, 그룹
+Gruß	;	인사, 절
+grüßen	;	인사하다
+gucken	;	바라보다
+gültig	;	유효한, 가치있는
+Gunst	;	호의, 친절
+günstig	;	호의있는, 유리한
+Gurgel	;	목구멍, 식도
+Gurke	;	오이
+Gürtel	;	벨트
+Guss	;	주조, 주물
+gut	;	좋은, 선량한
+Gut	;	선, 재산
+Güte	;	품질, 좋음, 친절
+gütig	;	친절한, 호의있는
+Gymnasium	;	김나지움
+Haar	;	털, 머리털
+Habe	;	재산, 소유물
+Habicht	;	(동물) 매
+hacken	;	쪼개다, 썰다
+Hader	;	불화, 싸움
+Hafen	;	항구, 항만
+Haft	;	구류, 구치
+haften	;	달라붙다, 책임지다(für)
+Haftung	;	보증, 책임
+Hag	;	울타리
+Hagel	;	우박
+hager	;	마른, 수척한
+Hahn	;	수탉
+Hähnchen	;	수평아리
+Hai	;	상어
+Haken	;	갈고리
+halb	;	절반의
+Halbinsel	;	반도
+Hälfte	;	절반
+hallen	;	울리다, 반향하다
+Hals	;	목, 목덜미
+Halt	;	정지
+halten	;	붙잡다, 유지하다, 행하다
+Haltestelle	;	정류장
+Haltung	;	자세, 거동
+hämisch	;	음흉한, 악의있는
+Hammer	;	망치
+Hand	;	손
+Handel	;	다툼, 분규, 거래
+handeln	;	행하다, 논하다, 상담하다
+Händler	;	상인
+Handlung	;	행동, 동작
+Handschritt	;	필체, 글씨체
+Handschuh	;	장갑
+Handtasche	;	핸드백
+Handtuch	;	타월, 수건
+Handwerk	;	수공업, 직업
+Handwerker	;	수공업자
+Hang	;	경향, 성벽
+hängen	;	걸려있다, 정체하다
+Harfe	;	하프
+Harke	;	갈취
+harmlos	;	악의없는, 천진한
+Harmonie	;	화음, 조화
+Harn	;	오줌
+Harnisch	;	갑옷, 투구
+harren	;	고대하다, 기다리다
+hart	;	단단한, 굳은
+Härte	;	단단함, 견고함
+hartnäckig	;	완고한, 고집센
+Harz	;	송진
+haschen	;	붙잡다
+Hase	;	산토끼
+Hass	;	미움, 증오
+hassen	;	미워하다, 증오하다
+hässlich	;	추한, 못생긴
+Hast	;	서두름
+hastig	;	성급한
+Haube	;	두건
+Hauch	;	입김, 미풍
+hauchen	;	입김내다, 숨 내쉬다
+hauen	;	때리다, 치다, 베다
+Haufe	;	더미, 무더기
+häufig	;	빈번한, 잦은
+Haupt	;	머리
+Hauptbahnhof	;	중앙역
+Hauptmann	;	대위, 단장
+Hauptsache	;	요점, 본안
+Hauptstraße	;	간선 도로, 큰거리
+Haus	;	집
+Hausfrau	;	주부
+häuslich	;	집의, 가정의
+Haut	;	살갗, 피부
+heben	;	일으키다, 올리다
+Hecke	;	울타리, 부화
+Heer	;	군대, 육군
+Hefe	;	효모
+Heft	;	공책
+heften	;	부착시키다, 붙이다
+heftig	;	격렬한
+hegen	;	보호하다, 양육하다
+hehlen	;	감추다
+Heide	;	황무지
+heikel	;	몹시 까다로운
+heil	;	온전한, 건전한
+Heil	;	안전, 건전, 건강
+heilen	;	낫다, 치유하다
+heilig	;	거룩한, 신성한
+Heilung	;	치유
+Heim	;	자택, 고향, 본국
+heim	;	집으로, 고향으로
+Heimat	;	고향
+Heimchen	;	귀뚜라미
+heimisch	;	고향의, 고향같은
+Heimkehr	;	귀향
+heimlich	;	비밀의
+Heimweh	;	향수, 향수병
+Heirat	;	결혼
+heiraten	;	결혼하다
+heiser	;	목쉰
+heiß	;	뜨거운, 더운
+heißen	;	부르다, 의미하다
+heiter	;	밝은, 갠
+heizen	;	데우다
+Heizung	;	난방, 난방장치
+Held	;	영웅, 주인공
+Heldin	;	여주인공
+helfen	;	돕다, 유용하다
+hell	;	맑은, 밝은
+Helm	;	헬멧
+Hemd	;	셔츠, 내의
+hemmen	;	멈추다, 저지하다
+Hemmung	;	저지, 억제
+Hengst	;	말의 수컷
+Henken	;	손잡이
+herabsetzen	;	내리다, 내려놓다
+herausfinden	;	찾아내다
+herausgeben	;	내주다, 출판하다
+herausgehen	;	나오다
+herauskommen	;	나오다
+herausnehmen	;	집어내다
+herausstellen	;	밖에 세우다
+herb	;	신랄한, 가혹한
+herbei	;	이쪽으로
+Herberge	;	숙소, 숙박소
+Herbst	;	가을, 수확
+Herd	;	아궁이, 레인지
+Herde	;	가축의 떼, 무리
+hergeben	;	인도하다, 내놓다
+herkommen	;	이쪽으로 오다, 유래하다
+Herkunft	;	출신, 혈통
+Herr	;	님, 신사
+Herrgott	;	하느님
+herrlich	;	훌륭한
+Herrschaft	;	지배권, 통치권
+herrschen	;	지배하다
+Herrscher	;	지배자
+Herrstellung	;	생산, 제조
+herstellen	;	생산하다, 제조하다, 복원하다
+herüber	;	이쪽으로
+herum	;	둘레에, 주위에
+herunter	;	아래로
+hervor	;	밖으로
+hervoragen	;	우뚝솟다
+hervorufen	;	야기하다, 불러일으키다
+Herz	;	심장
+herzlich	;	충심의
+Herzog	;	(칭호) 공작
+hetzen	;	사냥하다
+Heu	;	건초
+heucheln	;	꾸며대다, ~인체하다
+heulen	;	울부짖다
+heute	;	오늘
+heutig	;	오늘의, 현대의
+Hexe	;	마녀
+Hieb	;	내리침, 타격
+hierher	;	이리로
+Hilfe	;	도움, 조력
+hilflos	;	어찌할바를 모르는
+Himmel	;	하늘
+himmlisch	;	하늘의
+hinab	;	아래로
+hinan	;	위로
+hinauf	;	위쪽으로
+hinaus	;	밖으로
+hinbringen	;	가지고 가다
+hindern	;	방해하다
+Hindernis	;	방해하다
+hinein	;	안으로, 속으로
+hingeben	;	인도하다, 헌신하다
+hingehen	;	가다
+hinken	;	절뚝거리다
+hinlegen	;	놓다, 드러눕다
+hinrichten	;	사형집행하다
+hinten	;	뒤에, 배후에
+hintere	;	뒤의
+hintereinander	;	잇달아
+Hintergrund	;	배경, 배후관계
+hinterlassen	;	뒤에 남기다, 유증하다
+hinterlegen	;	맡기다
+hinüber	;	저쪽으로
+hinunter	;	아래로
+hinweg	;	저쪽으로
+hinweisen	;	가리키다
+hinzu	;	그쪽으로, 그것에 덧붙여
+Hirn	;	뇌
+Hirsch	;	(숫)사슴
+Hirt	;	목자, 목동
+Historie	;	역사
+Hit	;	히트
+Hitze	;	열, 열기
+hitzig	;	열렬한
+hoch	;	높은, 상층의, 아주
+hochhalten	;	높이 평가하다, 높이 들고있다
+Hochmut	;	교만
+hochmütig	;	교만한
+Hochschule	;	대학교
+höchst	;	가장 높은, 최고의
+Hochwasser	;	홍수, 범람
+Hochzeit	;	결혼식
+hocken	;	쪼그리고 앉다
+Hode	;	고환
+Hof	;	뜰, 안마당, 농가
+hoffen	;	바라다, 기대하다
+hoffentlich	;	바라건대
+Hoffnung	;	기대
+höflich	;	공손한, 예의바른
+Höflichkeit	;	공손함, 예의바름
+Höhe	;	높음, 높이
+Hoheit	;	주권, 통치권, 위엄
+Höhepunkt	;	최고점, 정점
+höher	;	뛰어난
+hohl	;	속이 빈, 공허한, 오목한
+Höhle	;	동굴, 굴
+Hohn	;	조롱, 조소
+höhnisch	;	비웃는
+Hoker	;	노점상인
+hold	;	사랑스러운
+holen	;	가져오다, 꺼내다
+Hölle	;	지옥, 저승
+höllisch	;	지옥의
+Holz	;	재목, 목재, 장작
+hölzern	;	목조의
+Honig	;	벌꿀
+horchen	;	귀기울여듣다, 엿듣다
+hören	;	듣다
+Hörer	;	청취자, 수화기
+Horizont	;	수평선, 시야
+Horn	;	뿔
+Hörsaal	;	강당, 강의실
+Hose	;	바지
+Hospital	;	병원
+Hotel	;	호텔
+hübsch	;	예쁜, 귀여운
+Hubschrauber	;	헬리콥터
+Huf	;	발굽
+Hüfte	;	엉덩이, 히프
+Hügel	;	언덕
+Huhn	;	닭
+huldigen	;	충성 맹세하다
+Hülle	;	싸게, 보
+hüllen	;	싸다, 씌우다
+Hülse	;	껍질, 껍데기
+human	;	인간의
+Humor	;	유머
+Hund	;	개
+Hundert	;	백
+Hunger	;	배고픔, 공복
+hungern	;	굶주리다
+hungrig	;	배고픈
+hüpfen	;	뛰다
+Hure	;	창녀
+hurtig	;	신속한, 민첩한
+husten	;	기침하다
+Husten	;	기침
+Hut	;	모자, 감독, 보호
+hüten	;	감시하다
+Hütte	;	오두막
+Hygiene	;	위생학
+Ideal	;	이상
+ideal	;	이상적인
+Idee	;	관념, 생각
+Igel	;	고슴도치
+Imbiss	;	가벼운 식사, 간식
+immer	;	늘, 항상
+immobile	;	부동산
+impfen	;	접종하다
+Import	;	수입
+impotent	;	무능한
+Impressionismus	;	인상주의
+imprrtieren	;	수입하다
+imstande	;	할 수 있는
+Inbegriff	;	총괄
+indem	;	함으로써, 하는 동안
+indessen	;	그동안에
+Indien	;	인도
+indirekt	;	간접의
+Individuum	;	개체, 개인
+Industrie	;	산업, 공업
+ineinander	;	서로 뒤섞여
+infolge	;	~의 결과로서, 때문에
+Information	;	정보
+informieren	;	가르치다, 교시하다
+Ingenieur	;	기사, 기술자
+Inhaber	;	임자, 소유자
+Inhalt	;	내용물, 용량, 용적
+Inland	;	내국, 국내
+Innenstadt	;	도심
+innerhalb	;	내부에
+innerlich	;	안의, 내부의
+innig	;	친밀한, 진심의
+Inschritt	;	비명
+Insekt	;	곤충
+Insel	;	섬, 도서
+insofern	;	그 점에 있어서는
+Instanz	;	(법률) 심급
+Instinkt	;	본능
+Institut	;	연구소
+Instrument	;	도구, 기구, 악기
+Intellekt	;	지성, 지력
+intelligent	;	이지적인
+Intelligenz	;	지능, 지력
+interessant	;	재밌는
+Interesse	;	이해, 흥미
+interessieren	;	흥미를 일으키다
+intern	;	내부의
+Intrige	;	음모, 책략
+Inventar	;	재고품 목록, 재산
+inwendig	;	안쪽의, 내부의, 안으로
+inzwischen	;	그동안에
+irdisch	;	현세의
+irgend	;	도대체, 어느
+irgendwie	;	어떻게 해서든지
+irgendwo	;	어딘가에서
+Ironie	;	아이러니, 풍자
+ironisch	;	반어적인
+irrational	;	비합리적인
+irre	;	헤매는
+irren	;	방황하다
+irrig	;	잘못 생각한
+Irrtum	;	오류
+isolieren	;	고립하다
+Italien	;	이탈리아
+Jacke	;	윗옷, 재킷
+Jagd	;	사냥, 수렵
+jagen	;	몰다, 쫓다
+Jäger	;	사냥꾼
+jäh	;	급격한, 갑작스런
+Jahr	;	일년
+Jahreszeit	;	계절
+Jahrgang	;	1년간의 생산물, 1년분
+Jahrhundert	;	백년, 세기
+jährlich	;	매년의, 연례의
+Jammer	;	비탄, 불행, 비참
+jämmerlich	;	비참한, 비겁한
+jammern	;	한탄하다
+jäten	;	잡초를 뽑다
+jauchzen	;	환호하다
+jawohl	;	그렇습니다!!!
+je	;	언제나, 언젠가, 일찍이
+jedermann	;	각자, 누구든지
+jederzeit	;	언제나
+jedesmal	;	매번
+jedoch	;	그래도
+jemand	;	어떤사람, 누군가
+jeneer	;	저, 그
+jenseits	;	저쪽에, 건너편에
+Joch	;	멍에, 굴레
+Jod	;	요드
+Journal	;	신문, 잡지
+Journalist	;	저널리스트, 신문기자
+Jubiläum	;	기념일
+jucken	;	가렵다
+Jude	;	유대인
+Jugend	;	젊음, 청년기
+Jugendherberge	;	유스호스텔
+jugendlich	;	청년의
+jung	;	젊은
+Junge	;	소년, 젊은이
+Jünger	;	문인, 제자, 학도
+Jungfrau	;	처녀, 아가씨
+Junggeselle	;	독신 남자
+Jüngling	;	청소년
+Juwel	;	보석
+Kabel	;	케이블
+Kabine	;	선실, 객실
+Kabinett	;	작은방, 화장실, 회의실
+Kadaver	;	시체, 썩은 고기
+Käfer	;	딱정벌레
+Kaffee	;	커피
+Käfig	;	새장, 우리
+kahl	;	민숭민숭한
+Kahn	;	작은배
+Kai	;	부두, 선창
+Kaiser	;	황제
+Kaiserin	;	여제
+Kakao	;	카카오
+Kalb	;	송아지
+Kalender	;	달력
+Kalif	;	군주
+Kalk	;	석회
+Kalorie	;	칼로리
+kalt	;	추운, 냉정한
+Kälte	;	추위, 차가움
+Kalzium	;	칼슘
+Kamel	;	낙타
+Kamera	;	카메라
+Kamerad	;	동무
+Kamin	;	굴뚝, 연통
+Kamm	;	빗, (닭)볏
+kämmen	;	빗질하다
+Kammer	;	작은 방, 의회
+Kampf	;	싸움, 전투
+kämpfen	;	싸우다
+Kanal	;	운하
+Kandidat	;	후보자, 지원자
+kandieren	;	설탕을 치다
+Kaninchen	;	토끼
+Kanne	;	포트, 주전자
+Kanon	;	표준, 규범
+Kanone	;	대포
+Kante	;	모퉁이, 모서리
+Kanzel	;	설교단, 강단
+Kanzler	;	장관, 재상
+Kapelle	;	예배당, 관현악단
+Kapital	;	자본
+Kapitalismus	;	자본주의
+Kapitän	;	선장, 함장, 주장
+Kapitel	;	(서적) 장
+Kappe	;	모자, 두건
+Kapsel	;	캡슐
+kaputt	;	망가진, 고장난
+Karawane	;	대상
+Kardinal	;	추기경
+karg	;	불충분한, 초라한
+Karidatur	;	풍자화
+Karren	;	수레
+Karte	;	카드
+Kartell	;	카르텔
+Kartoffel	;	감자
+Karton	;	판지, 마분지
+Käse	;	치즈
+Kaserne	;	병영, 막사
+Kasse	;	금고, 현금출납소
+kassieren	;	징수하다, 받다
+Kastanie	;	밤, 밤나무
+Kasten	;	상자
+Kasus	;	경우
+Katalog	;	목록
+Katastrophe	;	대참사
+Kater	;	수코양이
+Katheder	;	강단
+katholisch	;	카톨릭교의
+Katholizismus	;	카톨릭교
+Kattun	;	면직물
+Katze	;	(암)고양이
+kauen	;	씹다
+Kauf	;	구매, 매매
+kaufen	;	사다, 구입하다
+Kaufhaus	;	백화점
+käuflich	;	살 수 있는
+Kaufmann	;	상인
+kaum	;	거의~않다
+Kauz	;	올빼미
+keck	;	당돌한, 건방진
+Kegel	;	원뿔, 원추
+Kehle	;	목, 목소리
+kehren	;	돌리다, 바꾸다
+Keil	;	쐐기
+Keim	;	싹, 눈, 병균
+keinesfalls	;	결코~않다
+keineswegs	;	결코~않다
+Kelch	;	긴 다리가 달린 잔
+Keller	;	지하실, 광
+Kellner	;	급사
+Kellnerin	;	여자급사
+kennen	;	알다
+kennenlernen	;	알게 되다
+Kenner	;	전문가
+Kenntnis	;	인식
+Kennzeichen	;	특징
+kennzeichnen	;	표시하다, 특징짓다
+kerben	;	눈금 새기다
+Kerker	;	감옥
+Kerl	;	놈, 녀석
+Kern	;	핵, 씨
+Kernwaffe	;	핵무기
+Kerze	;	양초
+Kessel	;	주전자
+Kette	;	사슬, 목걸이
+Ketzer	;	이단자
+keuchen	;	헐떡이다
+Keule	;	곤봉
+keusch	;	순결한, 정결한
+kichern	;	킥킥 웃다
+kieben	;	달라붙다, 붙이다
+Kieme	;	아가미
+Kies	;	자갈
+Kiesel	;	잔돌, 조약돌
+Kilogramm	;	킬로그램
+Kilometer	;	킬로미터
+Kind	;	아이
+Kindergarten	;	유치원
+Kindheit	;	어린 시절
+kindisch	;	유치한
+kindlich	;	어린이의, 순진한
+Kinn	;	턱
+Kino	;	영화관
+Kiosk	;	매점
+Kirche	;	교회
+Kirchhof	;	교회 묘지
+kirchlich	;	교회의
+Kissen	;	쿠션, 베개
+Kiste	;	상자
+Kitt	;	접합제
+Kittel	;	가운, 작업복
+kitzelig	;	간지러운
+kitzeln	;	간질이다
+Klage	;	비탄, 불평, 고소
+klagen	;	슬퍼하다, 고소하다
+Klammer	;	집게
+Klang	;	소리, 울림
+Klappe	;	밸브
+klappern	;	덜커덩거리다
+klar	;	밝은, 명백한, 확실한
+klären	;	명백히 하다, 규명하다
+Klarheit	;	깨끗함
+Klasse	;	학급, 계급
+Klassik	;	고전주의
+klassisch	;	고전적인
+klatschen	;	박수치다
+klauben	;	줍다, 주워모으다
+klaue	;	발톱
+Klausel	;	(법률)약관
+Klavier	;	피아노
+Klee	;	클로버
+Kleid	;	원피스
+kleiden	;	옷을 입히다
+Kleidung	;	의복, 옷
+klein	;	작은
+Kleinigkeit	;	사소한 일
+kleinlich	;	편협한, 인색한
+Kleinod	;	보석, 귀중품
+Kleister	;	풀
+klemmen	;	단단히 죄다
+klettern	;	기어오르다
+Klient	;	의뢰인
+Klima	;	기후, 풍토
+Klimaanlage	;	냉난방장치, 에어컨
+klimmen	;	기어오르다
+Klinge	;	날, 검
+Klingel	;	초인종, 벨
+klingeln	;	벨 누르다
+klingen	;	울리다
+Klinik	;	클리닉
+Klinke	;	(문)손잡이
+Klippe	;	낭떠러지, 암초 
+Klo	;	화장실
+klopfen	;	두드리다
+Kloß	;	덩어리
+Kloster	;	수도원
+Klotz	;	통나무, 그루터기
+Kluft	;	갈라진 틈
+klug	;	영리한
+Klugheit	;	영리, 현명
+klumpen	;	덩어리
+Knabe	;	소년
+knacken	;	딱 소리나다, 쪼개다
+Knall	;	탕 하는 소리
+knallen	;	탁 소리 내다
+knapp	;	꼭 맞는, 빠듯한
+Knappe	;	하인, 광부
+Knäuel	;	뭉치, 집단, 무리
+Knecht	;	머슴, 일꾼
+Kneife	;	주점
+kneifen	;	꼬집다, 끼우다
+kneten	;	반죽하다
+knicken	;	딱 소리나다
+Knie	;	무릎
+knien	;	무릎꿇다
+Kniff	;	꼬집기, 술책
+knipsen	;	탁 소리 내다
+knirschen	;	삐걱거리다
+knistern	;	바스락 소리나다
+Knöchel	;	손가락 마디, 복사뼈
+Knochen	;	뼈
+Knopf	;	단추
+Knospe	;	싹, 봉오리
+Knoten	;	매듭, 마디
+knüpfen	;	묶다, 맺다
+Knüppel	;	몽둥이, 곤봉
+knurren	;	으르렁거리다, 투덜대다
+Koch	;	요리사
+kochen	;	끓이다, 삶다, 찌다
+Köder	;	미끼
+Koffer	;	트렁크, 여행용가방
+Kohl	;	양배추
+Kohle	;	숯, 석탄
+Kolben	;	곤봉
+Kollege	;	동료
+Kolonie	;	식민지
+kolossal	;	거대한
+Kombination	;	결합, 연합
+kombinieren	;	결합하다
+Komfort	;	쾌적, 편리
+komisch	;	익살스러운
+Komma	;	콤마
+kommandieren	;	지령하다, 호령하다
+Kommando	;	명령, 사령부
+kommen	;	오다, 도착하다
+Kommentar	;	주석, 주해, 논평
+Kommission	;	위원회, 위임
+Kommode	;	장롱
+Kommunikation	;	전달, 의사소통
+kommunikativ	;	의사소통의
+Kommunismus	;	공산주의
+Komödie	;	희극
+Kompass	;	나침반
+Kompliment	;	공손한 말
+komponieren	;	합성하다
+Komponist	;	작곡가
+Kompromiss	;	타협
+Kondition	;	조건
+Konferenz	;	회의
+Konfession	;	고백
+Konflikt	;	충돌, 투쟁
+Kongress	;	회의
+König	;	왕
+Königin	;	왕비, 여왕
+königlich	;	왕의
+Königreich	;	왕국
+konkret	;	구체적인, 객관적인
+Konkurrenz	;	경쟁, 경기
+konkurrieren	;	경쟁하다
+Konkurs	;	파산
+konsequent	;	시종일관된
+Konsequenz	;	결과, 결론
+konservativ	;	보수적인
+konservieren	;	보존하다, 저장하다
+konstant	;	불변의, 확고한
+Konstitution	;	헌법, 체질
+konstruieren	;	조립하다, 구성하다
+Konsul	;	영사
+Konsulat	;	영사관
+Konsum	;	소비
+Kontakt	;	접촉
+Kontinent	;	대륙
+Konto	;	(은행)구좌, 계정
+Kontrakt	;	계약
+Kontrast	;	대조, 대비
+Kontrolle	;	검사, 제어
+kontrollieren	;	검사하다
+Konvention	;	협약, 관습
+konventionell	;	관습적인
+Konversation	;	회화
+Konzentration	;	집중
+konzentrieren	;	집중하다
+Konzept	;	초고, 구상
+Konzert	;	음악회
+Kopf	;	머리, 두뇌
+Kopfschmerz	;	두통
+Kopie	;	사본, 복사
+kopieren	;	복사하다
+koppeln	;	결합하다
+Korb	;	바구니
+Kork	;	코르크
+Korn	;	곡식, 곡물
+Körper	;	몸, 몸통, 물체
+körperlich	;	유형의, 몸의
+Korps	;	단체, 조합
+korrekt	;	옳은
+Korrespondez	;	서신왕래
+korrespondieren	;	서신왕래하다, 일치하다
+Korridor	;	복도, 통로
+korrigieren	;	정정하다
+kosen	;	애무하다
+Kosmos	;	우주
+Kost	;	음식물, 식료품, 식사, 하숙
+kostbar	;	비싼, 귀중한
+kosten	;	값이다, 필요로 하다
+Kosten	;	비용, 값, 손실
+kosten	;	맛보다
+kostenlos	;	무료의
+köstlich	;	맛좋은, 멋진
+kostspielig	;	값비싼
+Kostüm	;	의상, 복장
+Kot	;	똥
+Krabbe	;	게
+krachen	;	짝 소리내다
+Kraft	;	힘
+kräftig	;	힘있는, 강력한
+Kraftwagen	;	자동차
+Kragen	;	옷깃, 칼라, 목덜미, 목
+Krähe	;	까마귀
+krähen	;	울다
+Kralle	;	발톱
+Kram	;	잡동사니
+Krampf	;	경련, 발작
+krampfhaft	;	경려적인, 발작적인
+Kran	;	크레인, 기중기
+Kranich	;	두루미
+krank	;	아픈
+kränken	;	모욕하다, 상하게 하다
+Krankenhaus	;	병원
+Krankenschwester	;	간호사
+Krankheit	;	병, 질병
+Kranz	;	화환
+Krasch	;	소란, 싸움
+kratzen	;	할퀴다, 긁다
+kraus	;	곱슬곱슬한
+kräuseln	;	파마하다, 물결이 일게하다
+Kraut	;	야채, 채소
+Krawatte	;	넥타이
+Kreatur	;	피조물, 앞잡이
+Krebs	;	갑각류, (의학)암
+Kredit	;	대부, 외상
+Kreide	;	분필, 백묵
+Kreis	;	원, 원형, 동아리써클
+kreischen	;	날카롭게 소리지르다
+Kreisel	;	팽이
+kreisen	;	돌다, 순환하다
+Kreislauf	;	순환
+Kreuz	;	십자가
+kreuzen	;	교차시키다, 가로지르다
+Kreuzung	;	교차, 교차점
+Kreuzzug	;	십자군
+kriechen	;	기다, 포복하다
+Krieg	;	전쟁
+kriegen	;	얻다, 획득하다
+Krise	;	위기, 공황
+Kristall	;	결정, 수정
+Kritik	;	비판
+kritisch	;	비판의
+Krone	;	왕관
+Kröte	;	두꺼비
+Krücke	;	T자형 지팡이, 목발
+Krug	;	항아리
+krumm	;	굽은, 비틀린
+krümmen	;	구부리다
+Krüppel	;	불구자
+Kruste	;	껍데기
+Kübel	;	통, 대야
+Kubus	;	입방체, (수학)세제곱
+Küche	;	부엌, 주방
+Kuchen	;	케이크
+Kuckuck	;	뻐꾸기
+Kugel	;	공, 구, 탄환
+Kuh	;	암소
+kühl	;	시원한
+kühlen	;	차게 하다
+Kühlschrank	;	냉장고
+kühn	;	대담한, 용감한
+Kulisse	;	무대배경
+Kult	;	숭배, 예찬
+kultivieren	;	경작하다, 교화시키다
+Kultur	;	문화, 경작
+kulturell	;	문화적인
+Kummer	;	근심, 걱정
+kümmerlich	;	비참한, 빈약한
+kümmern	;	근심하다
+kund	;	알려진
+Kunde	;	고객, 손님, 단골
+Kunde	;	알림, 통지
+kundgeben	;	알리다, 통지하다
+Kundgebung	;	시위
+kundig	;	알고 있는, 정통한
+kündigen	;	해약을 예고하다
+Kundigung	;	(법률)해약고지
+künftig	;	미래의, 다가올
+Kunst	;	예술, 재주, 기술
+Künstler	;	예술가
+künstlich	;	인조의, 위조의
+Kunststück	;	재주
+Kupfe	;	동, 구리
+kupfern	;	구리의, 구리로 만든
+Kur	;	치료, 요양
+Kurort	;	요양지
+Kurs	;	강좌, 진로, 코스, 유통
+Kurve	;	곡선, 커브
+kurz	;	짧은
+Kürze	;	짦음, 단시간
+kürzlich	;	최근
+Kuss	;	키스
+küssen	;	키스하다
+Küste	;	해안, 해변
+Kutsche	;	마차
+Kutscher	;	마부
+laben	;	회복시키다
+Laboratorium	;	실험실
+Labsal	;	기분을 상쾌하게 하는 것
+Labyrinth	;	미로, 미궁
+lächeln	;	미소하다
+lachen	;	웃다
+Lachen	;	웃음
+lächerlich	;	우스운
+Lachs	;	연어
+Lade	;	서랍, 트렁크
+Laden	;	가게, 점포
+laden	;	싣다, 충전하다, 장전하다
+Ladung	;	적하, 화물
+Lage	;	위치, 자세
+Lager	;	잠자는 자리, 보금자리, 진영, 창고
+lagern	;	야영하다, 저장하다
+lahm	;	마비된, 절름거리는, 뻣뻣한
+lähmen	;	마비시키다
+Laich	;	(물고기 등의) 알
+Laie	;	세속인, 문외한
+Laken	;	침대의 시트
+Lamm	;	어린 양
+Lampe	;	램프
+Land	;	육지, 땅
+landen	;	상륙하다, 도달하다
+Landkarte	;	지도
+ländlich	;	시골의, 농촌의
+Landschaft	;	풍경, 지형
+Landsmann	;	동향인
+Landung	;	상륙, 착륙
+Landwirtschaft	;	농업
+lang	;	긴
+lange	;	오랫동안
+Länge	;	길이, 경도
+langen	;	충분하다, 족하다
+langsam	;	느린, 천천히
+längst	;	가장 긴, 벌써
+Langweile	;	지루함, 심심함
+langweilen	;	지루하게 하다
+langweilig	;	지루한
+Lappen	;	천 조각, 헝겊
+Lärche	;	낙엽송
+Lärm	;	소동, 소음
+lärmen	;	떠들다
+Larve	;	애벌레
+Last	;	짐, 하중, 부담
+lasten	;	압박하다
+Laster	;	악덕, 악습
+lästern	;	흉보다, 모독하다
+lästig	;	번거로운, 성가신
+Lastwagen	;	트럭
+Latein	;	라틴어
+lateinisch	;	라틴어의
+Laterne	;	랜턴, 가로등
+Latte	;	횡목, 바, 가로대(육상)
+Lattich	;	상추
+lau	;	미온의, 미지근한
+Laub	;	잎
+Laube	;	정자, 현관
+Lauer	;	매복, 잠복
+lauern	;	매복하다
+Lauf	;	달리기, 진행
+laufen	;	달리다, 뛰다
+laufend	;	현재의, 계속적인, 연속된
+Läufer	;	달리는 사람, 주자
+Laune	;	기분을 상쾌하게 하는 것
+Laus	;	이
+lauschen	;	엿듣다
+laut	;	시끄러운
+Laut	;	목소리
+lauten	;	~라는 내용이다, ~라고 씌여있다
+läuten	;	울리다
+lauter	;	순수한
+läutern	;	순수하게 하다
+Lava	;	용암
+Lawine	;	눈사태
+Leben	;	생명, 목숨
+lebend	;	살아있는
+lebendig	;	살아있는
+Lebenslauf	;	경력, 이력
+Lebensmittel	;	양식, 식료
+lebhaft	;	활달한, 쾌활한
+lechzen	;	마르다, 건조하다, 갈망하다
+leck	;	물이 새는
+lecken	;	핥다
+lecken	;	물이 새다
+lecker	;	맛있는
+Leder	;	가죽
+ledern	;	가죽으로 만든
+ledig	;	미혼의, 독신의
+leer	;	공허한
+Leere	;	공허
+leeren	;	비우다
+legen	;	두다, 눕히다
+Legende	;	전설
+Lehm	;	찰흙
+lehnen	;	기대어 있다
+Lehre	;	교훈
+lehren	;	가르치다
+Lehrer	;	교사
+Lehrerin	;	여교사
+Lehrling	;	도제
+Leib	;	신체, 육체
+leiblich	;	육체상의, 신체상의
+Leiche	;	송장, 시체
+leicht	;	가벼운
+leichtfertig	;	경솔한
+Leichtsinn	;	경솔
+leichtsinnig	;	경솔한
+leid	;	유감으로 생각하다
+Leid	;	슬픔, 걱정
+leiden	;	견디다, 참다
+Leidenschaft	;	격정, 열정
+leidenschaftlich	;	열정적인
+leider	;	유감스럽게도
+leidig	;	싫은
+leidlich	;	보통의, 어지간한
+leihen	;	빌려주다
+Leim	;	아교, 풀
+Leine	;	밧줄, 노끈
+leise	;	낮은 목소리의
+leisten	;	행하다, 제공하다
+Leistung	;	행함, 업적, 성능
+leiten	;	이끌다
+Leiter	;	지도자
+Leiter	;	사닥다리
+Leitung	;	이끔, 지도
+Lende	;	허리
+lenken	;	향하게 하다, 조종하다
+Lerche	;	종달새
+lernen	;	배우다
+lesen	;	읽다
+Leser	;	독자
+Letter	;	활자, 문자
+letzt	;	최후의, 최근의
+Leuchte	;	빛, 등불
+leuchten	;	빛나다, 반짝이다
+Leuchter	;	촛대, 샹들리에
+leugnen	;	부정하다, 취소하다
+Leute	;	사람들
+leutselig	;	붙임성 있는
+Lexikon	;	사전
+Licht	;	빛, 밝기
+lichten	;	밝게 하다
+Lid	;	눈꺼풀
+lieb	;	사랑하는
+Liebe	;	사랑
+lieben	;	사랑하다
+liebenswürdig	;	사랑스러운, 친절한
+lieber	;	차라리, 오히려
+Liebhaber	;	애호가
+liebkosen	;	애무하다
+lieblich	;	사랑스러운
+Liebling	;	애인
+Lied	;	가곡
+liederlich	;	단정치 못한
+liefern	;	배달하다, 공급하다
+Lieferung	;	공급
+Lille	;	백합
+lindern	;	완화시키다
+Lineal	;	자
+Linie	;	선
+link	;	왼쪽의
+links	;	왼쪽에
+Linse	;	렌즈
+Lippe	;	입술
+liquid	;	유동성의, 지불 능력있는
+liquidieren	;	청산하다, 변제하다
+lispeln	;	속삭이다
+List	;	책략
+Liste	;	리스트
+listig	;	교활한
+Literatur	;	문학
+Lob	;	칭찬, 호평
+loben	;	칭찬하다
+Loch	;	구멍
+Lochkarte	;	펀치 카드
+Locke	;	곱슬머리
+locken	;	꾀다, 꾀어내다
+locker	;	느슨한, 풀어진
+lockern	;	느슨하게 하다
+Löffel	;	스푼
+Logik	;	논리
+Lohn	;	보수, 임금
+lohnen	;	보답하다, 유익하다
+Lokal	;	음식점
+Lokomotiv	;	기관차
+los	;	풀린, 해방되다
+Los	;	제비, 추첨, 복권
+löschen	;	끄다, 지우다
+lose	;	늘어진, 풀어진
+lösen	;	떼다, 분리하다, 해결하다
+losgehen	;	떠나다
+loslassen	;	풀어주다
+Losung	;	(군사)암호, 슬로건
+Lösung	;	해결, 해방
+Löwe	;	사자
+Lücke	;	틈, 간격
+Luft	;	공기
+lüften	;	바람쐬다
+Luftpost	;	항공 우편
+Lüge	;	거짓말
+lügen	;	거짓말하다
+Lügner	;	거짓말쟁이
+Lump	;	불량배, 룸펜
+Lumpen	;	누더기
+Lunge	;	폐, 허파
+Lust	;	욕망, 즐거움
+lüstern	;	열망하는
+lustig	;	즐거운, 재밌는, 활발한
+Luxus	;	사치
+Lyrik	;	서정시
+machen	;	만들다
+Macht	;	힘, 능력
+mächtig	;	힘있는, 강력한
+Mädchen	;	소녀
+Made	;	구더기
+Magen	;	위, 배
+mager	;	여윈, 마른
+Magie	;	마법
+Magnet	;	자석
+mähen	;	베다, 수확하다
+Mahl	;	식사, 음식
+mahlen	;	갈다, 빻다
+Mahlzeit	;	식사, 음식
+Mähne	;	(말) 갈기
+mahnen	;	주의하다, 독촉하다
+Mahnung	;	독촉, 경고
+Mais	;	옥수수
+Makel	;	오점, 얼룩
+Makler	;	부동산 중개인
+Mal	;	때, 회
+Mal	;	반점
+malen	;	칠하다, 그리다
+Maler	;	화가
+Malerei	;	회화
+malerisch	;	회화의
+manchmal	;	여러 번
+Mangel	;	결핍, 부족
+mangelhaft	;	결점있는, 불충분한
+mangeln	;	결핍되다
+Manier	;	방식, 예의범절
+männlich	;	남자의
+Mannschaft	;	팀, 선수단, 승무원, 조업원
+Manöver	;	기동연습, 책략
+Mantel	;	외투
+Manuskript	;	원고
+Mappe	;	서류철
+Märchen	;	동화
+märchenhaft	;	동화적인
+Marine	;	해군
+Marke	;	기호, 표시, 우표
+markieren	;	표시하다
+Markt	;	장, 시장
+Marktplatz	;	시장, 광장
+Marsch	;	행진, 행군
+marschieren	;	행진하다
+Märtyrer	;	순교자
+Maschine	;	기계
+Maske	;	탈, 가면
+Maß	;	척도, 치수
+Masse	;	덩어리, 다량
+mäßig	;	절제하는, 적당한
+Maßnahme	;	조처, 처리
+Maßregel	;	방법, 수단, 조처
+Maßstab	;	척도, 기준
+Mast	;	돛대, 마스트
+Material	;	원료, 재료
+Materie	;	물질, 재료
+matt	;	몹시 지친, 힘이 없는
+Matte	;	매트, 돗자리
+Mauer	;	벽, 담
+Maul	;	주둥이, 입
+Maulwurf	;	두더지
+Maurer	;	미장이
+Maus	;	쥐
+Medaille	;	메달
+Medikament	;	약품, 약
+Medium	;	매개물
+Medizin	;	의학, 약품
+Meer	;	바다, 대양
+Mehl	;	밀가루
+Mehrheit	;	다수
+meiden	;	피하다
+Meile	;	마일
+meinen	;	생각하다
+meinethalben	;	나를 위하여, 나에 관해서는
+Meinung	;	의견
+meist	;	가장 많은, 대부분의
+meistens	;	대부분
+Meister	;	주인, 지배자
+Meisterschaft	;	뛰어난 솜씨, 능숙
+melden	;	보도하다, 신고하다
+Meldung	;	통지, 보도
+melken	;	소젖짜다
+Menge	;	다수, 다량, 군중
+mengen	;	섞다
+Mensa	;	(대학)학생 식당
+Mensch	;	인간
+Menschheit	;	인류
+menschlich	;	인간의, 인간적인
+Menschlichkeit	;	인간성, 인도
+merken	;	눈치채다, 기억하다
+Merkmal	;	특징
+merkwürdig	;	기묘한, 주의할만한
+Messe	;	미사, 미사곡, 박람회
+messen	;	재다, 달다
+Messer	;	나이프
+Metall	;	금속
+metallen	;	금속의
+Meteor	;	유성, 운석
+Meter	;	미터
+Methode	;	방법, 수단, 조처
+Metzger	;	정육점주인
+meucheln	;	암살하다
+Miene	;	얼굴, 표정, 안색
+Miete	;	임대, 임차
+mieten	;	임차하다, 빌리다
+Mieter	;	임차인
+Milch	;	젖, 우유
+mild	;	상냥한, 온화한
+mildern	;	완화하다, 경감하다
+Militär	;	군인, 군대
+minder	;	그다지 좋지 않은
+Minderheit	;	소수, 열등
+mindest	;	가장 적은, 최소의
+mindestens	;	적어도
+Mine	;	지뢰
+mischen	;	섞다
+Mischung	;	혼합
+Missbrauch	;	남용, 악용
+missbrauchen	;	남용하다, 악용하다
+missen	;	부족하다, ~가지고있지 않다
+Misserfolg	;	실패
+Missetat	;	악행, 범행
+missfallen	;	맘에 들지 않다
+missglücken	;	실패하다
+misshandeln	;	학대하다
+misslich	;	다루기힘든, 불쾌한
+misslingen	;	실패하다
+missraten	;	성공못하다
+misstrauen	;	믿지 않다
+Missverständnis	;	오해
+missverstehen	;	오해하다
+Mist	;	똥, 분뇨, 거름, 비료
+Mitarbeiter	;	협력자
+mitbringen	;	가지고 오다
+mitgehen	;	동행하다
+Mitgift	;	결혼자금, 지참금
+Mitglied	;	구성원, 회원
+Mitleid	;	동정
+mitmachen	;	함께하다
+Mittagessen	;	점심
+Mitte	;	중앙
+mitteilen	;	전하다, 알리다
+Mitteilung	;	전달, 보고
+Mittel	;	수단, 방법
+Mittelalter	;	중세
+mittelbar	;	간접의
+Mittelmeer	;	지중해
+Mittelpunkt	;	중심, 중점
+Mitternacht	;	자정
+Mittwoch	;	수요일
+Möbel	;	가구
+möbliert	;	가구가 딸린
+Mode	;	유행, 모드
+Modell	;	모형, 모델
+Modus	;	방법, 수단, 양식
+möglich	;	가능한
+Möglichkeit	;	가능성
+möglichst	;	가능한 한
+Mohn	;	양귀비
+Monarch	;	군주
+Monat	;	달
+monatlich	;	매달
+Mönch	;	승려, 수도사
+Mond	;	달
+monoton	;	단조로운
+Monstrum	;	괴물
+Moos	;	이끼
+Moral	;	도덕
+Morast	;	수렁, 진흙
+Mord	;	살인
+Mörder	;	살인자
+morsch	;	썩은, 무른
+Most	;	포도즙
+Motiv	;	동기
+Motorrad	;	오토바이
+Möwe	;	갈매기
+Mücke	;	모기
+müde	;	지친, 피로한
+Müdigkeit	;	피로, 권태
+Mühe	;	수고, 노력
+Mühle	;	맷돌
+Muhme	;	숙모
+mühsam	;	힘드는
+mühulos	;	수월한
+Müll	;	쓰레기
+Mumie	;	미이라
+Mund	;	입
+Mundart	;	방언, 사투리
+mündig	;	성년이 된
+mündlich	;	구두의
+munter	;	생기넘치는
+Münze	;	주화, 동전
+mürbe	;	잘 깨지는, 약한
+murmeln	;	중얼거리다
+murren	;	투덜대다
+Mus	;	잼
+Muschel	;	조개
+Muskel	;	근육
+Muskelkater	;	근육통
+Muße	;	짬, 틈, 여가
+müßig	;	한가한
+Muster	;	본보기, 모범
+musterhaft	;	모범적인
+mustern	;	검사하다
+Mut	;	용기
+mutig	;	용감한
+mutmaßen	;	추측하다
+Mutter	;	어머니
+Muttersprache	;	모국어
+Muttertag	;	어머니날
+Mutwille	;	변덕, 방자
+Mütze	;	모자
+Nabel	;	배꼽
+nachahmen	;	모방하다, 흉내내다
+Nachahmung	;	모방, 흉내
+Nachbar	;	이웃사람
+Nachbarschaft	;	이웃사람들
+nachdenken	;	숙고하다
+Nachdruck	;	강조, 복제
+nacheinander	;	차례차례로
+Nachfrage	;	문의
+nachgeben	;	느슨해지다, 양보하다
+nachgehen	;	따라가다
+nachhaltig	;	지속적인
+nachher	;	나중에
+nachholen	;	가져오다, 회복하다
+nachkommen	;	뒤에 오다, 이행하다
+Nachlass	;	유산, 유물
+nachlassen	;	경감하다, 중지하다
+nachlässig	;	게으른, 부주의한
+nachmachen	;	모방하다, 흉내내다
+Nachmittag	;	오후
+Nachrede	;	험담, 비방
+Nachricht	;	정보, 뉴스
+nachschlagen	;	참조하다
+nachsehen	;	확인햅다
+Nachsicht	;	관용
+Nachteil	;	손해, 단점
+Nachtisch	;	디저트
+nachtragen	;	원한품다
+nachträglich	;	나중의, 나중에
+Nachweis	;	증거, 증명
+nachweisen	;	소개하다, 증명하다
+Nachwelt	;	후세
+Nachwuchs	;	후진, 자손
+Nacken	;	목덜미
+nackt	;	노출된, 벌거벗은
+Nadel	;	바늘
+Nagel	;	손톱, 발톱
+nagen	;	갉아먹다
+nahe	;	가까운
+Nähe	;	가까움
+nähen	;	꿰매다
+nähern	;	접근하다, 다가오다
+nähren	;	영양을 주다, 기르다
+nahrhaft	;	영양이 풍부한
+Nahrung	;	양분, 음식물
+Nahrungsmittel	;	식품, 식료품
+naiv	;	순진한
+Name	;	이름
+namenlos	;	무명의
+namentlich	;	기명의, 특히, 주로
+nämlich	;	즉
+Narbe	;	흉터, 상흔
+Narkose	;	마취
+Narr	;	바보, 멍청이
+Nase	;	코
+nass	;	축축한
+Nässe	;	습기
+Nationalität	;	국적, 국민성
+Natur	;	자연
+natürlich	;	자연의, 타고난
+Naturwissenschaft	;	자연과학
+Neapel	;	나폴리
+Nebel	;	안개
+nebenan	;	나란히
+nebenbei	;	나란히
+Nebenbuhler	;	경쟁사
+nebeneinander	;	서로 나란히
+Nebensache	;	부차적인 것, 사소한 것
+nebensächlich	;	종속적인
+necken	;	놀리다, 우롱하다
+Neffe	;	조카
+nehmen	;	잡다
+Neid	;	질투, 시기
+neidisch	;	질투심 많은
+neigen	;	기울이다, 숙이다
+Neigung	;	경사, 경향
+Nelke	;	카네이션
+nennen	;	이름짓다, 명명하다
+Nerv	;	신경
+nervös	;	신경질적인, 신경성의
+Nest	;	둥지, 보금자리
+nett	;	친절한
+netto	;	순수한
+Netz	;	그물
+netzen	;	적시다, 축이다
+neu	;	새로운
+neuerdings	;	요즈음, 최근에
+Neugier	;	호기심
+neugierig	;	호기심이 있는
+Neujahr	;	새해, 신년
+neulich	;	최근에, 요즈음
+neutral	;	중립의
+Neutrum	;	중성
+Neuzeit	;	근대
+Nichte	;	조카딸, 질녀
+nie	;	결코~아니다
+nieder	;	아래로, 낮게
+niedergehen	;	하강하다
+Niederlage	;	패배
+Niederlande	;	네덜란드
+niederlassen	;	앉다(sich), 정착하다
+niederlegen	;	내려놓다, 그만두다
+Niederschlag	;	타도, 침전, (기상)강수
+niederschlagen	;	타도하다, (눈)내리깔다
+niederträchtig	;	비열한
+niedlich	;	귕운
+niedrig	;	낮은
+niemals	;	결코~아니다
+niemand	;	아무도~아니다
+Niere	;	(해부)신장
+niesen	;	재채기하다
+nirgends	;	어디에도 없다
+nisten	;	둥지를 틀다
+Niveau	;	수평면, 수준
+Nomen	;	명사
+nominal	;	이름의, 명목상의
+Nonne	;	수녀, 비구니
+nördlich	;	북쪽의
+Nordpol	;	북극
+Norm	;	규범, 표준
+normal	;	표준의, 보통의
+Not	;	위기, 궁지, 비상, 고생, 궁핍
+Notar	;	(법률)공증인
+Notdurft	;	필수품
+Note	;	악보, 평점, 점수
+notieren	;	메모하다
+nötig	;	필요한
+nötigen	;	강요하다
+Notiz	;	주의, 메모
+Notizbuch	;	메모장
+notwendig	;	불가피한, 필요한
+Notwendigkeit	;	필연, 필수품
+Novelle	;	단편소설
+nüchtern	;	술취하지 않은, 냉정한
+Nudel	;	국수
+Null	;	제로
+Nummer	;	수
+nun	;	지금, 이제
+Nuss	;	견과류
+Nutzen	;	이익
+nützen	;	융ㅇ하다, 이용하다
+nützlich	;	유용한, 유익한
+nutzlos	;	소용없는
+Obdach	;	숙소, 피난처
+oben	;	위에
+ober	;	윙의
+Ober	;	웨이터
+Oberfläche	;	표면, 외피
+oberflächlich	;	표면의, 피상적인
+oberhalb	;	상부에, 위쪽에
+Oberhemd	;	와이셔츠
+oberst	;	가장 위의, 최고의
+Oberst	;	육군 대령
+Obhut	;	보호, 비호
+Objekt	;	대상
+Obrigkeit	;	당국, (법률)직권
+Obst	;	과일
+obwohl	;	~에도 불구하고
+Ochse	;	숫소, 황소
+öde	;	거친, 황량한
+Ofen	;	스토브, 난로, 오븐
+offen	;	열려있는
+offenbar	;	공공연한, 분명한
+offenbaren	;	드러내다, 밝히다
+Offenbarung	;	공표
+öffentlich	;	공공연한
+Öffentlichkeit	;	공공연함
+Offizer	;	장교, 사관
+öffnen	;	열다
+oft	;	자주
+Ohnmacht	;	기절, 실신
+Ohr	;	귀
+Ökonomie	;	경제
+ökonomisch	;	경제상의, 경제적인
+Öl	;	기름
+Onkel	;	숙부, 삼촌
+Oper	;	오페라
+Operation	;	조작, 수술
+operieren	;	수술하다, 조작하다
+Opfer	;	제물, 희생, 희생자
+opfern	;	바치다, 봉헌하다
+Opium	;	아편
+Opposition	;	반대, 야당
+Optik	;	광학
+Orakel	;	신탁, 예언
+Orange	;	오렌지
+Orchester	;	오케스트라
+Orden	;	결사, 수도회, 훈장
+ordentlich	;	정규의, 깔끔한, 본격적인
+ordnen	;	배열하다, 정리하다
+Ordnung	;	등급, 서열, 질서, 법규
+Organ	;	기구, 도구
+organisieren	;	조직하다
+Orgel	;	오르간
+orientieren	;	방향 정하다
+Original	;	원본
+original	;	원본의, 고유의
+originell	;	독특한, 별난
+Ort	;	장소
+örtlich	;	장소의
+Ost	;	동쪽
+Osten	;	동쪽
+österlich	;	동쪽의
+Ostern	;	부활절
+Österreich	;	오스트리아
+Ozean	;	대양, 해양
+Pacht	;	임대차, 소작지
+Pack	;	꾸러미, 다발
+Päckchen	;	작은꾸러미
+packen	;	싸다, 붙잡다
+Packung	;	포장
+Pädagogik	;	교육학
+pädagogisch	;	교육의
+Paket	;	꾸러미, 다발
+Pakt	;	협정, 동맹
+Palast	;	궁전
+Panik	;	공포
+Panne	;	고장
+Panorama	;	전경, 파노라마
+Panther	;	표범
+Pantoffel	;	슬리퍼
+Pantomime	;	무언극
+Panzer	;	탱크, 전차, 갑옷
+Papagei	;	앵무새
+Papier	;	종이
+Papierkorb	;	휴지통
+Pappe	;	판지, 마분지
+Pappel	;	포플라
+Papst	;	교황
+Paradies	;	낙원
+paradox	;	역설적인
+parken	;	주차하다
+Parodie	;	패러디
+Partei	;	정당
+Parterre	;	일층, 최하층
+Partie	;	부분, 부위
+Pass	;	좁고 험한 길, 여권
+Passagier	;	승객
+passen	;	꼭맞다, 어울리다
+passieren	;	통과하다, 일어나다, 생기다
+Patient	;	환자
+Patron	;	후원자, 비호자
+Pause	;	중지
+Pazifik	;	태평양
+pazifisch	;	태평양의
+Pech	;	피치, 불운
+Pein	;	고통
+peinlich	;	고통스런
+Peitsche	;	채찍, 회초리
+Pelz	;	모피, 털가죽
+Pension	;	연금
+Periode	;	시기, 시대
+Peripherie	;	주변
+Perle	;	진주
+Person	;	사람
+Personal	;	인원, 직원
+persönlich	;	개인적인, 사적인
+Persönlichkeit	;	개성, 인격
+Perspektive	;	전망, 관점
+Perücke	;	가발
+pervers	;	성적 도착의
+Pest	;	페스트
+Pfad	;	좁은 길
+Pfahl	;	말뚝
+Pfand	;	저당, 담보
+Pfandleihe	;	전당포
+Pfanne	;	냄비, 프라이팬
+Pfannkuchen	;	팬케이크
+Pfarrer	;	목사
+Pfau	;	(동물)공작
+Pfeffer	;	후추
+Pfeife	;	피리
+pfeifen	;	피리불다, 휘파람불다
+Pfeil	;	화살
+Pfeiler	;	기둥
+Pfennig	;	페니히
+Pferch	;	울타리
+Pferd	;	말
+Pfirsich	;	복숭아
+Pflanze	;	식물
+pflanzen	;	심다, 재배하다
+Pflaster	;	고약, 포장, 포장도로
+Pflaume	;	자두
+Pflege	;	돌봄, 보호
+pflegen	;	돌보다, 보호하다
+Pflicht	;	의무, 책무
+Pflock	;	말뚝
+pflücken	;	따다, 꺾다
+Pflug	;	쟁기
+pflügen	;	갈다
+Pforte	;	문, 입구
+Pförtner	;	수위, 문지기
+Pfosten	;	말뚝, 기둥
+Pfote	;	(동물)발
+pfropfen	;	(원예)접붙이다
+Pfuhl	;	늪
+Pfühl	;	베개, 쿠션, 시트
+Pfund	;	파운드
+pfuschen	;	서투르다, 솜씨없다
+Phänomen	;	현상
+Phantom	;	환영, 환상
+Phase	;	상, 단계, 국면
+Philosoph	;	철학자
+Philosophie	;	철학
+Phonetik	;	음성학
+Phrase	;	숙어, 관용구
+Physik	;	물리학
+Pille	;	알약
+Pilot	;	조종사
+Pilz	;	버섯
+Pinsel	;	브러시, 붓
+Pistole	;	권총
+placken	;	고생하다
+Plage	;	괴로움
+plagen	;	괴롭히다
+Plakat	;	벽보, 포스터
+Plan	;	계획
+planen	;	계획하다
+Planet	;	행성
+Planke	;	두꺼운 판자
+planmäßig	;	계획대로의, 계획적인
+plappern	;	종알거리다
+Plastik	;	조소, 조각
+plastisch	;	조형적인, 입체적인
+Platin	;	백금
+plätschern	;	첨벙 소리내다
+platt	;	펀펀한
+Platte	;	판
+Platz	;	광장, 장소
+platzen	;	파열하다, 무산되다
+plaudern	;	수다떨다, 잡담하다
+plündern	;	약탈하다
+Plural	;	복수
+pochen	;	톡톡 두드리다
+Poetik	;	시학
+poetisch	;	시적인
+Pointe	;	요점, 급소
+Pol	;	극
+polar	;	극의
+Polen	;	폴란드
+polieren	;	갈다, 닦다
+Politik	;	정치
+Politiker	;	정치가
+Polizei	;	경찰
+Polizist	;	경찰관
+populär	;	대중적인
+Portier	;	수위, 문지기
+Portion	;	몫, 할당
+Porto	;	우편료
+Porträt	;	초상화
+Porzellan	;	도자기
+Pose	;	자세
+Position	;	위치, 지위
+Possen	;	장난
+Post	;	우편, 우체국
+Postamt	;	우체국
+Posten	;	위병, 보초
+Postkarte	;	우편엽서
+Potenz	;	잠재력
+Pracht	;	화려, 호화
+prächtig	;	훌륭한
+prägen	;	각인하다, 주조하다
+pragmatisch	;	실제적인
+prahlen	;	자랑하다, 과시하다
+Praktikant	;	실습생
+praktisch	;	실제적인
+prallen	;	부딪치다
+Präludium	;	전주곡, 서곡
+Prämie	;	프리미엄
+Prämisse	;	전제
+prangen	;	화려하다
+Präsident	;	대통령
+Praxis	;	실제, 경험, 실무
+predigen	;	설교하다
+Prediger	;	설교자, 목사
+Predigt	;	설교
+Preis	;	값, 가격
+preisen	;	찬미하다
+preiswert	;	적당한 값의
+prellen	;	속이다
+Presse	;	신문, 간행물
+pressen	;	압축하다
+Priester	;	신부, 목사
+prima	;	제1급의
+primitiv	;	원시의, 원시적인
+Prinz	;	왕자
+Prinzessin	;	공주
+Prinzip	;	원리, 원칙
+prinzipiell	;	원칙상의
+privat	;	사적인
+Privileg	;	특권, 특전
+Probe	;	시험, 견본
+probieren	;	시험하다
+Problem	;	문제
+Produktion	;	생산, 산출
+produktiv	;	생산적인
+produzieren	;	생산하다
+Professor	;	대학교수
+Profil	;	프로필
+Profit	;	이익
+Programm	;	프로그램
+Prolog	;	머리말
+Propaganda	;	선교, 선전
+Propeller	;	프로펠러
+Prophet	;	예언자
+prophezeien	;	예언하다
+Proportion	;	비율, 균형
+Prosa	;	산문, 산문작품
+prosaisch	;	산문의, 산문적인
+Prospekt	;	설명서, 안내서
+Protest	;	항의
+protestieren	;	항의하다
+Protokoll	;	기록, 조서
+Proviant	;	양식, 식량
+Provinz	;	지방, 시골
+Prozent	;	퍼센트
+Prozess	;	진행, 과정
+prüfen	;	시험하다, 검사하다
+Prüfung	;	검사, 조사
+Prügel	;	막대기, 몽둥이
+prügeln	;	몽둥이로 때리다
+Prunk	;	화려
+Publikum	;	관객, 청중
+Pudel	;	푸들
+Puls	;	맥, 맥박
+Pulver	;	가루, 가루약, 화약
+Pumpe	;	펌프
+pumpen	;	펌프로 올리다
+Punkt	;	점
+pünktlich	;	정확한
+Puppe	;	인형
+Purpur	;	보랏빛
+Pute	;	칠면조(암컷)
+Puter	;	칠면조(수컷)
+Putz	;	장식
+putzen	;	청소하다
+Putzfrau	;	청소부
+Pyramide	;	피라미드
+Quacksalber	;	돌팔이의사
+Quadrat	;	정방형, 자승
+Qual	;	고통, 아픔
+quälen	;	괴롭히다
+Qualität	;	품질
+Qualm	;	짙은 연기
+qualmen	;	연기가 일다
+Quantität	;	양, 중량
+Quantum	;	몫, 할당
+Quartier	;	숙소, 숙영
+Quecksilber	;	수은
+Quelle	;	우물, 샘
+quellen	;	솟아나다, 부풀다
+quer	;	가로의, 가로지른
+quetschen	;	눌러부수다, 으깨다
+quitt	;	자유로운
+Quittung	;	영수, 영수증
+Rabe	;	까마귀
+Rache	;	복수, 보복
+Rachen	;	목구멍
+rächen	;	복수하다, 보복하다
+Rad	;	바퀴
+radfahren	;	자전거 타고 가다
+Radfahrer	;	자전거 타는 사람
+Radiergummi	;	고무지우개
+radikal	;	철저한, 과격한
+Radio	;	라디오
+Radioapparat	;	라디오 수신기
+Radium	;	라듐
+raffen	;	한데 모으다
+ragen	;	돌출하다, 높이 솟다
+Rahmen	;	테두리, 틀
+Rain	;	두렁, 좁은 길
+Rakete	;	로켓
+Rand	;	가장자리, 테두리
+Rang	;	등급, 계급
+Rank	;	책략, 음모
+rar	;	드문
+Rasen	;	잔디
+rasen	;	미처 날뛰다
+Rasierapparat	;	면도기
+rasieren	;	면도하다
+Rasse	;	인종, 품종
+rasselen	;	딸랑 소리내다
+Rast	;	휴식
+rasten	;	쉬다
+Rat	;	충고, 조언
+Rate	;	할부금
+raten	;	충고하다, 추측하다
+Rathaus	;	시청
+rätlich	;	추천할 만한
+rätlos	;	어찌할 바를 모르는
+Ratschlag	;	충고, 조언
+ratschlagen	;	협의하다, 상의하다
+Rätsel	;	수수께끼
+rätselhaft	;	수수께끼같은, 난해한
+Ratte	;	쥐
+rau	;	거친, 사나운
+Raub	;	탈취, 약탈
+rauben	;	빼앗다
+Räuber	;	도둑, 강도
+Rauch	;	연기
+rauchen	;	연기나다, 흡연하다
+raufen	;	쥐어뜯다
+räumen	;	치우다, 제거하다, 청소하다
+Raumflug	;	우주 여행
+räumlich	;	공간의, 공간적인
+Raupe	;	애벌레
+Rausch	;	취함, 만취, 환각
+rauschen	;	좔좔 소리내다
+räuspern	;	헛기침하다
+reagieren	;	반작용하다
+Reaktion	;	반작용하다
+real	;	물적인, 실재하는
+Rebe	;	덩굴, 포도덩굴
+Rebell	;	반항아, 반역자
+Rechen	;	갈퀴
+Rechenschaft	;	변명, 답변
+rechnen	;	셈하다
+Rechnung	;	계산
+recht	;	정당한, 적당한
+Recht	;	법, 권리, 정당함
+Rechte	;	오른손, 보수당
+rechtfertigen	;	정당화하다, 변명하다(sich)
+rechts	;	오른쪽으로
+rechtschaffen	;	올바른
+Rechtschreibung	;	정서법
+rechtzeitig	;	적시의
+recken	;	늘이다, 펴다
+Redakteur	;	편집자(신문, 잡지)
+Rede	;	말함, 이야기, 연설
+reden	;	말하다, 이야기하다
+Redewendung	;	말씨, 관용구
+redlich	;	정직한
+Redner	;	연설가
+reduzieren	;	경감하다, 축소하다
+Regal	;	서가, 선반
+rege	;	활동적인
+Regel	;	규칙
+regelmäßig	;	규칙적인
+regeln	;	정리하다
+regen	;	움직이다, 자극하다
+Regen	;	비
+Regenbogen	;	무지개
+regieren	;	지배하다
+Regierung	;	지배
+Region	;	지방, 지역
+Register	;	목록, 색인
+regnen	;	비오다
+regulieren	;	규정하다
+Regung	;	감동
+Reh	;	노루
+reiben	;	문지르다, 마찰하다
+Reibung	;	마찰, 문지름
+reich	;	풍부한
+Reich	;	나라, 제국
+Reiche	;	부자
+reichen	;	다다르다, 제공하다
+reichlich	;	풍부한
+Reichtum	;	풍부
+reif	;	익은, 성숙한
+Reif	;	서리
+Reife	;	성숙, 완숙
+reifen	;	익다, 성숙하다
+Reifen	;	타이어, 테
+Reihe	;	열, 줄
+reihen	;	나란히 하다, 배열하다
+Reim	;	운, 각운
+rein	;	순수한
+reinigen	;	청소하다
+Reinigung	;	세탁, 순화
+Reis	;	쌀, 밥
+Reise	;	여행
+Reisebüro	;	여행 안내소
+reisen	;	여행하다
+Reisende	;	여행자
+reißen	;	찢다
+Reißverschluss	;	지퍼
+reiten	;	말타고 가다, 타고가다
+Reiz	;	자극, 선동
+reizen	;	자극하다, 유혹하다
+reizend	;	매력있는
+reizvoll	;	매혹적인
+Reklame	;	광고, 선전
+Rekord	;	기록
+Rektor	;	학교장
+relativ	;	관계있는
+Relief	;	(조각) 부조
+Religion	;	종교, 신앙
+religiös	;	종교상의, 종교적인
+renken	;	비틀다
+rennen	;	달리다, 뛰다
+Rente	;	이자, 집세, 연금
+Reparatur	;	수리, 수선
+reparieren	;	수리하다, 수선하다
+repräsentieren	;	대표하다
+Reserve	;	삼감, 사양, 비축
+reservieren	;	예약하다
+Residenz	;	관저, 수도
+Resignation	;	체념, 단념, 포기
+Resonanz	;	공명, 반향
+Respekt	;	경의
+respektive	;	각각, 각자
+Rest	;	나머지, 잔여
+restlos	;	남김없이, 완전히
+Resultat	;	결과, 답
+retten	;	구하다, 구조하다
+Rettich	;	(식물) 무
+Rettung	;	구조
+Reue	;	후회
+reuen	;	후회하다
+Revue	;	평론
+Rezept	;	처방
+Rhein	;	라인강
+Rhetorik	;	수사학, 수사법
+richten	;	바르게 하다
+Richter	;	재판관, 판사
+richtig	;	바른, 정당한
+Richtigkeit	;	올바름, 정당
+Richtung	;	방향, 진로, 경향
+riechen	;	냄새가 나다, 냄새맡다
+Riegel	;	빗장
+Riemen	;	가죽, 끈, 벨트
+Riese	;	거인
+rieseln	;	졸졸 흐르다
+riesig	;	거인같은, 거대한
+Rind	;	(동물) 소
+Rinde	;	껍질
+Ring	;	고리, 반지
+ringeln	;	동그랗게 하다, 말다
+ringen	;	노력하다, 싸우다
+rinnen	;	흐르다, 듣다, 떨어지다
+Rippe	;	갈빗대, 늑골
+Risiko	;	위험, 모험
+Riss	;	찢음, 갈라진 틈
+Ritt	;	기마, 승마
+Ritter	;	(중세의) 기사
+Ritual	;	의식, 제식
+Ritus	;	의식
+Ritze	;	틈새, 균열
+ritzen	;	새기다, 파다
+Rock	;	상의, 재킷
+roden	;	개간하다
+Roggen	;	호밀
+roh	;	날것의, 생것의
+Rohr	;	갈대
+Röhre	;	파이프, 도관, 진공관
+Rohstoff	;	원료
+Rolle	;	두루마리, 롤러, 배역, 역할
+rollen	;	굴리다, 말다, 감다
+Rom	;	로마
+Roman	;	장편소설
+Romantik	;	낭만주의
+romantisch	;	낭만적인
+römisch	;	로마의
+rosa	;	장밋빛의
+Rose	;	장미
+rosig	;	장밋빛의
+Rosine	;	건포도
+Rost	;	녹
+rösten	;	굽다, 볶다
+röstfrei	;	녹슬지 않는
+rot	;	붉은
+rotieren	;	회전하다
+Rotte	;	무리, 떼, 일당
+Route	;	길, 도정
+Routine	;	숙련, 훈련, 정해진 것
+Rübe	;	순무
+ruchlos	;	극악무도한
+Ruck	;	밀침, 홱 당김
+Rücken	;	등, 잔등
+rücken	;	움직이다, 옮기다
+Rückfahrt	;	귀향
+Rückgrat	;	척추
+Rückkehr	;	귀환
+Rücksack	;	배낭
+Rücksicht	;	고려, 배려
+Rückstand	;	침전물, 체불, 밀림
+Rücktritt	;	퇴직, 사임
+rückwärts	;	뒤로
+Rückweg	;	귀로
+Rudel	;	짐승의 떼, 무리
+Ruder	;	(항해) 키
+rüdern	;	노를 젓다
+Ruf	;	외침
+rufen	;	소리치다
+Ruhe	;	고요, 정적
+ruhen	;	쉬다, 휴식하다
+ruhig	;	조용한
+Ruhm	;	명성, 명예
+rühmen	;	기리다, 칭찬하다
+rühren	;	휘젓다, 움직이다, 감동시키다
+Rührung	;	감동
+Ruine	;	폐허
+ruinieren	;	파멸시키다
+Rummel	;	법석, 소란
+Rumpf	;	몸통
+rund	;	둥근
+Runde	;	한바퀴, 일주
+Rundfahrt	;	일주, 순회
+Rundfunkt	;	라이도 방송, 방송국
+Runzel	;	주름
+rupfen	;	뽑다
+Ruß	;	그을음
+Russe	;	러시아사람
+rüsten	;	무장하다, 준비하다
+Rüstung	;	무장
+Rute	;	회초리, 채찍
+rutschen	;	미끄러지다
+rütteln	;	흔들다
+Saal	;	홀, 강당
+Saat	;	씨뿌리기, 파종
+Sabbat	;	안식일
+Sache	;	사물, 물건
+Sachelage	;	사태
+sachlich	;	객관적인, 공정한
+Sachsen	;	작센
+sacht	;	조심스러운, 부드러운
+Sack	;	자루, 주머니
+säen	;	씨뿌리다, 파종하다
+Saft	;	주스, 과즙
+saftig	;	즙이 많은
+Sage	;	전설
+Säge	;	톱
+sagen	;	말하다
+sägen	;	톱으로 자르다
+Sahne	;	(커피)크림
+Saison	;	철, 계절
+Saite	;	(현악기의)현, 현악기
+Salat	;	샐러드
+Salbe	;	연고, 고약
+salben	;	연고를 바르다
+Salm	;	연어
+Salon	;	살롱, 미장원
+Salz	;	소금
+salzig	;	소금기있는, 짠
+Samen	;	씨, 씨앗, 종자
+sammeln	;	모으다
+Sammlung	;	모임, 수집
+Samstag	;	토요일
+samt	;	함께
+sämtlich	;	전체의, 완전한
+Sand	;	모래
+sanft	;	온화한, 부드러운
+Sänger	;	가수
+Sankt	;	성(Saint)
+Satan	;	사탄, 악마
+Satire	;	풍자, 조롱
+satt	;	배부른, 싫증난
+Sattel	;	안장
+Satz	;	문장, 세트
+Sau	;	암퇘지
+sauber	;	깨끗한, 청결한
+säubern	;	깨끗이 하다, 청소하다
+sauer	;	신, 산성의
+Sauerstoff	;	산소
+saufen	;	마시다
+saugen	;	빨다
+Säugling	;	젖먹이, 갓난아기
+Säule	;	원주, 기둥
+Saum	;	가장자리
+Säure	;	신맛, (화학)산
+sausen	;	(물, 바람)쏴쏴 소리내다
+schaben	;	깎다, 벗기다
+schäbig	;	닳아 떨어진, 남루한
+Schach	;	장기, 체스
+Schachtel	;	상자
+schade	;	섭섭한, 유감스러운
+Schädel	;	해골
+schaden	;	해치다, 손상시키다
+Schaden	;	손해, 손실
+Schaf	;	양
+schaffen	;	창조하다, 만들어내다, 일하다
+Schaffner	;	차장, 안내원
+Schaft	;	자루, 손잡이
+Schal	;	숄
+schal	;	김빠진
+Schale	;	접시, 사발
+Schale	;	껍질, 껍데기
+schälen	;	껍질벗기다
+Schalk	;	악한, 불량배
+Schall	;	소리, 음향
+schallen	;	울리다
+Schallplatte	;	레코드, 음반
+schalten	;	스위치 넣다, 기어 바꾸다, 작동하다
+Schalter	;	스위치, (우체국등)창구
+Scham	;	수치, 수치심
+schämen	;	부끄러워하다(sich)
+Schande	;	창피, 치욕, 불명예
+schänden	;	더럽히다, 모독하다
+schändlich	;	비열한
+Schank	;	술집
+Schar	;	무리, 떼
+scharf	;	날카로운
+Schärfe	;	날카로움
+scharren	;	할퀴다, 긁다
+Schatten	;	그늘, 그림자
+Schatz	;	재물, 보물
+schätzen	;	평가하다
+Schau	;	전람회, 전시회
+Schauder	;	공포, 경악
+schauderhaft	;	끔찍한
+schauen	;	보다, 바라보다
+Schauer	;	소나기, 전율
+Schaufel	;	삽
+schaufeln	;	삽질하다
+Schaufenster	;	쇼윈도, 진열창
+Schaukel	;	그네
+schaukeln	;	흔들다
+Schaum	;	거품, 포말
+schäumen	;	거품을 내다
+Schauspiel	;	연극
+Schauspieler	;	배우
+Scheck	;	수표
+scheel	;	사팔눈의
+Scheibe	;	원반, 얇은 조각, 창유리
+Scheide	;	칼 집
+scheiden	;	이혼시키다, 가르다, 헤어지다
+Scheidung	;	이혼
+Schein	;	빛, 광휘, 외관
+scheinbar	;	와관상의, 표면상의
+scheinen	;	빛나다
+scheißen	;	똥누다
+Scheit	;	장작
+Scheitel	;	정수리, 머리꼭대기
+scheitern	;	난파하다, 실패하다
+Schelle	;	방울, 초인종
+Schelm	;	장난꾸러기, 개구쟁이
+schelten	;	꾸짖다
+Schema	;	도식, 도해, 계획
+Schemel	;	등받이 없는 의자
+Schenke	;	술집
+Schenkel	;	허벅다리
+schenken	;	선물하다
+Scherbe	;	깨진조각, 파편
+Schere	;	가위
+scheren	;	(가위로)자르다
+Scherz	;	농담
+scherzen	;	농담하다
+scheu	;	소심한, 수줍어하는
+Scheu	;	겁, 소심
+scheuen	;	두려워하다, 기피하다
+scheuern	;	문질러 닦다
+scheußlich	;	소름끼치는
+Schi	;	스키
+Schicht	;	층, 계층
+schick	;	멋진, 세련된
+schicken	;	보내다, 적합하다(sich)
+Schicksal	;	운명, 숙명
+schieben	;	밀다, 연기하다
+schief	;	비스듬한, 그릇된
+schielen	;	사팔눈이다, 곁눈으로 보다
+Schiene	;	궤도, 레일
+schier	;	거의
+schießen	;	쏘다, 사격하다
+Schiff	;	배, 선박
+Schifffahrt	;	항해
+Schild	;	방패
+Schild	;	간판, 상표
+schildern	;	묘사하다, 서술하다
+schilern	;	현란하게 빛나다
+Schilf	;	갈대
+Schimmel	;	곰팡이
+Schimmer	;	깜빡이는 빛
+Schimpf	;	창피
+schimpfen	;	욕하다
+Schimpfwort	;	욕설
+schinden	;	괴롭히다
+Schinken	;	햄
+Schippe	;	삽
+Schirm	;	우산, 양산
+Schlacht	;	싸움, 전투
+schlachten	;	도살하다
+Schlachter	;	백정
+Schlacke	;	용암
+Schlaf	;	잠
+schlafen	;	자다
+schlaff	;	느슨한, 기운없는
+Schlafzimmer	;	침실
+Schlag	;	가격, 맥박
+schlagen	;	치다
+Schlager	;	유행가
+schlagfertig	;	재치있는
+Schlamm	;	진흙
+Schlange	;	뱀
+schlank	;	가늘고 긴, 날씬한
+schlau	;	교활한, 간사한
+Schlauch	;	관, 튜브
+schlecht	;	나쁜
+Schlegel	;	두드리는 기구
+schleichen	;	살금살금 걷다
+Schleier	;	면사포, 장막
+Schleife	;	매듭, 나비넥타이
+Schleife	;	썰매
+schleifen	;	갈다, 닦다
+schleifen	;	질질 끌고가다
+schleppen	;	질질 끌다, 견인하다
+schleudern	;	던지다, 팽개치다
+schleunig	;	빠른
+Schleuse	;	수문
+Schlich	;	술책, 책략
+schlicht	;	단순한, 간소한
+schlichten	;	평평하게 하다
+schließen	;	잠그다, 닫다, 끝내다
+schließlich	;	끝의, 마지막의, 결국
+schlimm	;	좋지않은, 나쁜
+Schlinge	;	고리, 올가미
+schlingen	;	휘감다, 얽어매다, 삼키다
+Schlips	;	넥타이
+Schlitten	;	썰매
+Schlittschuh	;	스케이트
+Schloss	;	자물쇠
+Schlosser	;	금속공
+Schlucht	;	협곡
+Schluck	;	한모금
+schlucken	;	삼키다
+Schlummer	;	졸음
+schlummern	;	졸다
+Schlund	;	목구멍
+schlüpfen	;	미끄러지다
+schlüprig	;	미끄러운
+Schluss	;	결말, 결론, 추론
+Schlüssel	;	열쇠
+Schlüsselloch	;	열쇠 구멍
+Schmach	;	치욕
+schmachten	;	고생하다
+schmähen	;	욕하다, 비방하다
+schmal	;	좁은, 모자라는
+schmecken	;	~한 맛이 나다
+Schmeichelei	;	아첨
+schmeicheln	;	아첨하다
+schmeißen	;	던지다, 중단하다
+schmelzen	;	녹다, 용해하다
+Schmerz	;	고통
+schmerzen	;	아프다
+schmerzlich	;	고통스러운
+Schmetterling	;	나비
+schmettern	;	내던지다, 내팽개치다
+Schmied	;	대장장이
+Schmiede	;	대장간
+schmiegen	;	기대다(sich), 꼭맞다
+schmieren	;	바르다
+Schminke	;	화장품
+schminken	;	화장하다
+schmollen	;	토라지다
+Schmuck	;	장식품, 장신구
+schmücken	;	장식하다
+Schmuggler	;	밀수자
+schmunzeln	;	낄낄웃다
+Schmutz	;	더러운 것, 진흙
+schmutzig	;	더러운
+Schnabel	;	부리, 주둥이
+Schnalle	;	버클, 죔쇠
+schnappen	;	닫히다, 잠기다
+schnarchen	;	코골다
+schnauben	;	헐떡이다
+Schnauze	;	(짐승) 주둥이
+Schnecke	;	달팽이
+Schnee	;	눈
+Schneide	;	칼날, 날
+schneiden	;	자르다, 베다
+Schneider	;	재단사
+Schneiderin	;	여자 재단사
+schneien	;	눈이 오다
+schnell	;	신속한
+Schnellzug	;	급행열차
+Schnitt	;	자름, 잘라냄
+Schnitzel	;	잘라버린 조각
+schnöde	;	모욕적인
+schnuffeln	;	냄새맡다
+Schnupfen	;	코감기
+Schnur	;	끈, 줄, 장식끈
+schnüren	;	묶다, 매다
+Schnurrbart	;	코밑수염
+Schokolade	;	초콜릿
+Scholle	;	흙덩이, 토지
+schon	;	이미, 벌써
+schön	;	아름다운
+schonen	;	소중히 하다, 아끼다
+Schönheit	;	아름다움, 미모
+Schopf	;	두발
+schöpfen	;	푸다, 긷다
+Schorf	;	부스럼딱지
+Schornstein	;	굴뚝
+Schoß	;	무릎
+schräg	;	비스듬한, 어긋난
+Schrank	;	옷장, 책장
+Schranke	;	(도로)차단기, 장벽
+Schraube	;	나사
+Schrecken	;	공포, 전율
+schrecken	;	깜짝놀라게 하다
+schrecklich	;	무서운
+Schrei	;	부르짖음
+schreiben	;	쓰다, 편지쓰다
+Schreibmachine	;	타자기
+Schreibtisch	;	책상
+schreien	;	외치다, 비명지르다
+schreiten	;	걷다
+Schrift	;	문자, 글자, 문서, 서체
+schriftlich	;	문서에 의한, 글자의
+Schriftsteller	;	작가
+schrill	;	날카로운
+Schritt	;	걸음, 발걸음
+schroff	;	험한, 냉혹한, 쌀쌀한
+Schublade	;	서랍
+schüchtern	;	수줍어하는
+Schuh	;	구두
+Schuhlöffel	;	구둣주걱
+schuld	;	죄가있는, 책임있는
+Schuld	;	채무, 빚, 죄
+schuldig	;	빚이 있는, 부채가 있는
+Schule	;	학교, 수업
+Schüler	;	학생, 제자
+Schülerin	;	여학생
+Schulter	;	어깨
+Schuppe	;	비늘
+Schuppen	;	헛간
+schüren	;	부채질하다
+Schurke	;	악한, 악당
+Schürze	;	앞치마
+Schuss	;	사격, 발사
+Schüssel	;	사발, 대접
+Schuster	;	구두 수선공
+Schutt	;	파편, 폐기물
+schütteln	;	흔들다
+schütten	;	붓다, 쏟다
+Schutz	;	보호, 비호
+schützen	;	보호하다, 지키다
+schwach	;	약한, 허약한, 보잘것없는
+Schwäche	;	약함, 약점
+schwächen	;	약하게 하다
+Schwager	;	형부, 처남, 자형, 매형
+Schwägerin	;	처제, 처형, 시누이, 올케
+Schwalbe	;	제비
+Schwamm	;	스펀지
+Schwan	;	백조
+schwanger	;	임신한, 잉태한
+schwanken	;	동요하다, 흔들리다
+Schwanz	;	꼬리
+schwären	;	곪다
+Schwarm	;	무리, 군중, 우상
+schwärmen	;	우글거리다, 열광하다
+schwarz	;	검은
+schwatzen	;	지껄이다, 수다떨다
+schweben	;	떠다니다, 부유하다
+Schweden	;	스웨덴
+schweifen	;	방황하다
+schweigen	;	침묵하다
+Schwein	;	돼지
+Schweinefleisch	;	돼지고기
+Schweiß	;	땀
+schweißen	;	용접하다
+Schweiz	;	스위스
+schwelen	;	연기내며 타다
+schwelgen	;	포식하다
+Schwelle	;	문지방, 문턱
+schwellen	;	부풀다, (의학)붓다
+schwenken	;	흔들다, 돌리다
+schwer	;	무거운, 어려운, 심한
+schwerfallen	;	어렵다
+Schwert	;	검, 칼
+Schwester	;	자매, 누이
+Schwiegermutter	;	시어머니, 장모
+Schwiegersohn	;	사위
+Schwiegertochter	;	며느리
+Schwiegervater	;	시아버지, 장인
+schwierig	;	어려운
+Schwierigkeit	;	어려움
+Schwimmbad	;	수영장
+Schwindel	;	현기증, 사기, 속임수
+schwindeln	;	어지럽다, 속이다
+schwinden	;	줄어들다, 사라지다
+Schwinge	;	날개
+schwingen	;	휘두르다
+schwirren	;	웅웅거리다
+schwitzen	;	땀나다
+schwören	;	맹세하다, 선서하다
+schwül	;	무더운
+Schwung	;	스윙, 도약
+See	;	호수
+See	;	바다, 해양
+Seele	;	영혼, 정신
+seelisch	;	정신적인
+Segel	;	돛
+Segelboot	;	범선, 돛단배
+Segelflugzeug	;	행글라이더
+segeln	;	항해하다
+Segen	;	축복, 은총
+segnen	;	축복하다
+sehen	;	보다, 구경하다
+sehnen	;	동경하다, 그리워하다
+Sehnsucht	;	그리움, 동경
+sehr	;	몹시, 매우
+seicht	;	(물이) 얕은
+Seide	;	명주실, 비단
+seiden	;	비단의
+Seife	;	비누
+Seil	;	밧줄, 로프, 자일
+seitdem	;	그때부터
+Seite	;	면, 측면, 페이지, 면모
+Sekretär	;	비서
+Sekretärin	;	여비서
+Sekt	;	샴페인
+Sekunde	;	초
+selb…	;	동일한
+selber	;	자기가, 직접
+selbst	;	스스로, 자신이
+selbstständig	;	자립적인, 독립적인
+selbstverständlich	;	당연한, 자명한
+selig	;	황홀한, 아주기쁜
+Seligkeit	;	극락
+selten	;	드문
+Seltenheit	;	희소성
+seltsam	;	이상한, 기이한
+Semester	;	학기
+Seminar	;	세미나
+Semmel	;	밀가루 빵
+Senat	;	상원
+senden	;	보내다, 파견하다, 부치다
+Sender	;	방송, 방송국
+Sendung	;	발송, 발송물, 방송, 소명
+Senf	;	겨자
+sengen	;	살짝 태우다
+Senior	;	연장자
+senken	;	가라앉히다, 내리다
+senkrecht	;	수직의
+Sense	;	큰 낫
+Sentenz	;	금언, 격언
+Serie	;	시리즈
+setzen	;	앉히다
+Seuche	;	유행병, 전염병
+seufzen	;	한숨쉬다
+Seufzer	;	한숨, 탄식
+sicher	;	안전한, 확실한
+Sicherheit	;	안전, 확실함
+sichern	;	안전하게 하다
+Sicht	;	봄, 시계, 시야
+sichtbar	;	볼수있는, 보이는
+sickern	;	새다, 스며나오다
+Sieb	;	여과기
+siedeln	;	이주하다
+sieden	;	끓다
+Siedlung	;	이주, 주택단지
+Sieg	;	승리
+Siegel	;	도장, 봉인
+siegen	;	이기다, 승리거두다
+Sieger	;	승리자, 우승자
+Signal	;	신호
+Silbe	;	음절
+Silber	;	은
+silbern	;	은의
+singen	;	노래하다
+sinken	;	가라앉다
+Sinn	;	감각
+sinnen	;	곰곰히 생각하다
+sinnlich	;	감각의, 감성적인
+sinnlos	;	무감각의, 무의식의
+sinnvoll	;	의미심장한
+Sippe	;	씨족, 혈족
+Sitte	;	풍속, 풍습, 관습
+sittlich	;	도덕상의, 풍속의
+Situation	;	상황
+Sitz	;	자리, 좌석
+sitzen	;	앉아있다
+sitzenbleiben	;	낙제하다
+Sitzung	;	집회, 회의
+Skandal	;	스캔들, 추문
+Skelett	;	해골
+Skepsis	;	의심, 회의
+skeptisch	;	회의적인
+Ski	;	스키
+Skizze	;	스케치
+Sklave	;	노예
+Skrupel	;	양심의 가책, 거리낌
+sobald	;	하자마자
+Socke	;	양말
+soeben	;	방금
+Sofa	;	소파
+sofort	;	즉시
+sogar	;	더욱이
+sogenannt	;	이른바, 즉
+Sohle	;	발바닥, 신바닥
+Sohn	;	아들
+Soldat	;	군인
+solide	;	견고한, 견실한
+Sommerfrische	;	피서, 휴양
+sonderbar	;	기묘한, 이상한
+Sonnabend	;	토요일
+Sonne	;	태양
+Sonntag	;	일요일
+sonst	;	그렇지 않으면
+Sorge	;	근심
+sorgen	;	근심하다, 돌보다
+Sorgfalt	;	신중
+sorgfältig	;	주의깊은
+Sorte	;	종류, 품종
+Soße	;	소스
+souverän	;	주권을 가진, 무제한의
+soweit	;	대체로, ~하는 한
+sowieso	;	어쨌든
+sowohl	;	~와 마찬가지로, ~또한
+sozial	;	사회적인, 사회의
+sozusagen	;	말하자면, 소위
+spähen	;	엿보다, 주시하다
+Spalt	;	갈라진 틈, 균열
+Spalte	;	갈라진 틈, 균열
+spalten	;	쪼개다, 찢다
+Span	;	나무 조각
+Spange	;	머리핀, 브로치
+spannen	;	팽팽히 하다, 긴장시키다
+spannend	;	긴장시키는, 재밌는
+Spannung	;	긴장감
+sparen	;	절약하다, 아끼다
+Sparkasse	;	저축은행(금고)
+spärlich	;	부족한, 모자라는
+sparsam	;	아끼는, 절약하는
+Spaß	;	농담, 재미
+spät	;	늦은
+Spaten	;	삽
+später	;	나중의, 다음의
+spätestens	;	늦어도
+Spatz	;	참새
+Spaziergang	;	산책
+Specht	;	딱다구리
+Speck	;	비계살, 베이컨
+Speer	;	창
+Speichel	;	타액, 침
+Speicher	;	창고, 곳간
+speien	;	침뱉다, 토하다
+Speise	;	음식, 요리
+Speisekarte	;	메뉴
+speisen	;	식사하다, 음식대접하다
+Spektakel	;	구경거리, 장관
+Spektrum	;	스펙트럼
+spekulieren	;	투기하다
+spenden	;	주다, 베풀다, 기부하다
+Sperling	;	참새
+Sperre	;	차단물, 바리케이드
+sperren	;	차단하다, 정지시키다, 금지하다
+spezialisieren	;	전공하다(sich)
+speziell	;	특별한, 특별히
+spezifisch	;	특수한, 특유한
+Sphäre	;	천체, 천구, 범위
+Spiegel	;	거울
+Spiel	;	놀이, 유희, 장난
+spielen	;	놀다, 연주하다, 상연하다
+Spielplatz	;	놀이터
+Spielzeug	;	장난감
+Spieß	;	창, 꼬챙이
+Spinat	;	시금치
+Spinne	;	거미
+spinnen	;	방적하다, 생각해내다
+Spion	;	간첩, 첩자
+Spirale	;	나선, 나선형
+Spiritus	;	정신, 알코올
+Spital	;	병원
+spitz	;	뾰족한, 날카로운
+Spitze	;	뽀족한 끝, 선두, 맨앞
+Splitter	;	조각, 파편
+Sporn	;	박차
+Sport	;	스포츠
+sportlich	;	스포츠의
+Sportplatz	;	운동장
+Spott	;	비웃음, 조롱
+spotten	;	조롱하다, 비웃다
+spöttisch	;	조소적인, 비웃는
+Sprache	;	언어, 말
+sprachlos	;	말없는, 침묵의
+sprechen	;	말하다
+Sprechstunde	;	면회시간
+spreizen	;	벌리다, 펼치다
+sprengen	;	폭파하다, 깨뜨리다, 부수다
+Sprichwort	;	속담, 격언
+sprießen	;	싹트다
+springen	;	뛰다, 뛰어오르다
+Spritze	;	소화기, 주사기
+spritzen	;	뿜어나오다, 물뿌리다
+spröde	;	깨지기 쉬운, 수줍은
+Spruch	;	격언, 금언
+Sprudel	;	탄산수, 미네랄워터
+sprudeln	;	솟아나오다
+sprühen	;	튀기다, 날리다, 반짝이다
+Sprung	;	뜀, 뛰어오름
+Spucke	;	침, 타액
+spucken	;	침뱉다
+Spuk	;	유령, 도깨비, 소동
+Spule	;	실패
+spülen	;	씻다, 세척하다
+Spund	;	마개
+Spur	;	자취, 흔적, 발자국
+spüren	;	감지하다, 알아채다
+spzieren	;	산책하다
+spzierenfahren	;	드라이브하다
+spzierengehen	;	산책하다
+Staat	;	나라, 국가
+staatlich	;	국가의
+Staatsangehörigkeit	;	국적
+Staatsanwalt	;	(검찰)검사
+Stab	;	막대기, 지팡이
+Stachel	;	가시, 독침
+Stacheldraht	;	가시철사, 철조망
+Stadt	;	도시
+städtisch	;	시의, 도시풍의
+Stadtmitte	;	도심, 시내
+Stadtplan	;	시가 지도, 도시계획
+Stahl	;	강철
+stählern	;	강철제의, 강철같은
+Stall	;	마구간, 외양간
+Stamm	;	줄기, 종족, 부족, 혈통
+stammeln	;	말더듬다
+stammen	;	유래하다
+stampfen	;	찧다, 발구르다
+Stand	;	기립, 상태, 신분
+Standpunkt	;	입장, 견지, 관점
+Stange	;	막대기, 장대
+Stapel	;	진수대
+stark	;	강한, 튼튼한
+Stärke	;	힘, 장점, 장기
+stärken	;	강하게 하다, 기운 돋우다
+starr	;	움직이지 않는, 부동의
+starren	;	응시하다
+Start	;	출발
+starten	;	출발하다
+Station	;	정거장
+Statistik	;	통계
+statt	;	대신에
+Stätte	;	곳, 소재지, 장소
+stattlich	;	당당한
+Statue	;	입상 
+Staub	;	먼지, 티끌
+staubig	;	먼지덮인
+Staubsauger	;	진공청소기
+stauchen	;	찍다, 압축하다
+stauen	;	(흐름)막다
+staunen	;	놀라다, 경탄하다
+stechen	;	찌르다
+stecken	;	꽂다
+steckenbleiben	;	박힌채 있다
+Steg	;	작은길
+stehen	;	서다
+stehenbleiben	;	멈추다, 정지하다
+stehlen	;	훔치다
+steif	;	굳은, 뻣뻣한
+steigen	;	오르다
+steigern	;	올리다
+steil	;	가파른
+Stein	;	돌
+steinern	;	돌의, 석조의
+steinig	;	돌이 많은
+Stelle	;	자리, 장소
+stellen	;	세우다, 놓다
+Stellung	;	자세, 입장, 태도
+stemmen	;	받치다
+Stempel	;	스탬프, 도장
+stempeln	;	도장찍다
+sterben	;	죽다
+sterblich	;	죽을 운명의, 덧없는
+Stern	;	별
+stet	;	부동의, 항구적인
+stetig	;	끊임없는, 연속적인
+Steuer	;	세금
+Steuer	;	핸들, 운전대
+steuern	;	조종하다, 키를 잡다
+Stich	;	찔린 상처
+Stickstoff	;	질소
+stieben	;	먼지처럼 날리다
+Stiefel	;	장화
+Stiefmutter	;	계모
+Stiefsohn	;	의붓아들
+Stieftochter	;	의붓딸
+Stiefvater	;	의붓아버지
+Stiel	;	손잡이, 자루
+Stier	;	황소
+Stierkampf	;	투우
+Stift	;	연필
+stiften	;	창설하다, 설립하다, 기부하다
+Stiftung	;	(법률)재단, 기부, 설립
+Stil	;	스타일, 양식
+still	;	고요한, 정지한
+Stille	;	고요함, 정적
+stillen	;	정지시키다, 침묵시키다
+stillstehen	;	중지하다, 정지하다
+Stimme	;	목소리, 투표, 발언권
+stimmen	;	맞다, 적합하다, 투표하다
+Stimmrecht	;	투표권
+Stimmung	;	기분, 분위기
+Stimmungsbarometer	;	여론
+stinken	;	악취풍기다
+Stirn	;	이마
+stöbern	;	찾다, 뒤지다
+Stock	;	층
+Stock	;	그루터기, 막대기, 지팡이
+stocken	;	멎다, 중단되다
+Stoff	;	옷감, 물질
+Stoffwechsel	;	신진대사
+stöhnen	;	신음하다, 끙끙거리다
+Stollen	;	지하통로
+stolpern	;	비틀거리다
+stolz	;	자랑스러운
+Stolz	;	자랑
+stopfen	;	채워넣다
+Storch	;	황새
+stören	;	어지럽히다, 방해하다
+Stoß	;	찌름
+stoßen	;	찌르다, 밀치다, 차다
+stottern	;	말더듬다
+stracks	;	똑바로, 즉시
+Strafe	;	벌, 벌금
+strafen	;	벌하다
+straff	;	팽팽한
+Strafgeld	;	벌금
+Strahl	;	광선
+strahlen	;	반짝이다
+stramm	;	팽팽한
+Strand	;	해변, 해안
+Strang	;	새끼, 끈
+Straße	;	도로
+Straßenanlage	;	도로시설
+Straßenbahn	;	시가전차
+sträuben	;	곤두세우다
+Strauch	;	덤불
+straucheln	;	비틀거리다
+Strauß	;	꽃다발
+Strauß	;	타조
+streben	;	노력하다, 애쓰다
+Strecke	;	거리, 길이
+strecken	;	펴다, 넘어뜨리다
+Streich	;	타격
+streicheln	;	쓰다듬다
+streichen	;	쓰다듬다, 바르다, 삭제하다
+Streifen	;	줄, 줄무늬
+streifen	;	가볍게 닿다, 스치다
+Streiholz	;	성냥
+Streik	;	동맹파업
+streiken	;	파업하다
+Streit	;	다툼, 싸움
+streiten	;	싸우다
+Streitigkeit	;	다툼, 싸움
+streng	;	엄한, 가차없는
+streuen	;	흩뿌리다, 살포하다
+Strich	;	선, 줄
+Strick	;	밧줄, 새끼
+stricken	;	짜다, 뜨다
+strikt	;	엄격한
+Stroh	;	짚
+Strohhalm	;	짚푸라기, 빨대
+Strolch	;	뜨내기, 부랑자
+Strom	;	강, 대하
+strömen	;	흐르다
+Strömung	;	흐름
+Strudel	;	소용돌이
+Struktur	;	구조
+Strumpf	;	양말
+Stube	;	방
+Stück	;	부분, 조각
+Studium	;	대학공부, 연구
+Stufe	;	계단
+Stuhl	;	의자, 걸상
+stülpen	;	젖히다, 씌우다
+stumm	;	벙어리의, 무언의, 말없는
+Stummel	;	동강, 남은 조각
+stumpf	;	무딘
+Stumpf	;	동강, 남은 조각
+Stunde	;	시간
+stundenlang	;	수시간의
+stündlich	;	매시의, 한 시간마다의
+stur	;	고집센, 완고한
+Sturm	;	폭풍
+stürmen	;	폭풍이 몰아치다
+stürmisch	;	폭풍우의
+Sturz	;	추락, 전복
+stürzen	;	추락하다
+Stute	;	암말
+Stütze	;	지주, 버팀목
+stutzen	;	짧게 끊다
+stützen	;	받치다, 지지하다
+Subjekt	;	주체
+Substanz	;	물질
+suchen	;	찾다
+Sucht	;	벽, 중독, 광
+Süd	;	남
+Sühne	;	속죄
+Summe	;	합, 금액, 액수
+Sumpf	;	늪
+Sünde	;	죄, 죄악
+sündigen	;	죄를 범하다
+Suppe	;	수프
+süß	;	단, 달콤한
+Süßigkeit	;	단 것
+Szene	;	장면, 장
+Tabak	;	담뱃잎
+Tabelle	;	표, 목록
+Tablett	;	쟁반
+Tablette	;	정제, 알약
+Tadel	;	비난, 나무람
+tadellos	;	흠잡을 데가 없는
+Tafel	;	칠판, 식사, 연회
+Tag	;	낮, 주간
+tagen	;	회의를 하다
+täglich	;	매일의
+Tagung	;	회의
+Takt	;	박자
+Taktik	;	전술, 용병술
+taktlos	;	약삭빠르지 못한
+Tal	;	골짜기
+Talent	;	재능, 재능있는 사람
+tändeln	;	장난하다, 농락하다
+Tank	;	큰 통, 탱크
+tanken	;	급유하다
+Tankstelle	;	주유소
+Tante	;	숙모, 고모
+Tanz	;	춤, 무용
+tanzen	;	춤추다
+Tapete	;	벽지, 도배지
+tapfer	;	용감한, 씩씩한
+tappen	;	손으로 더듬다
+Tarif	;	요금표, 임금률
+Tasche	;	가방, 호주머니
+Taschentuch	;	손수건
+Tasse	;	잔, 컵
+tasten	;	손으로 더듬다, 만져보다
+Tat	;	행위
+Täter	;	범인
+tätig	;	재직하는, 활동하고 있는
+Tätigkeit	;	활동, 일
+Tatsache	;	사실
+tatsächlich	;	실제의, 사실의
+Tau	;	밧줄
+Tau	;	이슬
+taub	;	귀머거리의
+Taube	;	비둘기
+tauchen	;	가라앉다, 담그다
+tauen	;	녹다
+Taufe	;	침례, 세례
+taufen	;	세례를 베풀다
+taugen	;	쓸모있다, 유용하다
+taumeln	;	비틀거리다
+Tausch	;	교환, 교역
+tauschen	;	교환하다, 바꾸다
+täuschen	;	속이다, 기만하다
+Täuschung	;	속임, 사기
+Tauwetter	;	눈 녹이는 날씨, 긴장완화
+Taxi	;	택시
+Technik	;	공업, 기술
+technisch	;	기술적인
+Tee	;	차
+Teer	;	타르
+Teich	;	연못
+Teig	;	반죽
+Teil	;	부분
+teilen	;	나누다, 분할하다
+Teilnahme	;	참여, 동정, 동감
+teilnehmen	;	참가하다
+Teilnehmer	;	참가자
+teils	;	일부는, 반은
+teilweise	;	부분적으로, 나누어서
+Telefon	;	전화기
+telefonieren	;	전화걸다
+Telefonzelle	;	공중전화박스
+Telegrafie	;	전신
+Telegramm	;	전보, 전신
+Teleskop	;	망원경
+Teller	;	접시
+Tempel	;	신전, 사원
+Temperament	;	기질, 열정
+temperamentvoll	;	활발한
+Temperatur	;	온도
+Tempo	;	속도, 박자
+Tendenz	;	경향, 추세
+Tennis	;	테니스
+Teppich	;	융단, 양탄자
+Terasse	;	테라스
+Termin	;	기한 기일
+Testament	;	유언(장)
+teuer	;	비싼
+Teufel	;	악마
+Text	;	텍스트, 본문
+Theater	;	극장, 연극
+Thema	;	주제, 테마
+Theologie	;	신학
+theoretisch	;	이론적인
+Theorie	;	이론
+These	;	명제, 주장
+Thron	;	왕좌, 옥좌
+tief	;	깊은
+Tiefe	;	깊이
+Tier	;	동물, 짐승
+Tiergarten	;	동물원
+Tiger	;	호랑이
+tilgen	;	지우다, 제거하다, 갚다
+Tinte	;	잉크
+Tipp	;	암시, 충고
+Tisch	;	탁자, 책상
+Tischtuch	;	테이블 보
+Titel	;	표제, 칭호
+toben	;	미쳐날뛰다
+Tochter	;	딸
+Tod	;	죽음
+tödlich	;	치명적인
+Toilette	;	화장대, 화장실
+toll	;	멋진, 최고의
+Ton	;	음조, 어조
+Tonband	;	테이프레코더용 테이프
+tönen	;	울리다
+Tonne	;	큰 통, 톤
+Topf	;	단지, 사발
+Tor	;	문
+Tor	;	바보
+Torpedo	;	어뢰
+tot	;	죽은
+töten	;	죽이다
+Tour	;	여행
+Tourist	;	여행객
+Trab	;	(말)속보, 총총걸음
+traben	;	(말)속보로 가다
+Tracht	;	복장, 의복
+trachten	;	뜻하다, 노력하다
+tragbar	;	휴대용의, 참을 수 있는
+träge	;	게으른, 태만한
+tragen	;	지니고 있다, 나르다
+Träger	;	운반인, 골프캐디
+tragisch	;	비극적인
+tragödie	;	비극
+Träne	;	눈물
+Trank	;	음료
+Traube	;	포도
+trauen	;	신뢰하다
+Trauer	;	비애, 슬픔, 상
+trauern	;	슬퍼하다
+träufeln	;	듣다, 떨어지다
+Traum	;	꿈
+träumen	;	꿈꾸다
+traurig	;	슬픈
+treffen	;	명중하다, 만나다
+trefflich	;	훌륭한
+treiben	;	몰다, 쫓다, 행하다, 움직이다
+trennen	;	나누다, 분리시키다
+Trennung	;	분리
+treten	;	디디다, 밟다, 걷다
+treu	;	성실한
+Treue	;	성실
+Tribut	;	공물, 공세
+Trichter	;	깔때기
+Trick	;	책략, 술책
+Trieb	;	충동
+trinken	;	마시다
+Trinkgeld	;	팁
+Trippe	;	계단
+Tritt	;	걸음, 디딤
+trocken	;	마른, 건조한
+trocknen	;	마르다, 건조하다
+Trödel	;	고물
+Trog	;	큰 통
+Trommel	;	북, 드럼
+Trope	;	비유
+Tropfen	;	방울, 물방울
+tropfen	;	방울떨어지다
+Trost	;	위로, 위안
+trösten	;	위로하다
+trostlos	;	절망적인
+trotz	;	에도 불구하고
+Trotz	;	반항, 고집
+trotzdem	;	에도 불구하고
+trotzig	;	반항적인
+trüb	;	탁한, 흐린
+trügen	;	속이다, 기만하다
+Trümmer	;	파편, 폐허
+Trumpf	;	으뜸패
+Trunk	;	음료, 음주
+Truppe	;	(군사)부대
+Tuch	;	천
+tüchtig	;	유능한, 쓸모있는
+Tücke	;	악의, 술책
+Tugend	;	덕, 미덕
+tugendhaft	;	덕이 있는
+Tulpe	;	튤립
+tummeln	;	빙빙 돌리다
+Tunnel	;	터널
+Tür	;	문
+Türkei	;	터키
+Turm	;	탑, 성탑
+Turnhalle	;	(실내)체육관
+Turnier	;	운동경기
+Tüte	;	종이봉지
+Typ	;	유형
+typisch	;	전형적인
+Tyrann	;	독재자, 폭군
+U-Bahn	;	지하철
+Übel	;	악, 해악
+übel	;	역겨운, 불쾌한
+üben	;	연습하다, 이행하다
+überall	;	도처에, 언제나
+uberblick	;	조망, 전망
+überblicken	;	조망하다, 개관하다
+überdies	;	게다가, 또한
+Überdruss	;	싫증, 권태
+überdrussig	;	싫증난
+übereinkommen	;	일치하다
+übereinstimmen	;	일치하다
+übereinstimmung	;	일치, 조화
+überfahren	;	치다, 무시하고 달리다
+Überfall	;	습격
+überfallen	;	습격하다
+überfließen	;	넘쳐 흐르다
+Überfluss	;	과다, 과잉, 사치
+überflüssig	;	불필요한
+überführen	;	입증하다
+überfüllen	;	너무 채우다, 너무 넣다
+Übergang	;	넘어감, 일시적인 것
+übergeben	;	넘겨주다
+übergehen	;	이행하다, 간과하다
+übergreifen	;	퍼지다, 번지다
+überhaupt	;	일반적으로
+überholen	;	추월하다
+überkommen	;	엄습하다, 덮치다
+überladen	;	너무 많이 싣다
+überlassen	;	맡기다, 양도하다
+überlaufen	;	넘치다, 넘어가다
+überleben	;	살아남다
+überlegen	;	숙고하다
+überlegen	;	뛰어난, 능가하는
+Überlegung	;	숙고
+überliefern	;	넘겨주다, (후세에)전하다
+Überlieferung	;	전통, 관습
+Übermacht	;	우세
+übermäßig	;	과도한
+übermorgen	;	모레
+Übermut	;	경솔함, 교만
+übernächst	;	다음다음의
+übernachten	;	묵다
+Übernahme	;	인수, 떠맡음
+übernehmen	;	인수하다
+überordnen	;	우선시하다
+überragen	;	능가하다
+überraschen	;	놀라게 하다
+Überraschung	;	놀람
+überreden	;	권유하다, 설득하다
+überschreiten	;	넘어서다, 벗어나다
+überschwemmen	;	범람하다, 침수시키다
+übersehen	;	못보고 지나치다, 간과하다
+übersetzen	;	번역하다, 통역하다
+Übersetzung	;	번역, 통역
+Übersicht	;	조망하는 능력, 일람표
+überspringen	;	뛰어넘다
+überstehen	;	극복하다
+übertragen	;	방송하다, 번역하다, 넘겨주다
+Übertragung	;	중계방송, 번역
+übertreffen	;	능가하다
+übertreiben	;	과자애서 말하다, 지나치게 하다
+übertreten	;	위반하다
+übertrieben	;	과장된, 과도한
+überwältigen	;	압도하다, 제압하다
+überweisen	;	송금하다, 이체하다
+Überweisung	;	계좌이체
+überwiegen	;	능가하다, 압도적이다
+überwinden	;	극복하다, 정복하다
+Überwindung	;	극기, 자제
+überzeugen	;	확신시키다
+überziehen	;	덮다, 칠하다, 초과하다
+Übezeugung	;	확신, 신념
+üblich	;	습관적인, 통례의
+übrig	;	남아있는, 나머지의
+übrigbleiben	;	남아있다
+übrigens	;	그것은 그렇고, 그런데
+übriglassen	;	남기다
+Übung	;	연습, 훈련
+Ufer	;	물가, 강가
+Uhr	;	시간, 시각
+Ultimatum	;	(법률)최후 통첩
+umarmen	;	껴안다
+umbringen	;	죽이다
+umdrehen	;	돌리다, 회전시키다
+umfallen	;	넘어지다
+Umfang	;	주위, 크기, 부피
+umfangreich	;	범위가 넓은
+umfassen	;	껴안다, 싸다
+umformen	;	변형하다
+Umgang	;	교제, 사교
+umgeben	;	에워싸다
+Umgebung	;	주변, 환경
+umgehen	;	떠돌다, 다루다, 취급하다
+umgehen	;	우회하다
+umgekehrt	;	거꾸로의, 역의
+umher	;	주위에, 빙둘러
+umhüllen	;	싸다, 덮다
+Umkehr	;	귀환, 복귀
+umkehren	;	뒤집다, 돌아가다
+umkippen	;	넘어지다, 급변하다
+umkleiden	;	옷을 갈아입히다
+umkommen	;	죽다, 생명을 잃다
+Umkreis	;	주위, 주변
+Umlauf	;	회전, 유통
+Umlauf	;	변모음
+umlaufen	;	회전하다, 유통하다, 퍼지다
+umlegen	;	휘감다, 넘어뜨리다
+Umriss	;	윤곽, 스케치
+Umsatz	;	(상업)매상
+umschalten	;	전환하다, 변속하다
+Umschau	;	전망, 조망
+Umschlag	;	커버, 봉투, 찜질
+umschließen	;	둘러싸다
+umschreiben	;	다시 쓰다, 고쳐 쓰다
+umsehen	;	돌아보다, 둘러보다
+umsetzen	;	옮기다, 변환하다
+umso	;	그만큼
+umsonst	;	공짜로, 헛되이
+Umstand	;	사정, 형편, 번거로움, 성가심
+umsteigen	;	갈아타다
+Umsturz	;	전복, 혁명
+umstürzen	;	넘어지다, 전복하다
+Umtausch	;	교환
+umtauschen	;	교환하다, 환전하다
+Umweg	;	우회로
+Umwelt	;	환경, 주변 사람들
+umwenden	;	반대측으로 돌리다
+umwerfen	;	넘어뜨리다
+umziehen	;	이사하다, 갈아입다(sich)
+Umzug	;	이사, 이주
+unabhängig	;	독립의, 독자적인
+unangenehm	;	불괘한, 싫은
+unanständig	;	버릇없는, 무례한
+Unart	;	나쁜 버릇
+unaufhörlich	;	끊임없는
+unbedingt	;	무조건의, 무조건
+unbefangen	;	선입견 없는, 솔직한
+unbeholfen	;	서투른, 어색한
+unbekannt	;	무명의
+unbequem	;	불편한, 귀찮은
+unbestimmt	;	미정의, 애매한
+unbewusst	;	무의식의, 미지의
+unendlich	;	끝없는, 무한한
+Unendlichkeit	;	무한, 영구
+unentbehrlich	;	필수 불가결의
+unerhört	;	전례없는, 미증유의
+unerträglich	;	견디기 어려운
+unerwartet	;	예기치 않은
+unfähig	;	무능력한
+Unfall	;	재해, 사고, 상해
+unfehlbar	;	틀림없는, 틀림없이
+unfreundlich	;	불친절한
+Unfug	;	못된 장난, 비행
+Ungarn	;	헝가리
+Ungeduld	;	조급, 성급
+ungefähr	;	대략의
+ungeheur	;	엄청난, 섬뜩한
+ungenügend	;	불충분한, 모자라는
+ungeschickt	;	서투른
+ungestört	;	방해받지 않는
+ungesund	;	건강에 해로운
+ungewiss	;	불확실한
+ungewöhnlich	;	비범한
+ungewohnt	;	익숙하지 않은, 낯선
+Ungeziefer	;	해충
+unglaublich	;	믿어지지 않는
+ungleich	;	상이한
+Unglück	;	사고, 재난
+unglücklich	;	불행한, 슬픈
+ungültig	;	무효의
+ungünstig	;	형편이 나쁜
+unheimlich	;	섬뜩한
+Uniform	;	유니폼
+Union	;	연맹
+universal	;	일반적인, 우주의
+Universität	;	대학교
+Universum	;	우주, 세계
+unklar	;	불명료한
+Unkosten	;	잡비, 부대비용
+Unkraut	;	잡초
+unlösbar	;	해결할 수 없는
+unmenschlich	;	비인간적인
+unmittelbar	;	직접의
+unmöglich	;	불가능한
+unnütz	;	쓸모없는, 소용없는
+Unordnung	;	무질서
+unpersönlich	;	냉정한
+Unrecht	;	부정, 부당
+unrecht	;	옳지 않은
+Unruhe	;	불안, 초조
+unruhig	;	불안한, 소란한
+Unschuld	;	무죄, 순진
+unschuldig	;	무죄의, 순진한
+unsicher	;	불안정한
+Unsinn	;	무의미함
+unterbrechen	;	중단하다
+unterdrücken	;	억압하다, 억제하다
+Untergang	;	빠짐, 몰락
+untergehen	;	지다, 가라앉다
+unterhalb	;	~의 하부에
+Unterhalt	;	생계, 부양
+unterhalten	;	부양하다, 기르다, 보존하다
+Unterhaltung	;	즐거움, 위안, 환담, 담소
+Unterhaltungsmusik	;	경음악
+Unterhemd	;	러닝셔츠, 속옷
+Unterhose	;	팬티
+Unterkunft	;	숙박소
+Unterlage	;	깔개, 구비서류
+unterlassen	;	중단하다
+unterliegen	;	지다, 굴복하다
+unternehmen	;	감행하다, 꾀하다
+Unternehmen	;	기도, 기업
+Unterricht	;	수업
+unterrichten	;	가르치다, 교수하다, 알리다
+unterscheiden	;	구별하다
+Unterschied	;	상이, 구별, 차이
+unterschlagen	;	횡령하다, 착복하다
+unterschreiben	;	서명하다
+unterschreichen	;	밑줄 긋다
+unterschrift	;	서명, 사인
+unterstehen	;	지배 아래 있다
+unterstützen	;	지지하다, 보조하다
+Unterstützung	;	보조, 보조금
+untersuchen	;	조사하다, 진찰하다
+untersuchung	;	조사, 진찰
+unterwegs	;	도중에
+unterzeichnen	;	서명하다
+unverschämt	;	뻔뻔스러운
+unverständlich	;	이해할 수 없는
+Unwetter	;	악천후
+üppig	;	무성한, 풍부한
+uralt	;	태고의
+Urheber	;	발기인, 창시자, 저작자
+Urkunde	;	증서
+Urlaub	;	휴가
+Ursache	;	이유, 원인
+Ursprung	;	기원
+ursprünglich	;	원인의
+Urteil	;	판결
+urteilen	;	판단하다, 판결하다
+urwüchsig	;	야생의
+usw.	;	und so weiter 등등
+Utopie	;	이상향
+Vasall	;	신하, 가신
+Vase	;	꽃병
+Vater	;	아버지
+Veilchen	;	제비꽃
+Vene	;	정맥
+Venedig	;	베니스
+Ventil	;	밸브
+Venus	;	비너스
+verabreden	;	약속하다
+Verabredung	;	약속
+verabschieden	;	가결하다, 해고하다
+verachten	;	무시다, 경멸하다
+Verachtung	;	경멸
+veralten	;	낡아지다, 쇠퇴하다
+verändern	;	바꾸다, 변화시키다
+Veränderung	;	변화, 변경
+Veranlagung	;	소질, 재능
+veranlassen	;	야기시키다, 유발하다
+Veranlassung	;	유인, 동기
+veranstalten	;	개최하다, 실행하다
+Veranstaltung	;	행사, 개최
+verantworten	;	책임지다
+verantwortlich	;	책임이 있는
+Verantwortung	;	책임
+verarbeiten	;	가공하다, 세공하다
+Verband	;	연합, 연맹
+verbergen	;	숨기다, 은닉하다
+verbessern	;	개량하다
+Verbesserung	;	개량
+verbeugen	;	절하다
+Verbeugung	;	절, 인사
+verbieten	;	금지하다
+verbinden	;	붕대로 감다, 묶다
+verbindlich	;	구속력 있는, 친절한
+Verbindung	;	결합, 연결
+verblühen	;	시들다
+Verbot	;	금지
+Verbrauch	;	소비(량)
+verbrauchen	;	사용하다, 소비하다
+Verbraucher	;	소비자
+Verbrauchergenossenschaft	;	소비조합
+Verbrecher	;	소비자
+verbreiten	;	넓히다, 퍼뜨리다
+Verbreitung	;	전파, 유포, 보급
+verbrennen	;	소실되다, 연소하다
+verbringen	;	시간을 보내다, 낭비하다
+Verbum	;	동사
+verbünden	;	연합하다, 동맹하다
+Verdacht	;	의혹
+verdächtig	;	의심스러운
+verdammen	;	벌하다, 비난하다
+verdanken	;	힘입다, 덕택이다
+verdauen	;	소화하다, 이해하다
+verdecken	;	씌우다, 덮다, 감추다
+verderben	;	망하다, 상하다, 망하게 하다
+verdienen	;	얻다, 벌다
+Verdienst	;	벌이, 이득, 공로
+verdingen	;	일을 맡기다, 고용되다
+verdrängen	;	밀어젖히다, 배제하다
+verdrehen	;	비틀다
+verdrießen	;	불쾌하게 하다
+Verdruss	;	불쾌, 역정
+verehren	;	존경하다, 선물하다
+Verein	;	단체, 결사, 클럽
+vereinbaren	;	협정하다
+vereinigen	;	결합하다, 하나가되다
+vererben	;	남기다, 유전시키다
+verfahren	;	거동하다, 행동하다
+Verfahren	;	처치, 방법
+Verfall	;	열망, 몰락
+verfallen	;	쇠퇴하다, 빠지다
+verfalschen	;	위조하다, 변조하다
+verfassen	;	작성하다, 쓰다
+Verfasser	;	저자
+Verfassung	;	헌법, 상태
+verfehlen	;	놓치다, 잃다
+verfeuchten	;	투쟁하다, 옹호하다
+verfluchen	;	저주하다, 원망하다
+verfolgen	;	뒤쫓다
+verfügen	;	지시하다
+Verfügung	;	지령, 규정
+verführen	;	오도하다, 유혹하다
+vergangen	;	과거의
+Vergangenheit	;	과거
+vergeben	;	용서하다, 주다
+vergebens	;	무익하게, 헛되이
+vergeblich	;	무익한, 헛된
+vergehen	;	지나가다, 사라지다, 그릇된짓을 하다
+vergelten	;	갚다, 보답하다
+vergessen	;	잊다
+vergesslich	;	잘 잊어버리는
+vergießen	;	(피,눈물) 흘리다, 엎지르다
+vergiften	;	독살하다, 독을 넣다
+Vergleich	;	비교, 화해, 타협
+vergleichen	;	비교하다, 타협하다(sich)
+Vergnügen	;	즐거움, 만족
+vergnügt	;	즐거운
+vergöttern	;	숭배하다
+vergraben	;	매장하다
+vergrößern	;	확대하다
+verhaften	;	체포하다
+Verhaftung	;	체포
+verhalten	;	행동하다, ~상태이다
+Verhalten	;	행동, 태도
+Verhältnis	;	관계
+verhältnismäßig	;	비례하는
+verhandeln	;	협의하다, 토의하다
+Verhandlung	;	협의, 토의
+Verhängnis	;	비운, 불운
+verhasst	;	몸시 미운
+verhehlen	;	감추다
+verheimlichen	;	숨기다, 비밀에 부치다
+verheiraten	;	결혼하다
+verheiratet	;	결혼한
+verheißen	;	주기로 약속하다
+verhindern	;	막다, 방해하다
+verhüllen	;	싸서 감추다, 덮다
+verhungern	;	굶어죽다, 아사하다
+verhüten	;	방지하다, 피하다
+verjähren	;	시효가 지나다, 기한지나다
+verjüngen	;	젊게하다, 갱신하다
+Verkauf	;	판매, 매각
+verkaufen	;	팔다, 판매하다
+Verkäufer	;	점원
+Verkehr	;	교통, 교제
+verkehren	;	운행하다, 교제하다
+Verkehrschaos	;	교통혼란
+Verkehrsunfall	;	교통사고
+verkehrt	;	거꾸로의, 앞뒤가 바뀐
+verkennen	;	오인하다, 오해하다
+verklagen	;	고소하다
+verkleiden	;	변장시키다
+verkleinern	;	축소시키다
+verknüpfen	;	결합하다, 연결하다
+verkommen	;	타락하다, 쇠퇴하다
+verkörpern	;	구체화하다, ~의 화신이다
+verkürzen	;	짧게 하다
+Verkürzung	;	단축
+Verlag	;	출판, 출판사
+verlangen	;	요구하다, 바라다, 필요로하다
+verlängern	;	길게 하다
+Verlängerung	;	연장
+verlassen	;	떠나다, 버리다, 포기하다
+Verlauf	;	연장, 경과
+verlaufen	;	뻗어 있다. 경과하다
+verlegen	;	당황한
+Verlegenheit	;	당혹, 곤경
+verleihen	;	빌리다, 주다, 수여하다
+verletzen	;	해치다, 손상하다
+Verletzte	;	부상자, 피해자
+Verletzung	;	부상
+verleumden	;	비방하다, 헐뜯다
+verlieben	;	~에 반하다, 사랑에 빠지다
+verlieren	;	잃다, 지다
+verloben	;	약혼하다
+Verlobte	;	약혼자
+Verlobtung	;	약혼
+verlocken	;	유혹하다
+verlohnen	;	가치가 있다
+verloren	;	잃은, 분실된
+verlöschen	;	꺼지다, 소멸하다
+Verlust	;	잃음, 손실, 손해
+Vermächtnis	;	유언, 유증
+vermählen	;	결혼하다
+vermehren	;	늘리다, 증가시키다
+vermeiden	;	피하다
+vermieten	;	세놓다
+Vermieter	;	임대인
+vermindern	;	줄이다, 감소시키다
+vermischen	;	섞다, 혼합하다
+vermissen	;	없음을 한탄하다, 그리워하다
+vermitteln	;	중재하다, 매개하다
+Vermittlung	;	중재, 조정
+Vermögen	;	힘, 능력
+vermögen	;	할 수 있다
+vermuten	;	추측하다, 예상하다
+vermutlich	;	추측할 수 있는
+vernachlässigen	;	등한시 하다, 소홀히 하다
+vernehmen	;	듣다, 청취하다
+verneinen	;	부정하다
+vernichten	;	없애다, 취소하다
+Vernunft	;	이성, 판단력
+vernünftig	;	이성있는, 판단력있는
+veröffentlichen	;	공표하다
+verordnen	;	규정하다
+verpassen	;	놓치다
+verpfänden	;	저당잡히다, 담보로하다
+Verpflegung	;	식사, 음식
+verpflichten	;	의무를 지우다
+Verrat	;	배반, 배신
+verraten	;	누설하다, 배신하다
+verreisen	;	여행하다
+verrenken	;	탈골시키다
+verrichten	;	행하다, 실행하다
+verringern	;	줄이다, 떨어뜨리다
+verrosten	;	녹슬다
+verrucht	;	흉악한, 무도한
+Vers	;	시구, 시행, 절, 구
+versagen	;	거절하다, 실패하다
+versammeln	;	모으다
+Versammelung	;	모임, 집회
+versäumen	;	놓치다, 잃다, 빠지다
+Versäumnis	;	태만
+verschaffen	;	조달하다, 공급하다
+verschenken	;	선사하다, 기증하다
+verschieben	;	연기하다
+verschieden	;	다른, 딴, 갖가지의
+verschlafen	;	잠으로 시간보내다, 놓치다
+verschlafen	;	잠이 덜깬, 잠에 취한
+verschließen	;	자물쇠 채우다
+verschlingen	;	삼키다
+verschlossen	;	폐쇄된
+verschlucken	;	삼키다
+Verschluss	;	폐쇄, 자물쇠
+verschmelzen	;	녹다
+verschreiben	;	(약) 처방하다, 몸을 바치다
+verschütten	;	엎지르다, 흘리다
+verschweigen	;	비밀로 하다
+verschwenden	;	낭비하다
+Verschwendung	;	낭비
+verschwinden	;	사라지다
+verschwören	;	결탁하다, 공모하다
+versehen	;	공급하다, 실수하다
+Versehen	;	실수, 과실
+versetzen	;	옮기다
+versichern	;	확언하다, 보증하다
+Versicherung	;	보험, 보증
+versinken	;	가라앉다, 침몰하다, 몰두하다
+versöhnen	;	화해시키다
+versorgen	;	제공하다, 돌봐주다
+verspäten	;	지각하다
+Verspätung	;	지각
+verspotten	;	조롱하다
+versprechen	;	약속하다
+Verstand	;	이해력, 지능
+verständigen	;	알려주다, 타협하다
+Verständigung	;	의사소통, 양해, 협조
+verständlich	;	분명한
+Verständnis	;	이해, 이해력
+verstärken	;	강화하다
+verstecken	;	숨기다
+verstehen	;	이해하다
+versteigern	;	경매하다
+verstellen	;	막다, 방해하다
+verstören	;	당황케 하다
+verstreuen	;	흩뿌리다
+verstummen	;	침묵하다
+Versuch	;	시도, 노력
+versuchen	;	시도하다
+Versuchung	;	유혹, 욕망
+vertauschen	;	교환하다, 뒤바꾸다
+verteidigen	;	지키다, 방어하다
+Verteidigung	;	방어, 변호
+verteilen	;	가르다, 분배하다
+vertiefen	;	깊게 하다
+vertilgen	;	근절하다
+vertonen	;	작곡하다
+Vertrag	;	계약, 협정
+vertragen	;	견디다, 참다
+vertrauen	;	신용하다, 신뢰하다
+Vertrauen	;	신용, 신뢰
+vertraulich	;	친밀한
+vertraut	;	친밀한
+vertreiben	;	내쫓다
+vertreten	;	대표하다, 주장하다, 변호하다
+Vertreter	;	대표자, 대리인, 변호인
+Vertretung	;	대리, 대표, 변호
+verunglücken	;	불의의 사고를 당하다
+verursachen	;	야기하다, 초래하다
+verurteilen	;	유죄 판결 내리다
+verwachsen	;	(상처) 아물다, 합생하다
+verwalten	;	관리하다, 돌보다
+Verwaltung	;	주재, 관리, 행정, 행정관청
+verwandeln	;	변하게 하다
+verwandt	;	친척의, 같은 종류의
+Verwandtschaft	;	친척관계
+verwechseln	;	혼동하다, 뒤바꾸다
+verwegen	;	무모한
+verweigern	;	거절하다
+verweilen	;	머무르다, 체재하다
+verweisen	;	나무라다, 지시하다
+verwenden	;	쓰다, 사용하다, 애쓰다(sich)
+verwerten	;	이용하다
+verwickeln	;	얽히다, 연루시키다
+verwirklichen	;	실현하다, 실행하다
+verwirren	;	혼란시키다, 얽히게 하다
+verwischen	;	지우다, 희미해지다(sich)
+verwöhnen	;	버릇없게 키우다, 호강시키다
+verwunden	;	다치게 하다
+verzehren	;	먹다, 먹어치우다, 소모시키다
+verzeichnen	;	적다, 기록하다
+Verzeichnis	;	표, 목록
+verzeihen	;	용서하다
+Verzeihung	;	용서
+verzerren	;	일그러뜨리다, 왜곡시키다
+Verzicht	;	포기, 단념
+verzichten	;	포기하다, 단념하다
+verzögern	;	지체시키다, 연기하다
+verzückt	;	미칠듯이 기뻐하는
+Verzug	;	지체, 지연
+verzweifeln	;	절망하다
+verzweifelt	;	절망적인
+Verzweifelung	;	절망
+Vetter	;	사촌
+Vieh	;	가축
+vielerlei	;	가지가지의
+vielleicht	;	아마도
+vielmal	;	진심으로, 여러 번
+vielmehr	;	오히려
+Villa	;	별장
+Viloine	;	바이올린
+violett	;	보라색의
+Vision	;	환상
+Visitenkarte	;	명함
+Vogel	;	새
+Vokal	;	모음
+Volk	;	민족, 국민
+Volkslied	;	민요
+Volksschule	;	초등학교
+volkstümlich	;	대중적인, 인기있는
+voll	;	가득찬
+vollbringen	;	완성하다
+vollenden	;	완성하다, 완료하다
+völling	;	완전한, 전적인
+vollkommen	;	완전한, 완벽한
+Vollmacht	;	전권, 대리권, 위임
+vollständig	;	완전한, 전부의
+vollstrecken	;	(법률) 집행하다
+vollziehen	;	실행하다, 집행하다
+voneinander	;	서로로부터
+voraussetzen	;	가정하다, 추측하다
+Voraussetzung	;	가정, 추측
+voraussichtlich	;	예측할 수 있는
+Vorbehalt	;	유보, 제한
+vorbei	;	지나서, 통과하여
+vorbereiten	;	준비하다
+Vorbereitung	;	준비
+vorbildlich	;	모범적인, 전형적인
+vorbringen	;	제시하다
+vorder	;	전방의
+Vordergrund	;	전경, 전면
+Vorfahr	;	선조
+Vorfall	;	사건, 일
+vorführen	;	보여주다, 제시하다
+Vorgang	;	사건, 과정
+vorgeben	;	사칭하다, 둘러대다
+vorgehen	;	(시계)빨리가다, 대응하다, 일어나다, 우선하다
+vorgestern	;	그저께
+vorhaben	;	의도하다, 계획하다
+vorhanden	;	존재하는, 현존의
+Vorhang	;	커튼, 장막
+vorig	;	직전의
+Vorkehrung	;	교통수단
+vorkommen	;	존재하다, 일어나다, 생각되다
+Vorlage	;	제출, 제시
+Vorläufer	;	선행자, 선구자
+vorläufig	;	당장의, 일시적인
+vorlegen	;	제출하다, 제시하다
+vorlesen	;	낭독하다
+Vorlesung	;	강의
+Vorliebe	;	편애, 애호
+vorliegen	;	제출되어 이다, 존재하다
+vormachen	;	시범 보이다, 속이다
+Vormittag	;	오전
+Vormund	;	후견인
+Vorname	;	이름
+vornehm	;	고상한, 품위있는, 상류층의
+vornehmen	;	행하다, 계획하다
+Vorrat	;	예비품, 저장품
+Vorrecht	;	특권, 특전
+Vorrede	;	머리말, 서문
+Vorrichtung	;	설비, 장치
+Vorsatz	;	의도, 뜻
+Vorschlag	;	제의, 제안, 동의
+vorschlagen	;	제안하다, 제의하다
+vorschreiben	;	규정하다, 지시하다
+Vorschrift	;	규정, 지시, 처방
+Vorschuss	;	선불, 선금
+vorsehen	;	계획하다
+Vorsehung	;	섭리, 하늘의 뜻
+Vorsicht	;	조심, 주의
+vorsichtig	;	조심스러운
+Vorspiel	;	전주곡, 서곡
+Vorsprung	;	우위, 우월
+vorstehen	;	지배하다
+vorstellen	;	상상하다, 소개하다
+Vorstellung	;	상연, 관념
+Vorteil	;	장점, 이득
+vorteilhaft	;	유익한
+Vortrag	;	강연, 낭독, 연주
+vortragen	;	진술하다, 연주하다
+vortrefflich	;	뛰어난
+vorüber	;	지나서
+vorübergehen	;	지나가다
+Vorurteil	;	선입견
+Vorwand	;	핑계, 구실
+vorwärts	;	앞으로
+vorweg	;	처음부터
+vorwerfen	;	비난하다, 질책하다
+Vorwurf	;	비난, 질책
+Vorzeichen	;	전조, 징후
+vorziehen	;	앞으로 끌다
+Vorzug	;	우선, 장점, 이점
+Vulkan	;	화산
+Waage	;	저울, 균형
+waagerecht	;	수평의
+wach	;	깨어 있는
+Wache	;	경비, 위병
+wachen	;	깨어 있다
+Wachs	;	밀랍, 왁스
+wachsen	;	성장하다, 생기다
+wackelig	;	흔들리는
+wackeln	;	흔들리다, 흔들거리다
+Waffe	;	무기
+Wagen	;	마차, 자동차
+wagen	;	감행하다
+wägen	;	숙고하다
+Wahl	;	선택, 선거
+wählen	;	고르다, 선택하다
+Wahn	;	망상, 광기
+Wahnsinn	;	광기, 정신착란
+wahnsinnig	;	광기의, 정신착란의
+wahr	;	진실한, 참된
+während	;	~하는 동안에
+Wahrheit	;	진실, 진리
+wahrnehmen	;	인지하다, 이용하다
+wahrscheinlich	;	있을 법한
+Währung	;	화폐
+Waise	;	고아
+Wald	;	숲
+wälzen	;	굴리다
+Walzer	;	왈츠
+Wand	;	벽
+Wandel	;	변화, 변천
+wandeln	;	거닐다, 산책하다
+Wanderer	;	도보 여행자, 행인
+wandern	;	도보여행하다, 떠돌다
+Wanderung	;	도보여행, 소풍
+Wandlung	;	변화
+Wange	;	뺨, 볼
+wanken	;	흔들리다
+Wanne	;	통, 욕조
+Ware	;	상품, 물품
+warm	;	따뜻한
+Wärme	;	온도, 체온
+wärmen	;	따뜻하게 하다
+Warnung	;	경고, 충고
+warten	;	기다리다
+Wartesaal	;	대합실
+Wäsche	;	빨래, 세탁
+waschen	;	빨래하다, 씻다
+Wäscherei	;	세탁소
+Wasser	;	물
+Wasserleitung	;	수도, 수도시설
+Watte	;	탈지면
+weben	;	짜다, 뜨다
+Wechsel	;	변화, 변천
+wechseln	;	바꾸다, 변경하다
+wecken	;	깨우다, 불러일으키다
+Wecker	;	자명종
+Weg	;	길
+wegfahren	;	떠나다, 출발하다
+weggeheh	;	가버리다, 떠나다
+weglassen	;	생략하다, 보내다
+wegnehmen	;	떼내다, 빼앗다
+wegwerfen	;	버리다, 낭비하다
+weh	;	슬픈, 고통주다
+wehen	;	바람이 불다
+Wehmut	;	비애, 우수
+Wehr	;	방어, 저항
+wehren	;	막다, 저지하다
+Weib	;	여성, 아내
+weiblich	;	여성의, 여성적인
+weich	;	부드러운, 폭신한
+weichen	;	물러나다, 굴복하다
+Weide	;	목초지, 목장
+weigern	;	거절하다
+Weihnachten	;	크리스마스
+Weihnachtsmann	;	산타클로스
+Weile	;	잠시동안
+Wein	;	포도주
+weinen	;	울다
+weise	;	현명한
+Weise	;	방법, 형태
+weisen	;	가리키다, 지시하다
+Weisheit	;	슬기로움, 현명
+weiß	;	흰
+weissagen	;	예언하다
+weit	;	넓은
+Weite	;	넓음, 넓이
+weiter	;	더 넓은, 더 먼
+weitläufig	;	정확한, 상세한
+Weizen	;	밀, 소맥
+welch	;	어떤
+welk	;	시든, 축 늘어진
+Welle	;	물결, 파도
+Welt	;	세계
+Weltanschauung	;	세계관
+weltlich	;	현세의, 세속적인
+Weltraum	;	우주, 우주공간
+Wende	;	전환, 변화
+wenden	;	뒤집다, 돌리다
+Wendung	;	분기점, 변화
+wenig	;	적은
+wenigstens	;	적어도, 최소한
+werben	;	광고하다, 권유하다
+Werbung	;	상품광고
+werfen	;	던지다
+Werk	;	작업
+Werktag	;	근무일, 평일
+werktags	;	평일에
+Werkzeug	;	도구
+wert	;	가치있는
+Wert	;	가치, 값
+werten	;	평가하다
+wertlos	;	가치없는
+wertvoll	;	귀중한
+Wesen	;	존재, 본질, 태도
+wesentlich	;	본질적인, 중요한
+weshalb	;	무엇 때문에
+Weste	;	조끼
+Westen	;	서쪽
+westlich	;	서쪽의
+Wette	;	내기, 경쟁
+wetten	;	내기하다
+Wetter	;	날씨
+Wettervorhersage	;	일기예보
+Wettkampf	;	시합, 경기
+wetzen	;	갈다, 연마하다
+Wicht	;	생물, 인간
+wichtig	;	중요한, 중대한
+Wichtigkeit	;	중요성, 중대
+Wickel	;	감은 것, 고리모양
+wickeln	;	감다, 싸다
+wider	;	~에 거슬러
+Widerhall	;	반향, 메아리
+widerkäuen	;	반추하다, 되풀이하여 씹다
+widerlegen	;	반박하다, 부정하다
+widerlich	;	몹시 불쾌한
+Widersacher	;	상대방, 적
+widersprechen	;	반대 의견 말하다
+Widerspruch	;	반대, 반박
+Widerstand	;	저항
+widerstehen	;	저항하다
+widerwärtig	;	싫은, 구역질나는
+Widerwille	;	싫음, 혐오
+widerwillig	;	마지못한, 싫은, 마지못해
+widmen	;	바치다, 헌정하다
+wieder	;	다시, 재차
+wiedergeben	;	갚다, 재현하다
+wiederholen	;	반복하다
+Wiederholung	;	되풀이, 반복
+Wiederhören	;	다시 듣기
+Wiederkehr	;	귀환
+wiederkehren	;	되돌아오다
+wiederkommen	;	회귀하다
+wiedersehen	;	다시 만나다, 재회하다
+Wiege	;	요람, 유모차
+wiegen	;	흔들다, 무게를 달다
+Wiese	;	목초지, 목장
+wieso	;	어째서
+wieviel	;	얼마만큼
+wievielt	;	몇번째
+wild	;	야생의
+Wildnis	;	황무지
+Wille	;	의지
+willig	;	기꺼이
+willkommen	;	환영받는
+Willkur	;	임의, 자의
+willkürlich	;	자의의, 자기맘대로
+wimmeln	;	우글거리다
+wimmern	;	흐느끼다
+Wimper	;	속눈썹
+Wind	;	바람
+winden	;	감다
+windig	;	바람이 센
+Wink	;	신호, 윙크
+Winkel	;	각, 각도
+winken	;	신호하다
+Winter	;	겨울
+winzig	;	아주적은
+Wirbel	;	소용돌이, 혼란
+wirbeln	;	소용돌이치다
+Wirbelsäule	;	척추
+wirken	;	일하다, 적용하다
+wirklich	;	현실의, 실제의
+Wirklichkeit	;	현실, 실제
+wirksam	;	효과적인, 유능한
+Wirkung	;	효과, 영향, 작용
+Wirt	;	주인
+Wirtin	;	여주인
+Wirtschaft	;	경제
+wirtschaften	;	살림살이 하다
+wirtschaftlich	;	경제상의
+wischen	;	닦다, 씻다
+wissen	;	알다
+Wissenschaft	;	학문, 과학
+Wissenschaftler	;	학자, 과학자
+wissenschaftlich	;	학문적인
+Witterung	;	날씨
+Witz	;	재치
+witzig	;	재치있는
+Woche	;	주
+Wochenende	;	주말
+Wochentag	;	평일, 근무일
+wöchentlich	;	매주
+wogegen	;	~에 반대하여
+wogen	;	큰 파도가 일다
+wohl	;	좋은, 기분좋은
+Wohl	;	행복, 건강, 번영
+Wohlfahrt	;	안녕, 복지
+wohlhabend	;	부유한
+Wohlsein	;	건강, 행복
+Wohltat	;	선행, 자선
+wohnen	;	살다, 거주하다
+Wohnung	;	주택
+Wohnzimmer	;	거실
+wölben	;	둥글게 구부리다
+Wolf	;	늑대
+Wolke	;	구름
+wolkig	;	흐린
+Wolle	;	양털
+Wollust	;	성적 쾌락, 육욕
+Wonne	;	황홀
+Wort	;	단어, 낱말
+Wörterbuch	;	사전
+wörtlich	;	문자 그대로
+Wortschatz	;	어휘
+Wucher	;	폭리, 고리
+wuchern	;	폭리를 취하다
+Wuchs	;	키
+Wucht	;	힘
+wühlen	;	파다, 후비다, 교란하다
+Wulst	;	불룩함
+wund	;	다친, 상처난
+Wunde	;	상처, 부상
+Wunder	;	놀라움
+wunderbar	;	놀라운
+wunderlich	;	기묘한
+wundern	;	놀라게 하다
+Wunsch	;	소원
+wünschen	;	원하다
+Würde	;	위엄, 체면
+würdig	;	가치가 있는
+würdigen	;	진가를 인정하다
+Wurf	;	던짐
+Würfel	;	주사위
+würgen	;	목조르다
+Wurm	;	벌레, 구더기
+Wurst	;	소시지, 순대
+Würze	;	양념, 조미료
+Wurzel	;	뿌리
+wurzeln	;	뿌리박다
+wüst	;	황폐한, 어수선한
+Wüste	;	황무지
+Wut	;	분노, 격노
+wüten	;	미친듯이 날뛰다
+wütend	;	열광적인
+z.B.	;	zum Beispiel 예를 들면
+Zacke	;	첨단, 첨두
+zagen	;	겁내다
+zäh	;	질긴, 끊기 힘든
+Zahl	;	수
+zahlen	;	치르다, 지불하다
+zählen	;	세다, 계산하다
+zahlos	;	무수한, 아주많은
+zahlreich	;	다수의, 수많은
+Zahlung	;	지불
+zahm	;	길들여진
+zähmen	;	길들이다
+Zahn	;	이, 치아
+Zahnpasta	;	치약
+Zange	;	집게
+Zank	;	말다툼, 싸움
+zanken	;	싸우다
+Zapfen	;	마개, 주둥이
+zappeln	;	버둥거리다, 허우적대다
+zart	;	상냥한, 부드러운
+zärtlich	;	애정깊은
+Zauber	;	마법, 매력
+zaudern	;	주저하다, 망설이다
+Zaum	;	고삐, 재갈
+Zaun	;	울타리
+Zeche	;	음식값, 술값
+Zehe	;	발가락
+zehnt	;	열번째의 
+zehren	;	먹어치우다
+Zeichen	;	표시, 표
+zeichnen	;	표시하다, 기호넣다
+Zeichnung	;	그림그리기, 스케치
+Zeigefinger	;	집게손가락
+zeigen	;	가르쳐주다, 알리다
+Zeiger	;	바늘, 지침
+zeihen	;	나무라다, 꾸짖다
+Zeile	;	행, 줄
+Zeit	;	시간, 시대
+Zeitalter	;	시대
+Zeitpunkt	;	시각, 순간
+Zeitschrift	;	잡지
+Zeitung	;	신문
+Zelle	;	작은 방
+Zelt	;	천막, 텐트
+Zeltplatz	;	캠프장, 야영지
+Zement	;	시멘트
+Zensor	;	검열관
+Zensur	;	검열
+zentral	;	중심의
+Zentrum	;	중심
+Zepter	;	왕위, 주권
+zerbrechen	;	깨뜨리다, 부수다
+zerfallen	;	붕괴하다
+zerlegen	;	나누다, 해체하다
+zermalmen	;	부수다, 분쇄하다
+zerreißen	;	잡아찢다
+zerren	;	잡아당기다, 질질끌다
+zerschlagen	;	때려부수다
+zersetzen	;	분해하다
+zerstören	;	파괴하다
+Zerstörung	;	파괴
+zerstreuen	;	흩뿌리다
+Zerstreuung	;	산만, 기분전환
+zerteilen	;	분할하다
+Zettel	;	종이 쪽지, 삐라
+Zeug	;	도구
+Zeuge	;	목격자, 증인
+zeugen	;	증언하다, 증명하다
+zeugen	;	아이를 만들다, 유발하다
+Zeugnis	;	증명서
+Ziege	;	염소
+Ziegel	;	벽돌, 기와
+ziehen	;	끌다, 끌어내다
+Ziel	;	목표, 의도
+zielen	;	목표로 삼다, 겨누다
+ziemen	;	어울리다, 적당하다
+ziemlich	;	상당한, 어지간한
+Zierde	;	장식, 자랑거리
+zieren	;	장식하다, 꾸미다
+zierlich	;	우아한
+zietlich	;	시간적인
+Ziffer	;	숫자
+Zigarette	;	담배
+Zimmer	;	방
+Zimmermann	;	목수
+Zins	;	이자, 이익
+Zipfel	;	첨단, 모서리
+Zirkel	;	컴퍼스
+Zitat	;	인용문, 관용구
+zitieren	;	인용하다
+zittern	;	떨다
+zivil	;	민간의
+Zivilsation	;	문명
+zivilsieren	;	교화하다
+zögern	;	주저하다, 우물쭈물하다
+Zögling	;	학생, 생도
+Zoll	;	관세
+Zone	;	지대
+Zoo	;	동물원
+Zorn	;	노여움, 분노
+zorning	;	노한, 성난
+Zubehör	;	부속물
+zubereiten	;	마련하다, 준비하다
+zubringen	;	시간 보내다
+Zucht	;	사육, 양식
+zucken	;	경련하다
+Zucker	;	설탕
+zudecken	;	덮다, 씌우다
+zudrehen	;	돌려서 죄다
+zudringlich	;	집요한
+zuerst	;	최초에, 맨먼저
+Zufall	;	우연
+zufällig	;	우연의
+Zuflucht	;	피난처, 도피처
+zufrieden	;	만족한
+Zug	;	기차
+Zugang	;	통로, 입구
+zugeben	;	인정하다, 부가하다
+zugehen	;	접근하다
+zugehören	;	속하다
+Zügel	;	고삐
+Zugeständnis	;	인정
+zugestehen	;	인정하다, 시인하다
+zugleich	;	동시에
+zugreifen	;	움켜쥐다
+zugrunde	;	망하다, 몰락하다
+zuhören	;	귀기울이다
+Zuhörer	;	경청자
+Zukunft	;	미래, 장래
+zukünftig	;	미래의, 장래의
+zulänglich	;	충분한, 넉넉한
+zuletzt	;	마지막에, 최후에
+zumachen	;	닫다, 잠그다
+zumute	;	~한 기분이다
+zumuten	;	요구하다, 기대하다
+Zumutung	;	요구, 기대
+zunächst	;	맨처음
+Zunahme	;	증가, 증대
+zunehmen	;	증가하다, 증대하다
+Zuneigung	;	애착, 호의
+Zunft	;	중세의 길드
+Zunge	;	혀
+zupfen	;	쥐어 뜯다
+zurechtkommen	;	잘 해내다, 잘 다루다
+zurichten	;	갖추다, 준비하다
+zürnen	;	화내다, 노하다
+zurück	;	뒤로
+zurückfahren	;	돌아오다
+zurückgeben	;	돌려주다
+zurückgehen	;	돌아가다
+zurückhalten	;	만류하다, 억제하다
+zurückkehren	;	돌아가(오)다
+zurückkommen	;	돌아오다
+zurücklassen	;	뒤에 남기다, 남겨두다
+zurücklegen	;	남겨두다, 저축하다
+zurücknehmen	;	회수하다, 철회하다, 취소하다
+zurückschlagen	;	격퇴하다
+zurücksetzen	;	복귀시키다
+zurückstellen	;	제자리에 갖다두다
+zurücktreten	;	뒤로 물러서다
+zurückweisen	;	거부하다
+zurückwerfen	;	뒤로 던지다
+zurückzeihen	;	철회하다, 물러나다
+Zusage	;	약속, 수락
+zusagen	;	약속하다, 수락하다
+zusammen	;	함께
+zusammenbrechen	;	붕괴하다, 좌절하다
+zusammenbringen	;	모으다, 조달하다
+Zusammenbruch	;	붕괴, 와해
+zusammenehmen	;	총괄하다, 집중하다, 자제하다
+zusammenfallen	;	붕괴하다, 와해하다
+zusammenfassen	;	요약하다, 총괄하다
+zusammengesetzt	;	합성의, 복합의
+zusammenhalten	;	함게 모아두다
+Zusammenhang	;	맥락, 관계
+zusammenhängen	;	관계가 있다
+zusammenkommen	;	모이다
+zusammenlaufen	;	모여들다, 모이다
+zusammenlegen	;	모으다, 접다, 합병하다
+zusammenreimen	;	설명하다
+zusammenschlagen	;	때려 눕히다
+zusammenschließen	;	합병하다, 제휴하다
+zusammensein	;	함께 있다
+zusammensetzen	;	조립하다, 합성하다
+zusammenstellen	;	작성하다, 조립하다
+Zusammenstoß	;	충돌
+zusammenstoßen	;	충돌하다
+zusammentreffen	;	만나다, 해후하다
+zusammenziehen	;	오그라들다, 모으다
+zuschauen	;	구경하다
+Zuschauer	;	구경꾼, 관객
+Zuschlag	;	할증금, 가산금
+zuschlagen	;	닫다, 부가하다, 할증하다
+zuschließen	;	자물쇠로 잠그다
+zuschreiben	;	누구의 탓으로 돌리다
+zusehen	;	바라보다
+Zustand	;	상태
+zustimmen	;	찬성하다, 동의하다
+Zustimmung	;	찬성, 동의
+zustoßen	;	(문) 탕 닫다, 일어나다, 닥치다
+zuteilen	;	배분하다
+zutragen	;	일어나다, 생기다(sich)
+zutrauen	;	믿다, 신뢰하다
+zutreffen	;	적합하다
+Zutritt	;	입장, 유입
+zutun	;	보태다
+zuverlässig	;	믿을 수 있는
+Zuversicht	;	확신, 신뢰
+zuviel	;	너무많은
+zuvor	;	미리
+zuvorkommen	;	앞지르다, 예방하다
+zuweilen	;	때때로
+zuwenden	;	향하게 하다
+Zwang	;	강제, 압박
+zwanglos	;	구속받지 않는, 자유로운
+Zweck	;	목적
+zweideutig	;	뜻이 둘있는, 애매한
+zweierlei	;	두 가지의
+Zweifel	;	의심, 주저
+zweifelhaft	;	의심스러운
+zweifellos	;	확실한
+zweifeln	;	의심하다
+Zweig	;	가지, 잔가지
+zweit	;	2번째의
+Zwerg	;	난쟁이
+Zwiebel	;	양파
+Zwiespalt	;	분열, 불화
+Zwilling	;	쌍둥이
+zwingen	;	강요하다
+Zwist	;	불화, 분쟁
+zwitschern	;	지저귀다
